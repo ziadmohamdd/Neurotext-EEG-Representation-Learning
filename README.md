@@ -1,0 +1,1 @@
+# New_trends_AI_project1
