@@ -1,0 +1,6 @@
+-r requirements.txt
+sentence-transformers>=3.4,<4
+transformers>=4.48,<5
+timm==0.9.16
+einops>=0.8,<0.9
+ipykernel>=6

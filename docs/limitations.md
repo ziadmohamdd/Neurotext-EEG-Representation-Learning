@@ -1,0 +1,12 @@
+# Limitations and outstanding research work
+
+- No real ZuCo data or sentence alignments were provided. OSF and NEMAR website access returned proxy 403. GitHub metadata inspection is not a full raw-data audit. All dataset adapters need validation against the actual selected releases.
+- Raw NEMAR trigger/eye-tracking tables do not establish sentence text or timing. An audited alignment TSV is a required external input. MATLAB rawData/content schema examples must be verified per file; word-level band features are deliberately not treated as waveforms.
+- Identical/different subject-ID strings cannot establish cross-version participant identity. Transfer requires audited `person_id` values and comparable tasks. Real sentence overlap and channel compatibility remain data-dependent.
+- Hugging Face model download is currently blocked by network policy. Pretrained sentence embedding extraction needs permitted Hugging Face access or an existing verified local model path. No synthetic language vectors are offered for research.
+- CPU software tests and official-weight synthetic inference establish implementation behavior, not EEG semantic performance. RTX 3050/Windows and Colab GPU execution have not been measured here. No expensive real-data campaign has run.
+- Channel correspondence is scientifically sensitive. EGI-to-standard mapping remains an explicit audited input; the pretrained adapter rejects unconfigured mappings and never pretends arbitrary electrode names are compatible.
+- Epoch checkpoints support interruption recovery; arbitrary mid-microbatch state is not saved. Cross-filesystem resume requires the exact same cached signal bytes, logical metadata, text embeddings and training settings; only physical file locations may change.
+- Fixed center crops, per-sentence filtering edge effects, initial artifact thresholds, tiny contrastive negative pools, canonicalized sentence identities, participant sample size and task/domain shift can bias results. Inspect diagnostics and report sensitivity analyses.
+- The quality-aware gate is a simple label-free transient attenuation heuristic, not a validated artifact-removal model. Subject cluster intervals are unavailable with a single test subject. LOSO utility exists, but the default matrix uses repeated group splits.
+- LaBraM is frozen; large foundation-model fine-tuning and target-domain adaptation are intentionally not implemented. The required ZuCo SSL and cross-dataset zero-shot protocols have executable software paths, but their scientific results remain unexecuted.
