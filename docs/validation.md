@@ -2,7 +2,7 @@
 
 Validated in the attached Linux cloud machine using Python 3.11.17, PyTorch 2.7.1+cpu and the versions in `tested_environment.json` / `requirements-lock-linux-py311.txt`.
 
-- **51 tests passed**, including two optional official-weight LaBraM integration tests; none skipped in the configured cloud setup run. Upstream timm emits two deprecation warnings.
+- **65 tests passed**, including two optional official-weight LaBraM integration tests; none skipped in the configured cloud setup run. Upstream timm emits two deprecation warnings.
 - Dataset software checks: versioned manifests, canonical sentence identities, MATLAB v5 structs and v7.3 HDF5 references, actual MNE BrainVision parsing of a tiny synthetic binary, alignment bounds, channel order, finite values and invalid-input rejection.
 - Signal/model checks: resampling/filtering behavior, training-only streaming normalization, variable-length batches, padding-independent embeddings, quality-aware forward passes, masked reconstruction gradients, duplicate-aware alignment losses and classical features.
 - Protocol checks: participant/content disjointness, LOSO folds, both transfer directions on synthetic fixtures, identity-audit failures, Gaussian and shuffled-class controls, known retrieval rankings/chance and subject bootstrap behavior.
@@ -26,6 +26,10 @@ Synthetic fixtures and their temporary metrics exist only to test software behav
 
 ## Not executed / external prerequisites
 
-Real ZuCo ingestion, source annotation/participant/montage audits, real-data baseline training, ZuCo SSL, real EEG/text alignment, quality/robustness comparisons and cross-dataset experiments await actual data and verified sentence alignments. Hugging Face sentence-model extraction awaits permitted model access or a verified local model directory. OSF, NEMAR website and Hugging Face connectivity attempts returned proxy tunnel 403; public GitHub metadata and LaBraM assets were accessible.
+The user has reported successful Windows ingestion, 200 Hz resampling, validation and sentence embedding generation for 217 ZJS observations, plus CUDA detection on the RTX 3050. Full-cohort ingestion, remaining source annotation/participant/montage audits, real-data baseline training, ZuCo SSL, real EEG/text alignment, quality/robustness comparisons and cross-dataset experiments remain unexecuted. Hugging Face sentence-model extraction awaits permitted model access or a verified local model directory. OSF, NEMAR website and Hugging Face connectivity attempts returned proxy tunnel 403; public GitHub metadata and LaBraM assets were accessible.
 
-Windows/RTX 3050 and Colab GPU runtime execution, peak-VRAM benchmarks and the full research matrix have not run. Notebook schema/cell checks do not imply a Colab training run. Environment draft persistence/publication and fresh-task restoration must be assessed separately from current-machine validation.
+Windows installation and CUDA detection passed in user-reported output. RTX 3050 training, Colab GPU execution, peak-VRAM benchmarks and the full research matrix have not run. Notebook schema/cell checks do not imply a Colab training run. Environment draft persistence/publication and fresh-task restoration must be assessed separately from current-machine validation.
+
+## Batch workflow verification
+
+Batch tests cover v5/HDF5 EEGLAB metadata extraction, per-subject missing slots and audits, common-channel selection, complete/partial cohort outcomes, checksum-verified downloads, Range resume validation, disk preflight, shared text-pool assembly and reuse of completed subject caches. An end-to-end synthetic CLI test combines acquisition and preparation across three subjects; no synthetic result is presented as research performance. Live official download plans were inspected: ZuCo 1.0 NR has 12 subjects/24 selected files (~10.42 GiB); ZuCo 2.0 NR has 18 subjects/36 selected files (~34.43 GiB). Full cohort bytes were not downloaded in cloud validation. See `batch_workflow.md` before running on Windows.

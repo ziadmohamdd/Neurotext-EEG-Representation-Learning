@@ -6,6 +6,7 @@ import hashlib
 import itertools
 import json
 from pathlib import Path
+import shutil
 import sys
 import numpy as np
 from .data.dataset import read_manifest, write_manifest, load_signal
@@ -22,6 +23,24 @@ def parser():
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest="command",required=True)
     sub.add_parser("device")
+    acquisition = sub.add_parser("download-zuco", help="Plan or download all NR sentence exports and one metadata recording per subject")
+    acquisition.add_argument("--dataset", choices=["zuco1", "zuco2"], required=True)
+    acquisition.add_argument("--root", required=True)
+    acquisition.add_argument("--subjects", nargs="+")
+    acquisition.add_argument("--execute", action="store_true", help="Download the listed files; otherwise save a size/checksum plan only")
+    batch = sub.add_parser("prepare-batch", help="Prepare all downloaded NR subjects in one bounded-memory job")
+    batch.add_argument("--dataset", choices=["zuco1", "zuco2"], required=True)
+    batch.add_argument("--root", required=True)
+    batch.add_argument("--output")
+    batch.add_argument("--subjects", nargs="+")
+    batch.add_argument("--download", action="store_true", help="Acquire missing official NR exports and subject metadata first")
+    batch.add_argument("--units", choices=["uV", "V"], required=True, help="Verified source waveform units; never inferred from amplitude")
+    batch.add_argument("--already-preprocessed", action="store_true", required=True, help="Acknowledge these are existing preprocessed sentence exports; only anti-alias resampling is applied")
+    batch.add_argument("--target-sfreq", type=float, default=200.)
+    batch.add_argument("--channel-policy", choices=["strict", "intersection"], default="strict")
+    batch.add_argument("--skip-text", action="store_true")
+    batch.add_argument("--text-model", default="sentence-transformers/all-MiniLM-L6-v2")
+    batch.add_argument("--text-revision")
     inspect = sub.add_parser("inspect-data")
     inspect.add_argument("--manifest")
     inspect.add_argument("--root")
@@ -102,6 +121,58 @@ def inspect_data(args):
         print(f"Inspected {len(paths)} BIDS sidecars; see {args.output}")
     else:
         raise ValueError("Supply --manifest or --root")
+
+def download_zuco(args):
+    from .data.acquisition import plan_download, download_file
+    plan = plan_download(args.dataset, args.subjects)
+    root = Path(args.root)
+    root.mkdir(parents=True, exist_ok=True)
+    write_json(root/"download_plan.json", plan)
+    print(f"{args.dataset}: {len(plan['subjects'])} subjects, {len(plan['files'])} files, {plan['total_bytes']/2**30:.2f} GiB source files (including existing files)", flush=True)
+    if not args.execute:
+        print(f"Plan saved: {root/'download_plan.json'}. Add --execute to download. Prepared caches need additional disk space.")
+        return plan
+    remaining = 0
+    for entry in plan['files']:
+        target = root/entry['name']
+        partial = target.with_suffix(target.suffix+'.partial')
+        if not target.exists():
+            remaining += max(0,entry['size']-(partial.stat().st_size if partial.exists() else 0))
+    free = shutil.disk_usage(root).free
+    if remaining > free:
+        raise SystemExit(f'Insufficient disk space: source downloads need about {remaining/2**30:.2f} GiB more, but only {free/2**30:.2f} GiB is free. Prepared caches also need space.')
+    report = {"status":"downloading", "files":[], "subjects":plan["subjects"]}
+    for entry in plan["files"]:
+        print(f"{entry['name']} ({entry['size']/2**20:.1f} MiB)", flush=True)
+        try:
+            status = download_file(entry, root)
+            report["files"].append({"name":entry["name"], "status":status})
+        except Exception as exc:
+            report["files"].append({"name":entry["name"], "status":"failed", "error":str(exc)})
+        write_json(root/"download_report.json", report)
+    failures = [row for row in report["files"] if row["status"] == "failed"]
+    report["status"] = "failed" if failures else "complete"
+    write_json(root/"download_report.json", report)
+    if failures:
+        raise SystemExit(f"{len(failures)} download(s) failed; see {root/'download_report.json'}. Correct access/disk issues and rerun; verified files and valid partial downloads are reused.")
+    return plan
+
+def prepare_batch_command(args):
+    from .batch import prepare_batch
+    subjects = args.subjects
+    if args.download:
+        plan = download_zuco(argparse.Namespace(dataset=args.dataset,root=args.root,subjects=subjects,execute=True))
+        subjects = plan["subjects"]
+    output = args.output or f"data/processed/{args.dataset}_batch"
+    report = prepare_batch(args.root,args.dataset,output,args.units,args.target_sfreq,args.channel_policy,
+                           not args.skip_text,args.text_model,args.text_revision,subjects=subjects)
+    print(f"Summary: {Path(output)/'summary.json'}")
+    print(f"Status: {report['status']}; subjects: {report.get('n_subjects',0)}; observations: {report.get('n_observations',0)}")
+    if report["status"] != "prepared":
+        raise SystemExit("Batch preparation is incomplete. Inspect the summary; failed subjects were not silently treated as prepared.")
+    print(f"Combined manifest: {report['manifest']}")
+    if report.get("text_cache"):
+        print(f"Shared text cache: {report['text_cache']}")
 
 def ingest(args):
     audit = {}
@@ -286,7 +357,8 @@ def export_results(args):
 def main(argv=None):
     args = parser().parse_args(argv)
     commands = {"inspect-data":inspect_data,"ingest":ingest,"preprocess":preprocess,"evaluate":evaluate,
-                "run-experiments":run_experiments,"export-results":export_results}
+                "run-experiments":run_experiments,"export-results":export_results,
+                "download-zuco":download_zuco,"prepare-batch":prepare_batch_command}
     if args.command == "device":
         print(json.dumps(device_info()[1],indent=2))
     elif args.command == "cache-text":

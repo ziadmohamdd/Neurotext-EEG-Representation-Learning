@@ -2,7 +2,7 @@
 
 Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4 GB), CPU and Google Colab. One package implements all workflows; notebooks are clients of the same modules.
 
-**Status:** software validation uses explicitly synthetic tests. No ZuCo data was supplied, and no scientific training, retrieval scores, robustness conclusions or cross-dataset results are claimed. Official pretrained LaBraM weights were downloaded, checksum-verified and tested on synthetic input. See [validation](docs/validation.md), [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [limitations](docs/limitations.md).
+**Status:** software validation uses explicitly synthetic tests. User-side Windows preparation has imported and resampled 217 ZJS observations; no scientific training, retrieval scores, robustness conclusions or cross-dataset results are claimed. Official pretrained LaBraM weights were downloaded, checksum-verified and tested on synthetic input. See [validation](docs/validation.md), [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [limitations](docs/limitations.md).
 
 ## Windows setup (PowerShell, Python 3.11)
 
@@ -21,6 +21,16 @@ python -m eeg_decoding.cli device
 ```
 
 For Linux/CPU replace activation with `source .venv/bin/activate`. This cloud instance also has a prepared Python 3.11 environment at `/workspace/eeg-env/py311`. Tested dependency versions are recorded in `docs/tested_environment.json`; GPU memory and Windows behavior must be benchmarked on the actual machine. The base configuration starts at batch 2, accumulation 8, embedding 128, workers 0 and 8-second crops. These are initial settings, not a measured 4 GB guarantee.
+
+## Recommended batch workflow
+
+Use one command to prepare all downloaded normal-reading subjects, with subject-specific metadata checks and bounded-memory caching:
+
+```powershell
+.\.venv\Scripts\python.exe -m eeg_decoding.cli prepare-batch --dataset zuco1 --root data/raw/zuco1 --units uV --already-preprocessed
+```
+
+Add `--download` to acquire missing official NR exports and one metadata recording per subject. First inspect the live size/checksum plan with `python -m eeg_decoding.cli download-zuco --dataset zuco1 --root data/raw/zuco1`. The inspected ZuCo 1.0 plan is approximately 10.42 GiB of source files, plus processed caches. No training happens during preparation. See [batch_workflow.md](docs/batch_workflow.md) for full-cohort commands, restart behavior, reports and limitations.
 
 ## Acquire and validate real EEG
 
