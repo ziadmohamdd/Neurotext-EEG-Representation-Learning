@@ -32,6 +32,7 @@ def parser():
     ingest.add_argument("--root",required=True)
     ingest.add_argument("--alignment",help="Verified sentence-clock alignment TSV for BIDS")
     ingest.add_argument("--schema",help="Explicit metadata JSON for one MATLAB recording")
+    ingest.add_argument("--skip-missing-eeg",action="store_true",help="Exclude scalar NaN/empty MATLAB EEG slots, preserving original sentence IDs and writing an import audit")
     ingest.add_argument("--cache",default="data/processed/imported")
     ingest.add_argument("--output",required=True)
     prep = sub.add_parser("preprocess")
@@ -103,6 +104,7 @@ def inspect_data(args):
         raise ValueError("Supply --manifest or --root")
 
 def ingest(args):
+    audit = {}
     if args.format == "bids":
         if not args.alignment:
             raise ValueError("BIDS requires --alignment; trigger-only tables are insufficient")
@@ -114,8 +116,16 @@ def ingest(args):
         from .data.zuco1 import iter_mat as load1
         from .data.zuco2 import iter_mat as load2
         schema = json.loads(Path(args.schema).read_text())
-        records = (load1 if args.dataset == "zuco1" else load2)(args.root,schema,args.cache)
-    write_manifest(args.output,records)
+        records = (load1 if args.dataset == "zuco1" else load2)(args.root,schema,args.cache,
+                    skip_missing_eeg=args.skip_missing_eeg, audit=audit)
+    try:
+        write_manifest(args.output,records)
+    except Exception as exc:
+        if args.format == "mat":
+            write_json(str(args.output)+".import.json",dict(audit,status="failed",error=str(exc)))
+        raise
+    if args.format == "mat":
+        write_json(str(args.output)+".import.json",dict(audit,status="imported" if audit.get("imported") else "empty"))
     report = validate_records(read_manifest(args.output))
     write_json(str(args.output)+".validation.json",report)
     if not report["valid"]:

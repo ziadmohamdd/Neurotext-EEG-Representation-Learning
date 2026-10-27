@@ -97,3 +97,51 @@ def test_bids_brainvision_roundtrip(tmp_path):
     rows=list(iter_bids(tmp_path,alignment,"zuco1",tmp_path/"cache"))
     assert rows[0].channels==["C3","CZ","C4"]
     np.testing.assert_allclose(load_signal(rows[0]),x[20:120].T,atol=1e-3)
+
+@pytest.mark.parametrize('version', ['zuco1', 'zuco2'])
+def test_mat_missing_slots_preserve_sentence_ids(tmp_path, version):
+    """Synthetic missing slots reproduce the user-observed ZuCo export pattern."""
+    path = tmp_path / 'missing.mat'
+    entries = np.empty(4, dtype=object)
+    for i, signal in enumerate([np.nan, np.ones((3,80)), np.array([]), np.ones((3,90))]):
+        entries[i] = {'rawData':signal, 'content':f'Synthetic sentence {i}'}
+    savemat(path, {'sentenceData':entries})
+    schema = dict(subject='fixture', session='1', task='nr', channels=['A','B','C'], sfreq=200,
+                  signal_field='rawData', text_field='content', time_axis=1, units='uV')
+    loader = iter_mat if version == 'zuco1' else iter_mat2
+    with pytest.raises(ValueError, match='missing EEG'):
+        list(loader(path, schema, tmp_path/'strict'))
+    audit = {}
+    rows = list(loader(path, schema, tmp_path/'skip', skip_missing_eeg=True, audit=audit))
+    assert [r.sentence_id for r in rows] == ['1','3']
+    assert [r.text for r in rows] == ['Synthetic sentence 1','Synthetic sentence 3']
+    assert [r.provenance['matlab_sentence_index'] for r in rows] == [2,4]
+    assert audit['total_sentences'] == 4 and audit['imported'] == 2
+    assert [r['sentence_id'] for r in audit['skipped']] == ['0','2']
+    entries[0] = {'rawData':np.ones((2,80)), 'content':'Wrong montage'}
+    savemat(path, {'sentenceData':entries})
+    with pytest.raises(ValueError, match='expected raw C x T'):
+        list(loader(path, schema, tmp_path/'bad', skip_missing_eeg=True))
+
+
+def test_hdf_missing_slot_and_nonfinite_waveform(tmp_path):
+    import h5py
+    path = tmp_path/'missing_hdf.mat'
+    with h5py.File(path,'w') as f:
+        group = f.create_group('sentenceData')
+        signals = group.create_dataset('rawData',(1,3),dtype=h5py.ref_dtype)
+        texts = group.create_dataset('content',(1,3),dtype=h5py.ref_dtype)
+        for i in range(3):
+            signal = np.array([[np.nan]]) if i == 0 else np.ones((80,3))
+            signals[0,i] = f.create_dataset(f'signal{i}',data=signal).ref
+            texts[0,i] = f.create_dataset(f'text{i}',data=np.array([ord(c) for c in f'Fixture {i}'])[:,None]).ref
+    schema = dict(subject='fixture',session='1',task='nr',channels=['A','B','C'],sfreq=200,
+                  signal_field='rawData',text_field='content',time_axis=1,units='uV')
+    audit = {}
+    rows = list(iter_mat(path,schema,tmp_path/'cache',skip_missing_eeg=True,audit=audit))
+    assert [r.sentence_id for r in rows] == ['1','2']
+    assert audit['imported'] == 2 and len(audit['skipped']) == 1
+    with h5py.File(path,'a') as f:
+        f['signal1'][0,0] = np.inf
+    with pytest.raises(ValueError,match='NaN/Inf'):
+        list(iter_mat(path,schema,tmp_path/'bad',skip_missing_eeg=True))
