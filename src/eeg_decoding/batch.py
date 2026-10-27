@@ -124,6 +124,7 @@ def prepare_batch(root, dataset, output, units, target_sfreq=200, channel_policy
             processed = subject_dir/digest
             processed.mkdir(exist_ok=True)
             records = []
+            print(f'{subject}: reading sentence waveforms incrementally', flush=True)
             for record in iter_mat(source, schema, scratch, dataset=dataset, skip_missing_eeg=True, audit=audit):
                 original = load_signal(record)
                 before = signal_quality(original)
@@ -145,6 +146,8 @@ def prepare_batch(root, dataset, output, units, target_sfreq=200, channel_policy
                 Path(record.signal_path).unlink()
                 if len(records) == 1:
                     signal_plot(signal, target_sfreq, processed/'diagnostic.png')
+                if len(records) % 50 == 0:
+                    print(f'{subject}: cached {len(records)} observations; source slot {int(record.sentence_id)+1}/{audit.get("total_sentences", "?")}', flush=True)
             if not records:
                 raise ValueError('No finite sentence waveforms imported')
             validation = validate_records(records)

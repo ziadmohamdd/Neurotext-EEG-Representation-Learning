@@ -59,7 +59,7 @@ First inspect downloaded subject/task files with MATLAB, `scipy.io.whosmat` for 
 }
 ```
 
-These are **schema examples, not a verified description of every OSF export**. Determine actual field paths, retained channels, sample rates, units, preprocessing history and skipped sentences. If raw sentence signals are absent, use original continuous EEG plus verified events or export verified sentence shards. The loader fails rather than turning spectral bands into artificial waveforms. V7.3 references are read one sentence at a time; SciPy v5 loads one bounded subject/task variable, so files above 512 MiB are rejected. Compressed v5 can expand substantially; use v7.3 sentence shards on a 16 GB machine.
+These are **schema examples, not a verified description of every OSF export**. Determine actual field paths, retained channels, sample rates, units, preprocessing history and skipped sentences. If raw sentence signals are absent, use original continuous EEG plus verified events or export verified sentence shards. The loader fails rather than turning spectral bands into artificial waveforms. V7.3 references are read one sentence at a time. Level 5 sentence structs (including compressed v7 exports) now stream only the selected numeric EEG and character-text fields, discarding unused features/word data in 64 KiB chunks. Subject files above 512 MiB no longer require conversion or whole-subject loading. A 64 MiB limit remains on each selected field (text metadata has a smaller bound), and malformed/truncated data and zlib integrity failures are rejected. The reader is intentionally limited to sentence structs/cells of scalar structs with real numeric EEG and character text; it is not a general MAT decoder.
 
 ## Validation and versioning
 
