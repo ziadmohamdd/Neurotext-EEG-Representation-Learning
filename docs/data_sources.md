@@ -64,3 +64,9 @@ These are **schema examples, not a verified description of every OSF export**. D
 ## Validation and versioning
 
 Versioned JSONL records contain dataset, subject, session, task, sentence ID/text, absolute signal cache reference, ordered channels, sample rate, signal quality and provenance. Signals are float32 compressed NPZ per observation. Validation checks observation identity, dimensions, finite values, metadata, subject counts and sentence counts. Training saves content-and-signal digests and exact split membership; evaluation rejects changed test data. Manifests are local generated artifacts; preserve an immutable research copy with dataset licenses in your own storage. Never publish sensitive data without checking dataset terms.
+
+## Missing EEG slots in MATLAB exports
+
+A user-side inspection of `resultsZJS_NR.mat` found 300 sentence slots: 217 finite 2D arrays and 83 missing/invalid-dimension entries. The inspected finite arrays have 105 channels and variable sample counts. These observations do not establish the ordered electrode names, sampling frequency, units or preprocessing history; verify those from the export scripts before creating a schema. Do not substitute a 128-channel BIDS montage for the retained 105-channel MATLAB layout.
+
+MATLAB ingestion accepts `--skip-missing-eeg` to exclude explicit scalar-NaN or empty EEG placeholders. It preserves original zero-based sentence IDs and additionally records the MATLAB one-based index. The adjacent `.import.json` report lists skipped IDs/reasons and imported/total counts. Wrong channel dimensions and nonfinite waveforms still fail explicitly; the flag does not silently accept an incorrect schema or repair corrupt EEG. Without the flag, missing EEG remains an error.

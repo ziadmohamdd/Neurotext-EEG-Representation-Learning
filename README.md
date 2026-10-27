@@ -24,7 +24,7 @@ For Linux/CPU replace activation with `source .venv/bin/activate`. This cloud in
 
 ## Acquire and validate real EEG
 
-Follow [data_sources.md](docs/data_sources.md) before ingestion. Raw BIDS and OSF MATLAB are different formats. **Do not use trigger-only events as sentence alignments.** NEMAR's inspected table has no sentence text, so supply a verified sentence-clock TSV. MATLAB requires an inspected schema JSON and raw sentence-level signals; band features are not waveforms.
+Follow [data_sources.md](docs/data_sources.md) before ingestion. Raw BIDS and OSF MATLAB are different formats. **Do not use trigger-only events as sentence alignments.** NEMAR's inspected table has no sentence text, so supply a verified sentence-clock TSV. MATLAB requires an inspected schema JSON and raw sentence-level signals; band features are not waveforms. For exports containing scalar-NaN/empty EEG slots, add `--skip-missing-eeg` to ingestion; excluded sentence IDs are saved in the adjacent `.import.json` report.
 
 ```powershell
 python scripts/inspect_data.py --root data/raw/zuco1 --output results/metrics/raw_inspection.json
