@@ -3,6 +3,7 @@
 Schema JSON supplies subject/session/task/channels/sfreq, signal_field, text_field,
 time_axis (0 or 1), units (uV or V), and optional person_id. Word-level band features
 are not raw EEG and are deliberately not accepted as time series.
+Level 5 files stream selected sentence fields; v7.3 files read HDF5 references.
 """
 from pathlib import Path
 import hashlib
@@ -11,7 +12,6 @@ from .dataset import Record
 
 def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=False, audit=None):
     import h5py
-    from scipy.io import loadmat
     path, cache_dir = Path(path), Path(cache_dir).resolve()
     cache_dir.mkdir(parents=True, exist_ok=True)
     required = {"subject", "session", "task", "channels", "sfreq", "signal_field", "text_field", "time_axis", "units"}
@@ -67,17 +67,8 @@ def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=Fal
                 if record is not None:
                     yield record
     else:
-        if path.stat().st_size > 512 * 2**20:
-            raise ValueError("MAT v5 >512 MiB: export sentence shards or MATLAB v7.3 for bounded-memory reading")
-        # scipy cannot lazily decompress v5 variables; bound to one small subject file.
-        mat = loadmat(path, simplify_cells=True, variable_names=["sentenceData"])
-        rows = mat["sentenceData"]
-        if isinstance(rows, dict):
-            rows = [rows]
-        audit["total_sentences"] = len(rows)
-        for i, row in enumerate(rows):
-            if sf not in row or tf not in row:
-                raise ValueError(f"No {sf}/{tf}: supply correct raw sentence schema; do not concatenate word band features")
-            record = convert(i, row[sf], row[tf])
+        from .mat5 import iter_sentence_fields
+        for i, signal, text in iter_sentence_fields(path, sf, tf, audit=audit):
+            record = convert(i, signal, text)
             if record is not None:
                 yield record

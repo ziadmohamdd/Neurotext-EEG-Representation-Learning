@@ -66,7 +66,7 @@ For each subject, at least one actual `*_SUBJECT_NR*_EEG.mat` recording is requi
 
 By default all prepared subjects must share the same electrode set. Order differences are corrected by verified electrode labels. Differing sets fail explicitly. Only use `--channel-policy intersection` when the scientific protocol explicitly chooses the common electrodes; that choice changes cache signatures and all models must use the resulting same manifest.
 
-MATLAB v7.3 sentence references and EEG headers are lazy. SciPy v5 reads one bounded subject variable and can expand compressed data significantly. V5 files above the existing 512 MiB safety limit are reported as blocked; provide a verified v7.3/sentence-shard export instead of lifting the memory guard. Unsupported fields, nonfinite waveforms, inconsistent channel sets and empty subjects fail explicitly. Missing scalar-NaN/empty EEG slots alone are skipped with an audit.
+MATLAB v7.3 sentence references and EEG headers are lazy. Level 5 sentence exports are now streamed: only raw EEG and sentence text are materialized, while redundant word/band fields are discarded in 64 KiB chunks. Compressed-stream checksums, matrix sizes and selected field bounds are checked. The old 512 MiB subject-file restriction is replaced by a 64 MiB per-selected-field guard; unsupported layouts still fail explicitly rather than falling back to full-subject loading. The separate generic v5 EEGLAB metadata reader retains its 512 MiB guard; the downloader selects small metadata recordings. Nonfinite waveforms, inconsistent channels and empty subjects remain errors; scalar-NaN/empty EEG slots alone are skipped with an audit.
 
 ## ZuCo 2.0 and other conditions
 
@@ -77,3 +77,17 @@ Cross-dataset participant-identity audits remain mandatory before transfer. Prep
 ## Verification scope
 
 Synthetic unit/integration tests exercise MATLAB v5/HDF5 metadata reading, missing slots, multi-subject preparation, shared text-pool assembly, montage handling, restart/cache verification, checksum-preserving resumable downloads and the combined download/preparation CLI. Live public OSF listings/checksum plans have been inspected. Full real-data cohort download/preparation and Windows execution of these new commands have not run in the cloud; the user-side ZJS batch run is the first intended real-data integration check. No scientific metrics are fabricated.
+
+## Recovery from the former Level 5 size restriction
+
+The first full Windows run downloaded the cohort successfully but prepared only ZDN (298 observations) and ZJS (217). The remaining subjects hit the former 512 MiB Level 5 guard. That was a loader limitation, not a reason to discard or redownload the data.
+
+After updating with `git pull origin main`, rerun preparation without `--download`:
+
+```powershell
+.\.venv\Scripts\python.exe -m eeg_decoding.cli prepare-batch --dataset zuco1 --root data/raw/zuco1 --units uV --already-preprocessed
+```
+
+Completed caches retain their existing signatures and are reused. Failed subjects are processed with the bounded incremental reader. Progress is printed every 50 retained observations. Consume each source completely before trusting completion: the batch job only writes successful subject state after the entire iterator and compressed-stream integrity checks finish. A failed subject remains failed/partial even if some temporary sentence arrays were emitted before an error.
+
+New regression coverage compares selected values with SciPy for compressed/uncompressed structs and cell-wrapped scalar structs, verifies little/big endian encodings and Unicode, rejects truncated/corrupt compression, retains per-field allocation guards, and exercises a valid file above the former 512 MiB threshold. A memory test traverses 48 MiB of irrelevant nested fields with less than 8 MiB peak traced allocations; this is reader-test allocation overhead, not a claim about total application RSS. Full real-cohort completion still needs confirmation on the user's downloaded files.

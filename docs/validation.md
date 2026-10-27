@@ -2,7 +2,7 @@
 
 Validated in the attached Linux cloud machine using Python 3.11.17, PyTorch 2.7.1+cpu and the versions in `tested_environment.json` / `requirements-lock-linux-py311.txt`.
 
-- **65 tests passed**, including two optional official-weight LaBraM integration tests; none skipped in the configured cloud setup run. Upstream timm emits two deprecation warnings.
+- **80 tests passed**, including two optional official-weight LaBraM integration tests; none skipped in the configured cloud setup run. Upstream timm emits two deprecation warnings.
 - Dataset software checks: versioned manifests, canonical sentence identities, MATLAB v5 structs and v7.3 HDF5 references, actual MNE BrainVision parsing of a tiny synthetic binary, alignment bounds, channel order, finite values and invalid-input rejection.
 - Signal/model checks: resampling/filtering behavior, training-only streaming normalization, variable-length batches, padding-independent embeddings, quality-aware forward passes, masked reconstruction gradients, duplicate-aware alignment losses and classical features.
 - Protocol checks: participant/content disjointness, LOSO folds, both transfer directions on synthetic fixtures, identity-audit failures, Gaussian and shuffled-class controls, known retrieval rankings/chance and subject bootstrap behavior.
@@ -33,3 +33,7 @@ Windows installation and CUDA detection passed in user-reported output. RTX 3050
 ## Batch workflow verification
 
 Batch tests cover v5/HDF5 EEGLAB metadata extraction, per-subject missing slots and audits, common-channel selection, complete/partial cohort outcomes, checksum-verified downloads, Range resume validation, disk preflight, shared text-pool assembly and reuse of completed subject caches. An end-to-end synthetic CLI test combines acquisition and preparation across three subjects; no synthetic result is presented as research performance. Live official download plans were inspected: ZuCo 1.0 NR has 12 subjects/24 selected files (~10.42 GiB); ZuCo 2.0 NR has 18 subjects/36 selected files (~34.43 GiB). Full cohort bytes were not downloaded in cloud validation. See `batch_workflow.md` before running on Windows.
+
+## Incremental Level 5 fix
+
+The user's full-cohort run confirmed that 10 of 12 sentence files exceeded the former v5 size guard; two prepared subjects contained 515 observations in total. The source sentence reader now streams selected fields rather than calling `loadmat` on the full struct. Fifteen new format/memory regression cases compare against SciPy, exercise compressed/uncompressed and endian/Unicode cases, check zlib corruption/truncation and field bounds, and verify a valid >512 MiB sparse-file fixture plus incremental skipped-field memory behavior. These are software fixtures, not scientific experiments. Existing prepared cache signatures remain compatible. OSF's cloud download redirect to Oracle object storage is currently blocked by the runtime proxy; the full real-cohort run must be retried on the already-downloaded Windows files, without another acquisition step.
