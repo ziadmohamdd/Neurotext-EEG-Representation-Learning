@@ -205,7 +205,7 @@ def train_classical(records, config, text_path, output, protocol="subject", sour
     train_keys = [r.key for r in splits["train"]]
     if control == "shuffled":
         train_keys = shuffled_keys(train_keys,config.get("seed",42))
-    target_vectors = text.get(train_keys)
+    target_vectors = text.get(train_keys).astype(np.float64)
     pool = sorted({r.key for r in splits["val"]})
     best, chosen, table = -float("inf"), None, []
     for alpha in [.1,1.,10.,100.]:
@@ -214,9 +214,10 @@ def train_classical(records, config, text_path, output, protocol="subject", sour
         table.append({"alpha":alpha,"validation_mrr":metric})
         if metric > best:
             best,chosen = metric,model
-    scaler, ridge = chosen.steps[0][1], chosen.steps[1][1]
+    scaler, ridge = chosen.named_steps["standardscaler"], chosen.named_steps["ridge"]
     np.savez_compressed(output/"ridge.npz",mean=scaler.mean_,scale=scaler.scale_,coef=ridge.coef_,intercept=ridge.intercept_)
     meta["selection"] = table
+    meta.update(ridge_solver="svd", ridge_fit_dtype="float64", selected_alpha=float(ridge.alpha))
     write_json(output/"metadata.json",meta)
     write_json(output/"splits.json",meta["splits"])
     return table

@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.signal import welch
 from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, FunctionTransformer
 from sklearn.linear_model import Ridge
 
 BANDS = [(1, 4), (4, 8), (8, 13), (13, 30), (30, 45)]
@@ -16,5 +16,11 @@ def eeg_features(x, sfreq):
              np.abs(np.diff(x, axis=-1)).mean(-1)]
     return np.concatenate(stats + bands).astype(np.float32)
 
+def _float64(features):
+    # Keep disk-backed feature caches compact; solve the small regression problem
+    # in double precision, including standardization, for correlated EEG features.
+    return np.asarray(features, dtype=np.float64)
+
 def ridge_model(alpha=1.):
-    return make_pipeline(StandardScaler(), Ridge(alpha=alpha))
+    return make_pipeline(FunctionTransformer(_float64, validate=False),
+                         StandardScaler(), Ridge(alpha=alpha, solver="svd"))

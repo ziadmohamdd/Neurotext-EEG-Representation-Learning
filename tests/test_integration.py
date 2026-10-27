@@ -13,15 +13,26 @@ from eeg_decoding.cli import main
 from eeg_decoding.data.dataset import write_manifest
 
 
-def test_baseline_end_to_end(records,config,text_cache,tmp_path):
+def test_baseline_end_to_end(records,config,text_cache,tmp_path,capsys):
     output=tmp_path/"ridge"
     train_classical(records,config,text_cache.path,output)
+    metadata=json.loads((output/"metadata.json").read_text())
+    assert metadata["ridge_solver"]=="svd" and metadata["ridge_fit_dtype"]=="float64"
+    with np.load(output/"ridge.npz") as weights:
+        assert weights["coef"].dtype==np.float64
     for control in ["real","gaussian","shuffled"]:
         report=evaluate_checkpoint(records,output/"ridge.npz",text_cache.path,tmp_path/(control+".json"),control)
         assert report["metrics"]["n_queries"]==10
         assert report["data_status"]=="synthetic_fixture_no_scientific_claim"
     report=evaluate_checkpoint(records,output/"ridge.npz",text_cache.path,tmp_path/"corruption.json",corruption=("temporal_mask",.25))
     assert len(report["candidate_keys"])==10
+    manifest=tmp_path/"records.jsonl"
+    write_manifest(manifest,records)
+    main(["evaluate","--manifest",str(manifest),"--artifact",str(output/"ridge.npz"),
+          "--text-cache",str(text_cache.path),"--output",str(tmp_path/"cli_eval.json")])
+    printed=capsys.readouterr().out
+    assert "Candidate sentences: 10" in printed and "Random-ranking chance:" in printed
+    assert json.loads((tmp_path/"cli_eval.json").read_text())["chance"]["top1"]==.1
 
 
 def test_ssl_alignment_checkpoint_evaluation(records,config,text_cache,tmp_path):
