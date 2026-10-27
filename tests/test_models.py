@@ -30,6 +30,33 @@ def test_ssl_loss_backprop():
     assert model.encoder.features[0].weight.grad.abs().sum()>0
 
 
+@pytest.mark.parametrize("length", [2, 3, 19, 20, 21, 40])
+def test_ssl_short_observations_keep_context_and_ignore_padding(length):
+    model = MaskedEEG(3)
+    x = torch.ones(1, 3, length + 7, requires_grad=True)
+    mask = torch.arange(length + 7)[None] < length
+    seen = []
+    handle = model.encoder.features.register_forward_pre_hook(
+        lambda module, args: seen.append(args[0].detach().clone()))
+    loss = model.loss(x, mask, generator=torch.Generator().manual_seed(42))
+    handle.remove()
+    assert torch.isfinite(loss)
+    corrupted = seen[0]
+    assert corrupted.shape[-1] == length
+    hidden = (corrupted == 0).all(dim=1)
+    assert 0 < hidden.sum() < length
+    loss.backward()
+    assert torch.isfinite(x.grad).all()
+    assert x.grad[:, :, length:].count_nonzero() == 0
+    assert model.decoder.weight.grad.abs().sum() > 0
+
+
+@pytest.mark.parametrize("mask", [[[True, False, True]], [[True, False, False]]])
+def test_ssl_rejects_invalid_validity_masks(mask):
+    with pytest.raises(ValueError, match="prefix-valid"):
+        MaskedEEG(3).loss(torch.ones(1, 3, 3), torch.tensor(mask))
+
+
 def test_alignment_multi_positive():
     z=torch.eye(3,requires_grad=True)
     loss=alignment_loss(z,z,["same","same","different"])
