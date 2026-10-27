@@ -265,6 +265,9 @@ def evaluate(args):
     records = read_manifest(args.manifest)
     report = evaluate_checkpoint(records,args.artifact,args.text_cache,args.output,args.control,features_path=args.features)
     print(json.dumps(report["metrics"],indent=2))
+    print(f"Candidate sentences: {len(report['candidate_keys'])}")
+    print("Random-ranking chance:")
+    print(json.dumps(report["chance"],indent=2))
     if args.robustness:
         rows = []
         path = Path(args.output)

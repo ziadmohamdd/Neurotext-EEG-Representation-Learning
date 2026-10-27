@@ -57,3 +57,25 @@ def test_checkpoint(records,tmp_path):
     assert meta["epoch"]==3
     for a,b in zip(model.parameters(),restored.parameters()):
         torch.testing.assert_close(a,b)
+
+
+def test_ridge_correlated_features_matches_double_precision_svd():
+    import warnings
+    from scipy.linalg import LinAlgWarning
+    from sklearn.preprocessing import StandardScaler
+    rng=np.random.default_rng(9)
+    latent=rng.normal(size=(64,4))
+    # Near-identical/duplicated columns and a constant mimic correlated EEG statistics.
+    x=np.column_stack([latent,latent[:,0],latent[:,0]+1e-7*latent[:,1],np.ones(64)]).astype(np.float32)
+    y=(latent@rng.normal(size=(4,3))).astype(np.float32)
+    with warnings.catch_warnings():
+        warnings.simplefilter('error',LinAlgWarning)
+        model=ridge_model(.1).fit(x,y)
+        prediction=model.predict(x)
+    assert np.isfinite(prediction).all() and prediction.dtype==np.float64
+    scaler=StandardScaler().fit(x.astype(np.float64))
+    standardized=scaler.transform(x.astype(np.float64))
+    u,s,vt=np.linalg.svd(standardized,full_matrices=False)
+    centered=y.astype(np.float64)-y.astype(np.float64).mean(0)
+    reference=(standardized@vt.T)@((s/(s*s+.1))[:,None]*(u.T@centered))+y.astype(np.float64).mean(0)
+    np.testing.assert_allclose(prediction,reference,rtol=1e-10,atol=1e-10)

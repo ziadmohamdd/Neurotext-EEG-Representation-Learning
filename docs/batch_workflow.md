@@ -91,3 +91,18 @@ After updating with `git pull origin main`, rerun preparation without `--downloa
 Completed caches retain their existing signatures and are reused. Failed subjects are processed with the bounded incremental reader. Progress is printed every 50 retained observations. Consume each source completely before trusting completion: the batch job only writes successful subject state after the entire iterator and compressed-stream integrity checks finish. A failed subject remains failed/partial even if some temporary sentence arrays were emitted before an error.
 
 New regression coverage compares selected values with SciPy for compressed/uncompressed structs and cell-wrapped scalar structs, verifies little/big endian encodings and Unicode, rejects truncated/corrupt compression, retains per-field allocation guards, and exercises a valid file above the former 512 MiB threshold. A memory test traverses 48 MiB of irrelevant nested fields with less than 8 MiB peak traced allocations; this is reader-test allocation overhead, not a claim about total application RSS. Full real-cohort completion still needs confirmation on the user's downloaded files.
+
+## Stable ridge baseline and interpretation
+
+Ridge fits use float64 standardization/regression and the SVD solver to avoid unstable float32 normal-equation solves on highly correlated EEG features. Signal caches remain float32. Solver, dtype and selected validation alpha are recorded in `metadata.json`. SVD fitting can take longer than the earlier automatic Cholesky solver. This is a numerical correction, not a change in task/splits/validation grid.
+
+If an earlier baseline printed `Ill-conditioned matrix`, preserve its artifacts and fit a new run:
+
+```powershell
+git pull origin main
+$eegBatch = Get-Content data\processed\zuco1_batch\summary.json -Raw | ConvertFrom-Json
+.\.venv\Scripts\python.exe -m eeg_decoding.cli train-baseline --manifest $eegBatch.manifest --text-cache $eegBatch.text_cache --output checkpoints/zuco1_batch_ridge_stable
+.\.venv\Scripts\python.exe -m eeg_decoding.cli evaluate --manifest $eegBatch.manifest --artifact checkpoints/zuco1_batch_ridge_stable/ridge.npz --text-cache $eegBatch.text_cache --output results/metrics/zuco1_ridge_stable.json
+```
+
+Compare observed retrieval against the printed candidate-pool chance values, per-subject estimates and separately trained Gaussian/shuffled controls. A handful of top-1 hits across repeated sentence observations does not establish robust semantic decoding. Avoid selecting model changes based on final test scores; fit/choose settings using training/validation data only.
