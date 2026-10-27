@@ -1,0 +1,10 @@
+# Each command is expanded by `eeg run-experiments`; no experiment is auto-labelled complete.
+seeds: [42, 43, 44]
+representations: [ridge, cnn, ssl, labram]
+protocols: [held_out_subject, held_out_subject_and_sentence, zuco1_to_zuco2, zuco2_to_zuco1]
+controls: [real, gaussian, shuffled]
+robustness:
+  additive_noise: [0.0, 0.25, 0.5, 1.0]
+  channel_dropout: [0.0, 0.1, 0.25, 0.5]
+  temporal_mask: [0.0, 0.1, 0.25, 0.5]
+quality_aware: [false, true]

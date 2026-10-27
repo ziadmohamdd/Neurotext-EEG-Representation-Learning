@@ -1,0 +1,6 @@
+base: local.yaml
+batch_size: 8
+gradient_accumulation_steps: 2
+num_workers: 2
+scale_batch_by_vram: true
+checkpoint_dir: /content/drive/MyDrive/eeg-project/checkpoints

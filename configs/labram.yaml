@@ -1,0 +1,10 @@
+base: local.yaml
+# Official pretraining recipe; use original imported microvolt signals, not the 0.5–45 Hz cache.
+preprocessing:
+  target_sfreq: 200
+  low: 0.1
+  high: 75.0
+  notch: 50.0
+  already_filtered: false
+  artifact_threshold_uv: 200.0
+  artifact_policy: reject

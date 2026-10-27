@@ -1,0 +1,26 @@
+{
+  "python": "3.11.17",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "device": "CPU",
+  "packages": {
+    "torch": "2.7.1+cpu",
+    "torchvision": "0.22.1+cpu",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "mne": "1.10.2",
+    "mne-bids": "0.17.0",
+    "h5py": "3.16.0",
+    "sentence-transformers": "3.4.1",
+    "transformers": "4.57.6",
+    "timm": "0.9.16",
+    "einops": "0.8.2",
+    "pytest": "9.1.1",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "real_zuco_experiments": "not_executed",
+  "windows_gpu": "not_tested",
+  "colab_gpu": "not_tested"
+}
