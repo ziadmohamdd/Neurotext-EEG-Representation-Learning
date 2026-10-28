@@ -69,3 +69,47 @@ comparisons must share audited cohorts, signal recipes, split identities and
 candidate pools. Audit channel mapping and cross-version participant overlap
 before pretrained extraction or transfer. Assemble final figures and discussion
 after recording executed and unexecuted requirements explicitly.
+
+## Subsequent matched pretrained comparisons (2026-10-29)
+
+The user subsequently completed real-data frozen official LaBraM extraction and
+ridge evaluation on both versions. All values below are user-reported Windows
+GPU results, not cloud reruns. Inputs select the same 19 source electrodes using
+the template-based approximate mapping documented in `pretrained_models.md`.
+Both methods use the same prepared signals, complete seconds, seed 42, source
+preprocessing, candidate pool and within-version subject split. Signals shorter
+than one complete second are excluded from both methods. Mapping and upstream
+preprocessing adaptation limit conclusions about the pretrained model generally.
+
+| Dataset | Representation + ridge | Recall@1 (%) | Recall@5 (%) | Recall@10 (%) | MRR |
+|---|---|---:|---:|---:|---:|
+| ZuCo1 | Statistical/spectral | 0.507 | 1.689 | 3.716 | 0.024530 |
+| ZuCo1 | Frozen LaBraM | 0.169 | 2.196 | 4.392 | 0.022326 |
+| ZuCo2 | Statistical/spectral | 0.814 | 2.442 | 4.374 | 0.027599 |
+| ZuCo2 | Frozen LaBraM | 0.407 | 2.238 | 3.967 | 0.023559 |
+
+ZuCo1: 3,345 prepared observations, 592 test queries, 300 candidates. Statistical
+ridge has 3 top-1 hits versus 1 for LaBraM. Outputs:
+`zuco1_statistical19_20261029_022627.json` and
+`zuco1_labram19_20261029_022627.json`.
+ZuCo2: 5,838 prepared observations, 983 test queries, 344 candidates. Statistical
+ridge has 8 top-1 hits versus 4 for LaBraM. Outputs:
+`zuco2_statistical19_20261029_020526.json` and
+`zuco2_labram19_20261029_020526.json`.
+
+Frozen LaBraM did not improve top-1 retrieval or MRR over the matched statistical
+baseline on either reported split. ZuCo1 Recall@5/10 improved, so the outcome is
+metric-dependent. No statistical significance or general superiority claim is
+made. Matched negative controls and repeated splits for these adapted cohorts
+remain unexecuted. The earlier 105-channel runs have different cohorts and must
+not be counted as matched pretraining ablations.
+
+Cross-version audit reported equal ordered channel layouts, 200 Hz, `nr` tasks,
+and 50 shared sentence hashes in the duration-filtered manifests. Neither
+manifest contains audited `person_id`. Different version-specific subject labels
+alone do not establish participant independence. On 2026-10-29 the official
+ZuCo2 OSF home wiki was readable at
+https://api.osf.io/v2/wikis/kw2df/content/ ; it documents intentionally repeated
+stimuli but does not state whether the participants overlap. Paper access from
+this environment remains blocked. Transfer remains unexecuted pending identity
+evidence; no artificial identity reconciliation or audit bypass is performed.
