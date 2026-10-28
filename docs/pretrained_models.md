@@ -31,3 +31,56 @@ train or extract features. Subsequent inference needs `pip install -e ".[labram]
 Frozen inference uses batch 1 and non-overlapping windows of up to eight seconds, drops any final fractional second, and duration-weights pooled window features. Reject inputs shorter than one second. At C=19 and eight seconds, attention has 153 tokens including CLS; at 128 channels it has 1025. A single float32 10-head attention matrix is roughly 0.9 MiB versus 40 MiB, respectively; intermediate allocations add memory. These are analytic lower-order estimates, **not GPU benchmarks**. CPU synthetic inference was validated; actual RTX 3050 and Colab peak memory must be measured. No pretrained fine-tuning is claimed; frozen features plus a small trainable projection are intentional for limited VRAM.
 
 Real ZuCo/channel adaptation and semantic usefulness remain untested without data. Alternatives such as BENDR/EEGPT were not integrated because a single verified official-weight inference adapter suffices alongside the ZuCo-trained CNN/SSL comparisons; no compatibility or license claim is made for those alternatives.
+
+## Uploaded ZuCo coordinates and explicit template adaptation
+
+On 2026-10-28 the user supplied the actual coordinate audit containing all 30
+locally selected recording headers (12 ZuCo1, 18 ZuCo2). All had identical ordered
+105-channel XYZ arrays. After the EEGLAB axis conversion `[-Y, X, Z]` and fitting
+one uniform scale, these matched MNE's `GSN-HydroCel-129` subset, with maximum
+residual 6.45e-9 m. This identifies stored **template** coordinates; it does not
+establish individually digitized locations, electrical reference, or complete
+upstream filtering history. It does not resolve participant overlap.
+
+`eeg_decoding.data.labram_inputs` implements a documented positional adaptation,
+not an assertion of exact EGI-to-10/20 equivalence. Both MNE montages are transformed
+using their native fiducials into head coordinates. Unit directions remove head-size
+differences. A one-to-one minimum-angular-distance assignment selects 19 source
+electrodes for conventional 10/20 tokens, with the named Cz vertex anchored to CZ.
+The uploaded geometry gives directional errors of 2.11–9.40 degrees; the tool
+rejects assignments above 12 degrees. This tolerance is an engineering choice,
+not a clinical electrode-equivalence criterion. The method can differ from
+published nominal EGI lookup tables. Use it as an exploratory foundation-model
+adaptation and report the errors, not as an exact reproduction of a paper's montage.
+
+The generated audit verifies **every** supplied header against the template with
+a 0.1 mm residual limit and binds all input records to audited header hashes.
+No arbitrary rotation or per-electrode deformation is fit. Each prepared signal
+uses the selected real source channels, retains only complete seconds (matching
+the adapter's temporal support), and excludes inputs under one second. All
+exclusions and truncations are recorded. No new bandpass, notch, reference change
+or train-fitted normalization is applied to these physical microvolt inputs.
+This preserves upstream processing and must be reported as a potential mismatch
+to LaBraM's published preprocessing recipe, whose reproduction is not claimed.
+
+```powershell
+python -m pip install -e ".[labram]"
+python -m eeg_decoding.data.labram_inputs --manifest data/manifests/zuco2_duration_qc.jsonl --coordinate-audit results/metrics/electrode_coordinates.json --output data/processed/zuco2_labram19
+python -m eeg_decoding.cli extract-pretrained --manifest data/processed/zuco2_labram19/smoke.jsonl --config configs/labram_full_sentence.yaml --channel-mapping data/processed/zuco2_labram19/mapping.json --output data/processed/zuco2_labram19_smoke_features
+python -m eeg_decoding.cli extract-pretrained --manifest data/processed/zuco2_labram19/manifest.jsonl --config configs/labram_full_sentence.yaml --channel-mapping data/processed/zuco2_labram19/mapping.json --output data/processed/zuco2_labram19_features
+```
+
+Use new output directories on reruns; existing adaptation/feature artifacts are
+protected. The smoke manifest includes the first retained signal and the longest
+one. Whole-sentence extraction uses bounded windows and prints progress every 50
+observations. Default extraction is real EEG only; `--include-controls` produces
+14 variants and requires a separate output directory. No pretrained extraction
+or decoding on user EEG has yet been executed in the cloud. Real-data completion
+must be confirmed from the user's outputs.
+
+For a fair representation comparison, fit a new statistical ridge baseline on
+the **generated 19-channel manifest**, with `max_samples: null`, and compare it
+with ridge/projection on its frozen LaBraM cache. Do not attribute differences
+against earlier 105-channel models solely to pretraining. Preserve the same text
+cache, split/seed and candidate pool. Repeat this adaptation for ZuCo1 before
+claiming a comparable two-version experiment.
