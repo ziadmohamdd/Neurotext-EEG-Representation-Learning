@@ -10,6 +10,24 @@ Input contract from official code: microvolts divided by 100; 200 Hz; `[B,C,numb
 
 EGI E1–E128 labels are not the official standard-electrode vocabulary. Require an audited one-to-one source-electrode to standard-position mapping derived from actual electrode coordinates and reference documentation. Subset/harmonize **all** comparison models to the same mapped source channels if making a controlled comparison. The adapter rejects unrecognized/duplicate mappings. It cannot establish the scientific validity of a supplied mapping. No assumed EGI-to-10/20 mapping is shipped.
 
+Before extraction, export the coordinates actually stored in all locally supplied
+EEGLAB recording headers:
+
+```powershell
+python -m eeg_decoding.data.channel_audit --roots data/raw/zuco1 data/raw/zuco2 --output results/metrics/electrode_coordinates.json
+python -c "from eeg_decoding.models.pretrained_eeg import acquire_official; print(acquire_official('checkpoints/official_labram'))"
+```
+
+The coordinate audit supports v5/v7.3 metadata, preserves channel order and source
+hashes, and writes missing/empty/nonfinite coordinates as JSON null rather than
+inventing positions. It does not load HDF5 EEG waveforms. For v5, the metadata
+reader loads the selected EEG struct from the small recording file; its existing
+512 MiB guard remains. Coordinate frame, origin, units, montage/reference and
+cross-recording consistency must be verified before deriving a mapping. A full
+XYZ count is not itself a scientifically verified mapping. The weight acquisition
+command verifies the pinned official checkpoint/source checksums; it does not
+train or extract features. Subsequent inference needs `pip install -e ".[labram]"`.
+
 Frozen inference uses batch 1 and non-overlapping windows of up to eight seconds, drops any final fractional second, and duration-weights pooled window features. Reject inputs shorter than one second. At C=19 and eight seconds, attention has 153 tokens including CLS; at 128 channels it has 1025. A single float32 10-head attention matrix is roughly 0.9 MiB versus 40 MiB, respectively; intermediate allocations add memory. These are analytic lower-order estimates, **not GPU benchmarks**. CPU synthetic inference was validated; actual RTX 3050 and Colab peak memory must be measured. No pretrained fine-tuning is claimed; frozen features plus a small trainable projection are intentional for limited VRAM.
 
 Real ZuCo/channel adaptation and semantic usefulness remain untested without data. Alternatives such as BENDR/EEGPT were not integrated because a single verified official-weight inference adapter suffices alongside the ZuCo-trained CNN/SSL comparisons; no compatibility or license claim is made for those alternatives.

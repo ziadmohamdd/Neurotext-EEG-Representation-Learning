@@ -28,8 +28,17 @@ def _text(f, obj):
     return ''.join(chr(int(c)) for c in values if int(c))
 
 
-def read_eeg_metadata(path):
+def _coordinate(value):
+    values = np.asarray(value).ravel()
+    if values.size != 1:
+        return None
+    number = float(values[0])
+    return number if np.isfinite(number) else None
+
+
+def read_eeg_metadata(path, include_coordinates=False):
     path = Path(path)
+    coordinates = None
     if h5py.is_hdf5(path):
         with h5py.File(path, 'r') as f:
             eeg = _deref(f, f['EEG'])
@@ -40,6 +49,20 @@ def read_eeg_metadata(path):
             sfreq = float(np.asarray(_deref(f, eeg['srate'])[()]).squeeze())
             count = int(np.asarray(_deref(f, eeg['nbchan'])[()]).squeeze())
             history = _text(f, eeg['history']) if 'history' in eeg else ''
+            if include_coordinates:
+                coordinates = {axis:[None]*count for axis in ('X','Y','Z')}
+                for axis in coordinates:
+                    if axis not in locations:
+                        continue
+                    field = locations[axis]
+                    if h5py.check_dtype(ref=field.dtype) is not None:
+                        values = [_coordinate(f[ref][()]) if ref else None
+                                  for ref in field[()].flatten(order='F')]
+                    else:
+                        values = [_coordinate(v) for v in field[()].flatten(order='F')]
+                    if len(values) != count:
+                        raise ValueError(f'Coordinate count differs from channel count: {axis}')
+                    coordinates[axis] = values
     else:
         if path.stat().st_size > 512 * 2**20:
             raise ValueError('MAT v5 metadata file exceeds 512 MiB; supply a smaller run or verified header-only export')
@@ -48,7 +71,16 @@ def read_eeg_metadata(path):
         labels = [str(c.labels) for c in np.atleast_1d(eeg.chanlocs)]
         sfreq, count = float(eeg.srate), int(eeg.nbchan)
         history = str(getattr(eeg, 'history', ''))
+        if include_coordinates:
+            coordinates = {axis:[_coordinate(getattr(c, axis, []))
+                                 for c in np.atleast_1d(eeg.chanlocs)]
+                           for axis in ('X','Y','Z')}
     if not np.isfinite(sfreq) or sfreq <= 0 or len(labels) != count or not labels or len(set(labels)) != len(labels):
         raise ValueError(f'Invalid channel/sampling metadata: {path}')
-    return {'source': str(path.resolve()), 'sha256': sha256_file(path), 'sfreq': sfreq,
-            'channels': labels, 'history': history}
+    result = {'source': str(path.resolve()), 'sha256': sha256_file(path), 'sfreq': sfreq,
+              'channels': labels, 'history': history}
+    if include_coordinates:
+        result['electrodes'] = [dict(label=label, **{axis:coordinates[axis][i] for axis in coordinates})
+                                for i, label in enumerate(labels)]
+        result['coordinate_convention'] = 'Stored EEGLAB XYZ; frame, origin and units not independently verified'
+    return result
