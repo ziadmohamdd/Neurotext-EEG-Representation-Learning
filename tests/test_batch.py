@@ -54,6 +54,50 @@ def test_read_ordered_eeg_metadata(tmp_path,hdf):
     assert len(meta['sha256']) == 64 and meta['history'] == 'synthetic fixture'
 
 
+@pytest.mark.parametrize('format', ['v5', 'hdf_refs', 'hdf_direct'])
+def test_export_actual_electrode_coordinates(tmp_path, format):
+    path = tmp_path/'oip_SYNTHETIC_NR1_EEG.mat'
+    labels = ('E2','E3','Cz')
+    expected = {'X':[1., 2., 3.], 'Y':[-1., -2., -3.], 'Z':[4., None, 6.]}
+    if format == 'v5':
+        locs = np.empty(3, dtype=object)
+        for i, label in enumerate(labels):
+            locs[i] = dict(labels=label, **{axis:values[i] if values[i] is not None else []
+                                          for axis, values in expected.items()})
+        savemat(path, {'EEG':{'srate':500, 'nbchan':3, 'chanlocs':locs}})
+    else:
+        header(path, labels, hdf=True)
+        with h5py.File(path, 'a') as f:
+            for axis, values in expected.items():
+                if format == 'hdf_direct':
+                    f['locations'].create_dataset(axis, data=np.array([
+                        np.nan if v is None else v for v in values])[:,None])
+                else:
+                    refs = f['locations'].create_dataset(axis, (3,1), dtype=h5py.ref_dtype)
+                    for i, value in enumerate(values):
+                        data = [] if value is None else [[value]]
+                        refs[i,0] = f.create_dataset(f'{axis}{i}', data=data).ref
+    meta = read_eeg_metadata(path, include_coordinates=True)
+    assert meta['electrodes'] == [dict(label=label, **{axis:values[i] for axis, values in expected.items()})
+                                  for i, label in enumerate(labels)]
+    json.dumps(meta, allow_nan=False)
+    assert 'electrodes' not in read_eeg_metadata(path)
+
+
+def test_coordinate_audit_cli_preserves_missing_positions(tmp_path, monkeypatch):
+    from eeg_decoding.data.channel_audit import main as audit_main
+    root = tmp_path/'raw'
+    root.mkdir()
+    header(root/'oip_SYNTHETIC_NR1_EEG.mat')
+    output = tmp_path/'report.json'
+    monkeypatch.setattr('sys.argv', ['channel_audit', '--roots', str(root), '--output', str(output)])
+    audit_main()
+    report = json.loads(output.read_text())
+    assert report['status'] == 'coordinates_exported_not_mapping_verified'
+    assert report['recordings'][0]['n_complete_xyz'] == 0
+    assert report['recordings'][0]['electrodes'][0] == dict(label='E2', X=None, Y=None, Z=None)
+
+
 def test_batch_all_subjects_repeatable_and_content_checked(tmp_path):
     root, output = tmp_path/'raw', tmp_path/'prepared'
     for i,name in enumerate(['ZAA','ZBB','ZCC']):
