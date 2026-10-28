@@ -47,6 +47,9 @@ class FeatureCache:
             raise ValueError("Pretrained corruption seed differs: re-extract features for this experiment seed")
 
 def extract_features(args):
+    output = Path(args.output)
+    if (output/'metadata.json').exists():
+        raise FileExistsError('Feature output already has metadata; choose a new output directory')
     records, config = read_manifest(args.manifest), load_config(args.config)
     if getattr(args,"seed",None) is not None:
         config["seed"] = args.seed
@@ -58,7 +61,6 @@ def extract_features(args):
     device,info = device_info(config.get("device","auto"))
     cache = acquire_official(args.cache)
     model = FrozenLaBraM(cache,records[0].channels,mapping,200).to(device)
-    output = Path(args.output)
     output.mkdir(parents=True,exist_ok=True)
     variants = [("real",None),("gaussian",None)] if args.include_controls else [("real",None)]
     if args.include_controls:
@@ -74,6 +76,7 @@ def extract_features(args):
     with torch.inference_mode():
         for control,corruption in variants:
             name = variant_name(control,corruption)
+            print(f'Extracting LaBraM {name}: {len(records)} observations on {device}', flush=True)
             array = np.lib.format.open_memmap(output/(name+".npy"),mode="w+",dtype=np.float32,shape=(len(records),200))
             for i,r in enumerate(records):
                 x = load_signal(r)
@@ -90,6 +93,8 @@ def extract_features(args):
                 if config.get("quality_aware"):
                     tensor = tensor * channel_reliability(tensor)
                 array[i] = model(tensor).cpu().numpy()[0]
+                if (i+1) % 50 == 0 or i+1 == len(records):
+                    print(f'{name}: {i+1}/{len(records)} observations', flush=True)
             array.flush()
             meta["variants"].append(name)
     meta["status"] = "complete"
