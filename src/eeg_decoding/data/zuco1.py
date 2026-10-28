@@ -10,7 +10,8 @@ import hashlib
 import numpy as np
 from .dataset import Record
 
-def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=False, audit=None):
+def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=False,
+             skip_short_eeg=False, min_samples=2, audit=None):
     import h5py
     path, cache_dir = Path(path), Path(cache_dir).resolve()
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -19,6 +20,8 @@ def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=Fal
         raise ValueError(f"MATLAB schema needs: {sorted(required)}")
     if metadata["units"] not in {"uV", "V"} or metadata["time_axis"] not in (0, 1):
         raise ValueError("Specify units and time_axis explicitly")
+    if not isinstance(min_samples, int) or min_samples < 2:
+        raise ValueError("min_samples must be an integer >=2")
     sf, tf = metadata["signal_field"], metadata["text_field"]
     if audit is None:
         audit = {}
@@ -38,10 +41,17 @@ def iter_mat(path, metadata, cache_dir, dataset="zuco1", *, skip_missing_eeg=Fal
             x = x.T
         if metadata["time_axis"] == 0:
             x = x.T
-        if x.ndim != 2 or x.shape[0] != len(metadata["channels"]) or x.shape[1] < 2:
-            raise ValueError(f"Sentence {i}: expected raw C x T EEG, not band features")
+        if x.ndim != 2 or x.shape[0] != len(metadata["channels"]):
+            raise ValueError(f"Sentence {i}: expected raw C x T EEG, not band features; shape={x.shape}")
         if not np.isfinite(x).all():
             raise ValueError(f"Sentence {i}: waveform contains NaN/Inf; inspect signal quality before importing")
+        if x.shape[1] < min_samples:
+            if not skip_short_eeg:
+                raise ValueError(f"Sentence {i}: insufficient temporal samples ({x.shape[1]} < {min_samples})")
+            audit["skipped"].append({"sentence_id":str(i), "matlab_index":i+1,
+                                     "reason":"insufficient_temporal_samples",
+                                     "n_samples":x.shape[1], "min_samples":min_samples})
+            return None
         if metadata["units"] == "V":
             x *= 1e6
         digest = hashlib.sha256(f"{path.resolve()}:{path.stat().st_mtime_ns}:{i}".encode()).hexdigest()

@@ -89,6 +89,42 @@ def test_batch_missing_metadata_and_montage_policy(tmp_path):
     assert report['status']=='partial'
 
 
+@pytest.mark.parametrize('hdf', [False, True])
+def test_batch_audits_segments_too_short_for_resampling(tmp_path, hdf):
+    root = tmp_path/'raw'
+    root.mkdir()
+    path = root/'resultsYTL_NR.mat'
+    lengths = [1, 2, 3, 1000]
+    if hdf:
+        with h5py.File(path, 'w') as f:
+            group = f.create_group('sentenceData')
+            signals = group.create_dataset('rawData', (1,4), dtype=h5py.ref_dtype)
+            texts = group.create_dataset('content', (1,4), dtype=h5py.ref_dtype)
+            for i, n in enumerate(lengths):
+                signals[0,i] = f.create_dataset(f'signal{i}', data=np.ones((n,3))).ref
+                texts[0,i] = f.create_dataset(f'text{i}', data=np.array([ord(c) for c in f'Fixture {i}'])[:,None]).ref
+    else:
+        rows = np.empty(4, dtype=object)
+        for i, n in enumerate(lengths):
+            rows[i] = {'rawData':np.ones((3,n)), 'content':f'Fixture {i}'}
+        savemat(path, {'sentenceData':rows})
+    header(root/'oip_YTL_NR6_EEG.mat')
+    report = prepare_batch(root, 'zuco2', tmp_path/'out', 'uV', cache_text=False)
+    assert report['status'] == 'prepared'
+    audit = report['subjects']['YTL']
+    assert audit['imported'] == 2
+    assert audit['skipped'] == [
+        {'sentence_id':str(i), 'matlab_index':i+1,
+         'reason':'insufficient_temporal_samples', 'n_samples':n, 'min_samples':3}
+        for i, n in enumerate([1,2])
+    ]
+    records = read_manifest(report['manifest'])
+    assert [r.sentence_id for r in records] == ['2','3']
+    assert load_signal(records[0]).shape == (3,2)
+    again = prepare_batch(root, 'zuco2', tmp_path/'out', 'uV', cache_text=False)
+    assert again['subjects']['YTL']['status'] == 'reused'
+
+
 def test_batch_verifies_all_supplied_runs_and_requested_subjects(tmp_path):
     root = tmp_path/'raw'
     subject(root,'ZAA')

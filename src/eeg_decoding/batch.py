@@ -125,7 +125,13 @@ def prepare_batch(root, dataset, output, units, target_sfreq=200, channel_policy
             processed.mkdir(exist_ok=True)
             records = []
             print(f'{subject}: reading sentence waveforms incrementally', flush=True)
-            for record in iter_mat(source, schema, scratch, dataset=dataset, skip_missing_eeg=True, audit=audit):
+            # Polyphase resampling returns ceil(n * target/source) samples.
+            # Require >=2 output samples; audit unusable finite segments separately
+            # from missing placeholders and retain strict channel/nonfinite checks.
+            min_samples = max(2, int(meta['sfreq'] // target_sfreq) + 1)
+            for record in iter_mat(source, schema, scratch, dataset=dataset,
+                                   skip_missing_eeg=True, skip_short_eeg=True,
+                                   min_samples=min_samples, audit=audit):
                 original = load_signal(record)
                 before = signal_quality(original)
                 aligned = harmonize(original, record.channels, channels)

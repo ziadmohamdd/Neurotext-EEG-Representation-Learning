@@ -94,6 +94,21 @@ New regression coverage compares selected values with SciPy for compressed/uncom
 
 ## Stable ridge baseline and interpretation
 
+### Single-sample source segments
+
+ZuCo2 YTL source inspection found sentence ID 122 (MATLAB entry 123) with
+105 channels but only one finite time sample in the original v7.3 export.
+Batch preparation explicitly excludes such unusable segments, recording
+`insufficient_temporal_samples`, original sample count and minimum required
+sample count in the subject audit. The minimum is two source samples or, when
+downsampling, the smallest count that produces at least two output samples
+under polyphase resampling. At 500 to 200 Hz this requires three source samples.
+Wrong channel counts, unexpected dimensions and nonfinite waveforms still fail.
+Direct MATLAB ingestion remains strict unless `skip_short_eeg=True` is explicitly
+requested. This technical minimum is distinct from any scientific duration QC.
+Previously successful subject caches are unchanged; rerunning preparation reuses
+them and retries the failed subject. No source files need changing or downloading.
+
 Ridge fits use float64 standardization/regression and the SVD solver to avoid unstable float32 normal-equation solves on highly correlated EEG features. Signal caches remain float32. Solver, dtype and selected validation alpha are recorded in `metadata.json`. SVD fitting can take longer than the earlier automatic Cholesky solver. This is a numerical correction, not a change in task/splits/validation grid.
 
 If an earlier baseline printed `Ill-conditioned matrix`, preserve its artifacts and fit a new run:
