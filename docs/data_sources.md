@@ -31,6 +31,28 @@ ZuCo 1.0 subject labels observed: ZAB, ZDM, ZDN, ZGW, ZJM, ZJN, ZJS, ZKB, ZKH, Z
 ZuCo 2.0 labels observed: YAC, YAG, YAK, YDG, YDR, YFR, YFS, YHS, YIS, YLS, YMD, YMS, YRH, YRK, YRP, YSD, YSL, YTL.
 The strings do not overlap. **Actual participant overlap remains unaudited**; different IDs do not prove different humans. Cross-dataset code requires explicit verified `person_id` provenance and checks disjoint identity values.
 
+On 2026-10-29 the user provided `1912.00903v3.pdf` (SHA256
+`6afa9cfbfceaeef6f981aa9068004e13625f7ea5737ecc318b78e809536ca740`).
+Section 3.1 states: "We recorded data from 19 participants and discarded the
+data of one of them due to technical difficulties with the eye-tracking
+calibration. Hence, we share the data of 18 participants." It does not explicitly
+state that these people are disjoint from ZuCo1. The paper therefore does not
+resolve the participant identity audit; no synthetic `person_id` should be added
+to imply otherwise.
+
+Section 3.2 describes 100 normal-reading and 85 task-specific sentences repeated
+from ZuCo1. These counts describe the paper's cross-release materials, not a
+verified count of canonical text matches between our selected NR-only exports.
+The local manifest comparison reports 50 shared canonical texts. Retain both
+facts with their scope; do not overwrite observed overlap with the paper's count.
+The acquisition section reports a HydroCel system, 500 Hz recording and Cz
+acquisition reference. This supports the montage interpretation but does not
+establish the final reference/filtering state of each preprocessed export.
+
+Strict transfer remains unexecuted pending primary documentation or a verified
+cross-release participant correspondence. Separate within-version held-out-
+subject-and-sentence experiments can proceed without that correspondence.
+
 ## Required BIDS sentence mapping
 
 Provide a UTF-8 TSV with columns:
