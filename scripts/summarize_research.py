@@ -70,7 +70,9 @@ def main():
     for ax, dataset in zip(axes, ['zuco1','zuco2']):
         values = []
         for prefix in ['statistical19','labram19']:
-            selected = [r for r in rows if r['name'].startswith(f'{dataset}_{prefix}_')]
+            selected = [r for r in rows if r['name'].startswith(f'{dataset}_{prefix}_')
+                        and r['training_control']=='real' and r['evaluation_control']=='real'
+                        and r['corruption']=='None']
             if len(selected) != 1:
                 raise ValueError('Ambiguous matched representation report')
             values.append(float(selected[0]['mrr']))
