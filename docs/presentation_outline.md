@@ -4,6 +4,9 @@ Draft for review; transfer remains pending identity evidence. Build slides from
 the executed results in [the report](research_results/REPORT.md). Avoid claiming
 successful semantic decoding or competitive published-paper accuracy.
 
+An editable [14-slide draft](presentation/NeuroText_draft.pptx) expands this
+outline with the archived charts and speaker notes. Review it before presenting.
+
 ## 1. Research question
 
 Can learned EEG representations retrieve sentence meaning across unseen readers
