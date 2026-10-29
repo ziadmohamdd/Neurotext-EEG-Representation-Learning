@@ -1,0 +1,33 @@
+{
+  "source_sha256": "4e9effce6f9ddfa37d232219eb0fef9952a9ef2e79f05e0f5b05cf90b551a895",
+  "n_reports": 63,
+  "identical_export_value_groups": [
+    [
+      "zuco1_cnn_20261027_124924.json",
+      "zuco1_cnn_20261027_131425.json"
+    ],
+    [
+      "zuco1_ridge_gaussian_20261027_124504.json",
+      "zuco1_ridge_stable_gaussian.json"
+    ],
+    [
+      "zuco1_ridge_shuffled_20261027_124504.json",
+      "zuco1_ridge_stable_shuffled.json"
+    ],
+    [
+      "zuco2_ridge_full.json",
+      "zuco2_ridge_full_robustness_eval.json"
+    ]
+  ],
+  "warning": "Equal exported values do not prove identical checkpoints. No rows were deleted.",
+  "provenance": "User-supplied real-data CSV; original JSON/checkpoints remain on user machine.",
+  "missing_export_fields": [
+    "artifact identity",
+    "signal/split digests",
+    "config/cropping",
+    "candidate count",
+    "subject-wise metrics",
+    "confidence intervals"
+  ],
+  "candidate_counts_source": "Previously supplied evaluation console output, not present in CSV"
+}
