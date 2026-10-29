@@ -1,8 +1,14 @@
-# EEG Representation Learning for Brain Signal Decoding
+# NeuroText: EEG Representation Learning
 
 Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4 GB), CPU and Google Colab. One package implements all workflows; notebooks are clients of the same modules.
 
-**Status:** software validation uses explicitly synthetic tests. User-side Windows preparation has imported and resampled 217 ZJS observations; no scientific training, retrieval scores, robustness conclusions or cross-dataset results are claimed. Official pretrained LaBraM weights were downloaded, checksum-verified and tested on synthetic input. See [validation](docs/validation.md), [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [limitations](docs/limitations.md).
+**Status:** user-side Windows experiments cover both ZuCo versions, statistical/CNN/SSL models, frozen official LaBraM features, ridge and supervised CNN controls, and selected robustness comparisons. The [draft research report](docs/research_results/REPORT.md) archives 67 evaluation reports and documents near-chance retrieval and remaining work; these results were not independently rerun in the cloud. Strict cross-dataset transfer remains unexecuted pending participant-identity evidence. Automated software tests use explicitly synthetic fixtures. See [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [pretrained adaptation](docs/pretrained_models.md).
+
+Repository: https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning . Existing local folders can keep their current name. Fresh clones can preserve the documented checkout path with:
+
+```powershell
+git clone https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning.git New_trends_AI_project1
+```
 
 ## Windows setup (PowerShell, Python 3.11)
 
