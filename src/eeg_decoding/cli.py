@@ -68,6 +68,8 @@ def parser():
     pretrained.add_argument("--channel-mapping",required=True)
     pretrained.add_argument("--output",required=True)
     pretrained.add_argument("--include-controls",action="store_true")
+    pretrained.add_argument("--include-gaussian",action="store_true",help="Extract real and Gaussian features without the robustness suite")
+    pretrained.add_argument("--reuse-real-features",help="Verify and copy the real variant from a compatible completed cache")
     pretrained.add_argument("--seed",type=int,help="Override extraction/control seed")
     for name in ["train-baseline","train-ssl","train-alignment"]:
         train = sub.add_parser(name)

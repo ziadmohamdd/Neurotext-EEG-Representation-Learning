@@ -57,6 +57,36 @@ def test_pretrained_cache_extraction(records,config,tmp_path):
     assert features.matrix(records[:2]).shape==(2,200)
     with pytest.raises(ValueError,match="seed differs"):
         features.verify(records[:2],False,43)
+    reused_args = argparse.Namespace(**dict(vars(args), output=str(tmp_path/'gaussian_only'),
+                                            include_controls=False, include_gaussian=True,
+                                            reuse_real_features=args.output))
+    extract_features(reused_args)
+    reused = FeatureCache(reused_args.output)
+    assert reused.metadata['variants'] == ['real','gaussian']
+    assert (Path(args.output)/'real.npy').read_bytes() == (Path(reused_args.output)/'real.npy').read_bytes()
+    import numpy as np
+    np.testing.assert_array_equal(reused.matrix(records[:2], 'gaussian'), features.matrix(records[:2], 'gaussian'))
+
+
+@pytest.mark.parametrize('mismatch', ['mapping','max_samples','observation_ids','manifest_digest','weights_sha256'])
+def test_real_feature_reuse_rejects_incompatible_inputs(tmp_path,mismatch):
+    import json
+    import numpy as np
+    from eeg_decoding.pretrained_workflow import verify_real_reuse
+    expected=dict(model='official_LaBraM_base',commit='test_commit',weights_sha256='test_weight_hash',
+                  manifest_digest='test_data_hash',observation_ids=['one','two'],quality_aware=False,
+                  mapping={'E2':'F8'},seed=42,units='uV_divided_by_100',max_samples=None)
+    (tmp_path/'metadata.json').write_text(json.dumps(dict(expected,status='complete',variants=['real'])))
+    np.save(tmp_path/'real.npy',np.ones((2,200),np.float32))
+    path, checksum = verify_real_reuse(tmp_path,expected)
+    assert path == tmp_path/'real.npy' and len(checksum)==64
+    bad = dict(expected)
+    bad[mismatch] = 'incompatible'
+    with pytest.raises(ValueError,match=f'reuse mismatch: {mismatch}'):
+        verify_real_reuse(tmp_path,bad)
+    np.save(tmp_path/'real.npy',np.full((2,200),np.nan,np.float32))
+    with pytest.raises(ValueError,match='invalid shape, dtype or values'):
+        verify_real_reuse(tmp_path,expected)
 
 
 def test_notebook_schema_and_cells():

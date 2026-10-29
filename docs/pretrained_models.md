@@ -84,3 +84,29 @@ with ridge/projection on its frozen LaBraM cache. Do not attribute differences
 against earlier 105-channel models solely to pretraining. Preserve the same text
 cache, split/seed and candidate pool. Repeat this adaptation for ZuCo1 before
 claiming a comparable two-version experiment.
+
+## Efficient matched negative controls
+
+`extract-pretrained --include-gaussian` extracts only real/Gaussian variants,
+without the 12 robustness conditions enabled by `--include-controls`.
+`--reuse-real-features EXISTING_CACHE` copies a completed real feature array to
+the new output after verifying model/checkpoint, manifest and observation order,
+mapping, temporal crop, quality setting, seed and units. Shape, float32 dtype,
+finite values and copied-file SHA256 are checked. Source caches are unchanged.
+This avoids recomputing already completed real-data model inference.
+
+For the user-reported ZuCo2 prepared directory, for example:
+
+```powershell
+$inputs = "data/processed/zuco2_labram19_20261029_015559"
+python -m eeg_decoding.cli extract-pretrained --manifest "$inputs/manifest.jsonl" --config configs/labram_full_sentence.yaml --channel-mapping "$inputs/mapping.json" --reuse-real-features "${inputs}_features" --include-gaussian --output "${inputs}_control_features"
+```
+
+Fit a Gaussian ridge using `train-baseline --control gaussian --features NEW_CACHE`
+and a shuffled-pair ridge using `--control shuffled --features NEW_CACHE`.
+Evaluation defaults to Gaussian features for the Gaussian-trained artifact and
+real features/true sentence labels for the shuffled-trained artifact. Keep the
+identical prepared manifest, text cache and configuration. The real-condition
+reference is the earlier matched LaBraM ridge, not the 105-channel baseline.
+Reuse checks were tested with synthetic official-weight extraction; real-data
+control completion still needs the user's actual execution output.
