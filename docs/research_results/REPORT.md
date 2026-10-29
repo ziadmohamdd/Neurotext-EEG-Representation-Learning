@@ -244,7 +244,7 @@ repository notice and the correction maintainers' documentation.
 
 | Requirement | Evidence/status |
 |---|---|
-| Modular local/Colab implementation and tests | Implemented; latest full suite 115 passed; real Colab execution not established |
+| Modular local/Colab implementation and tests | Implemented; latest full suite 119 passed; real Colab execution not established |
 | Both datasets, lazy preparation, metadata and duration QC | Executed; original timing/reference audit remains limited |
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
@@ -264,9 +264,16 @@ Different labels alone are insufficient. No invented participant identities or
 strict-audit bypass is used. Local NR manifests have 50 shared canonical texts;
 transfer must disclose overlap and distinguish unseen-content transfer.
 The user chose to seek primary identity evidence rather than run unverified
-exploratory transfer. An [unsent maintainer inquiry](../participant_identity_request.md)
-is prepared with the exact question, paper-listed contact and affected subject
-labels. No message has been sent by the assistant.
+exploratory transfer. A [maintainer inquiry](../participant_identity_request.md)
+was prepared with the exact question, paper-listed contact and affected subject
+labels. The user has since shown it in Gmail's Sent folder; no response has been
+provided yet. No message was sent by the assistant.
+
+[Transfer preparation](../transfer_preparation.md) can assemble both directions,
+validate shared signals/text targets and preserve the strict identity gate while
+waiting. These preparation artifacts are not executed transfer results. A
+[presentation outline](../presentation_outline.md) is also available for final
+deliverable preparation; the transfer slide must retain the pending status.
 
 ## Reproducibility and limits of the export
 
