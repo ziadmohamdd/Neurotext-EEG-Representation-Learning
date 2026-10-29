@@ -1,10 +1,18 @@
 {
-  "source_sha256": "f10c4ee328d05123c76f65e0c79e29043a87f609ae8e6b8dccb307fc79baed9f",
-  "n_reports": 67,
+  "source_sha256": "1a2f419157bf3930d272cc521e548fe552e5146847a5ea71a1046b9b4797b3bd",
+  "n_reports": 75,
   "identical_export_value_groups": [
     [
       "zuco1_cnn_20261027_124924.json",
       "zuco1_cnn_20261027_131425.json"
+    ],
+    [
+      "zuco1_labram19_gaussian_20261029_054736.json",
+      "zuco1_labram19_gaussian_20261029_060032.json"
+    ],
+    [
+      "zuco1_labram19_shuffled_20261029_054736.json",
+      "zuco1_labram19_shuffled_20261029_060032.json"
     ],
     [
       "zuco1_ridge_gaussian_20261027_124504.json",
@@ -13,6 +21,14 @@
     [
       "zuco1_ridge_shuffled_20261027_124504.json",
       "zuco1_ridge_stable_shuffled.json"
+    ],
+    [
+      "zuco2_labram19_gaussian_20261029_054736.json",
+      "zuco2_labram19_gaussian_20261029_060032.json"
+    ],
+    [
+      "zuco2_labram19_shuffled_20261029_054736.json",
+      "zuco2_labram19_shuffled_20261029_060032.json"
     ],
     [
       "zuco2_ridge_full.json",
