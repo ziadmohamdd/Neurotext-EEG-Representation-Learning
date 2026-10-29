@@ -4,6 +4,8 @@ Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4
 
 **Status:** user-side Windows experiments cover both ZuCo versions, statistical/CNN/SSL models, frozen official LaBraM features, matched negative controls for these configurations, and selected robustness comparisons. The [draft research report](docs/research_results/REPORT.md) archives 79 evaluation reports and documents near-chance retrieval and remaining work; these results were not independently rerun in the cloud. Strict cross-dataset transfer remains unexecuted pending participant-identity evidence. Automated software tests use explicitly synthetic fixtures. See [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [pretrained adaptation](docs/pretrained_models.md).
 
+Work can [continue without waiting for correspondence](docs/continue_work.md): tiny training-set diagnostics and a separately labelled exploratory transfer protocol are available. Cross-release participant independence remains unknown; these new actual-data runs have not yet been reported.
+
 Repository: https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning . Existing local folders can keep their current name. Fresh clones can preserve the documented checkout path with:
 
 ```powershell
@@ -51,7 +53,7 @@ python scripts/inspect_data.py --manifest data/manifests/zuco1.jsonl
 python scripts/preprocess.py --manifest data/manifests/zuco1.jsonl --channels data/raw/shared_channels.json --output data/manifests/zuco1_clean.jsonl
 ```
 
-The channels file is a JSON list in a scientifically chosen shared electrode order. Restrict both versions to comparable normal-reading (`nr`) tasks for primary transfer. Merge cleaned JSONL manifests with `write_manifest` and `read_manifest` (absolute signal references are preserved). Do not combine all EEG into RAM. Add verified `person_id` metadata before transfer; different subject labels alone do not establish distinct people. No data or weights are committed.
+The channels file is a JSON list in a scientifically chosen shared electrode order. Restrict both versions to comparable normal-reading (`nr`) tasks for primary transfer. Merge cleaned JSONL manifests with `write_manifest` and `read_manifest` (absolute signal references are preserved). Do not combine all EEG into RAM. Add verified `person_id` metadata before strict transfer; different subject labels alone do not establish distinct people. Explicit exploratory transfer instead records independence as unverified. No data or weights are committed.
 
 ## Train, resume and evaluate
 

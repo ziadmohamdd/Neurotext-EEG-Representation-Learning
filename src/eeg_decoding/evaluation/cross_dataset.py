@@ -19,9 +19,9 @@ def compatibility(source, target, require_identity_audit=True):
             "source_observations": len(source), "target_observations": len(target),
             "protocol": "zero_shot_no_target_fitting", "identity_audited": require_identity_audit}
 
-def transfer_split(source, target, seed=42, unseen_sentences=False):
+def transfer_split(source, target, seed=42, unseen_sentences=False, require_identity_audit=True):
     import numpy as np
-    compatibility(source, target)
+    compatibility(source, target, require_identity_audit=require_identity_audit)
     subjects = sorted({r.subject_key for r in source})
     if len(subjects) < 2:
         raise ValueError("Need two source subjects for train/validation")

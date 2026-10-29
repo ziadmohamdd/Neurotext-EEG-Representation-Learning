@@ -79,7 +79,7 @@ def parser():
         train.add_argument("--resume")
         train.add_argument("--ssl-checkpoint")
         train.add_argument("--features",help="Frozen LaBraM cache for ridge or contrastive projection")
-        train.add_argument("--protocol",choices=["subject","subject_sentence","transfer"],default="subject")
+        train.add_argument("--protocol",choices=["subject","subject_sentence","transfer","transfer_exploratory"],default="subject")
         train.add_argument("--source",choices=["zuco1","zuco2"])
         train.add_argument("--target",choices=["zuco1","zuco2"])
         train.add_argument("--control",choices=["real","gaussian","shuffled"],default="real")
@@ -270,6 +270,8 @@ def evaluate(args):
     print(f"Candidate sentences: {len(report['candidate_keys'])}")
     print("Random-ranking chance:")
     print(json.dumps(report["chance"],indent=2))
+    if report.get("transfer_assessment",{}).get("identity_audited") is False:
+        print("Exploratory transfer: participant overlap is unknown; unseen-person generalization is not established.")
     if args.robustness:
         rows = []
         path = Path(args.output)
@@ -307,8 +309,10 @@ def run_experiments(args):
         protocol = job["protocol"]
         source,target = None,None
         if "_to_" in protocol:
-            source,target = protocol.split("_to_")
-            protocol = "transfer"
+            exploratory = protocol.startswith("exploratory_")
+            direction = protocol.removeprefix("exploratory_")
+            source,target = direction.split("_to_")
+            protocol = "transfer_exploratory" if exploratory else "transfer"
         else:
             protocol = "subject_sentence" if protocol.endswith("and_sentence") else "subject"
         template = (args.quality_features if job["quality_aware"] else args.features)

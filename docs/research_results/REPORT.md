@@ -244,7 +244,7 @@ repository notice and the correction maintainers' documentation.
 
 | Requirement | Evidence/status |
 |---|---|
-| Modular local/Colab implementation and tests | Implemented; latest full suite 121 passed; real Colab execution not established |
+| Modular local/Colab implementation and tests | Implemented; latest full suite 128 passed; real Colab execution not established |
 | Both datasets, lazy preparation, metadata and duration QC | Executed; original timing/reference audit remains limited |
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
@@ -263,11 +263,18 @@ stimuli, but does not explicitly establish cohort independence from ZuCo1.
 Different labels alone are insufficient. No invented participant identities or
 strict-audit bypass is used. Local NR manifests have 50 shared canonical texts;
 transfer must disclose overlap and distinguish unseen-content transfer.
-The user chose to seek primary identity evidence rather than run unverified
-exploratory transfer. A [maintainer inquiry](../participant_identity_request.md)
+The user initially chose to seek primary identity evidence. A
+[maintainer inquiry](../participant_identity_request.md)
 was prepared with the exact question, paper-listed contact and affected subject
 labels. The user has since shown it in Gmail's Sent folder; no response has been
 provided yet. No message was sent by the assistant.
+
+The user has since chosen to continue without waiting for that reply.
+[Training-subset diagnostics and explicitly exploratory transfer](../continue_work.md)
+are implemented, but actual-data execution results have not yet been supplied.
+The new `transfer_exploratory` protocol records participant independence as
+unverified; it must not be described as strict unseen-person transfer. The
+original strict protocol remains available with its identity requirement.
 
 [Transfer preparation](../transfer_preparation.md) can assemble both directions,
 validate shared signals/text targets and preserve the strict identity gate while

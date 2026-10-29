@@ -151,6 +151,25 @@ def test_cross_dataset_train_both_directions(records,config,text_cache,tmp_path)
         assert report["protocol"]=="transfer" and report["metrics"]["n_queries"]==30
 
 
+def test_exploratory_transfer_records_identity_limit_and_source_only_fit(records,config,text_cache,tmp_path):
+    from dataclasses import replace
+    both=[replace(r,dataset='zuco1' if int(r.subject)<3 else 'zuco2',
+                  provenance={'units':'uV','synthetic':True}) for r in records]
+    out=tmp_path/'exploratory'
+    train_classical(both,config,text_cache.path,out,protocol='transfer_exploratory',source='zuco1',target='zuco2')
+    report=evaluate_checkpoint(both,out/'ridge.npz',text_cache.path,out/'eval.json')
+    assert report['protocol']=='transfer_exploratory'
+    assert not report['transfer_assessment']['identity_audited']
+    assert report['transfer_assessment']['sentence_overlap']==10
+    assert 'unresolved' in report['transfer_assessment']['interpretation']
+    import json
+    metadata=json.loads((out/'metadata.json').read_text())
+    assert all(s.startswith('zuco1:') for s in metadata['normalizer']['subjects'])
+    assert report['metrics']['n_queries']==30
+    with pytest.raises(ValueError,match='identity audit missing'):
+        train_classical(both,config,text_cache.path,tmp_path/'strict',protocol='transfer',source='zuco1',target='zuco2')
+
+
 def test_experiment_runner_executes_and_exports(records,config,text_cache,tmp_path):
     import yaml
     manifest=tmp_path/"records.jsonl"
@@ -166,3 +185,27 @@ def test_experiment_runner_executes_and_exports(records,config,text_cache,tmp_pa
     jobs=json.loads((output/"jobs.json").read_text())
     assert len(jobs)==3 and all(j["status"]=="executed" for j in jobs)
     assert (output/"retrieval.csv").is_file()
+
+
+def test_exploratory_runner_keeps_protocol_in_export(records,config,text_cache,tmp_path):
+    from dataclasses import replace
+    import csv
+    import yaml
+    both=[replace(r,dataset='zuco1' if int(r.subject)<3 else 'zuco2',
+                  provenance={'units':'uV','synthetic':True}) for r in records]
+    manifest=tmp_path/'both.jsonl'
+    write_manifest(manifest,both)
+    cfg=tmp_path/'config.yaml';cfg.write_text(yaml.safe_dump(config))
+    spec=tmp_path/'spec.yaml'
+    spec.write_text(yaml.safe_dump(dict(seeds=[42],representations=['ridge'],
+                     protocols=['exploratory_zuco1_to_zuco2','exploratory_zuco2_to_zuco1'],
+                     controls=['real'],quality_aware=[False],robustness={})))
+    output=tmp_path/'runs'
+    main(['run-experiments','--manifest',str(manifest),'--config',str(cfg),
+          '--experiments',str(spec),'--text-cache',str(text_cache.path),
+          '--output',str(output),'--execute'])
+    with (output/'retrieval.csv').open(newline='') as f:
+        rows=list(csv.DictReader(f))
+    assert len(rows)==2 and {r['protocol'] for r in rows}=={'transfer_exploratory'}
+    for path in output.glob('*/evaluation.json'):
+        assert not json.loads(path.read_text())['transfer_assessment']['identity_audited']
