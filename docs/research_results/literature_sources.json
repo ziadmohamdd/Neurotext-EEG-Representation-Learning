@@ -1,0 +1,42 @@
+{
+  "accessed": "2026-10-29",
+  "scope": "Primary repository documentation/code; no independent numerical paper reproduction",
+  "sources": [
+    {
+      "description": "AAAI 2022 original implementation notice",
+      "url": "https://github.com/MikeWangWZHL/EEG-To-Text/blob/a07cf91452a4ee67eb413c38ff7bab56c6987545/README.md",
+      "raw_url": "https://raw.githubusercontent.com/MikeWangWZHL/EEG-To-Text/a07cf91452a4ee67eb413c38ff7bab56c6987545/README.md",
+      "sha256": "9d03ba0934f5b9fe7a19ad273c2bebcb1076f973f9f810d29b1e4a673d51c31d"
+    },
+    {
+      "description": "Correction repository description",
+      "url": "https://github.com/NeuSpeech/EEG-To-Text/blob/01582402809aa4fd8079dfb397faf04babc5d9e8/README.md",
+      "raw_url": "https://raw.githubusercontent.com/NeuSpeech/EEG-To-Text/01582402809aa4fd8079dfb397faf04babc5d9e8/README.md",
+      "sha256": "e0da20f0ee53764c4e87489c2084e171bd1867446bed48ff5ae031958ed58cbb"
+    },
+    {
+      "description": "Correction input representation configuration",
+      "url": "https://github.com/NeuSpeech/EEG-To-Text/blob/01582402809aa4fd8079dfb397faf04babc5d9e8/config.py",
+      "raw_url": "https://raw.githubusercontent.com/NeuSpeech/EEG-To-Text/01582402809aa4fd8079dfb397faf04babc5d9e8/config.py",
+      "sha256": "d94b97a15ac89f0063548ebb530ae0375611ecafc43f8a3cf592710f55f91ec0"
+    },
+    {
+      "description": "Correction dataset partition implementation",
+      "url": "https://github.com/NeuSpeech/EEG-To-Text/blob/01582402809aa4fd8079dfb397faf04babc5d9e8/data.py",
+      "raw_url": "https://raw.githubusercontent.com/NeuSpeech/EEG-To-Text/01582402809aa4fd8079dfb397faf04babc5d9e8/data.py",
+      "sha256": "3d9519fae37c61d7f2e4b3fde8c4856e3480d057114efb0a8fcef1c9263a77d1"
+    },
+    {
+      "description": "Correction evaluation implementation",
+      "url": "https://github.com/NeuSpeech/EEG-To-Text/blob/01582402809aa4fd8079dfb397faf04babc5d9e8/eval_decoding.py",
+      "raw_url": "https://raw.githubusercontent.com/NeuSpeech/EEG-To-Text/01582402809aa4fd8079dfb397faf04babc5d9e8/eval_decoding.py",
+      "sha256": "3cff2d5032b7b42f416b4d66ee4c1a0603b729fc6a6e1287f0d224ddcb10d45d"
+    },
+    {
+      "description": "Official LaBraM model and preprocessing description",
+      "url": "https://github.com/935963004/LaBraM/blob/c431221e6cfd23dbfa9950e0180682fb322b0548/README.md",
+      "raw_url": "https://raw.githubusercontent.com/935963004/LaBraM/c431221e6cfd23dbfa9950e0180682fb322b0548/README.md",
+      "sha256": "e5f410f36a9f97601dfef910958ed7a605f35b4ad1cae3d1d93793e61a17ba40"
+    }
+  ]
+}
