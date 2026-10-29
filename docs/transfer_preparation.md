@@ -12,7 +12,7 @@ $zuco1 = Get-Content data/processed/zuco1_batch/summary.json -Raw | ConvertFrom-
 $zuco2 = Get-Content data/processed/zuco2_batch/summary.json -Raw | ConvertFrom-Json
 $transferDir = "data/processed/transfer_plan_$(Get-Date -Format yyyyMMdd_HHmmss)"
 
-python -m eeg_decoding.data.transfer_plan --zuco1 data/manifests/zuco1_duration_qc.jsonl --zuco2 data/manifests/zuco2_duration_qc.jsonl --text-zuco1 $zuco1.text_cache --text-zuco2 $zuco2.text_cache --output $transferDir
+python -m eeg_decoding.data.transfer_plan --zuco1 data/manifests/zuco1_duration_qc.jsonl --zuco2 data/manifests/zuco2_duration_qc.jsonl --text-zuco1 $zuco1.text_cache --text-zuco2 $zuco2.text_cache --rebuild-text-cache --output $transferDir
 if ($LASTEXITCODE -ne 0) { throw "Transfer preparation failed" }
 
 Get-Content "$transferDir/plan.json" -Raw
@@ -26,10 +26,25 @@ assumed count in the paper. No EEG arrays or neural checkpoints are copied.
 
 Checks include signal validity, documented microvolt units, channel order,
 sampling frequency, comparable task conditions and dataset versions. Frozen text
-caches must agree on model/revision metadata and dimension; shared sentence
-vectors must agree within float32 tolerance. If they disagree, do not silently
-substitute one cache: regenerate one shared frozen text cache under a single
-documented revision. Stored cohort digests bind source data and metadata.
+caches must agree on model/revision metadata and dimension. The command above
+re-encodes every unique target together on CPU, pinned to the shared recorded
+`resolved_revision`. It selects the lexicographically smallest original text for
+each canonical sentence key, independently of dataset order. This matters because
+sentence keys ignore case/whitespace but an encoder can distinguish those input
+strings. Different batching or software can also produce numeric differences;
+a disagreement alone does not identify its cause.
+
+Both original caches and all existing experimental artifacts are preserved.
+The new cache records their digests, the number of shared keys with disagreeing
+vectors, and its construction method. The initial model load may use the network
+if that revision is not cached locally. No EEG training or GPU inference occurs.
+If no resolved revision was recorded, rebuilding stops rather than silently
+choosing a new model version. Stored cohort digests bind source data and metadata.
+
+Omitting `--rebuild-text-cache` retains the original merge-only behavior: shared
+sentence vectors must agree within float32 tolerance, otherwise preparation
+stops with instructions to rebuild. A failed merge before output creation leaves
+no prepared plan; use a fresh timestamped directory when retrying.
 
 The plan also reports target observations/texts absent from the entire source
 cohort. These are planning counts, not an executed unseen-content transfer

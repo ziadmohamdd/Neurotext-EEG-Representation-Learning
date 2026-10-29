@@ -59,3 +59,48 @@ def test_incompatible_inputs_are_rejected_before_writing_plan(records,text_cache
     with pytest.raises(ValueError,match=match):
         prepare_plan(*paths,tmp_path/'out')
     assert not (tmp_path/'out').exists()
+
+
+def test_rebuild_encodes_entire_union_at_pinned_revision(records,text_cache,tmp_path,monkeypatch):
+    paths=inputs(records,text_cache,tmp_path)
+    b=read_manifest(paths[1])
+    # Same canonical sentence key, different encoder input spelling.
+    b[0]=replace(b[0],text='  '+b[0].text.upper()+'  ')
+    write_manifest(paths[1],b)
+    cache=TextCache(paths[3]);vectors=cache.embeddings.copy();vectors[0]*=-1
+    np.savez_compressed(paths[3],keys=np.array(cache.keys),embeddings=vectors,metadata=json.dumps(cache.metadata))
+    original_bytes=[p.read_bytes() for p in paths]
+    rebuilt_vectors=-text_cache.embeddings
+    calls=[]
+
+    def build(rows,path,model_name,revision=None):
+        calls.append((rows,model_name,revision))
+        assert [r.key for r in rows]==text_cache.keys
+        assert rows[[r.key for r in rows].index(b[0].key)].text==b[0].text
+        np.savez_compressed(path,keys=np.array(text_cache.keys),embeddings=rebuilt_vectors,
+                            metadata=json.dumps(dict(model=model_name,requested_revision=revision,
+                                                     resolved_revision=revision,
+                                                     sentence_hash_rule='NFKC/casefold/whitespace')))
+        return TextCache(path)
+
+    monkeypatch.setattr(TextCache,'build',build)
+    report=prepare_plan(*paths,tmp_path/'rebuilt',rebuild_text_cache=True)
+    assert len(calls)==1 and calls[0][1:]==('SYNTHETIC_TEST_ONLY','fixture')
+    assert report['status']=='blocked_pending_participant_identity'
+    assert report['text_cache_rebuilt'] and report['source_shared_vector_disagreements']==1
+    merged=TextCache(report['text_cache'])
+    np.testing.assert_allclose(merged.get(text_cache.keys),rebuilt_vectors,atol=1e-7)
+    assert merged.metadata['requested_revision']=='fixture'
+    assert merged.metadata['source_shared_vector_disagreements']==1
+    assert all('person_id' not in r.provenance for r in read_manifest(report['manifest']))
+    assert [p.read_bytes() for p in paths]==original_bytes
+
+
+def test_rebuild_requires_known_revision_before_writing(records,text_cache,tmp_path):
+    paths=inputs(records,text_cache,tmp_path)
+    for path in paths[2:]:
+        cache=TextCache(path);metadata=cache.metadata;metadata['resolved_revision']=None
+        np.savez_compressed(path,keys=np.array(cache.keys),embeddings=cache.embeddings,metadata=json.dumps(metadata))
+    with pytest.raises(ValueError,match='recorded resolved_revision'):
+        prepare_plan(*paths,tmp_path/'out',rebuild_text_cache=True)
+    assert not (tmp_path/'out').exists()
