@@ -47,6 +47,41 @@ experiments use complete recordings. These are separate conditions, not a
 controlled cropping-only ablation. Repeated neural alignment runs had declining
 training loss and worsening validation loss; early stopping selected epoch 0.
 
+## Supervised CNN negative controls
+
+The updated export adds four CNN control evaluations to the original 63 reports.
+The original rows and measurements are unchanged. Comparisons below match the
+existing real-EEG supervised CNN in each dataset, not the SSL-initialized model.
+
+| Dataset | Training condition | Recall@1 | Recall@5 | Recall@10 | MRR |
+|---|---|---:|---:|---:|---:|
+| ZuCo1 | Real EEG | 0.338% | 1.858% | 3.209% | 0.020596 |
+| ZuCo1 | Gaussian inputs | 0.338% | 1.858% | 3.885% | 0.022081 |
+| ZuCo1 | Shuffled pairs | 0.169% | 1.689% | 3.716% | 0.020392 |
+| ZuCo2 | Real EEG | 0.305% | 0.813% | 2.541% | 0.016582 |
+| ZuCo2 | Gaussian inputs | 0.305% | 1.524% | 3.252% | 0.019452 |
+| ZuCo2 | Shuffled pairs | 0.203% | 0.915% | 2.134% | 0.016242 |
+
+ZuCo1 uses the original 3,356-observation cohort, an 8-second center crop,
+microbatch size 2, 592 queries and 300 candidates. ZuCo2 uses the filtered
+5,884-observation cohort, full recordings, microbatch size 8, 984 queries and
+344 candidates. Both use seed 42. These two data recipes are not a controlled
+cross-dataset performance comparison. The summarizer checks equal candidate
+pool hashes and matching protocol, seed and query counts
+within each dataset; full preprocessing/configuration matching also relies on
+the recorded execution commands because these fields are absent from the CSV.
+
+Real and Gaussian CNNs have equal top-1 hit counts (2 in ZuCo1, 3 in ZuCo2),
+and Gaussian MRR is higher in both. The results do not demonstrate a real-EEG
+advantage for these supervised CNN configurations. No statistical significance
+is claimed from one split. SSL and adapted pretrained negative controls remain
+unexecuted; these results must not be relabeled as those controls.
+
+![Supervised CNN controls](cnn_controls_mrr.png)
+
+The source filenames and full metrics are in
+[cnn_controls_summary.csv](cnn_controls_summary.csv).
+
 ## Matched pretrained comparison
 
 Stored coordinates from 30 recording headers match a HydroCel template.
@@ -119,7 +154,7 @@ units, so separate panels are used.
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
 | Official pretrained EEG comparison | Executed with documented approximate 19-channel adaptation |
-| Noise and shuffled controls | Executed for ridge; matching neural/pretrained-cohort controls remain unexecuted |
+| Noise and shuffled controls | Executed for ridge and supervised CNN on both versions; SSL/pretrained-cohort controls remain unexecuted |
 | Quality-aware and corruption evaluation | Executed for ZuCo2 ridge; conclusions limited to that comparison |
 | Unseen-subject evaluation | Executed; broader neural split variability remains unexecuted |
 | Unseen-subject and unseen-content evaluation | Ridge/control comparison executed for three seeds on each version |
@@ -136,7 +171,7 @@ transfer must disclose overlap and distinguish unseen-content transfer.
 
 ## Reproducibility and limits of the export
 
-All 63 original rows are preserved. Four groups have identical exported values,
+All 67 rows are preserved: the original 63 and four added CNN controls. Four groups have identical exported values,
 listed in [export_audit.json](export_audit.json); this does not prove checkpoint
 identity. Corruption conditions, zero-severity evaluations, reruns and the
 superseded numerically unstable ridge fit are not independent methods or
@@ -154,4 +189,6 @@ python scripts/summarize_research.py
 
 The script validates required metric ranges, exactly three seeds per unseen-
 content condition and unique corruption severity points. Outputs include PNG/SVG
-figures and [unseen_content_summary.csv](unseen_content_summary.csv).
+figures, [unseen_content_summary.csv](unseen_content_summary.csv), and
+[cnn_controls_summary.csv](cnn_controls_summary.csv). The CNN summary also checks
+within-dataset protocol, seed, candidate hash, query count and control labels.

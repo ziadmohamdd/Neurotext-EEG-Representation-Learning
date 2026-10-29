@@ -83,6 +83,42 @@ def main():
     fig.savefig(output/'pretrained_comparison.svg')
     plt.close(fig)
 
+    cnn_summary = []
+    fig, axes = plt.subplots(1,2, figsize=(9,4), constrained_layout=True)
+    for ax, dataset, n, original, prefix in [
+        (axes[0], 'zuco1', 300, 'zuco1_cnn_20261027_131425.json', 'zuco1_cnn_original_'),
+        (axes[1], 'zuco2', 344, 'zuco2_cnn_full.json', 'zuco2_cnn_full_'),
+    ]:
+        baseline = files[original]
+        values = []
+        for control in ['real','gaussian','shuffled']:
+            selected = [baseline] if control=='real' else [
+                r for r in rows if r['name'].startswith(prefix+control+'_')]
+            if len(selected) != 1:
+                raise ValueError(f'Require one CNN report for {dataset}/{control}')
+            row = selected[0]
+            for key in ['protocol','seed','candidate_pool_sha256','n_queries','quality_aware']:
+                if row[key] != baseline[key]:
+                    raise ValueError(f'CNN comparison mismatch: {dataset}/{control}/{key}')
+            if row['training_control']!=control or row['evaluation_control']!=('gaussian' if control=='gaussian' else 'real'):
+                raise ValueError('CNN control provenance mismatch')
+            values.append(float(row['mrr']))
+            cnn_summary.append(dict(dataset=dataset, condition=control, file=row['file'],
+                                    seed=row['seed'], n_queries=row['n_queries'], candidates=n,
+                                    **{key:row[key] for key in ['recall@1','recall@5','recall@10','mrr']}))
+        ax.bar(['Real EEG','Gaussian','Shuffled'], values, color=['#386cb0','#f28e2b','#59a14f'])
+        ax.axhline(sum(1/i for i in range(1,n+1))/n, color='gray', ls='--')
+        recipe = 'Original cohort, 8-second crop' if dataset=='zuco1' else 'Duration QC, full recordings'
+        ax.set(title=f'{dataset.upper()} · {n} candidates\n{recipe}', ylabel='MRR', ylim=(0,.03))
+    fig.suptitle('Supervised CNN controls · seed 42, held-out subjects')
+    fig.savefig(output/'cnn_controls_mrr.png', dpi=200)
+    fig.savefig(output/'cnn_controls_mrr.svg', metadata={'Date':None})
+    plt.close(fig)
+    with (output/'cnn_controls_summary.csv').open('w',newline='',encoding='utf-8') as f:
+        writer = csv.DictWriter(f,fieldnames=list(cnn_summary[0]))
+        writer.writeheader()
+        writer.writerows(cnn_summary)
+
     fig, axes = plt.subplots(1,3, figsize=(12,3.8), sharey=True, constrained_layout=True)
     for ax, kind, label in zip(axes, ['additive_noise','channel_dropout','temporal_mask'],
                                ['Added noise / channel SD','Fraction of channels dropped','Fraction of time masked']):
@@ -120,7 +156,7 @@ def main():
                  candidate_counts_source='Previously supplied evaluation console output, not present in CSV')
     (output/'export_audit.json').write_text(json.dumps(audit,indent=2), encoding='utf-8')
     print(f'Summarized {len(rows)} reports; {len(repeated)} groups have identical exported values.')
-    print('Generated three figure pairs, unseen_content_summary.csv and export_audit.json in',output)
+    print('Generated four figure pairs, unseen_content_summary.csv, cnn_controls_summary.csv and export_audit.json in',output)
 
 
 if __name__=='__main__':
