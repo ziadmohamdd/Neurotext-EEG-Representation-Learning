@@ -263,6 +263,10 @@ stimuli, but does not explicitly establish cohort independence from ZuCo1.
 Different labels alone are insufficient. No invented participant identities or
 strict-audit bypass is used. Local NR manifests have 50 shared canonical texts;
 transfer must disclose overlap and distinguish unseen-content transfer.
+The user chose to seek primary identity evidence rather than run unverified
+exploratory transfer. An [unsent maintainer inquiry](../participant_identity_request.md)
+is prepared with the exact question, paper-listed contact and affected subject
+labels. No message has been sent by the assistant.
 
 ## Reproducibility and limits of the export
 
