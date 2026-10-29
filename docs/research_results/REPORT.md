@@ -244,7 +244,7 @@ repository notice and the correction maintainers' documentation.
 
 | Requirement | Evidence/status |
 |---|---|
-| Modular local/Colab implementation and tests | Implemented; latest full suite 119 passed; real Colab execution not established |
+| Modular local/Colab implementation and tests | Implemented; latest full suite 121 passed; real Colab execution not established |
 | Both datasets, lazy preparation, metadata and duration QC | Executed; original timing/reference audit remains limited |
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
@@ -256,7 +256,7 @@ repository notice and the correction maintainers' documentation.
 | ZuCo1 → ZuCo2 and reverse transfer | **Unexecuted: participant independence/correspondence unresolved** |
 | Published-work discussion | Primary-source protocol comparison completed; protocol-matched numerical reproduction remains unexecuted |
 | Figures and consolidated analysis | Initial figures and descriptive report generated here |
-| Final submission/presentation | Pending remaining requirements and review; this is a draft |
+| Final submission/presentation | A 14-slide draft with archived figures and speaker notes is available; final submission remains pending remaining requirements and review |
 
 The supplied ZuCo2 paper confirms 18 released participants and repeated
 stimuli, but does not explicitly establish cohort independence from ZuCo1.
@@ -272,8 +272,17 @@ provided yet. No message was sent by the assistant.
 [Transfer preparation](../transfer_preparation.md) can assemble both directions,
 validate shared signals/text targets and preserve the strict identity gate while
 waiting. These preparation artifacts are not executed transfer results. A
-[presentation outline](../presentation_outline.md) is also available for final
-deliverable preparation; the transfer slide must retain the pending status.
+[presentation outline](../presentation_outline.md) and an editable
+[14-slide presentation draft](../presentation/NeuroText_draft.pptx) are available
+for final deliverable preparation; the transfer slide retains the pending status.
+
+The user's subsequent preparation transcript reports 9,233 signal references,
+594 unique sentence targets and a rebuilt shared text cache pinned to revision
+`1110a243fdf4706b3f48f1d95db1a4f5529b4d41`. The reported plan status is
+`blocked_pending_participant_identity`; no EEG copying or transfer training was
+performed. These counts come from the supplied console summary, not a separately
+archived full plan JSON. The text-cache merge disagreement was resolved by
+re-encoding all targets together while preserving the original caches/results.
 
 ## Reproducibility and limits of the export
 
