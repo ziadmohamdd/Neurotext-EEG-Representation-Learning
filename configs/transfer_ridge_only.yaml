@@ -1,0 +1,6 @@
+seeds: [42]
+representations: [ridge]
+protocols: [zuco1_to_zuco2, zuco2_to_zuco1]
+controls: [real, gaussian, shuffled]
+quality_aware: [false]
+robustness: {}

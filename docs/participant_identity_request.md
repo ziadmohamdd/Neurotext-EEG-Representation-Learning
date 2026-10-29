@@ -1,7 +1,10 @@
 # Request to verify ZuCo cross-release participant overlap
 
-Prepared 2026-10-29. This is an unsent draft. The user chose to seek identity
-evidence rather than run transfer with participant overlap unknown.
+Prepared 2026-10-29. The user subsequently showed the inquiry in Gmail's Sent
+folder. No response has been provided in this session. The assistant did not
+send the email. The user chose to seek identity evidence rather than run
+transfer with participant overlap unknown. The original message draft follows
+for the project record; it does not need to be sent again.
 
 The supplied ZuCo2 paper (`1912.00903v3.pdf`, first page) lists Nora Hollenstein
 at **noraho@inf.ethz.ch**. This is the paper-listed address, not a newly verified
