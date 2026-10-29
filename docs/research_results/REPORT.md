@@ -225,6 +225,21 @@ units, so separate panels are used.
 
 ![Robustness comparison](quality_robustness_mrr.png)
 
+## Comparison with published work
+
+A source-verified [literature and protocol comparison](../published_work_comparison.md)
+reviews the official AAAI 2022 EEG-to-text implementation, its acknowledged
+evaluation correction and the official LaBraM task/input requirements. Primary
+sources are pinned and hashed in [literature_sources.json](literature_sources.json).
+
+Published generation BLEU/ROUGE scores and LaBraM classification results cannot
+be ranked against our fixed-pool sentence Recall@K/MRR. Word-level spectral EEG,
+all-subject sentence-index partitions, language decoders, montage adaptation and
+different candidate pools further limit comparability. This review establishes
+methodological context, not a reproduced numerical benchmark or competitive
+decoding claim. Its correction discussion is attributed to the original
+repository notice and the correction maintainers' documentation.
+
 ## Completion checklist
 
 | Requirement | Evidence/status |
@@ -239,7 +254,7 @@ units, so separate panels are used.
 | Unseen-subject evaluation | Executed; broader neural split variability remains unexecuted |
 | Unseen-subject and unseen-content evaluation | Ridge/control comparison executed for three seeds on each version |
 | ZuCo1 → ZuCo2 and reverse transfer | **Unexecuted: participant independence/correspondence unresolved** |
-| Protocol-matched comparison with published decoding work | Unexecuted; dataset paper is not a matched retrieval baseline |
+| Published-work discussion | Primary-source protocol comparison completed; protocol-matched numerical reproduction remains unexecuted |
 | Figures and consolidated analysis | Initial figures and descriptive report generated here |
 | Final submission/presentation | Pending remaining requirements and review; this is a draft |
 
