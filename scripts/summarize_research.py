@@ -113,6 +113,8 @@ def main():
     fig.suptitle('Supervised CNN controls · seed 42, held-out subjects')
     fig.savefig(output/'cnn_controls_mrr.png', dpi=200)
     fig.savefig(output/'cnn_controls_mrr.svg', metadata={'Date':None})
+    svg = output/'cnn_controls_mrr.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n', encoding='utf-8')
     plt.close(fig)
     with (output/'cnn_controls_summary.csv').open('w',newline='',encoding='utf-8') as f:
         writer = csv.DictWriter(f,fieldnames=list(cnn_summary[0]))
