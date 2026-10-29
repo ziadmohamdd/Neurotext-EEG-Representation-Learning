@@ -13,6 +13,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+def equivalent_report(rows):
+    """Select a display representative only when every exported value agrees."""
+    if not rows:
+        raise ValueError('Required evaluation condition is missing')
+    signature = lambda row: {k:v for k,v in row.items() if k not in ('file','name')}
+    if any(signature(row) != signature(rows[0]) for row in rows[1:]):
+        raise ValueError('Repeated condition has differing exported values; explicit run review required')
+    return sorted(rows,key=lambda row:row['name'])[0]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', default='docs/research_results/retrieval.csv')
@@ -84,6 +94,40 @@ def main():
     fig.savefig(output/'pretrained_comparison.png', dpi=200)
     fig.savefig(output/'pretrained_comparison.svg')
     plt.close(fig)
+
+    labram_summary = []
+    fig, axes = plt.subplots(1,2, figsize=(9,4), constrained_layout=True)
+    for ax, dataset, n in zip(axes, ['zuco1','zuco2'], [300,344]):
+        baseline = equivalent_report([r for r in rows if r['name'].startswith(dataset+'_labram19_')
+                                     and r['training_control']=='real' and r['corruption']=='None'])
+        values = []
+        for control in ['real','gaussian','shuffled']:
+            selected = [r for r in rows if r['name'].startswith(dataset+'_labram19_')
+                        and r['training_control']==control and r['corruption']=='None']
+            row = equivalent_report(selected)
+            for key in ['protocol','seed','candidate_pool_sha256','n_queries','quality_aware']:
+                if row[key] != baseline[key]:
+                    raise ValueError(f'LaBraM comparison mismatch: {dataset}/{control}/{key}')
+            if row['evaluation_control'] != ('gaussian' if control=='gaussian' else 'real'):
+                raise ValueError('LaBraM evaluation control mismatch')
+            values.append(float(row['mrr']))
+            labram_summary.append(dict(dataset=dataset, condition=control, reports_with_equal_values=len(selected),
+                                       source_files=';'.join(sorted(r['file'] for r in selected)),
+                                       seed=row['seed'], n_queries=row['n_queries'], candidates=n,
+                                       **{key:row[key] for key in ['recall@1','recall@5','recall@10','mrr']}))
+        ax.bar(['Real EEG','Gaussian','Shuffled'], values, color=['#386cb0','#f28e2b','#59a14f'])
+        ax.axhline(sum(1/i for i in range(1,n+1))/n,color='gray',ls='--')
+        ax.set(title=f'{dataset.upper()} · {n} candidates', ylabel='MRR', ylim=(0,.035))
+    fig.suptitle('Frozen LaBraM + ridge controls · seed 42, matched 19-channel cohorts')
+    fig.savefig(output/'labram_controls_mrr.png', dpi=200)
+    svg = output/'labram_controls_mrr.svg'
+    fig.savefig(svg, metadata={'Date':None})
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
+    plt.close(fig)
+    with (output/'labram_controls_summary.csv').open('w',newline='',encoding='utf-8') as f:
+        writer = csv.DictWriter(f,fieldnames=list(labram_summary[0]))
+        writer.writeheader()
+        writer.writerows(labram_summary)
 
     cnn_summary = []
     fig, axes = plt.subplots(1,2, figsize=(9,4), constrained_layout=True)
@@ -160,7 +204,7 @@ def main():
                  candidate_counts_source='Previously supplied evaluation console output, not present in CSV')
     (output/'export_audit.json').write_text(json.dumps(audit,indent=2), encoding='utf-8')
     print(f'Summarized {len(rows)} reports; {len(repeated)} groups have identical exported values.')
-    print('Generated four figure pairs, unseen_content_summary.csv, cnn_controls_summary.csv and export_audit.json in',output)
+    print('Generated five figure pairs, three summary CSVs and export_audit.json in',output)
 
 
 if __name__=='__main__':

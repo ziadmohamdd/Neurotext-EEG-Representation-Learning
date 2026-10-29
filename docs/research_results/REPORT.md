@@ -74,8 +74,9 @@ the recorded execution commands because these fields are absent from the CSV.
 Real and Gaussian CNNs have equal top-1 hit counts (2 in ZuCo1, 3 in ZuCo2),
 and Gaussian MRR is higher in both. The results do not demonstrate a real-EEG
 advantage for these supervised CNN configurations. No statistical significance
-is claimed from one split. SSL and adapted pretrained negative controls remain
-unexecuted; these results must not be relabeled as those controls.
+is claimed from one split. SSL negative controls remain unexecuted. Adapted
+pretrained ridge controls are reported separately below; these CNN results must
+not be relabeled as those controls.
 
 ![Supervised CNN controls](cnn_controls_mrr.png)
 
@@ -103,9 +104,45 @@ claims; this is an exploratory adaptation.
 ZuCo1 has 592 queries/300 candidates; ZuCo2 has 983/344. Uniform chance MRR is
 0.020942 and 0.018661, respectively. LaBraM has lower top-1 and MRR in both
 datasets; ZuCo1 Recall@5/10 is higher. This is one split, without significance
-claims or matched adapted-cohort negative controls.
+claims. Matched adapted-cohort negative controls are reported next.
 
 ![Matched representations](pretrained_comparison.png)
+
+## Frozen LaBraM ridge negative controls
+
+These use the same 19-channel prepared observations, whole-second temporal
+support, seed 42, subject split and candidate pool as each real-EEG LaBraM ridge.
+The completed real feature caches were verified and reused; Gaussian waveforms
+were passed through the same frozen official backbone. Separate Gaussian and
+shuffled-pair ridge models were then fit with source-training normalization and
+validation selection. These are not controls for a fine-tuned LaBraM model or
+for the ZuCo SSL encoder.
+
+| Dataset | Condition | Recall@1 | MRR |
+|---|---|---:|---:|
+| ZuCo1 | Real EEG | 0.169% | 0.022326 |
+| ZuCo1 | Gaussian inputs | 0.676% | 0.028627 |
+| ZuCo1 | Shuffled pairs | 0.338% | 0.021823 |
+| ZuCo2 | Real EEG | 0.407% | 0.023559 |
+| ZuCo2 | Gaussian inputs | 0.509% | 0.022214 |
+| ZuCo2 | Shuffled pairs | 0.102% | 0.015474 |
+
+ZuCo1 has 592 queries and 300 candidates; ZuCo2 has 983 queries and 344
+candidates. Gaussian features outperform real EEG on ZuCo1. On ZuCo2 real EEG
+has slightly higher MRR but fewer top-1 hits (4 versus 5). These outcomes do not
+show a consistent real-EEG advantage under this adaptation. No significance
+claim is made from this single split.
+
+![Frozen LaBraM controls](labram_controls_mrr.png)
+
+The export contains two timestamped report sets for each control, `054736` and
+`060032` on 2026-10-29. All exported fields other than filenames are identical
+within each pair. Each condition is displayed once; no scores are averaged or
+selected for better performance. Both source filenames remain in
+[labram_controls_summary.csv](labram_controls_summary.csv), and all original
+rows are retained. Equality of exported values does not prove identical
+checkpoint bytes or independent replication. The summarizer rejects differing
+repeated-condition values pending explicit review.
 
 ## Unseen subjects and unseen sentence content
 
@@ -149,12 +186,12 @@ units, so separate panels are used.
 
 | Requirement | Evidence/status |
 |---|---|
-| Modular local/Colab implementation and tests | Implemented; latest full suite 104 passed; real Colab execution not established |
+| Modular local/Colab implementation and tests | Implemented; latest full suite 115 passed; real Colab execution not established |
 | Both datasets, lazy preparation, metadata and duration QC | Executed; original timing/reference audit remains limited |
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
 | Official pretrained EEG comparison | Executed with documented approximate 19-channel adaptation |
-| Noise and shuffled controls | Executed for ridge and supervised CNN on both versions; SSL/pretrained-cohort controls remain unexecuted |
+| Noise and shuffled controls | Executed for statistical ridge, supervised CNN and adapted LaBraM ridge on both versions; SSL controls remain unexecuted |
 | Quality-aware and corruption evaluation | Executed for ZuCo2 ridge; conclusions limited to that comparison |
 | Unseen-subject evaluation | Executed; broader neural split variability remains unexecuted |
 | Unseen-subject and unseen-content evaluation | Ridge/control comparison executed for three seeds on each version |
@@ -171,7 +208,9 @@ transfer must disclose overlap and distinguish unseen-content transfer.
 
 ## Reproducibility and limits of the export
 
-All 67 rows are preserved: the original 63 and four added CNN controls. Four groups have identical exported values,
+All 75 rows are preserved: the original 63, four added CNN controls and eight
+LaBraM control reports (two timestamped reports per dataset/control condition).
+Eight groups have identical exported values,
 listed in [export_audit.json](export_audit.json); this does not prove checkpoint
 identity. Corruption conditions, zero-severity evaluations, reruns and the
 superseded numerically unstable ridge fit are not independent methods or
@@ -190,5 +229,8 @@ python scripts/summarize_research.py
 The script validates required metric ranges, exactly three seeds per unseen-
 content condition and unique corruption severity points. Outputs include PNG/SVG
 figures, [unseen_content_summary.csv](unseen_content_summary.csv), and
-[cnn_controls_summary.csv](cnn_controls_summary.csv). The CNN summary also checks
-within-dataset protocol, seed, candidate hash, query count and control labels.
+[cnn_controls_summary.csv](cnn_controls_summary.csv), and
+[labram_controls_summary.csv](labram_controls_summary.csv). The CNN and LaBraM
+summaries also check within-dataset protocol, seed, candidate hash, query count
+and control labels. Repeated LaBraM reports are summarized once only if every
+exported field except filenames agrees.
