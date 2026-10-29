@@ -40,3 +40,18 @@ def test_shuffled_pairs_duplicates():
     shuffled=shuffled_keys(keys)
     assert all(a!=b for a,b in zip(keys,shuffled))
     assert shuffled[0]==shuffled[1]
+
+
+def test_exploratory_transfer_allows_unknown_but_rejects_known_overlap(records):
+    source=[replace(r,provenance={'units':'uV'}) for r in records[:30]]
+    target=[replace(r,dataset='zuco2',provenance={'units':'uV'}) for r in records[30:]]
+    with pytest.raises(ValueError,match='identity audit missing'):
+        transfer_split(source,target)
+    split=transfer_split(source,target,require_identity_audit=False)
+    assert split['test']==target
+    check_disjoint(split)
+    assert not compatibility(source,target,require_identity_audit=False)['identity_audited']
+    known_source=[replace(r,provenance={'person_id':'same_person'}) for r in source]
+    known_target=[replace(r,provenance={'person_id':'same_person'}) for r in target]
+    with pytest.raises(ValueError,match='participant leakage'):
+        transfer_split(known_source,known_target,require_identity_audit=False)

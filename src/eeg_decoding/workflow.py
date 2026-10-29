@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Sampler
 from .data.dataset import EEGDataset, collate_variable, load_signal, observation_seed
 from .data.validation import manifest_digest
 from .evaluation.cross_subject import group_split, split_manifest
-from .evaluation.cross_dataset import transfer_split
+from .evaluation.cross_dataset import transfer_split, compatibility
 from .evaluation.controls import gaussian_input, shuffled_keys
 from .evaluation.robustness import corrupt
 from .evaluation.retrieval import ranks, summarize, chance
@@ -91,9 +91,10 @@ class DistinctSentenceBatches(Sampler):
 
 def make_splits(records, config, protocol="subject", source=None, target=None):
     seed = config.get("seed", 42)
-    if protocol == "transfer":
+    if protocol in {"transfer", "transfer_exploratory"}:
         return transfer_split([r for r in records if r.dataset == source],
-                              [r for r in records if r.dataset == target], seed)
+                              [r for r in records if r.dataset == target], seed,
+                              require_identity_audit=protocol == "transfer")
     return group_split(records, seed, held_out_sentences=protocol == "subject_sentence")
 
 def loader(records, config, normalizer=None, training=False, alignment=False, control="real", corruption=None):
@@ -117,6 +118,13 @@ def prepare_metadata(records, splits, config, stage, protocol):
                 "train_datasets":sorted({r.dataset for r in splits["train"]}),
                 "test_datasets":sorted({r.dataset for r in splits["test"]}),
                 "research_data_status": "synthetic_fixture_no_scientific_claim" if any(r.provenance.get("synthetic") for r in records) else "user_supplied_not_independently_authenticated"}
+    if protocol in {"transfer", "transfer_exploratory"}:
+        metadata["transfer_assessment"] = compatibility(
+            splits["train"] + splits["val"], splits["test"],
+            require_identity_audit=protocol == "transfer")
+        metadata["transfer_assessment"]["interpretation"] = (
+            "Cross-release participant independence unresolved; do not claim unseen-person transfer"
+            if protocol == "transfer_exploratory" else "Verified participant-disjoint transfer")
     return norm, metadata
 
 def train_neural(records, config, stage, output, text_path=None, ssl_checkpoint=None, resume=None,
@@ -303,5 +311,7 @@ def evaluate_checkpoint(records, artifact, text_path, output, control="auto", co
               "subject_wise":{s:summarize(rank[subjects==s]) for s in sorted(set(subjects))},
               "macro_subject_top1_ci":subject_bootstrap((rank<=1).astype(float),subjects),
               "macro_subject_mrr_ci":subject_bootstrap(1/rank,subjects)}
+    if "transfer_assessment" in meta:
+        report["transfer_assessment"] = meta["transfer_assessment"]
     write_json(output,report)
     return report
