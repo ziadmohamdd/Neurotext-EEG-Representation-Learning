@@ -1,0 +1,157 @@
+# EEG representation learning: results and completion review
+
+Draft research report, 2026-10-29. Measurements come from the user's Windows
+RTX 3050 execution, archived in [retrieval.csv](retrieval.csv). This is a
+descriptive analysis of executed experiments, not a claim of independent cloud
+reproduction or a completed research campaign.
+
+## Main finding
+
+The tested statistical, supervised CNN, masked-reconstruction SSL and frozen
+LaBraM representations do not establish reliable sentence retrieval across
+subjects or unseen sentence content. Real EEG does not consistently outperform
+matched Gaussian controls. Some results exceed uniform random-ranking
+expectations, but that alone is insufficient evidence of useful EEG decoding.
+
+These negative findings are scientifically reportable. They do not establish
+that EEG contains no semantic information or that pretrained EEG models cannot
+work. Results concern these implementations, adaptations, cohorts and splits.
+
+## Data and methods
+
+ZuCo1 preparation produced 3,356 observations from 12 subjects; ZuCo2 produced
+5,911 from 18. Original missing EEG slots were audited. Duration QC excluded
+7 ZuCo1 and 27 ZuCo2 segments of at most 0.1 seconds, leaving 3,349 and 5,884.
+An inspected YTL source slot contained a single sample and was excluded during
+technical preparation with an audit entry. The selected condition is normal
+reading (`nr`), with 105 ordered channels resampled to 200 Hz. Existing source
+preprocessing was retained; anti-alias resampling was applied. Complete original
+trigger timing and per-run reference/filter histories have not been verified.
+
+Models predict cached MiniLM sentence embeddings. Evaluation ranks a fixed,
+explicit pool of unique sentences with cosine similarity. This is retrieval,
+not unrestricted text generation. Data-dependent normalization and feature
+scaling use training observations. Model selection uses validation subjects;
+test inspection across development makes the overall history exploratory.
+
+Statistical features combine per-channel statistics and spectral band powers.
+Ridge uses float64 scaling and SVD fitting. The CNN learns compact waveform
+representations. SSL first reconstructs masked temporal blocks, then initializes
+sentence alignment. Gaussian controls match each observation's channel standard
+deviations and therefore preserve amplitude information; they are not equivalent
+to uniformly random rankings. Shuffled controls use separately trained models
+with deranged sentence labels and true evaluation labels.
+
+Earlier ZuCo1 inputs were center-cropped to at most 8 seconds. Later filtered
+experiments use complete recordings. These are separate conditions, not a
+controlled cropping-only ablation. Repeated neural alignment runs had declining
+training loss and worsening validation loss; early stopping selected epoch 0.
+
+## Matched pretrained comparison
+
+Stored coordinates from 30 recording headers match a HydroCel template.
+The documented approximate mapping selects 19 real electrodes for standard
+positional tokens, with angular errors of 2.11–9.40 degrees and a Cz anchor.
+Both comparison methods use identical adapted signals, complete seconds and
+subject splits. Inputs under one second are excluded, leaving 3,345 ZuCo1 and
+5,838 ZuCo2 observations. Official frozen LaBraM weights are checksum-verified.
+Mapping, upstream filtering and reference uncertainties limit paper-reproduction
+claims; this is an exploratory adaptation.
+
+| Dataset | Features + ridge | Recall@1 | Recall@5 | Recall@10 | MRR |
+|---|---|---:|---:|---:|---:|
+| ZuCo1 | Statistical | 0.507% | 1.689% | 3.716% | 0.024530 |
+| ZuCo1 | LaBraM | 0.169% | 2.196% | 4.392% | 0.022326 |
+| ZuCo2 | Statistical | 0.814% | 2.442% | 4.374% | 0.027599 |
+| ZuCo2 | LaBraM | 0.407% | 2.238% | 3.967% | 0.023559 |
+
+ZuCo1 has 592 queries/300 candidates; ZuCo2 has 983/344. Uniform chance MRR is
+0.020942 and 0.018661, respectively. LaBraM has lower top-1 and MRR in both
+datasets; ZuCo1 Recall@5/10 is higher. This is one split, without significance
+claims or matched adapted-cohort negative controls.
+
+![Matched representations](pretrained_comparison.png)
+
+## Unseen subjects and unseen sentence content
+
+Means below give each seed (42, 43, 44) equal weight. SD is sample SD across
+splits, not a confidence interval. Splits reuse participants and stimuli and
+cannot be treated as independent participant cohorts.
+
+| Dataset | Condition | Mean Recall@1 | Mean MRR ± split SD |
+|---|---|---:|---:|
+| ZuCo1 | Real EEG | 2.335% | 0.085268 ± 0.007368 |
+| ZuCo1 | Gaussian | 2.335% | 0.086335 ± 0.009157 |
+| ZuCo1 | Shuffled | 2.895% | 0.090252 ± 0.014689 |
+| ZuCo2 | Real EEG | 1.337% | 0.073448 ± 0.006412 |
+| ZuCo2 | Gaussian | 1.691% | 0.075441 ± 0.003512 |
+| ZuCo2 | Shuffled | 1.348% | 0.068180 ± 0.011447 |
+
+ZuCo1 uses 60 candidates (chance MRR 0.077998) and 117/111/115 queries by seed.
+ZuCo2 uses 68 candidates (chance MRR 0.070648) and 197/203/193 queries. These
+percentages cannot be directly compared with 300/344-candidate retrieval. Real
+EEG exceeds Gaussian MRR only on seed 43 in each dataset.
+
+![Unseen-content splits](unseen_content_mrr.png)
+
+## Robustness and quality weighting
+
+The ZuCo2 full-sentence ridge comparison uses one subject split, 984 queries,
+344 candidates and one corruption seed. Clean MRR is 0.023036 for standard
+ridge versus 0.020230 for the quality-aware variant. Quality-aware MRR is lower
+in 8 of 9 nonzero corruption conditions; the exception is 25% channel dropout.
+No consistent benefit is demonstrated for the implemented weighting heuristic.
+
+Corruption curves are non-monotonic near chance. Temporal masking sometimes
+increases retrieval scores, which does not establish that removing signal is
+beneficial. Low baseline performance, small hit counts, and random corruption
+variation limit robustness conclusions. Each corruption has different severity
+units, so separate panels are used.
+
+![Robustness comparison](quality_robustness_mrr.png)
+
+## Completion checklist
+
+| Requirement | Evidence/status |
+|---|---|
+| Modular local/Colab implementation and tests | Implemented; latest full suite 104 passed; real Colab execution not established |
+| Both datasets, lazy preparation, metadata and duration QC | Executed; original timing/reference audit remains limited |
+| Statistical and supervised CNN baselines | Executed on both versions |
+| ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
+| Official pretrained EEG comparison | Executed with documented approximate 19-channel adaptation |
+| Noise and shuffled controls | Executed for ridge; matching neural/pretrained-cohort controls remain unexecuted |
+| Quality-aware and corruption evaluation | Executed for ZuCo2 ridge; conclusions limited to that comparison |
+| Unseen-subject evaluation | Executed; broader neural split variability remains unexecuted |
+| Unseen-subject and unseen-content evaluation | Ridge/control comparison executed for three seeds on each version |
+| ZuCo1 → ZuCo2 and reverse transfer | **Unexecuted: participant independence/correspondence unresolved** |
+| Protocol-matched comparison with published decoding work | Unexecuted; dataset paper is not a matched retrieval baseline |
+| Figures and consolidated analysis | Initial figures and descriptive report generated here |
+| Final submission/presentation | Pending remaining requirements and review; this is a draft |
+
+The supplied ZuCo2 paper confirms 18 released participants and repeated
+stimuli, but does not explicitly establish cohort independence from ZuCo1.
+Different labels alone are insufficient. No invented participant identities or
+strict-audit bypass is used. Local NR manifests have 50 shared canonical texts;
+transfer must disclose overlap and distinguish unseen-content transfer.
+
+## Reproducibility and limits of the export
+
+All 63 original rows are preserved. Four groups have identical exported values,
+listed in [export_audit.json](export_audit.json); this does not prove checkpoint
+identity. Corruption conditions, zero-severity evaluations, reruns and the
+superseded numerically unstable ridge fit are not independent methods or
+replications. The CSV lacks original artifact/config/split identities, candidate
+counts, per-subject statistics and confidence intervals. Method-specific cohort
+and candidate counts above also use the previously supplied execution logs.
+Archive the original JSON files, split manifests and checkpoints before final
+submission. Do not infer participant-cluster intervals from aggregate CSV rows.
+
+Rebuild generated tables and figures from the repository root:
+
+```bash
+python scripts/summarize_research.py
+```
+
+The script validates required metric ranges, exactly three seeds per unseen-
+content condition and unique corruption severity points. Outputs include PNG/SVG
+figures and [unseen_content_summary.csv](unseen_content_summary.csv).
