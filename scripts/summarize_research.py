@@ -167,6 +167,42 @@ def main():
         writer.writeheader()
         writer.writerows(cnn_summary)
 
+    ssl_summary = []
+    fig, axes = plt.subplots(1,2, figsize=(9,4), constrained_layout=True)
+    for ax, dataset, n, original in [
+        (axes[0], 'zuco1', 300, 'zuco1_full_sentence_alignment.json'),
+        (axes[1], 'zuco2', 344, 'zuco2_ssl_alignment_full.json'),
+    ]:
+        baseline = files[original]
+        values = []
+        for control in ['real','gaussian','shuffled']:
+            selected = [baseline] if control=='real' else [r for r in rows
+                        if r['name'].startswith(f'{dataset}_ssl_alignment_{control}_')]
+            row = equivalent_report(selected)
+            for key in ['protocol','seed','candidate_pool_sha256','n_queries','quality_aware']:
+                if row[key] != baseline[key]:
+                    raise ValueError(f'SSL comparison mismatch: {dataset}/{control}/{key}')
+            if row['training_control']!=control or row['evaluation_control']!=('gaussian' if control=='gaussian' else 'real'):
+                raise ValueError('SSL control provenance mismatch')
+            values.append(float(row['mrr']))
+            ssl_summary.append(dict(dataset=dataset, condition=control,
+                                    source_files=';'.join(sorted(r['file'] for r in selected)),
+                                    seed=row['seed'], n_queries=row['n_queries'], candidates=n,
+                                    **{key:row[key] for key in ['recall@1','recall@5','recall@10','mrr']}))
+        ax.bar(['Real EEG','Gaussian','Shuffled'], values, color=['#386cb0','#f28e2b','#59a14f'])
+        ax.axhline(sum(1/i for i in range(1,n+1))/n,color='gray',ls='--')
+        ax.set(title=f'{dataset.upper()} · {n} candidates', ylabel='MRR', ylim=(0,.03))
+    fig.suptitle('SSL + alignment controls · full recordings, seed 42, held-out subjects')
+    fig.savefig(output/'ssl_controls_mrr.png', dpi=200)
+    svg = output/'ssl_controls_mrr.svg'
+    fig.savefig(svg, metadata={'Date':None})
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
+    plt.close(fig)
+    with (output/'ssl_controls_summary.csv').open('w',newline='',encoding='utf-8') as f:
+        writer = csv.DictWriter(f,fieldnames=list(ssl_summary[0]))
+        writer.writeheader()
+        writer.writerows(ssl_summary)
+
     fig, axes = plt.subplots(1,3, figsize=(12,3.8), sharey=True, constrained_layout=True)
     for ax, kind, label in zip(axes, ['additive_noise','channel_dropout','temporal_mask'],
                                ['Added noise / channel SD','Fraction of channels dropped','Fraction of time masked']):
@@ -204,7 +240,7 @@ def main():
                  candidate_counts_source='Previously supplied evaluation console output, not present in CSV')
     (output/'export_audit.json').write_text(json.dumps(audit,indent=2), encoding='utf-8')
     print(f'Summarized {len(rows)} reports; {len(repeated)} groups have identical exported values.')
-    print('Generated five figure pairs, three summary CSVs and export_audit.json in',output)
+    print('Generated six figure pairs, four summary CSVs and export_audit.json in',output)
 
 
 if __name__=='__main__':

@@ -74,14 +74,57 @@ the recorded execution commands because these fields are absent from the CSV.
 Real and Gaussian CNNs have equal top-1 hit counts (2 in ZuCo1, 3 in ZuCo2),
 and Gaussian MRR is higher in both. The results do not demonstrate a real-EEG
 advantage for these supervised CNN configurations. No statistical significance
-is claimed from one split. SSL negative controls remain unexecuted. Adapted
-pretrained ridge controls are reported separately below; these CNN results must
-not be relabeled as those controls.
+is claimed from one split. SSL and adapted pretrained ridge controls are
+reported separately below; these CNN results must not be relabeled as those
+controls.
 
 ![Supervised CNN controls](cnn_controls_mrr.png)
 
 The source filenames and full metrics are in
 [cnn_controls_summary.csv](cnn_controls_summary.csv).
+
+## Full-sentence SSL negative controls
+
+These comparisons use the duration-filtered 105-channel cohorts (3,349 ZuCo1
+and 5,884 ZuCo2 observations), full recordings, seed 42 and alignment microbatch
+size 8. They match each full-sentence real-EEG SSL/alignment configuration,
+not the earlier cropped ZuCo1 experiment.
+
+| Dataset | Condition | Recall@1 | MRR |
+|---|---|---:|---:|
+| ZuCo1 | Real EEG | 0.169% | 0.020680 |
+| ZuCo1 | Gaussian inputs | 0.338% | 0.023159 |
+| ZuCo1 | Shuffled pairs | 0.338% | 0.019842 |
+| ZuCo2 | Real EEG | 0.305% | 0.018846 |
+| ZuCo2 | Gaussian inputs | 0.305% | 0.018117 |
+| ZuCo2 | Shuffled pairs | 0.305% | 0.019402 |
+
+ZuCo1 has 592 queries/300 candidates; ZuCo2 has 984/344. Gaussian MRR exceeds
+real EEG on ZuCo1; shuffled MRR exceeds real EEG on ZuCo2. Real top-1 hits are
+1 versus 2 for each control in ZuCo1 and 3 for all three conditions in ZuCo2.
+These outcomes do not establish a consistent real-EEG advantage. Differences
+are descriptive; no statistical significance claim is made.
+
+Gaussian SSL was pretrained from scratch on Gaussian waveforms from training
+observations, then used to initialize Gaussian-input sentence alignment. Thus
+the Gaussian condition covers both learned stages, rather than corrupting only
+the input after real-data pretraining. Shuffled-pair alignment reused the real
+SSL encoder because that pretraining objective uses no sentence labels.
+Normalization uses only training observations; validation selects checkpoints.
+
+Recorded Gaussian SSL folders end in `20261029_060922`. Best pretraining epochs
+were 15 (ZuCo1, validation reconstruction loss 0.444607) and 4 (ZuCo2, 2.002514).
+Shuffled alignment initialized from real SSL checkpoints in
+`zuco1_ssl_full_sentence_20261027_170627` and
+`zuco2_ssl_full_20261028_211015`. Alignment control evaluations end in
+`20261029_142036`. Pretraining details come from the user's execution transcript;
+the CSV itself does not contain upstream checkpoint identities. Original
+checkpoints and configurations should be retained for the final audit.
+
+![SSL controls](ssl_controls_mrr.png)
+
+Full metrics and source filenames are in
+[ssl_controls_summary.csv](ssl_controls_summary.csv).
 
 ## Matched pretrained comparison
 
@@ -191,7 +234,7 @@ units, so separate panels are used.
 | Statistical and supervised CNN baselines | Executed on both versions |
 | ZuCo-trained SSL and semantic alignment | Executed on both versions; reconstruction improvement did not establish decoding |
 | Official pretrained EEG comparison | Executed with documented approximate 19-channel adaptation |
-| Noise and shuffled controls | Executed for statistical ridge, supervised CNN and adapted LaBraM ridge on both versions; SSL controls remain unexecuted |
+| Noise and shuffled controls | Executed for statistical ridge, supervised CNN, full-sentence SSL/alignment and adapted LaBraM ridge on both versions; conclusions limited to these tested configurations |
 | Quality-aware and corruption evaluation | Executed for ZuCo2 ridge; conclusions limited to that comparison |
 | Unseen-subject evaluation | Executed; broader neural split variability remains unexecuted |
 | Unseen-subject and unseen-content evaluation | Ridge/control comparison executed for three seeds on each version |
@@ -208,8 +251,9 @@ transfer must disclose overlap and distinguish unseen-content transfer.
 
 ## Reproducibility and limits of the export
 
-All 75 rows are preserved: the original 63, four added CNN controls and eight
-LaBraM control reports (two timestamped reports per dataset/control condition).
+All 79 rows are preserved: the original 63, four added CNN controls, eight
+LaBraM control reports (two timestamped reports per dataset/control condition),
+and four full-sentence SSL controls.
 Eight groups have identical exported values,
 listed in [export_audit.json](export_audit.json); this does not prove checkpoint
 identity. Corruption conditions, zero-severity evaluations, reruns and the
@@ -230,7 +274,8 @@ The script validates required metric ranges, exactly three seeds per unseen-
 content condition and unique corruption severity points. Outputs include PNG/SVG
 figures, [unseen_content_summary.csv](unseen_content_summary.csv), and
 [cnn_controls_summary.csv](cnn_controls_summary.csv), and
-[labram_controls_summary.csv](labram_controls_summary.csv). The CNN and LaBraM
+[labram_controls_summary.csv](labram_controls_summary.csv), and
+[ssl_controls_summary.csv](ssl_controls_summary.csv). The CNN, SSL and LaBraM
 summaries also check within-dataset protocol, seed, candidate hash, query count
 and control labels. Repeated LaBraM reports are summarized once only if every
 exported field except filenames agrees.
