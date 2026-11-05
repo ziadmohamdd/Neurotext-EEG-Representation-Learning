@@ -1,0 +1,7 @@
+{
+  "max_token_jaccard": 0.4117647058823529,
+  "max_token_containment": 0.7777777777777778,
+  "max_text_cosine_held_out_to_train": 0.7823798656463623,
+  "min_list_distance_held_out_to_train": 11,
+  "failures": []
+}

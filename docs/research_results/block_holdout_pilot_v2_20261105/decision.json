@@ -1,0 +1,98 @@
+{
+  "ridge_V": {
+    "passed": false,
+    "checks": {
+      "primary_gaps_at_least_minimum": false,
+      "within_block_gap_at_least_minimum": false,
+      "readers_positive_against_gaussian": false,
+      "reader_lower_bound_above_zero": false,
+      "sentence_lower_bound_above_zero": false
+    },
+    "primary_gaps": {
+      "gaussian": 0.00794084185671091,
+      "class_shuffled": 0.014778396810730461,
+      "timing_only_ridge": -0.007933724238967078,
+      "position_only_ridge": 0.005053807279257898
+    },
+    "within_block_gap": 0.001021735357641354,
+    "readers_positive": 17,
+    "readers_total": 30,
+    "bootstrap": {
+      "level": 98.33,
+      "reader_interval": [
+        -0.005685764831595228,
+        0.022043501856821086
+      ],
+      "sentence_interval": [
+        -0.011412852097680951,
+        0.02599501811722163
+      ],
+      "iterations": 10000
+    },
+    "real_primary": 0.1224051390124231
+  },
+  "ridge_F": {
+    "passed": false,
+    "checks": {
+      "primary_gaps_at_least_minimum": false,
+      "within_block_gap_at_least_minimum": false,
+      "readers_positive_against_gaussian": false,
+      "reader_lower_bound_above_zero": false,
+      "sentence_lower_bound_above_zero": false
+    },
+    "primary_gaps": {
+      "gaussian": 0.002548539059143104,
+      "class_shuffled": 0.02324407942761923,
+      "timing_only_ridge": -0.003705668263114228,
+      "position_only_ridge": 0.00928186325511075
+    },
+    "within_block_gap": 0.0027301222501699895,
+    "readers_positive": 15,
+    "readers_total": 30,
+    "bootstrap": {
+      "level": 98.33,
+      "reader_interval": [
+        -0.009613736644567949,
+        0.014629864270113702
+      ],
+      "sentence_interval": [
+        -0.011880466597448937,
+        0.01823578598577457
+      ],
+      "iterations": 10000
+    },
+    "real_primary": 0.12663319498827594
+  },
+  "cnn_F": {
+    "passed": false,
+    "checks": {
+      "primary_gaps_at_least_minimum": false,
+      "within_block_gap_at_least_minimum": false,
+      "readers_positive_against_gaussian": false,
+      "reader_lower_bound_above_zero": false,
+      "sentence_lower_bound_above_zero": false
+    },
+    "primary_gaps": {
+      "gaussian": 0.003059291664344883,
+      "class_shuffled": 0.00040546463911960107,
+      "timing_only_ridge": -0.030109576722582618,
+      "position_only_ridge": -0.01712204520435764
+    },
+    "within_block_gap": 0.0010180922402970613,
+    "readers_positive": 18,
+    "readers_total": 30,
+    "bootstrap": {
+      "level": 98.33,
+      "reader_interval": [
+        -0.003952297402010719,
+        0.010619202756517341
+      ],
+      "sentence_interval": [
+        -0.021798471716892573,
+        0.029587713878859237
+      ],
+      "iterations": 10000
+    },
+    "real_primary": 0.10022928652880755
+  }
+}

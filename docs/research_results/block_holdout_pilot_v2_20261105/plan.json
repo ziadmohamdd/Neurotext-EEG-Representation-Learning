@@ -1,0 +1,240 @@
+{
+  "plan_sha256": "eef247790d718091b5f3e5357feb1989ceb7a3881f852868170ad89a641f9006",
+  "plan": {
+    "version": "block_holdout_pilot_v2_20261105",
+    "status": "approved_20261105",
+    "requires": "Sentence-holdout pilot v1 finished and reported before this run starts",
+    "seed": 42,
+    "question": "With familiar readers and new sentence blocks kept apart from training in list order, does real EEG beat noise, shuffled pairs, word-count/timing and list-position controls?",
+    "cohort": {
+      "manifests": [
+        "data/manifests/zuco1_duration_qc.jsonl",
+        "data/manifests/zuco2_duration_qc.jsonl"
+      ],
+      "observations": 9233,
+      "readers": 30,
+      "task": "nr",
+      "new_downloads": false
+    },
+    "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+    "targets_changed": false,
+    "split": {
+      "unit": "Contiguous block of the stimulus list, separately for each release",
+      "list_order": "Sentence ID order. Assumed to match presentation order; not verified against stimulus logs",
+      "blocks_per_release": {
+        "val": 2,
+        "test": 2
+      },
+      "block_sentences": 25,
+      "buffer_sentences_each_side": 10,
+      "buffer_policy": "Buffer sentences are used in no fit and no score",
+      "placement": "Seeded rejection sampling, zuco1 then zuco2. Blocks hold no sentence that repeats in its list, occurs in both releases or has a near-duplicate, and keep at least the buffer length between blocks; neighbouring buffers may overlap",
+      "near_duplicate_policy": "Sentences with a near-duplicate or list repeat never enter held-out blocks; training also drops any group found in a held-out block as a safeguard",
+      "approximate_sizes_before_near_duplicate_drop": {
+        "train": {
+          "observations": 4141,
+          "zuco1_sentences": 120,
+          "zuco2_sentences": 167
+        },
+        "buffer": {
+          "observations": 2261,
+          "zuco1_sentences": 80,
+          "zuco2_sentences": 80
+        },
+        "val": {
+          "observations": 1403,
+          "zuco1_sentences": 50,
+          "zuco2_sentences": 50
+        },
+        "test": {
+          "observations": 1428,
+          "zuco1_sentences": 50,
+          "zuco2_sentences": 50
+        }
+      },
+      "exact_sizes": {
+        "train": {
+          "observations": 4487,
+          "unique_sentences": 260,
+          "zuco1_sentences": 124,
+          "zuco2_sentences": 183,
+          "readers": 30
+        },
+        "val": {
+          "observations": 1427,
+          "unique_sentences": 100,
+          "zuco1_sentences": 50,
+          "zuco2_sentences": 50,
+          "readers": 30
+        },
+        "test": {
+          "observations": 1386,
+          "unique_sentences": 100,
+          "zuco1_sentences": 50,
+          "zuco2_sentences": 50,
+          "readers": 29
+        },
+        "buffer": 1933,
+        "near_duplicate_training_observations_dropped": 0
+      }
+    },
+    "pipelines": {
+      "V": {
+        "purpose": "Validity fixes only",
+        "notch_hz": 50,
+        "drop_channels": [
+          "Cz"
+        ],
+        "window": "Center crop to 8 seconds",
+        "normalizer": "Shared across readers, fit on training observations only"
+      },
+      "F": {
+        "purpose": "Validity fixes plus fuller input, tested together",
+        "notch_hz": 50,
+        "drop_channels": [
+          "Cz"
+        ],
+        "window": "Whole sentence, center crop only above 30 seconds",
+        "normalizer": "Per reader, fit on that reader's training observations only"
+      }
+    },
+    "models": {
+      "ridge": {
+        "pipelines": [
+          "V",
+          "F"
+        ],
+        "features": "Existing eeg_features statistical summaries",
+        "alphas": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "selection": "Highest validation primary metric; first grid entry on ties"
+      },
+      "cnn": {
+        "pipelines": [
+          "F"
+        ],
+        "encoder": "Existing EEGCNN, temporal_segments 1, embedding_dim 128",
+        "model_seeds": [
+          42,
+          43,
+          44
+        ],
+        "seed_aggregation": "Mean per-query score across seeds before the gate",
+        "batch_size": 8,
+        "gradient_accumulation_steps": 2,
+        "alignment_candidate_scope": "batch",
+        "learning_rate": 0.001,
+        "weight_decay": 0.01,
+        "gradient_clip": 1.0,
+        "max_epochs": 50,
+        "patience": 8,
+        "selection": "Lowest validation batch alignment loss",
+        "max_hours_per_arm": 12
+      }
+    },
+    "arms_per_model": [
+      "real",
+      "gaussian",
+      "class_shuffled"
+    ],
+    "shared_controls": {
+      "timing_only_ridge": "Observation duration, word count and a training-derived word-count basis; no EEG amplitudes",
+      "position_only_ridge": {
+        "input": "Release flag and Fourier basis of normalized list position; no EEG amplitudes",
+        "fourier_terms": [
+          2,
+          5,
+          10,
+          20,
+          40,
+          80
+        ],
+        "alphas": [
+          0.1,
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000
+        ],
+        "selection": "Highest validation primary metric"
+      }
+    },
+    "evaluation": {
+      "aggregation": "Mean within reader, then equal weight across 30 readers",
+      "primary": {
+        "metric": "Expected 10-way top-1 accuracy with uniform random distractors; chance 10%",
+        "candidate_pool": "All sentences in the same split and release; 50 sentences"
+      },
+      "within_block": {
+        "metric": "Expected 10-way top-1 accuracy; chance 10%",
+        "candidate_pool": "The 25 sentences of the query's own block"
+      },
+      "secondary": [
+        "Expected 2-way, 4-way and 24-way accuracy",
+        "Expected 10-way accuracy among the 20 candidates closest in word count",
+        "Full-pool Recall@1/5/10 and MRR",
+        "Correlation of EEG-predicted list position with true position on validation"
+      ],
+      "ties": "A tie with the correct sentence counts as a miss"
+    },
+    "gate": {
+      "scope": "Applied separately to ridge V, ridge F and CNN F on validation",
+      "primary_gap_percentage_points": 2.0,
+      "primary_comparators": [
+        "gaussian",
+        "class_shuffled",
+        "timing_only_ridge",
+        "position_only_ridge"
+      ],
+      "within_block_gap_against_gaussian_percentage_points": 2.0,
+      "readers_positive_against_gaussian": "At least 20 of 30",
+      "bootstrap": "10000 resamples; 98.33% lower bounds above zero for real minus Gaussian when resampling readers and when resampling sentences"
+    },
+    "test_policy": "Score a model and its matched controls once on test blocks only if that model passes the gate; otherwise never score test blocks",
+    "stop_rule": "Stop after this run whatever the outcome. No extra settings or architectures under this plan.",
+    "output": "results/block_holdout_pilot_v2_20261105/",
+    "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+  },
+  "config": {
+    "seed": 42,
+    "device": "auto",
+    "batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "embedding_dim": 128,
+    "num_workers": 0,
+    "pin_memory": true,
+    "mixed_precision": "fp16_if_supported",
+    "cache_features": true,
+    "checkpoint_every_epoch": true,
+    "max_samples": 1600,
+    "epochs": 50,
+    "patience": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "quality_aware": false,
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "text_revision": null,
+    "preprocessing": {
+      "target_sfreq": 200,
+      "low": 0.5,
+      "high": 45.0,
+      "notch": 50.0,
+      "already_filtered": false,
+      "artifact_threshold_uv": 200.0,
+      "artifact_policy": "reject"
+    },
+    "alignment_candidate_scope": "batch",
+    "temporal_segments": 1
+  },
+  "git_head": "a29cdb698f37de137eba8787bc0a6b0d40701a4c"
+}
