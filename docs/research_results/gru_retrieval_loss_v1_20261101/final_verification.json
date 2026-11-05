@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "folds": 8,
+  "scored_rows": 152,
+  "saved_model_replays": 48,
+  "selected_query_ranks_reproduced": 13470,
+  "initial_weights_match_cosine_baseline": true,
+  "preprocessing_matches_cosine_baseline": true,
+  "structural_predictions_match_baseline": true,
+  "prior_protected_files_unchanged": 2003,
+  "outer_validation_or_test_evaluated": false
+}

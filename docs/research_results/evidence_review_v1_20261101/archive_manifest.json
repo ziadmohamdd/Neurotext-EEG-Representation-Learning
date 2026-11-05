@@ -1,0 +1,27 @@
+[
+    {
+        "source":  "docs/research_results/REPORT.md",
+        "archive":  "docs\\research_results\\evidence_review_v1_20261101\\archive\\REPORT.md",
+        "sha256":  "f9b97e071e654b4583bd6b72a66850a89e5f21715f207499c3cb4081b3ba0c27"
+    },
+    {
+        "source":  "docs/presentation/NeuroText_consolidated.pptx",
+        "archive":  "docs\\research_results\\evidence_review_v1_20261101\\archive\\NeuroText_consolidated.pptx",
+        "sha256":  "f1ad546ec9cb8e166e7f40012f3412df2f00ce37404e7db7702dedffad8e58c3"
+    },
+    {
+        "source":  "docs/presentation/NeuroText_consolidated.pdf",
+        "archive":  "docs\\research_results\\evidence_review_v1_20261101\\archive\\NeuroText_consolidated.pdf",
+        "sha256":  "fe7027d70818c02e8ed5635c4fe8282e7558a0f6840dca336e158302bc9a9754"
+    },
+    {
+        "source":  "docs/presentation/README.md",
+        "archive":  "docs\\research_results\\evidence_review_v1_20261101\\archive\\presentation_README.md",
+        "sha256":  "85d06cf60ee5d74f362fb041e3ad7a0574187508147a3afac961cd3686979454"
+    },
+    {
+        "source":  "docs/continue_work.md",
+        "archive":  "docs\\research_results\\evidence_review_v1_20261101\\archive\\continue_work.md",
+        "sha256":  "7705660ffd857a7e932895f1be2cf9c13575539cfb0f493b3d55430d07f749a6"
+    }
+]

@@ -1,0 +1,517 @@
+[
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\access_summary.json",
+    "archive": "access_summary.json",
+    "sha256": "ec3dbcd517811d5488c5dce0e0e491f500c2d29e3b851e7abc8b2633ef8bcbcf"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\coverage.json",
+    "archive": "coverage.json",
+    "sha256": "69111f2ffcf3da2c34dad1649906e305353f03a772ee687141a12b4fb8b23ee0"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\decision.json",
+    "archive": "decision.json",
+    "sha256": "2ae55ad7edabbed8375535e79f370b9cd8181fd6946e71220501e641a8f456b5"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\environment.json",
+    "archive": "environment.json",
+    "sha256": "75a843030acd8a8974e56cfc04cd2593f2eec310635c24c535d0d49336223cdd"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\final_verification.json",
+    "archive": "final_verification.json",
+    "sha256": "f4afae6c954e6e3d6cf3650e100aa93fd1887323901489a49118c7ecd29260bb"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\frozen_selection.json",
+    "archive": "frozen_selection.json",
+    "sha256": "c6fd356d8251ac51ee020004c217d84f582821aeccd3a45860ccd76856493895"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\plan.json",
+    "archive": "plan.json",
+    "sha256": "04b76e7f08758a790d3dde3da79f9df75ba114aca0ffd2344f32641fa04ec897"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\prediction_concentration.json",
+    "archive": "prediction_concentration.json",
+    "sha256": "3fcd5610427a174246af43615e79c79b89d50f95cbda14d95a29435fc305a570"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\preservation_after.json",
+    "archive": "preservation_after.json",
+    "sha256": "91be61ee5a44a1d3eab1ed6a67e74224980856d23926c40d716cd3800ce631b7"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\preservation_before.json",
+    "archive": "preservation_before.json",
+    "sha256": "3e82ab622fa0d7a9321a174ec50c0810f3da6546b0279d0d4145eece567bb3b2"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\raw_metadata_before.json",
+    "archive": "raw_metadata_before.json",
+    "sha256": "21f6a00ee3e41f912fcd298a5a46e3ed1000b33168badb8fd886b573a9b6b904"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\real_minus_controls.json",
+    "archive": "real_minus_controls.json",
+    "sha256": "d8d30e057170fa818e36c085cd484efe6567afc88eb0cdc98a182ab5e6b96ba2"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\training_cv_all_scores.json",
+    "archive": "training_cv_all_scores.json",
+    "sha256": "d966853c15a0de566f9f513696758fbd80938d5c3a606a7943e72891e0f1aba4"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\training_cv_summary.json",
+    "archive": "training_cv_summary.json",
+    "sha256": "e20241b2292f532bec494a0d73472e12c5c185b6ef6930826115d1f6ca5d5588"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\controls.py",
+    "archive": "implementation\\controls.py",
+    "sha256": "6b8e92527c16b716d933e2e63204f9ccbe23e2eeb2e0b7fd196daa5877119d65"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\gru_pilot.py",
+    "archive": "implementation\\gru_pilot.py",
+    "sha256": "a461a4db5ab05b9565ed832e03cb1fcfa7bff484ffb6472e8176535e9722fe37"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\gru_retrieval_loss.py",
+    "archive": "implementation\\gru_retrieval_loss.py",
+    "sha256": "246d51d1d811f36424a4a3d1e281d728ad6435d7c8d0dfdcf401ccaf9a3a1ce8"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\gru_retrieval_loss_v1_20261101.json",
+    "archive": "implementation\\gru_retrieval_loss_v1_20261101.json",
+    "sha256": "746fbf118cc5d510147b2fecae186c4e565aa05c01bbddcde7269c8645766ac9"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\incremental_ridge.py",
+    "archive": "implementation\\incremental_ridge.py",
+    "sha256": "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\prepare_gru_loss_comparison.py",
+    "archive": "implementation\\prepare_gru_loss_comparison.py",
+    "sha256": "ea1c58447fabac1975d4395052aecd6c589eaa37a9778d5b0d573865b7a90aba"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\retrieval.py",
+    "archive": "implementation\\retrieval.py",
+    "sha256": "d57d88565161081761726f2ddd15da706128634396d9625abf56cc134a68bcee"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\run_gru_retrieval_loss.py",
+    "archive": "implementation\\run_gru_retrieval_loss.py",
+    "sha256": "dc70cc7b4e1f1d2933d4588fe959881a817a4a22d48baebd7a2175fe664da18d"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\spectral_pilot.py",
+    "archive": "implementation\\spectral_pilot.py",
+    "sha256": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\test_gru_pilot.py",
+    "archive": "implementation\\test_gru_pilot.py",
+    "sha256": "0b2e849471a85ec63ae3ac86c36d23fe322d1dbf83f27f8535c3d812c4d33afd"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\implementation\\test_gru_retrieval_loss.py",
+    "archive": "implementation\\test_gru_retrieval_loss.py",
+    "sha256": "1265626849ea9fea71f3f960fcd5b6732c9d6128aa116f7727a55e6629ddb0df"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\architecture.json",
+    "archive": "cv_ZDM\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\provenance.json",
+    "archive": "cv_ZDM\\provenance.json",
+    "sha256": "fdba4e37d30013d8bfadf969fb503ab966031ea783b89e8db02a6a5c6b38411a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\scores.json",
+    "archive": "cv_ZDM\\scores.json",
+    "sha256": "cd243380e3f00e6e4d036e5d23a2c739d99dc0b0546ba5d8c76ecdca7df9cccb"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\architecture.json",
+    "archive": "cv_ZDN\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\provenance.json",
+    "archive": "cv_ZDN\\provenance.json",
+    "sha256": "51ce2091634b2ef47771a852569277b56a64c5f87a77565c18ea654d1c3bb5fd"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\scores.json",
+    "archive": "cv_ZDN\\scores.json",
+    "sha256": "6f88ba865cb7158f71bb268ded2b8fbb43490836c5220b6920e95b9fec566314"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\architecture.json",
+    "archive": "cv_ZGW\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\provenance.json",
+    "archive": "cv_ZGW\\provenance.json",
+    "sha256": "af1db2c2c85d9bf0b6b4d0ef5dc56f692e79384a584122197ac1341d44ac0af4"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\scores.json",
+    "archive": "cv_ZGW\\scores.json",
+    "sha256": "7984ace80f7dde0b9425b9796f6ae19e0899c36d35cb3789f8d5b7deb6366e8d"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\architecture.json",
+    "archive": "cv_ZJM\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\provenance.json",
+    "archive": "cv_ZJM\\provenance.json",
+    "sha256": "48e3fd8d83041921c052634bd04ffc5c907fe8e13601784160acdd1f63d266e4"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\scores.json",
+    "archive": "cv_ZJM\\scores.json",
+    "sha256": "3e3896d4f40391329d2cfbe7034a59ae2c719d327c81d3df85b01bd444f702c4"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\architecture.json",
+    "archive": "cv_ZJN\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\provenance.json",
+    "archive": "cv_ZJN\\provenance.json",
+    "sha256": "bb88d55c3875ae5cfd8846e9b9d55f47db8644469fa2e7e29c63820d36857d0a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\scores.json",
+    "archive": "cv_ZJN\\scores.json",
+    "sha256": "16836c4e0a080e3835fd85a5d30dc0fd319e47b3fb7a9716da68b480c1bc8f55"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\architecture.json",
+    "archive": "cv_ZKH\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\provenance.json",
+    "archive": "cv_ZKH\\provenance.json",
+    "sha256": "3a9d1ab7678dbd75e1310e9643782274b7142a0ad0455ca6e889452966cfbf47"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\scores.json",
+    "archive": "cv_ZKH\\scores.json",
+    "sha256": "d31078176e43f13c5193c823801e4fd6289bef00f446207a6a69941c02c66415"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\architecture.json",
+    "archive": "cv_ZMG\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\provenance.json",
+    "archive": "cv_ZMG\\provenance.json",
+    "sha256": "bca0f29b802ce98b025648ed79cd36efca41c69916e847e82fa9975d478f5246"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\scores.json",
+    "archive": "cv_ZMG\\scores.json",
+    "sha256": "d7dab5832cd9bca98821f41471a3314278473576e53acf934ff4147ce8dca071"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\architecture.json",
+    "archive": "cv_ZPH\\architecture.json",
+    "sha256": "b58d1043ed65ba3ff26a4ee3548dd151d565d2f31795381fd547dfc3e23facb3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\provenance.json",
+    "archive": "cv_ZPH\\provenance.json",
+    "sha256": "ff9354c4b8362c371034dfc7eb0d8162a37cb5d1f83f444a39e7a51500b477ac"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\scores.json",
+    "archive": "cv_ZPH\\scores.json",
+    "sha256": "01bf8ac1d2c22d5de7f04ea2607f29349e0d8fd53aa53ae07f848a847e4e7cd3"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\class_shuffled\\history.json",
+    "archive": "cv_ZDM\\class_shuffled\\history.json",
+    "sha256": "2b9b8c9a7ed1c6023987fec6a2def226cb03617ffee43b361de9ec836a829be8"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\matched_gaussian\\history.json",
+    "archive": "cv_ZDM\\matched_gaussian\\history.json",
+    "sha256": "f6025de4efa90ab69f086a4f7af1f4c2c100f0feba5e026fe0c586ac0e0d6d44"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\mean_eeg\\history.json",
+    "archive": "cv_ZDM\\mean_eeg\\history.json",
+    "sha256": "627d53eb1bea9661e5d63c682feed0cda12bf5d10380e583ec11aa41f8e36069"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\missingness_only\\history.json",
+    "archive": "cv_ZDM\\missingness_only\\history.json",
+    "sha256": "4aeb683bc448cec74f20c715a26d0210ad89c9d8fb9d002cf603e1d82d3eb375"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\real_eeg\\history.json",
+    "archive": "cv_ZDM\\real_eeg\\history.json",
+    "sha256": "9349e9a113f8db33db8230da998f56f8752c2e00f6e90d712f99985494b0e230"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDM\\word_order_shuffled\\history.json",
+    "archive": "cv_ZDM\\word_order_shuffled\\history.json",
+    "sha256": "49c27bb70ce3c32913018185e5b966fd30222ece911b304de7cd1fd7aabc281d"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\class_shuffled\\history.json",
+    "archive": "cv_ZDN\\class_shuffled\\history.json",
+    "sha256": "700ba2e0ad0b4cdf9dac8b88cf02ece7048e1e350b642007d94df3314283c700"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\matched_gaussian\\history.json",
+    "archive": "cv_ZDN\\matched_gaussian\\history.json",
+    "sha256": "1cc2b3d1333e20409aec2bb6fb503fce37e2fb5abd5c755f6490fd7bb6597cd2"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\mean_eeg\\history.json",
+    "archive": "cv_ZDN\\mean_eeg\\history.json",
+    "sha256": "babea4e107028321ed4ac7f5c105b75772eb2c229e9f5de3532147b4c53053e4"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\missingness_only\\history.json",
+    "archive": "cv_ZDN\\missingness_only\\history.json",
+    "sha256": "5de2dc1e2ba794ad9439799661c43bffb99aea335e6480eb712df2be3018b241"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\real_eeg\\history.json",
+    "archive": "cv_ZDN\\real_eeg\\history.json",
+    "sha256": "ece70b0387c2924a97b3a62efae463623e6ca1add5ba9da78142218c0c4c62ad"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZDN\\word_order_shuffled\\history.json",
+    "archive": "cv_ZDN\\word_order_shuffled\\history.json",
+    "sha256": "c218baf3ca4323416052812a0a8cb3b2bc911c74667201fe5d56df4012eefbde"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\class_shuffled\\history.json",
+    "archive": "cv_ZGW\\class_shuffled\\history.json",
+    "sha256": "21396d5c574ca360a784c7f59a8a8119d27cc60c359d5cd9b59ca3b548d21efa"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\matched_gaussian\\history.json",
+    "archive": "cv_ZGW\\matched_gaussian\\history.json",
+    "sha256": "ce5a4db05a6497559dfc9703c6231c7e89cf5066e9a1ea0ecb3df27a582a610a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\mean_eeg\\history.json",
+    "archive": "cv_ZGW\\mean_eeg\\history.json",
+    "sha256": "203122ffe8604a28b40e749fbc80c62ce634e04f36efdc818778bf1c3c25d305"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\missingness_only\\history.json",
+    "archive": "cv_ZGW\\missingness_only\\history.json",
+    "sha256": "2321e3539392114541ec311b1d132d2e7f205f27ed7c57ded8ca49d5792f7e66"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\real_eeg\\history.json",
+    "archive": "cv_ZGW\\real_eeg\\history.json",
+    "sha256": "b4de753f68f7e544fd036605dbc1d1599ecd17f071f42e9277d362192a336eb6"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZGW\\word_order_shuffled\\history.json",
+    "archive": "cv_ZGW\\word_order_shuffled\\history.json",
+    "sha256": "dea271d1c93002d8a1b3da8f26e46b7df6a8c7493b168695e334479cebcb81f2"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\class_shuffled\\history.json",
+    "archive": "cv_ZJM\\class_shuffled\\history.json",
+    "sha256": "e567a1ea3e2be6beb8628a91aa59dd7afc59da6db24dbd71a153d8e40d9090e9"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\matched_gaussian\\history.json",
+    "archive": "cv_ZJM\\matched_gaussian\\history.json",
+    "sha256": "dbc20284cd6b7b2d5e04f7153e537c1cd71b71f91ddcdb5239b213fefff18543"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\mean_eeg\\history.json",
+    "archive": "cv_ZJM\\mean_eeg\\history.json",
+    "sha256": "72d2ce2517a2f3d4c0c4ca52f179a3967de9e397c90c2a6a92d0d161fc6923fd"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\missingness_only\\history.json",
+    "archive": "cv_ZJM\\missingness_only\\history.json",
+    "sha256": "8b2b64e14273261eec6f2e34a72cb6aa2f5aec800797cc4a6aba3d23d7509d35"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\real_eeg\\history.json",
+    "archive": "cv_ZJM\\real_eeg\\history.json",
+    "sha256": "f8cd37a0dcc9ad16a8b2fbf3ecb0fce5a0b63a3f94ec929f372a2f728eea668b"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJM\\word_order_shuffled\\history.json",
+    "archive": "cv_ZJM\\word_order_shuffled\\history.json",
+    "sha256": "c1abbceb863df36238cf453cbb61b53779fb25a95d6a342a2422f53cbf3423df"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\class_shuffled\\history.json",
+    "archive": "cv_ZJN\\class_shuffled\\history.json",
+    "sha256": "c346bfeddeab01ed1b0fbb1f155779eaedead026c35b8e907e0c167cdb159c1a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\matched_gaussian\\history.json",
+    "archive": "cv_ZJN\\matched_gaussian\\history.json",
+    "sha256": "b3d8e626be17b02b0b8286c45015dd634c4b93fd4e4e3b2c7df3a1a508f49049"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\mean_eeg\\history.json",
+    "archive": "cv_ZJN\\mean_eeg\\history.json",
+    "sha256": "81ec900b485177552d56758510f2dad4b81f42799315bcb28f09f3b2a12e3369"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\missingness_only\\history.json",
+    "archive": "cv_ZJN\\missingness_only\\history.json",
+    "sha256": "9b14ea1b8da5cc7f02ded82c9eced80bafa7008f5d17d4ac59d4a1f55b898a6e"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\real_eeg\\history.json",
+    "archive": "cv_ZJN\\real_eeg\\history.json",
+    "sha256": "0c050a67bcd0ce8da405bd8ea15a2b030b9987612c93266b0dd766268f2c218d"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZJN\\word_order_shuffled\\history.json",
+    "archive": "cv_ZJN\\word_order_shuffled\\history.json",
+    "sha256": "0c9ccdae6cba3cb11996055fca4176f578e9608fa3f2fc65698dc7283d892773"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\class_shuffled\\history.json",
+    "archive": "cv_ZKH\\class_shuffled\\history.json",
+    "sha256": "581b4d27054be767b7619f690161d645f1d5e23e9fa7c28e22ed32ab26f27754"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\matched_gaussian\\history.json",
+    "archive": "cv_ZKH\\matched_gaussian\\history.json",
+    "sha256": "887678912b7045654c1cd26b0c30c81568b2d974f78af8732e723d7293e8514f"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\mean_eeg\\history.json",
+    "archive": "cv_ZKH\\mean_eeg\\history.json",
+    "sha256": "1d162d4b51609a641112aa704e6904abd905fbcf2749c3507ca4fe9a13253a0b"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\missingness_only\\history.json",
+    "archive": "cv_ZKH\\missingness_only\\history.json",
+    "sha256": "720f3558ca8012e252d55a9fbf794ea289b2656871bd6a41fd52d654ddbace6d"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\real_eeg\\history.json",
+    "archive": "cv_ZKH\\real_eeg\\history.json",
+    "sha256": "285fdd05dd1290f522762799cc5f1bcf9600ba1d3f21ab19acf3725029f8b8e8"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZKH\\word_order_shuffled\\history.json",
+    "archive": "cv_ZKH\\word_order_shuffled\\history.json",
+    "sha256": "4253fff8d85e3ddd13f598094361ba3044b555bf5d9ac5e32510a538718bccd7"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\class_shuffled\\history.json",
+    "archive": "cv_ZMG\\class_shuffled\\history.json",
+    "sha256": "00021dbaa1c5b1f4512aaf01d954c0086d3d61b5024eef0538d121499403964a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\matched_gaussian\\history.json",
+    "archive": "cv_ZMG\\matched_gaussian\\history.json",
+    "sha256": "cecc3db2ad33bef2cc552f270c96d7e4df9ac5d5d3832ab5add56d0bb3a2ae75"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\mean_eeg\\history.json",
+    "archive": "cv_ZMG\\mean_eeg\\history.json",
+    "sha256": "11ac1bbc91131c035662ec0daa05e187d08be43550c059b099a0ce1017d80020"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\missingness_only\\history.json",
+    "archive": "cv_ZMG\\missingness_only\\history.json",
+    "sha256": "3c82f591e5d01d81476e1a546419608600fd018b386f245a317596c3d3681adb"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\real_eeg\\history.json",
+    "archive": "cv_ZMG\\real_eeg\\history.json",
+    "sha256": "8efad043e840c94e8c65464d16e77bf5288101cccf5356b59d23112c34ebf23a"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZMG\\word_order_shuffled\\history.json",
+    "archive": "cv_ZMG\\word_order_shuffled\\history.json",
+    "sha256": "6fa8206654a658d3f6d90576919fca48f40a667ea4963dc5e25a978e3a8c454b"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\class_shuffled\\history.json",
+    "archive": "cv_ZPH\\class_shuffled\\history.json",
+    "sha256": "1de058cce2e93b55ee6111bd1b05657bc91e38ce058d3329606a45f10557463c"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\matched_gaussian\\history.json",
+    "archive": "cv_ZPH\\matched_gaussian\\history.json",
+    "sha256": "06b2802ed0845553d5bf8552cebd6f855f72a87d24af1b421592e758b66e96ec"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\mean_eeg\\history.json",
+    "archive": "cv_ZPH\\mean_eeg\\history.json",
+    "sha256": "6e2694c33f9e68767518d54e6043eee1b3879fe8a53b398922efb1e7db7d30a9"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\missingness_only\\history.json",
+    "archive": "cv_ZPH\\missingness_only\\history.json",
+    "sha256": "2232440a1412dc21201ba53b01c09e9450aff4b86d1dd8aaf1bd2f91517c2c10"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\real_eeg\\history.json",
+    "archive": "cv_ZPH\\real_eeg\\history.json",
+    "sha256": "50786900d56ca4f6405610a3f23b97bc66e400cf4b66e807222710fa34989ed8"
+  },
+  {
+    "source": "results\\gru_retrieval_loss_v1_20261101\\cv_ZPH\\word_order_shuffled\\history.json",
+    "archive": "cv_ZPH\\word_order_shuffled\\history.json",
+    "sha256": "fda4c44fd965f9704e1bdabdf98d4577985be439a4ceb9000b99b2da8e2cd221"
+  },
+  {
+    "source": "scripts\\finalize_gru_loss_comparison.py",
+    "archive": "reporting\\finalize_gru_loss_comparison.py",
+    "sha256": "0ebf2074db308987c6c44ff9c27ae0f9403b35b9097a43647105b7c338d97d95"
+  },
+  {
+    "source": "scripts\\audit_gru_predictions.py",
+    "archive": "reporting\\audit_gru_predictions.py",
+    "sha256": "d425211cebe1c8cd56cc006fac65b81d0a7fe5706c974fa9f60d682422703e20"
+  },
+  {
+    "source": "results\\gru_prediction_audit_v1_20261101\\fold_prediction_statistics.json",
+    "archive": "baseline_prediction_audit\\fold_prediction_statistics.json",
+    "sha256": "44521b9dc078c727a68e53ee63b7a36e6db84053dd958139c093a022ae2d9281"
+  },
+  {
+    "source": "results\\gru_prediction_audit_v1_20261101\\plan.json",
+    "archive": "baseline_prediction_audit\\plan.json",
+    "sha256": "37ce2290cf18a0f1b3590f1afc0eb123b42dd1ec204fb57f01b02c53658c04dc"
+  },
+  {
+    "source": "results\\gru_prediction_audit_v1_20261101\\summary.json",
+    "archive": "baseline_prediction_audit\\summary.json",
+    "sha256": "ad59c375852bdd55fa413e94cd8d11b0fdde89188efd46cb527adaa0ae58bcbc"
+  },
+  {
+    "source": "results\\gru_prediction_audit_v1_20261101\\verification.json",
+    "archive": "baseline_prediction_audit\\verification.json",
+    "sha256": "b43a59f0e35b833daa89f625c72fc23ad24c7cba7901883a952306c85357c98b"
+  }
+]

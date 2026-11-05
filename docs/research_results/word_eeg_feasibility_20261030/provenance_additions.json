@@ -1,0 +1,27 @@
+[
+  {
+    "source": "data\\raw\\zuco1\\download_plan.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\source_plans\\zuco1_download_plan.json",
+    "sha256": "990789fa71561fdd6b7b80f434a2c54f6c6229227824a5cc99adfeb72cc4d3a7"
+  },
+  {
+    "source": "data\\raw\\zuco2\\download_plan.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\source_plans\\zuco2_download_plan.json",
+    "sha256": "4438c0291072128339eaa7493f5c5e5783a7f00caa8ae5551109ab001e16a50c"
+  },
+  {
+    "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\splits.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\source_plans\\zuco1_saved_splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "src\\eeg_decoding\\data\\mat5.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\existing_mat5_reader.py",
+    "sha256": "dbdfffdc869d4ffcbd86f16884ac19dc3fbc00126cda27ddff6ad1e2ed122f5b"
+  },
+  {
+    "source": "src\\eeg_decoding\\data\\dataset.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\existing_dataset.py",
+    "sha256": "bf2cb139fb9aa50fdd847e22fad7e9d445953c721f452e33782061b653d4e5aa"
+  }
+]

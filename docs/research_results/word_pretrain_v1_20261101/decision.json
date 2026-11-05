@@ -1,0 +1,14 @@
+{
+  "descriptive_gate_passed": false,
+  "checks": {
+    "fresh_equal_steps": false,
+    "fresh_same_sentence": false,
+    "pretrained_gaussian": false,
+    "pretrained_class_shuffled": false,
+    "pretrained_missingness": false,
+    "structural_only": false
+  },
+  "next_action": "Stop after fixed training CV; no expansion or outer/test evaluation",
+  "outer_evaluated": false,
+  "test_evaluated": false
+}

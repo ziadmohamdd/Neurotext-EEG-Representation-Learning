@@ -1,0 +1,50 @@
+[
+  {
+    "epoch": 1,
+    "training_candidate_ce": 5.926376023578497
+  },
+  {
+    "epoch": 2,
+    "training_candidate_ce": 5.679362284593372
+  },
+  {
+    "epoch": 3,
+    "training_candidate_ce": 5.5311060460147825
+  },
+  {
+    "epoch": 4,
+    "training_candidate_ce": 5.398123067321073
+  },
+  {
+    "epoch": 5,
+    "training_candidate_ce": 5.263014741337403
+  },
+  {
+    "epoch": 6,
+    "training_candidate_ce": 5.120463533807204
+  },
+  {
+    "epoch": 7,
+    "training_candidate_ce": 4.991569892496161
+  },
+  {
+    "epoch": 8,
+    "training_candidate_ce": 4.853728565908224
+  },
+  {
+    "epoch": 9,
+    "training_candidate_ce": 4.7414822945039985
+  },
+  {
+    "epoch": 10,
+    "training_candidate_ce": 4.618419655526619
+  },
+  {
+    "epoch": 11,
+    "training_candidate_ce": 4.503394353456952
+  },
+  {
+    "epoch": 12,
+    "training_candidate_ce": 4.395531966465061
+  }
+]

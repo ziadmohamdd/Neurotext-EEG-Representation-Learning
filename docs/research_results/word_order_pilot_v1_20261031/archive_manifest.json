@@ -1,0 +1,182 @@
+[
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\decision.json",
+    "archive": "decision.json",
+    "sha256": "b6bb304906ad88caf83f45b9c37f6b457d3b68633020efc425cb60b2cea80766"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\feature_view.json",
+    "archive": "feature_view.json",
+    "sha256": "102fbb0ffeea23ba8525587c1ba42bf7351dfa7a61711436dd04e2a0edb3ffc1"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\frozen_selection.json",
+    "archive": "frozen_selection.json",
+    "sha256": "4de9d6abdc92aa99f24d5681f11c9da9e64d0d92a01c57f3c32578c259f8f797"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZDM_provenance.json",
+    "archive": "inner_fold_ZDM_provenance.json",
+    "sha256": "8c8aab99fc09b18cb2f74784f15b0bc57b6ba3cd913cfee9940ea8a1edd135aa"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZDN_provenance.json",
+    "archive": "inner_fold_ZDN_provenance.json",
+    "sha256": "0d82e56af11321998188c1a4c35fd86a5534e46a73db55643bb66adffea39385"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZGW_provenance.json",
+    "archive": "inner_fold_ZGW_provenance.json",
+    "sha256": "579bf7078273a67293d9cd52a7c59cb3014e29276ae3247a92f3897332fb80ab"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZJM_provenance.json",
+    "archive": "inner_fold_ZJM_provenance.json",
+    "sha256": "3aa6413226b1de17f47d5711fb263cc8e77114c4fc405bd6a6827cd63ee536fc"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZJN_provenance.json",
+    "archive": "inner_fold_ZJN_provenance.json",
+    "sha256": "5058fa92a1d16bdc7049e15b7cae4593f17c20b11b6add4244d7e9ef8d7aaf59"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZKH_provenance.json",
+    "archive": "inner_fold_ZKH_provenance.json",
+    "sha256": "eb88081703f81adc7d5fd68cbe55a9cb9160570617eacd5af6a2b0bdf1bcdfd0"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZMG_provenance.json",
+    "archive": "inner_fold_ZMG_provenance.json",
+    "sha256": "bc3e7c1e4eb76d1ddfd0b2f80f6492d62955de51ab65edb95dfd1790af73cb13"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_fold_ZPH_provenance.json",
+    "archive": "inner_fold_ZPH_provenance.json",
+    "sha256": "8c97a009a2ff8b2f7bd410d9a2c6c5cd2d6d5e7a2ea6dacc852da7ec6a1fb98c"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\inner_training_scores.json",
+    "archive": "inner_training_scores.json",
+    "sha256": "e9255d4d621bcaa04f8410ae245463a3a6805f1c5eed4d59c69fd712e85a5eba"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\plan.json",
+    "archive": "plan.json",
+    "sha256": "ac828b5e2cf6d445893d661bb87e45bf09850faf70caadd28716adcaaa4293aa"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\preservation_after.json",
+    "archive": "preservation_after.json",
+    "sha256": "4fdaf9e89681aac6a07abd5758c36eceb8576a299f1da86b20f48d06490f26e7"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\preservation_before.json",
+    "archive": "preservation_before.json",
+    "sha256": "189e9e02dbc2e93d4c25dbffa4cf803b08ae047e28bb725548d2c58aa5c9e701"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\real_minus_controls.json",
+    "archive": "real_minus_controls.json",
+    "sha256": "4dceda79d68c75dbfb1343a81e4c3a09883519d2c3e02978ee6d64a19ec5af97"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\validation_summary.json",
+    "archive": "validation_summary.json",
+    "sha256": "c405da8dc0ba73219ca5d4420ec53ad1ae9f448070e2e5e6fc094e6c1468bcde"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\word_projection_provenance.json",
+    "archive": "word_projection_provenance.json",
+    "sha256": "33ed174a6f7bdf85840399ff29554f9b8badf75668daf200b5d8563577692873"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\class_shuffled\\validation.json",
+    "archive": "class_shuffled\\validation.json",
+    "sha256": "35751845dacc824d910cfdabc441bccf03c9ba14239b223d5cbf06aa9e4406e8"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\matched_gaussian\\validation.json",
+    "archive": "matched_gaussian\\validation.json",
+    "sha256": "7a49413b336fa5b208090f12829d264a9ced286b78976cfdde575de29bc28a2c"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\mean_real\\validation.json",
+    "archive": "mean_real\\validation.json",
+    "sha256": "ee26d6ac93bbf9f67673e4d69fdd39fe9f8b38dcf98f61cac0fbe749ee2a221d"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\missingness_only\\validation.json",
+    "archive": "missingness_only\\validation.json",
+    "sha256": "cc7d97c36d1d65d00b815ba47803a17e2bac04389bcdeee02f80e112290e040e"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\ordered_real\\validation.json",
+    "archive": "ordered_real\\validation.json",
+    "sha256": "72a1825070d92796f19bf11ec3d4ed73d72307c9ff3e52eb7d4e3ea779df257b"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\structural_only\\validation.json",
+    "archive": "structural_only\\validation.json",
+    "sha256": "e17fae37bc75ca1fc54c66e4e51b1a950e4c9c982f7db5929cf9457ae38f5020"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\word_order_shuffled\\validation.json",
+    "archive": "word_order_shuffled\\validation.json",
+    "sha256": "94db8380ffcc6ab00a4bcb4d6e68c39406618f6c71305d858b279cb73297bf1b"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\incremental_ridge.py",
+    "archive": "implementation\\incremental_ridge.py",
+    "sha256": "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\run_word_order_pilot.py",
+    "archive": "implementation\\run_word_order_pilot.py",
+    "sha256": "1242cc89525538902ac0ec6fb2fa08fbc40af017231962ebbcae72be7add855c"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\spectral_pilot.py",
+    "archive": "implementation\\spectral_pilot.py",
+    "sha256": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\test_word_order.py",
+    "archive": "implementation\\test_word_order.py",
+    "sha256": "79b68d2cf8cec1411263a44cbf86b977d763254471a0b9cf2fe65c02b83c935c"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\trt_view.py",
+    "archive": "implementation\\trt_view.py",
+    "sha256": "3cd0791aa889caeae6969cbf0b997d1256e5d13ce6e6b818e5c6e5f34715fbe7"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\word_order.py",
+    "archive": "implementation\\word_order.py",
+    "sha256": "9d5eb832a781010ab4abaeb0b59ec05ab700f24dc4c7feaeb78a017beaf3a0f6"
+  },
+  {
+    "source": "results\\word_order_pilot_v1_20261031\\implementation\\word_order_pilot_v1.json",
+    "archive": "implementation\\word_order_pilot_v1.json",
+    "sha256": "959a397805e825a2750de17e0b8678e2f09860ab1976c698a49e89a30ae4e7ef"
+  },
+  {
+    "source": "scripts\\report_word_order_pilot.py",
+    "archive": "reporting\\report_word_order_pilot.py",
+    "sha256": "a398a765e4aaeaa8399b1944bff404c88685caf32032e3099062e2f83ce2223b"
+  },
+  {
+    "source": "results/word_order_pilot_v1_20261031/validation_checks.json",
+    "archive": "validation_checks.json",
+    "sha256": "44ac662961545eb683221008b7a5a884658b743d90de55257210f44b8e831a1d"
+  },
+  {
+    "source": "scripts/validate_word_order_pilot.py",
+    "archive": "reporting/validate_word_order_pilot.py",
+    "sha256": "6e1e905d1c08cfa915fd15349fe75d84cfe726ba3610c4fe900f91cdb0b4001f"
+  },
+  {
+    "source": "scripts/show_accuracy.py",
+    "archive": "reporting/show_accuracy.py",
+    "sha256": "7344427e5b95420dfb15ae2cf6a98eca371a639f668ca35866488cfc5604f323"
+  }
+]

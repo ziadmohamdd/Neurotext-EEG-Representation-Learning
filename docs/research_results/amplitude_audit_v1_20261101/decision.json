@@ -1,0 +1,31 @@
+{
+  "gates": [
+    {
+      "head": "semantic_embedding",
+      "macro_recall_gaps": {
+        "structural_only": 0.0,
+        "structural_gaussian": 0.0
+      },
+      "positive_readers": {
+        "structural_only": 0,
+        "structural_gaussian": 0
+      },
+      "passed": false
+    },
+    {
+      "head": "known_sentence_class",
+      "macro_recall_gaps": {
+        "structural_only": 0.0,
+        "structural_gaussian": 0.0
+      },
+      "positive_readers": {
+        "structural_only": 0,
+        "structural_gaussian": 0
+      },
+      "passed": false
+    }
+  ],
+  "outer_validation_extracted": false,
+  "test_evaluated": false,
+  "next_action": "Stop training-only diagnostic; no additional search or outer evaluation"
+}

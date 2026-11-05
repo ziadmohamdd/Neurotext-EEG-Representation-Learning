@@ -1,0 +1,7 @@
+{
+  "prepare": ".\\.venv\\Scripts\\python.exe scripts/consolidate_evidence_review_v1.py --prepare",
+  "consolidate": ".\\.venv\\Scripts\\python.exe scripts/consolidate_evidence_review_v1.py",
+  "artifact_refresh": ".\\.venv\\Scripts\\python.exe scripts/consolidate_evidence_review_v1.py --refresh",
+  "execution": "Existing .venv; Python standard library only; base interpreter requires access outside sandbox",
+  "prohibited_actions_executed": []
+}

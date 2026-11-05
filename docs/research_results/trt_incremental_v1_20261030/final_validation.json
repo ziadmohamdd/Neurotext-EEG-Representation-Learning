@@ -1,0 +1,11 @@
+{
+  "archive_hash_matches": 23,
+  "prior_files_unchanged": 585,
+  "matched_combined_candidate_settings": 196,
+  "identical_saved_structural_preprocessing": true,
+  "matching_observations_candidates": true,
+  "model_rank_replays": 3,
+  "test_features_extracted": false,
+  "links": "passed",
+  "packaging_recovered_without_refit": true
+}

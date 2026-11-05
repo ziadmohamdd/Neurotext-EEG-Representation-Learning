@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "ZDM",
+    "sentence_id": "168",
+    "duration_seconds": 0.06,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZDM",
+    "sentence_id": "173",
+    "duration_seconds": 0.065,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZDM",
+    "sentence_id": "195",
+    "duration_seconds": 0.05,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZDN",
+    "sentence_id": "278",
+    "duration_seconds": 0.08,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZJM",
+    "sentence_id": "275",
+    "duration_seconds": 0.08,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZJS",
+    "sentence_id": "250",
+    "duration_seconds": 0.08,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  },
+  {
+    "subject": "ZMG",
+    "sentence_id": "71",
+    "duration_seconds": 0.03,
+    "reason": "suspect sentence segment: duration <= 0.1 seconds"
+  }
+]

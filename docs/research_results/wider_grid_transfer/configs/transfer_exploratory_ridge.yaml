@@ -1,0 +1,8 @@
+# Explicitly exploratory: cross-release participant independence is unknown.
+# Fitting/selection uses source only. Target pool includes shared sentence texts.
+seeds: [42]
+representations: [ridge]
+protocols: [exploratory_zuco1_to_zuco2, exploratory_zuco2_to_zuco1]
+controls: [real, gaussian, shuffled]
+quality_aware: [false]
+robustness: {}

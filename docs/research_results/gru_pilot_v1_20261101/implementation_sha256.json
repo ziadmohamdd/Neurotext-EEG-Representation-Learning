@@ -1,0 +1,12 @@
+{
+    "verify_gru_pilot.py":  "ca18865b486074362cccf950ea3d8defe5131149a19207a5088420f7347ca896",
+    "spectral_pilot.py":  "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353",
+    "gru_pilot_v1_20261101.json":  "2899049f7fc8fbb737811023cb935ee0d1dc87ac54ff12d5eabca0864427b416",
+    "run_gru_pilot.py":  "43079c48decaaf29b12f93868f91c371fe055bf433352dbb8ef083f207c974cf",
+    "test_gru_pilot.py":  "0b2e849471a85ec63ae3ac86c36d23fe322d1dbf83f27f8535c3d812c4d33afd",
+    "incremental_ridge.py":  "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788",
+    "controls.py":  "6b8e92527c16b716d933e2e63204f9ccbe23e2eeb2e0b7fd196daa5877119d65",
+    "report_gru_pilot.py":  "806bb17a83b323d224e6d3e678a3483d2192ba1ab03bbe69d4fdfd957eab46f4",
+    "gru_pilot.py":  "a461a4db5ab05b9565ed832e03cb1fcfa7bff484ffb6472e8176535e9722fe37",
+    "retrieval.py":  "d57d88565161081761726f2ddd15da706128634396d9625abf56cc134a68bcee"
+}

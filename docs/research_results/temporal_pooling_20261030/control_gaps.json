@@ -1,0 +1,34 @@
+[
+  {
+    "pooling": "global",
+    "comparison": "real_minus_gaussian",
+    "recall@1": 0.0,
+    "recall@5": 0.005859375,
+    "recall@10": 0.001953125,
+    "mrr": 0.00047036088228724626
+  },
+  {
+    "pooling": "global",
+    "comparison": "real_minus_shuffled",
+    "recall@1": 0.0,
+    "recall@5": -0.0078125,
+    "recall@10": -0.00390625,
+    "mrr": -0.0018233334792098835
+  },
+  {
+    "pooling": "four_segment",
+    "comparison": "real_minus_gaussian",
+    "recall@1": -0.001953125,
+    "recall@5": 0.0,
+    "recall@10": 0.001953125,
+    "mrr": -0.002260526867760248
+  },
+  {
+    "pooling": "four_segment",
+    "comparison": "real_minus_shuffled",
+    "recall@1": 0.0,
+    "recall@5": 0.00390625,
+    "recall@10": -0.00390625,
+    "mrr": 0.0004032320240275715
+  }
+]

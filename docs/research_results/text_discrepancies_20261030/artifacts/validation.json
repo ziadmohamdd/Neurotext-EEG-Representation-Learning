@@ -1,0 +1,18 @@
+{
+  "audit_tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_text_discrepancy_audit.py -q",
+    "result": "5 passed in 0.83s",
+    "skips": 0,
+    "scope": "bookkeeping only; no fits"
+  },
+  "input_hashes_verified": 18,
+  "protected_files_unchanged": 415,
+  "discrepancies_verified": 37,
+  "prepared_affected_observations": 408,
+  "qc_retained_affected_observations": 406,
+  "split_count_checks": "passed",
+  "report_local_links": "passed",
+  "training_launched": false,
+  "targets_modified": false,
+  "archive_copies_verified": 19
+}

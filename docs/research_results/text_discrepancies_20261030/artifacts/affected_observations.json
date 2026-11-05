@@ -1,0 +1,4898 @@
+[
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZAB",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZGW",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": false,
+    "split": null
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJN",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKB",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "test"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKH",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZKW",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "val"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "51"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "61"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "64"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "65"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "66"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "69"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "71"
+    ],
+    "category": "canonical_key_difference",
+    "retained": false,
+    "split": null
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "73"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "91"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "98"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "203"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "10"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "23"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "24"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "26"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "35"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "45"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "100"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "106"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "114"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "122"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "140"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "150"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "154"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "167"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "180"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "194"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "227"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "235"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "241"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "248"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "251"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "252"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "255"
+    ],
+    "category": "canonical_key_difference",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    "category": "substantive_wording",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "295"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  },
+  {
+    "identity": [
+      "zuco1",
+      "ZPH",
+      "unspecified",
+      "nr",
+      "297"
+    ],
+    "category": "formatting_only",
+    "retained": true,
+    "split": "train"
+  }
+]

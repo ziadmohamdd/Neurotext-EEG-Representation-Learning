@@ -1,0 +1,27 @@
+seed: 42
+device: auto
+batch_size: 2
+gradient_accumulation_steps: 8
+embedding_dim: 128
+num_workers: 0
+pin_memory: true
+mixed_precision: fp16_if_supported
+cache_features: true
+checkpoint_every_epoch: true
+max_samples: 1600
+epochs: 50
+patience: 8
+learning_rate: 0.001
+weight_decay: 0.01
+gradient_clip: 1.0
+quality_aware: false
+text_model: sentence-transformers/all-MiniLM-L6-v2
+text_revision: null
+preprocessing:
+  target_sfreq: 200
+  low: 0.5
+  high: 45.0
+  notch: 50.0
+  already_filtered: false
+  artifact_threshold_uv: 200.0
+  artifact_policy: reject

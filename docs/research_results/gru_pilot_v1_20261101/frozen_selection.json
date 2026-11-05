@@ -1,0 +1,5 @@
+{
+  "common_epoch": 8,
+  "rule": "Common epoch maximizing equal-reader real_eeg Recall@1 across eight training-reader folds; ties prefer earlier epoch. All arms use that epoch.",
+  "outer_arrays_loaded": false
+}

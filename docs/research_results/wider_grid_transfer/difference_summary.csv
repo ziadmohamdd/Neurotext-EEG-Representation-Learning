@@ -1,0 +1,3 @@
+direction,mean_mrr_difference,split_sd_mrr_difference,mean_recall_at_1_difference_pp,split_sd_recall_at_1_difference_pp,positive_mrr_seeds
+zuco1_to_zuco2,-0.0008169847841461216,0.0008306526158668408,-0.06798096532970768,0.148161078978269,0
+zuco2_to_zuco1,0.0004503037955519325,0.0022374078201785968,0.04976609933313427,0.19881541112210788,2

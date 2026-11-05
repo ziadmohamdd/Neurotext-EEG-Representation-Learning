@@ -1,0 +1,2547 @@
+[
+  {
+    "subject": "ZAB",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZAB_NR.mat",
+    "source_sha256": "e1c8d551319fdd31de1b874551dfb0b0898f3b461e2e1a4a2ec327fe7829ef8c",
+    "source_slots": 300,
+    "prepared": 295,
+    "duration_qc_retained": 295,
+    "missing_slots": [
+      {
+        "index": 112,
+        "missing_eeg": true
+      },
+      {
+        "index": 162,
+        "missing_eeg": true
+      },
+      {
+        "index": 165,
+        "missing_eeg": true
+      },
+      {
+        "index": 166,
+        "missing_eeg": true
+      },
+      {
+        "index": 167,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 295,
+    "resampled_arrays_bitwise_matched": 295,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZAB_NR3_EEG.mat",
+      "sha256": "63a2a2b0ee6a6bafb712953d10e9c061c140366dadc10a8a2f6514d0db249ef1",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZAB_NR3';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZDM",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZDM_NR.mat",
+    "source_sha256": "2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d",
+    "source_slots": 300,
+    "prepared": 292,
+    "duration_qc_retained": 289,
+    "missing_slots": [
+      {
+        "index": 49,
+        "missing_eeg": true
+      },
+      {
+        "index": 99,
+        "missing_eeg": true
+      },
+      {
+        "index": 162,
+        "missing_eeg": true
+      },
+      {
+        "index": 199,
+        "missing_eeg": true
+      },
+      {
+        "index": 200,
+        "missing_eeg": true
+      },
+      {
+        "index": 238,
+        "missing_eeg": true
+      },
+      {
+        "index": 239,
+        "missing_eeg": true
+      },
+      {
+        "index": 268,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 292,
+    "resampled_arrays_bitwise_matched": 292,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [
+      {
+        "sentence_id": "168",
+        "duration_seconds": 0.06
+      },
+      {
+        "sentence_id": "173",
+        "duration_seconds": 0.065
+      },
+      {
+        "sentence_id": "195",
+        "duration_seconds": 0.05
+      }
+    ],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZDM_NR3_EEG.mat",
+      "sha256": "265b2508ff336386f1e22ab153a986a1d9fc4f1ce2ef0981e1381d80dec70697",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZDM_NR3';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZDN",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZDN_NR.mat",
+    "source_sha256": "ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604",
+    "source_slots": 300,
+    "prepared": 298,
+    "duration_qc_retained": 297,
+    "missing_slots": [
+      {
+        "index": 234,
+        "missing_eeg": true
+      },
+      {
+        "index": 265,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 298,
+    "resampled_arrays_bitwise_matched": 298,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [
+      {
+        "sentence_id": "278",
+        "duration_seconds": 0.08
+      }
+    ],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZDN_NR2_EEG.mat",
+      "sha256": "51be4815f1245343b08ac9dbffd403f06029e1d16e39dd62ddb59956a9d831fd",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZDN_NR2';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZGW",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZGW_NR.mat",
+    "source_sha256": "c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723",
+    "source_slots": 300,
+    "prepared": 281,
+    "duration_qc_retained": 281,
+    "missing_slots": [
+      {
+        "index": 28,
+        "missing_eeg": true
+      },
+      {
+        "index": 29,
+        "missing_eeg": true
+      },
+      {
+        "index": 48,
+        "missing_eeg": true
+      },
+      {
+        "index": 49,
+        "missing_eeg": true
+      },
+      {
+        "index": 50,
+        "missing_eeg": true
+      },
+      {
+        "index": 64,
+        "missing_eeg": true
+      },
+      {
+        "index": 65,
+        "missing_eeg": true
+      },
+      {
+        "index": 67,
+        "missing_eeg": true
+      },
+      {
+        "index": 69,
+        "missing_eeg": true
+      },
+      {
+        "index": 101,
+        "missing_eeg": true
+      },
+      {
+        "index": 113,
+        "missing_eeg": true
+      },
+      {
+        "index": 121,
+        "missing_eeg": true
+      },
+      {
+        "index": 138,
+        "missing_eeg": true
+      },
+      {
+        "index": 160,
+        "missing_eeg": true
+      },
+      {
+        "index": 198,
+        "missing_eeg": true
+      },
+      {
+        "index": 199,
+        "missing_eeg": true
+      },
+      {
+        "index": 211,
+        "missing_eeg": true
+      },
+      {
+        "index": 238,
+        "missing_eeg": true
+      },
+      {
+        "index": 273,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 281,
+    "resampled_arrays_bitwise_matched": 281,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZGW_NR4_EEG.mat",
+      "sha256": "3aec760916af888fc612c5390d7fa510f576140b97cbcdc838e343eca1867954",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZGW_NR4';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZJM",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZJM_NR.mat",
+    "source_sha256": "fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0",
+    "source_slots": 300,
+    "prepared": 258,
+    "duration_qc_retained": 257,
+    "missing_slots": [
+      {
+        "index": 2,
+        "missing_eeg": true
+      },
+      {
+        "index": 3,
+        "missing_eeg": true
+      },
+      {
+        "index": 5,
+        "missing_eeg": true
+      },
+      {
+        "index": 10,
+        "missing_eeg": true
+      },
+      {
+        "index": 11,
+        "missing_eeg": true
+      },
+      {
+        "index": 13,
+        "missing_eeg": true
+      },
+      {
+        "index": 22,
+        "missing_eeg": true
+      },
+      {
+        "index": 23,
+        "missing_eeg": true
+      },
+      {
+        "index": 26,
+        "missing_eeg": true
+      },
+      {
+        "index": 29,
+        "missing_eeg": true
+      },
+      {
+        "index": 33,
+        "missing_eeg": true
+      },
+      {
+        "index": 36,
+        "missing_eeg": true
+      },
+      {
+        "index": 39,
+        "missing_eeg": true
+      },
+      {
+        "index": 42,
+        "missing_eeg": true
+      },
+      {
+        "index": 47,
+        "missing_eeg": true
+      },
+      {
+        "index": 52,
+        "missing_eeg": true
+      },
+      {
+        "index": 53,
+        "missing_eeg": true
+      },
+      {
+        "index": 54,
+        "missing_eeg": true
+      },
+      {
+        "index": 56,
+        "missing_eeg": true
+      },
+      {
+        "index": 58,
+        "missing_eeg": true
+      },
+      {
+        "index": 60,
+        "missing_eeg": true
+      },
+      {
+        "index": 61,
+        "missing_eeg": true
+      },
+      {
+        "index": 64,
+        "missing_eeg": true
+      },
+      {
+        "index": 66,
+        "missing_eeg": true
+      },
+      {
+        "index": 68,
+        "missing_eeg": true
+      },
+      {
+        "index": 70,
+        "missing_eeg": true
+      },
+      {
+        "index": 73,
+        "missing_eeg": true
+      },
+      {
+        "index": 75,
+        "missing_eeg": true
+      },
+      {
+        "index": 78,
+        "missing_eeg": true
+      },
+      {
+        "index": 79,
+        "missing_eeg": true
+      },
+      {
+        "index": 80,
+        "missing_eeg": true
+      },
+      {
+        "index": 85,
+        "missing_eeg": true
+      },
+      {
+        "index": 91,
+        "missing_eeg": true
+      },
+      {
+        "index": 92,
+        "missing_eeg": true
+      },
+      {
+        "index": 101,
+        "missing_eeg": true
+      },
+      {
+        "index": 103,
+        "missing_eeg": true
+      },
+      {
+        "index": 109,
+        "missing_eeg": true
+      },
+      {
+        "index": 122,
+        "missing_eeg": true
+      },
+      {
+        "index": 131,
+        "missing_eeg": true
+      },
+      {
+        "index": 136,
+        "missing_eeg": true
+      },
+      {
+        "index": 138,
+        "missing_eeg": true
+      },
+      {
+        "index": 201,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 258,
+    "resampled_arrays_bitwise_matched": 258,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [
+      {
+        "sentence_id": "275",
+        "duration_seconds": 0.08
+      }
+    ],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZJM_NR6_EEG.mat",
+      "sha256": "fec7e2fd9d3430f7556907711aad3a2be4eb9b19f7c9767d03520a7939fedc89",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZJM_NR6';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZJN",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZJN_NR.mat",
+    "source_sha256": "93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15",
+    "source_slots": 300,
+    "prepared": 294,
+    "duration_qc_retained": 294,
+    "missing_slots": [
+      {
+        "index": 149,
+        "missing_eeg": true
+      },
+      {
+        "index": 151,
+        "missing_eeg": true
+      },
+      {
+        "index": 190,
+        "missing_eeg": true
+      },
+      {
+        "index": 198,
+        "missing_eeg": true
+      },
+      {
+        "index": 200,
+        "missing_eeg": true
+      },
+      {
+        "index": 210,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 294,
+    "resampled_arrays_bitwise_matched": 294,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZJN_NR4_EEG.mat",
+      "sha256": "c54f6e59ad453e952e727122fbf59811f48300ac4a5d5e452343d88ac784aee1",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZJN_NR4';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZJS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZJS_NR.mat",
+    "source_sha256": "ee156114b0a8f48007a74de02b13a72a0611af1590b0062eeb2a95bd36ea2d1c",
+    "source_slots": 300,
+    "prepared": 217,
+    "duration_qc_retained": 216,
+    "missing_slots": [
+      {
+        "index": 0,
+        "missing_eeg": true
+      },
+      {
+        "index": 1,
+        "missing_eeg": true
+      },
+      {
+        "index": 2,
+        "missing_eeg": true
+      },
+      {
+        "index": 3,
+        "missing_eeg": true
+      },
+      {
+        "index": 4,
+        "missing_eeg": true
+      },
+      {
+        "index": 5,
+        "missing_eeg": true
+      },
+      {
+        "index": 6,
+        "missing_eeg": true
+      },
+      {
+        "index": 7,
+        "missing_eeg": true
+      },
+      {
+        "index": 8,
+        "missing_eeg": true
+      },
+      {
+        "index": 9,
+        "missing_eeg": true
+      },
+      {
+        "index": 10,
+        "missing_eeg": true
+      },
+      {
+        "index": 11,
+        "missing_eeg": true
+      },
+      {
+        "index": 12,
+        "missing_eeg": true
+      },
+      {
+        "index": 13,
+        "missing_eeg": true
+      },
+      {
+        "index": 14,
+        "missing_eeg": true
+      },
+      {
+        "index": 15,
+        "missing_eeg": true
+      },
+      {
+        "index": 16,
+        "missing_eeg": true
+      },
+      {
+        "index": 17,
+        "missing_eeg": true
+      },
+      {
+        "index": 18,
+        "missing_eeg": true
+      },
+      {
+        "index": 19,
+        "missing_eeg": true
+      },
+      {
+        "index": 20,
+        "missing_eeg": true
+      },
+      {
+        "index": 21,
+        "missing_eeg": true
+      },
+      {
+        "index": 22,
+        "missing_eeg": true
+      },
+      {
+        "index": 23,
+        "missing_eeg": true
+      },
+      {
+        "index": 24,
+        "missing_eeg": true
+      },
+      {
+        "index": 25,
+        "missing_eeg": true
+      },
+      {
+        "index": 26,
+        "missing_eeg": true
+      },
+      {
+        "index": 27,
+        "missing_eeg": true
+      },
+      {
+        "index": 28,
+        "missing_eeg": true
+      },
+      {
+        "index": 29,
+        "missing_eeg": true
+      },
+      {
+        "index": 30,
+        "missing_eeg": true
+      },
+      {
+        "index": 31,
+        "missing_eeg": true
+      },
+      {
+        "index": 32,
+        "missing_eeg": true
+      },
+      {
+        "index": 33,
+        "missing_eeg": true
+      },
+      {
+        "index": 34,
+        "missing_eeg": true
+      },
+      {
+        "index": 35,
+        "missing_eeg": true
+      },
+      {
+        "index": 36,
+        "missing_eeg": true
+      },
+      {
+        "index": 37,
+        "missing_eeg": true
+      },
+      {
+        "index": 38,
+        "missing_eeg": true
+      },
+      {
+        "index": 39,
+        "missing_eeg": true
+      },
+      {
+        "index": 40,
+        "missing_eeg": true
+      },
+      {
+        "index": 41,
+        "missing_eeg": true
+      },
+      {
+        "index": 42,
+        "missing_eeg": true
+      },
+      {
+        "index": 43,
+        "missing_eeg": true
+      },
+      {
+        "index": 44,
+        "missing_eeg": true
+      },
+      {
+        "index": 45,
+        "missing_eeg": true
+      },
+      {
+        "index": 46,
+        "missing_eeg": true
+      },
+      {
+        "index": 47,
+        "missing_eeg": true
+      },
+      {
+        "index": 48,
+        "missing_eeg": true
+      },
+      {
+        "index": 49,
+        "missing_eeg": true
+      },
+      {
+        "index": 59,
+        "missing_eeg": true
+      },
+      {
+        "index": 69,
+        "missing_eeg": true
+      },
+      {
+        "index": 75,
+        "missing_eeg": true
+      },
+      {
+        "index": 88,
+        "missing_eeg": true
+      },
+      {
+        "index": 99,
+        "missing_eeg": true
+      },
+      {
+        "index": 104,
+        "missing_eeg": true
+      },
+      {
+        "index": 113,
+        "missing_eeg": true
+      },
+      {
+        "index": 115,
+        "missing_eeg": true
+      },
+      {
+        "index": 119,
+        "missing_eeg": true
+      },
+      {
+        "index": 138,
+        "missing_eeg": true
+      },
+      {
+        "index": 158,
+        "missing_eeg": true
+      },
+      {
+        "index": 159,
+        "missing_eeg": true
+      },
+      {
+        "index": 162,
+        "missing_eeg": true
+      },
+      {
+        "index": 167,
+        "missing_eeg": true
+      },
+      {
+        "index": 183,
+        "missing_eeg": true
+      },
+      {
+        "index": 195,
+        "missing_eeg": true
+      },
+      {
+        "index": 196,
+        "missing_eeg": true
+      },
+      {
+        "index": 213,
+        "missing_eeg": true
+      },
+      {
+        "index": 215,
+        "missing_eeg": true
+      },
+      {
+        "index": 225,
+        "missing_eeg": true
+      },
+      {
+        "index": 239,
+        "missing_eeg": true
+      },
+      {
+        "index": 242,
+        "missing_eeg": true
+      },
+      {
+        "index": 243,
+        "missing_eeg": true
+      },
+      {
+        "index": 245,
+        "missing_eeg": true
+      },
+      {
+        "index": 246,
+        "missing_eeg": true
+      },
+      {
+        "index": 249,
+        "missing_eeg": true
+      },
+      {
+        "index": 252,
+        "missing_eeg": true
+      },
+      {
+        "index": 258,
+        "missing_eeg": true
+      },
+      {
+        "index": 267,
+        "missing_eeg": true
+      },
+      {
+        "index": 272,
+        "missing_eeg": true
+      },
+      {
+        "index": 280,
+        "missing_eeg": true
+      },
+      {
+        "index": 298,
+        "missing_eeg": true
+      },
+      {
+        "index": 299,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 217,
+    "resampled_arrays_bitwise_matched": 217,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [
+      {
+        "sentence_id": "250",
+        "duration_seconds": 0.08
+      }
+    ],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZJS_NR6_EEG.mat",
+      "sha256": "35d223cd0f9892baa67ed6fd39357c6acfdd64384f8b37cbd12003e2e40090dc",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZJS_NR6';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZKB",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZKB_NR.mat",
+    "source_sha256": "93f510ebdc2b43624889c8d65be7856a8a6daa2cbbab96be0ef2778aff001238",
+    "source_slots": 300,
+    "prepared": 297,
+    "duration_qc_retained": 297,
+    "missing_slots": [
+      {
+        "index": 41,
+        "missing_eeg": true
+      },
+      {
+        "index": 99,
+        "missing_eeg": true
+      },
+      {
+        "index": 249,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 297,
+    "resampled_arrays_bitwise_matched": 297,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZKB_NR6_EEG.mat",
+      "sha256": "73ab1c1b239c15ab30c2f9328d000379f594cdf51492fb399d284717920b2017",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZKB_NR6';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZKH",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZKH_NR.mat",
+    "source_sha256": "fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d",
+    "source_slots": 300,
+    "prepared": 294,
+    "duration_qc_retained": 294,
+    "missing_slots": [
+      {
+        "index": 22,
+        "missing_eeg": true
+      },
+      {
+        "index": 211,
+        "missing_eeg": true
+      },
+      {
+        "index": 225,
+        "missing_eeg": true
+      },
+      {
+        "index": 226,
+        "missing_eeg": true
+      },
+      {
+        "index": 249,
+        "missing_eeg": true
+      },
+      {
+        "index": 299,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 294,
+    "resampled_arrays_bitwise_matched": 294,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZKH_NR4_EEG.mat",
+      "sha256": "838767cf059beef4e3ad07a5ec8fc3c3b8e6dc44cdc32c898fc7345da6bee533",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZKH_NR4';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZKW",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZKW_NR.mat",
+    "source_sha256": "f30d3f0fc58e9774f07b141545313a584232ae4972e4d492191c84f3051442f5",
+    "source_slots": 300,
+    "prepared": 296,
+    "duration_qc_retained": 296,
+    "missing_slots": [
+      {
+        "index": 49,
+        "missing_eeg": true
+      },
+      {
+        "index": 115,
+        "missing_eeg": true
+      },
+      {
+        "index": 157,
+        "missing_eeg": true
+      },
+      {
+        "index": 200,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 296,
+    "resampled_arrays_bitwise_matched": 296,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\gip_ZKW_NR6_EEG.mat",
+      "sha256": "1767aed0d4240113f8ae3337196b9812a26052f34c96efe5e4330dda5624d10d",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZMG",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZMG_NR.mat",
+    "source_sha256": "ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2",
+    "source_slots": 300,
+    "prepared": 287,
+    "duration_qc_retained": 286,
+    "missing_slots": [
+      {
+        "index": 48,
+        "missing_eeg": true
+      },
+      {
+        "index": 52,
+        "missing_eeg": true
+      },
+      {
+        "index": 79,
+        "missing_eeg": true
+      },
+      {
+        "index": 96,
+        "missing_eeg": true
+      },
+      {
+        "index": 99,
+        "missing_eeg": true
+      },
+      {
+        "index": 100,
+        "missing_eeg": true
+      },
+      {
+        "index": 137,
+        "missing_eeg": true
+      },
+      {
+        "index": 138,
+        "missing_eeg": true
+      },
+      {
+        "index": 139,
+        "missing_eeg": true
+      },
+      {
+        "index": 140,
+        "missing_eeg": true
+      },
+      {
+        "index": 157,
+        "missing_eeg": true
+      },
+      {
+        "index": 190,
+        "missing_eeg": true
+      },
+      {
+        "index": 252,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 287,
+    "resampled_arrays_bitwise_matched": 287,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [
+      {
+        "sentence_id": "71",
+        "duration_seconds": 0.03
+      }
+    ],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZMG_NR6_EEG.mat",
+      "sha256": "6846721c34877f6f67c14585b4edaba2becc8c60906b31bcadc746ee85b627a8",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZMG_NR6';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  },
+  {
+    "subject": "ZPH",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco1\\resultsZPH_NR.mat",
+    "source_sha256": "fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94",
+    "source_slots": 300,
+    "prepared": 247,
+    "duration_qc_retained": 247,
+    "missing_slots": [
+      {
+        "index": 50,
+        "missing_eeg": true
+      },
+      {
+        "index": 51,
+        "missing_eeg": true
+      },
+      {
+        "index": 52,
+        "missing_eeg": true
+      },
+      {
+        "index": 53,
+        "missing_eeg": true
+      },
+      {
+        "index": 54,
+        "missing_eeg": true
+      },
+      {
+        "index": 55,
+        "missing_eeg": true
+      },
+      {
+        "index": 56,
+        "missing_eeg": true
+      },
+      {
+        "index": 57,
+        "missing_eeg": true
+      },
+      {
+        "index": 58,
+        "missing_eeg": true
+      },
+      {
+        "index": 59,
+        "missing_eeg": true
+      },
+      {
+        "index": 60,
+        "missing_eeg": true
+      },
+      {
+        "index": 61,
+        "missing_eeg": true
+      },
+      {
+        "index": 62,
+        "missing_eeg": true
+      },
+      {
+        "index": 63,
+        "missing_eeg": true
+      },
+      {
+        "index": 64,
+        "missing_eeg": true
+      },
+      {
+        "index": 65,
+        "missing_eeg": true
+      },
+      {
+        "index": 66,
+        "missing_eeg": true
+      },
+      {
+        "index": 67,
+        "missing_eeg": true
+      },
+      {
+        "index": 68,
+        "missing_eeg": true
+      },
+      {
+        "index": 69,
+        "missing_eeg": true
+      },
+      {
+        "index": 70,
+        "missing_eeg": true
+      },
+      {
+        "index": 71,
+        "missing_eeg": true
+      },
+      {
+        "index": 72,
+        "missing_eeg": true
+      },
+      {
+        "index": 73,
+        "missing_eeg": true
+      },
+      {
+        "index": 74,
+        "missing_eeg": true
+      },
+      {
+        "index": 75,
+        "missing_eeg": true
+      },
+      {
+        "index": 76,
+        "missing_eeg": true
+      },
+      {
+        "index": 77,
+        "missing_eeg": true
+      },
+      {
+        "index": 78,
+        "missing_eeg": true
+      },
+      {
+        "index": 79,
+        "missing_eeg": true
+      },
+      {
+        "index": 80,
+        "missing_eeg": true
+      },
+      {
+        "index": 81,
+        "missing_eeg": true
+      },
+      {
+        "index": 82,
+        "missing_eeg": true
+      },
+      {
+        "index": 83,
+        "missing_eeg": true
+      },
+      {
+        "index": 84,
+        "missing_eeg": true
+      },
+      {
+        "index": 85,
+        "missing_eeg": true
+      },
+      {
+        "index": 86,
+        "missing_eeg": true
+      },
+      {
+        "index": 87,
+        "missing_eeg": true
+      },
+      {
+        "index": 88,
+        "missing_eeg": true
+      },
+      {
+        "index": 89,
+        "missing_eeg": true
+      },
+      {
+        "index": 90,
+        "missing_eeg": true
+      },
+      {
+        "index": 91,
+        "missing_eeg": true
+      },
+      {
+        "index": 92,
+        "missing_eeg": true
+      },
+      {
+        "index": 93,
+        "missing_eeg": true
+      },
+      {
+        "index": 94,
+        "missing_eeg": true
+      },
+      {
+        "index": 95,
+        "missing_eeg": true
+      },
+      {
+        "index": 96,
+        "missing_eeg": true
+      },
+      {
+        "index": 97,
+        "missing_eeg": true
+      },
+      {
+        "index": 98,
+        "missing_eeg": true
+      },
+      {
+        "index": 99,
+        "missing_eeg": true
+      },
+      {
+        "index": 203,
+        "missing_eeg": true
+      },
+      {
+        "index": 214,
+        "missing_eeg": true
+      },
+      {
+        "index": 264,
+        "missing_eeg": true
+      }
+    ],
+    "text_and_indices_matched": 247,
+    "resampled_arrays_bitwise_matched": 247,
+    "maximum_absolute_resampling_difference": 0.0,
+    "duration_exclusions": [],
+    "metadata": {
+      "source": "D:\\EEG_Project_Storage\\zuco1\\oip_ZPH_NR4_EEG.mat",
+      "sha256": "ce81533ffc30bde0f3a6487e5c0c40dd18faa086cf7c8d4c47a247bc24a14a2e",
+      "sfreq": 500.0,
+      "channels": [
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E15",
+        "E16",
+        "E18",
+        "E19",
+        "E20",
+        "E22",
+        "E23",
+        "E24",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "E31",
+        "E33",
+        "E34",
+        "E35",
+        "E36",
+        "E37",
+        "E38",
+        "E39",
+        "E40",
+        "E41",
+        "E42",
+        "E43",
+        "E44",
+        "E45",
+        "E46",
+        "E47",
+        "E50",
+        "E51",
+        "E52",
+        "E53",
+        "E54",
+        "E55",
+        "E57",
+        "E58",
+        "E59",
+        "E60",
+        "E61",
+        "E62",
+        "E64",
+        "E65",
+        "E66",
+        "E67",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E74",
+        "E75",
+        "E76",
+        "E77",
+        "E78",
+        "E79",
+        "E80",
+        "E82",
+        "E83",
+        "E84",
+        "E85",
+        "E86",
+        "E87",
+        "E89",
+        "E90",
+        "E91",
+        "E92",
+        "E93",
+        "E95",
+        "E96",
+        "E97",
+        "E98",
+        "E100",
+        "E101",
+        "E102",
+        "E103",
+        "E104",
+        "E105",
+        "E106",
+        "E108",
+        "E109",
+        "E110",
+        "E111",
+        "E112",
+        "E114",
+        "E115",
+        "E116",
+        "E117",
+        "E118",
+        "E120",
+        "E121",
+        "E122",
+        "E123",
+        "E124",
+        "Cz"
+      ],
+      "history": "\nEEG.etc.eeglabvers = '14.1.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.setname='ZPH_NR4';\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );"
+    },
+    "stored_metadata_hash_matches": true
+  }
+]

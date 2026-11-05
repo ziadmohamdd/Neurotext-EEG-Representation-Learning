@@ -1,0 +1,56 @@
+{
+  "real_eeg": {
+    "unique_top1_sentences": 6.375,
+    "largest_top1_share": 0.6296082495193156,
+    "effective_top1_sentences": 2.8443226642650115,
+    "mean_cosine_to_training_target_centroid": 0.9234567582607269,
+    "normalized_prediction_mean_norm": 0.9508765786886215,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.6128192320695686
+  },
+  "mean_eeg": {
+    "unique_top1_sentences": 6.25,
+    "largest_top1_share": 0.6672444020574432,
+    "effective_top1_sentences": 2.774179405409997,
+    "mean_cosine_to_training_target_centroid": 0.902570940554142,
+    "normalized_prediction_mean_norm": 0.9517148211598396,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.6120887148461982
+  },
+  "matched_gaussian": {
+    "unique_top1_sentences": 23.75,
+    "largest_top1_share": 0.3110553807090314,
+    "effective_top1_sentences": 11.123300913563675,
+    "mean_cosine_to_training_target_centroid": 0.8653723523020744,
+    "normalized_prediction_mean_norm": 0.8671678975224495,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.5806264936856882
+  },
+  "class_shuffled": {
+    "unique_top1_sentences": 2.375,
+    "largest_top1_share": 0.8589341253566332,
+    "effective_top1_sentences": 1.4282289921832785,
+    "mean_cosine_to_training_target_centroid": 0.9749965965747833,
+    "normalized_prediction_mean_norm": 0.9831846728920937,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.6303514039795928
+  },
+  "word_order_shuffled": {
+    "unique_top1_sentences": 6.625,
+    "largest_top1_share": 0.6517798428564527,
+    "effective_top1_sentences": 2.7298733405709443,
+    "mean_cosine_to_training_target_centroid": 0.9162901490926743,
+    "normalized_prediction_mean_norm": 0.9484953954815865,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.6111327184120419
+  },
+  "missingness_only": {
+    "unique_top1_sentences": 1.0,
+    "largest_top1_share": 1.0,
+    "effective_top1_sentences": 1.0,
+    "mean_cosine_to_training_target_centroid": 0.9989377856254578,
+    "normalized_prediction_mean_norm": 0.9996098652482033,
+    "constant_centroid_training_loss": 0.6341211795806885,
+    "observed_training_loss_at_selected_epoch": 0.6349909457110587
+  }
+}

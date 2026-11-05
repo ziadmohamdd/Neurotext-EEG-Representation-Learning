@@ -1,0 +1,17 @@
+{
+  "descriptive_screen_passed": false,
+  "checks": {
+    "mean_real_aggregate": true,
+    "matched_gaussian_aggregate": false,
+    "word_order_shuffled_aggregate": false,
+    "class_shuffled_aggregate": true,
+    "missingness_only_aggregate": false,
+    "structural_only_aggregate": false,
+    "ZJS_beats_matched_gaussian": false,
+    "ZJS_beats_structural_only": false,
+    "ZKW_beats_matched_gaussian": false,
+    "ZKW_beats_structural_only": false
+  },
+  "test_evaluated": false,
+  "next_action": "Stop; no tuning or test evaluation; report exploratory validation only"
+}

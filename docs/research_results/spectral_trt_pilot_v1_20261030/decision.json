@@ -1,0 +1,13 @@
+{
+  "useful_validation_advantage": false,
+  "strongest_control": "count_duration_only",
+  "real_minus_strongest_mrr": -0.06502587763310211,
+  "checks": {
+    "mrr_margin_over_strongest_control": false,
+    "recall_corroboration": false,
+    "zuco1:ZJS_mrr_above_all_controls": false,
+    "zuco1:ZKW_mrr_above_all_controls": false
+  },
+  "test_evaluated": false,
+  "interpretation": "Prespecified descriptive screen on one reused validation split; not statistical significance."
+}

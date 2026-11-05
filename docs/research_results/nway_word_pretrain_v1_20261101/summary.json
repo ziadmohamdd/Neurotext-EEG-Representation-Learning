@@ -1,0 +1,345 @@
+[
+  {
+    "N": 2,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.4920790677668326,
+    "chance": 0.5,
+    "minus_chance_pp": -0.7920932233167421
+  },
+  {
+    "N": 2,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.49384855989700077,
+    "chance": 0.5,
+    "minus_chance_pp": -0.6151440102999228
+  },
+  {
+    "N": 2,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.48818681081202686,
+    "chance": 0.5,
+    "minus_chance_pp": -1.1813189187973139
+  },
+  {
+    "N": 2,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.4920338978072808,
+    "chance": 0.5,
+    "minus_chance_pp": -0.7966102192719204
+  },
+  {
+    "N": 2,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.5022915014987204,
+    "chance": 0.5,
+    "minus_chance_pp": 0.2291501498720372
+  },
+  {
+    "N": 2,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.5382701090946693,
+    "chance": 0.5,
+    "minus_chance_pp": 3.8270109094669325
+  },
+  {
+    "N": 2,
+    "arm": "structural_only",
+    "expected_accuracy": 0.9043886409688702,
+    "chance": 0.5,
+    "minus_chance_pp": 40.438864096887016
+  },
+  {
+    "N": 5,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.1953094232513498,
+    "chance": 0.2,
+    "minus_chance_pp": -0.4690576748650199
+  },
+  {
+    "N": 5,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.19053952074276417,
+    "chance": 0.2,
+    "minus_chance_pp": -0.9460479257235838
+  },
+  {
+    "N": 5,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.1892735661996385,
+    "chance": 0.2,
+    "minus_chance_pp": -1.0726433800361508
+  },
+  {
+    "N": 5,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.18805832632451064,
+    "chance": 0.2,
+    "minus_chance_pp": -1.1941673675489373
+  },
+  {
+    "N": 5,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.20259472103289033,
+    "chance": 0.2,
+    "minus_chance_pp": 0.25947210328903236
+  },
+  {
+    "N": 5,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.23769721325850346,
+    "chance": 0.2,
+    "minus_chance_pp": 3.7697213258503446
+  },
+  {
+    "N": 5,
+    "arm": "structural_only",
+    "expected_accuracy": 0.7505570794719505,
+    "chance": 0.2,
+    "minus_chance_pp": 55.05570794719505
+  },
+  {
+    "N": 10,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.09712412200998216,
+    "chance": 0.1,
+    "minus_chance_pp": -0.28758779900178444
+  },
+  {
+    "N": 10,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.09233645406298167,
+    "chance": 0.1,
+    "minus_chance_pp": -0.7663545937018332
+  },
+  {
+    "N": 10,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.0916614658479974,
+    "chance": 0.1,
+    "minus_chance_pp": -0.8338534152002599
+  },
+  {
+    "N": 10,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.08800222114401601,
+    "chance": 0.1,
+    "minus_chance_pp": -1.1997778855983992
+  },
+  {
+    "N": 10,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.10274406245412274,
+    "chance": 0.1,
+    "minus_chance_pp": 0.2744062454122731
+  },
+  {
+    "N": 10,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.1282840816096772,
+    "chance": 0.1,
+    "minus_chance_pp": 2.8284081609677187
+  },
+  {
+    "N": 10,
+    "arm": "structural_only",
+    "expected_accuracy": 0.6281005906259756,
+    "chance": 0.1,
+    "minus_chance_pp": 52.81005906259756
+  },
+  {
+    "N": 20,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.047439115036405445,
+    "chance": 0.05,
+    "minus_chance_pp": -0.25608849635945574
+  },
+  {
+    "N": 20,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.045249055322266606,
+    "chance": 0.05,
+    "minus_chance_pp": -0.47509446777333975
+  },
+  {
+    "N": 20,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.04462558693722986,
+    "chance": 0.05,
+    "minus_chance_pp": -0.5374413062770145
+  },
+  {
+    "N": 20,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.040530888994325096,
+    "chance": 0.05,
+    "minus_chance_pp": -0.9469111005674907
+  },
+  {
+    "N": 20,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.052800618736279135,
+    "chance": 0.05,
+    "minus_chance_pp": 0.28006187362791324
+  },
+  {
+    "N": 20,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.07030992368068267,
+    "chance": 0.05,
+    "minus_chance_pp": 2.030992368068267
+  },
+  {
+    "N": 20,
+    "arm": "structural_only",
+    "expected_accuracy": 0.5136480136170077,
+    "chance": 0.05,
+    "minus_chance_pp": 46.36480136170078
+  },
+  {
+    "N": 50,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.018077805884692703,
+    "chance": 0.02,
+    "minus_chance_pp": -0.1922194115307297
+  },
+  {
+    "N": 50,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.018087600833804618,
+    "chance": 0.02,
+    "minus_chance_pp": -0.19123991661953826
+  },
+  {
+    "N": 50,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.018901658592696303,
+    "chance": 0.02,
+    "minus_chance_pp": -0.10983414073036969
+  },
+  {
+    "N": 50,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.014159624655140677,
+    "chance": 0.02,
+    "minus_chance_pp": -0.5840375344859323
+  },
+  {
+    "N": 50,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.022851427307998377,
+    "chance": 0.02,
+    "minus_chance_pp": 0.2851427307998377
+  },
+  {
+    "N": 50,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.03240488389574289,
+    "chance": 0.02,
+    "minus_chance_pp": 1.240488389574289
+  },
+  {
+    "N": 50,
+    "arm": "structural_only",
+    "expected_accuracy": 0.37881591147159466,
+    "chance": 0.02,
+    "minus_chance_pp": 35.88159114715946
+  },
+  {
+    "N": 100,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.008882214816065154,
+    "chance": 0.01,
+    "minus_chance_pp": -0.11177851839348461
+  },
+  {
+    "N": 100,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.009218884252397358,
+    "chance": 0.01,
+    "minus_chance_pp": -0.07811157476026419
+  },
+  {
+    "N": 100,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.010930890211116973,
+    "chance": 0.01,
+    "minus_chance_pp": 0.09308902111169731
+  },
+  {
+    "N": 100,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.006482789248494436,
+    "chance": 0.01,
+    "minus_chance_pp": -0.3517210751505564
+  },
+  {
+    "N": 100,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.012738539262686647,
+    "chance": 0.01,
+    "minus_chance_pp": 0.27385392626866467
+  },
+  {
+    "N": 100,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.01867497550435976,
+    "chance": 0.01,
+    "minus_chance_pp": 0.8674975504359759
+  },
+  {
+    "N": 100,
+    "arm": "structural_only",
+    "expected_accuracy": 0.2853449200429279,
+    "chance": 0.01,
+    "minus_chance_pp": 27.534492004292787
+  },
+  {
+    "N": 300,
+    "arm": "pretrained_real",
+    "expected_accuracy": 0.003945517825273292,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 0.06121844919399588
+  },
+  {
+    "N": 300,
+    "arm": "fresh_equal_steps",
+    "expected_accuracy": 0.003484732789788584,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 0.015139945645525031
+  },
+  {
+    "N": 300,
+    "arm": "fresh_same_sentence",
+    "expected_accuracy": 0.005294132153320638,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 0.19607988199873047
+  },
+  {
+    "N": 300,
+    "arm": "pretrained_gaussian",
+    "expected_accuracy": 0.0021604742351739076,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": -0.1172859098159426
+  },
+  {
+    "N": 300,
+    "arm": "pretrained_class_shuffled",
+    "expected_accuracy": 0.00578328343620803,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 0.24499501028746964
+  },
+  {
+    "N": 300,
+    "arm": "pretrained_missingness",
+    "expected_accuracy": 0.008976698622069693,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 0.5643365288736358
+  },
+  {
+    "N": 300,
+    "arm": "structural_only",
+    "expected_accuracy": 0.16112889594861327,
+    "chance": 0.0033333333333333335,
+    "minus_chance_pp": 15.779556261527993
+  }
+]

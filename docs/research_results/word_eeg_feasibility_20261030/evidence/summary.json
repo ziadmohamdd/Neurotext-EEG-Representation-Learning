@@ -1,0 +1,2161 @@
+{
+  "zuco1": {
+    "subjects": 12,
+    "counts": {
+      "words": 76891,
+      "sentences": 3600,
+      "joined_word_text_exact": 3500,
+      "literal_space_tokens_exact": 3500,
+      "whitespace_tokens_exact": 3500,
+      "fixated_words": 51176,
+      "raw_fixations": 89949,
+      "usable_raw_fixations": 89643,
+      "words_with_usable_raw": 51089,
+      "FFD_complete_8x105_words": 51024,
+      "SFD_complete_8x105_words": 28918,
+      "GD_complete_8x105_words": 51048,
+      "GPT_complete_8x105_words": 51073,
+      "TRT_complete_8x105_words": 51089
+    },
+    "source_slots": {
+      "sentence_observations": 3600,
+      "with_word_records": 3500,
+      "word_observations": 76891,
+      "exact_word_text_mapping_when_present": 3500,
+      "wordbounds_match_when_present": 3500,
+      "at_least_one_usable_raw_fixation": 3487,
+      "at_least_one_complete_TRT_word": 3487,
+      "raw_fixations": 89949,
+      "usable_raw_fixations": 89643,
+      "fixated_word_observations": 51176,
+      "FFD_complete_8x105_words": 51024,
+      "SFD_complete_8x105_words": 28918,
+      "GD_complete_8x105_words": 51048,
+      "GPT_complete_8x105_words": 51073,
+      "TRT_complete_8x105_words": 51089
+    },
+    "prepared": {
+      "sentence_observations": 3356,
+      "with_word_records": 3356,
+      "word_observations": 73200,
+      "exact_word_text_mapping_when_present": 3356,
+      "wordbounds_match_when_present": 3356,
+      "at_least_one_usable_raw_fixation": 3343,
+      "at_least_one_complete_TRT_word": 3343,
+      "raw_fixations": 85001,
+      "usable_raw_fixations": 84986,
+      "fixated_word_observations": 48695,
+      "FFD_complete_8x105_words": 48684,
+      "SFD_complete_8x105_words": 27727,
+      "GD_complete_8x105_words": 48685,
+      "GPT_complete_8x105_words": 48688,
+      "TRT_complete_8x105_words": 48687
+    },
+    "duration_qc": {
+      "sentence_observations": 3349,
+      "with_word_records": 3349,
+      "word_observations": 73085,
+      "exact_word_text_mapping_when_present": 3349,
+      "wordbounds_match_when_present": 3349,
+      "at_least_one_usable_raw_fixation": 3342,
+      "at_least_one_complete_TRT_word": 3342,
+      "raw_fixations": 84995,
+      "usable_raw_fixations": 84980,
+      "fixated_word_observations": 48691,
+      "FFD_complete_8x105_words": 48680,
+      "SFD_complete_8x105_words": 27725,
+      "GD_complete_8x105_words": 48681,
+      "GPT_complete_8x105_words": 48684,
+      "TRT_complete_8x105_words": 48683
+    },
+    "outside_prepared": {
+      "sentence_observations": 244,
+      "with_word_records": 144,
+      "word_observations": 3691,
+      "exact_word_text_mapping_when_present": 144,
+      "wordbounds_match_when_present": 144,
+      "at_least_one_usable_raw_fixation": 144,
+      "at_least_one_complete_TRT_word": 144,
+      "raw_fixations": 4948,
+      "usable_raw_fixations": 4657,
+      "fixated_word_observations": 2481,
+      "FFD_complete_8x105_words": 2340,
+      "SFD_complete_8x105_words": 1191,
+      "GD_complete_8x105_words": 2363,
+      "GPT_complete_8x105_words": 2385,
+      "TRT_complete_8x105_words": 2402
+    },
+    "mapping_disagreements_with_nonempty_words": [],
+    "missing_word_records": [
+      {
+        "subject": "ZJS",
+        "sentence_id": "0",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "1",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "2",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "3",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "4",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "5",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "6",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "7",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "8",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "9",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "10",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "11",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "12",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "13",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "14",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "15",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "16",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "17",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "18",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "19",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "20",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "21",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "22",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "23",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "24",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "25",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "26",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "27",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "28",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "29",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "30",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "31",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "32",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "33",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "34",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "35",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "36",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "37",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "38",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "39",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "40",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "41",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "42",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "43",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "44",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "45",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "46",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "47",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "48",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZJS",
+        "sentence_id": "49",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "50",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "51",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "52",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "53",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "54",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "55",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "56",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "57",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "58",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "59",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "60",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "61",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "62",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "63",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "64",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "65",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "66",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "67",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "68",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "69",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "70",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "71",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "72",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "73",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "74",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "75",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "76",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "77",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "78",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "79",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "80",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "81",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "82",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "83",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "84",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "85",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "86",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "87",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "88",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "89",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "90",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "91",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "92",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "93",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "94",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "95",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "96",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "97",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "98",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "ZPH",
+        "sentence_id": "99",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      }
+    ]
+  },
+  "zuco2": {
+    "subjects": 18,
+    "counts": {
+      "words": 119271,
+      "sentences": 6282,
+      "joined_word_text_exact": 6083,
+      "literal_space_tokens_exact": 6083,
+      "whitespace_tokens_exact": 6083,
+      "fixated_words": 79821,
+      "raw_fixations": 122810,
+      "usable_raw_fixations": 122213,
+      "words_with_usable_raw": 79639,
+      "FFD_complete_8x105_words": 79509,
+      "SFD_complete_8x105_words": 51654,
+      "GD_complete_8x105_words": 79535,
+      "GPT_complete_8x105_words": 79595,
+      "TRT_complete_8x105_words": 79639
+    },
+    "source_slots": {
+      "sentence_observations": 6282,
+      "with_word_records": 6083,
+      "word_observations": 119271,
+      "exact_word_text_mapping_when_present": 6083,
+      "wordbounds_match_when_present": 6083,
+      "at_least_one_usable_raw_fixation": 6019,
+      "at_least_one_complete_TRT_word": 6019,
+      "raw_fixations": 122810,
+      "usable_raw_fixations": 122213,
+      "fixated_word_observations": 79821,
+      "FFD_complete_8x105_words": 79509,
+      "SFD_complete_8x105_words": 51654,
+      "GD_complete_8x105_words": 79535,
+      "GPT_complete_8x105_words": 79595,
+      "TRT_complete_8x105_words": 79639
+    },
+    "prepared": {
+      "sentence_observations": 5911,
+      "with_word_records": 5911,
+      "word_observations": 115654,
+      "exact_word_text_mapping_when_present": 5911,
+      "wordbounds_match_when_present": 5911,
+      "at_least_one_usable_raw_fixation": 5851,
+      "at_least_one_complete_TRT_word": 5851,
+      "raw_fixations": 118339,
+      "usable_raw_fixations": 118336,
+      "fixated_word_observations": 77338,
+      "FFD_complete_8x105_words": 77338,
+      "SFD_complete_8x105_words": 50433,
+      "GD_complete_8x105_words": 77338,
+      "GPT_complete_8x105_words": 77338,
+      "TRT_complete_8x105_words": 77338
+    },
+    "duration_qc": {
+      "sentence_observations": 5884,
+      "with_word_records": 5884,
+      "word_observations": 115031,
+      "exact_word_text_mapping_when_present": 5884,
+      "wordbounds_match_when_present": 5884,
+      "at_least_one_usable_raw_fixation": 5850,
+      "at_least_one_complete_TRT_word": 5850,
+      "raw_fixations": 118338,
+      "usable_raw_fixations": 118335,
+      "fixated_word_observations": 77337,
+      "FFD_complete_8x105_words": 77337,
+      "SFD_complete_8x105_words": 50432,
+      "GD_complete_8x105_words": 77337,
+      "GPT_complete_8x105_words": 77337,
+      "TRT_complete_8x105_words": 77337
+    },
+    "outside_prepared": {
+      "sentence_observations": 371,
+      "with_word_records": 172,
+      "word_observations": 3617,
+      "exact_word_text_mapping_when_present": 172,
+      "wordbounds_match_when_present": 172,
+      "at_least_one_usable_raw_fixation": 168,
+      "at_least_one_complete_TRT_word": 168,
+      "raw_fixations": 4471,
+      "usable_raw_fixations": 3877,
+      "fixated_word_observations": 2483,
+      "FFD_complete_8x105_words": 2171,
+      "SFD_complete_8x105_words": 1221,
+      "GD_complete_8x105_words": 2197,
+      "GPT_complete_8x105_words": 2257,
+      "TRT_complete_8x105_words": 2301
+    },
+    "mapping_disagreements_with_nonempty_words": [],
+    "missing_word_records": [
+      {
+        "subject": "YAC",
+        "sentence_id": "201",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "202",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "203",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "204",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "205",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "206",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "207",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "208",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "209",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "210",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "211",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "212",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "213",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "214",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "215",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "216",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "217",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "218",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "219",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "220",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "221",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "222",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "223",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "224",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "225",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "226",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "227",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "228",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "229",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "230",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "231",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "232",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "233",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "234",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "235",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "236",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "237",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "238",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "239",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "240",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "241",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "242",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "243",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "244",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "245",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "246",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "247",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "248",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "249",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "250",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "251",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "252",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "253",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "254",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "255",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "256",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "257",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "258",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "259",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "260",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "261",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "262",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "263",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "264",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "265",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "266",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "267",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "268",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "269",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "270",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "271",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "272",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "273",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "274",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "275",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "276",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "277",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "278",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "279",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "280",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "281",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "282",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "283",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "284",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "285",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "286",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "287",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "288",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "289",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "290",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "291",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "292",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "293",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "294",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "295",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "296",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "297",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "298",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAC",
+        "sentence_id": "299",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "50",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "51",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "52",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "53",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "54",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "55",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "56",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "57",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "58",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "59",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "60",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "61",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "62",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "63",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "64",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "65",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "66",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "67",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "68",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "69",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "70",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "71",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "72",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "73",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "74",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "75",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "76",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "77",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "78",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "79",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "80",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "81",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "82",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "83",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "84",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "85",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "86",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "87",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "88",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "89",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "90",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "91",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "92",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "93",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "94",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "95",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "96",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "97",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "98",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YAK",
+        "sentence_id": "99",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "50",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "51",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "52",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "53",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "54",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "55",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "56",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "57",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "58",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "59",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "60",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "61",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "62",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "63",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "64",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "65",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "66",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "67",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "68",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "69",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "70",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "71",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "72",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "73",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "74",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "75",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "76",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "77",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "78",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "79",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "80",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "81",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "82",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "83",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "84",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "85",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "86",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "87",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "88",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "89",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "90",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "91",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "92",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "93",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "94",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "95",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "96",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "97",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "98",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      },
+      {
+        "subject": "YRH",
+        "sentence_id": "99",
+        "prepared": false,
+        "raw_sentence_state": "nan_sentinel"
+      }
+    ]
+  },
+  "zuco1_saved_seed42_splits": {
+    "train": {
+      "sentence_observations": 2245,
+      "with_word_records": 2245,
+      "word_observations": 48865,
+      "exact_word_text_mapping_when_present": 2245,
+      "wordbounds_match_when_present": 2245,
+      "at_least_one_usable_raw_fixation": 2244,
+      "at_least_one_complete_TRT_word": 2244,
+      "raw_fixations": 55519,
+      "usable_raw_fixations": 55518,
+      "fixated_word_observations": 32848,
+      "FFD_complete_8x105_words": 32848,
+      "SFD_complete_8x105_words": 19102,
+      "GD_complete_8x105_words": 32848,
+      "GPT_complete_8x105_words": 32848,
+      "TRT_complete_8x105_words": 32848
+    },
+    "val": {
+      "sentence_observations": 512,
+      "with_word_records": 512,
+      "word_observations": 11203,
+      "exact_word_text_mapping_when_present": 512,
+      "wordbounds_match_when_present": 512,
+      "at_least_one_usable_raw_fixation": 512,
+      "at_least_one_complete_TRT_word": 512,
+      "raw_fixations": 14427,
+      "usable_raw_fixations": 14413,
+      "fixated_word_observations": 7109,
+      "FFD_complete_8x105_words": 7098,
+      "SFD_complete_8x105_words": 3484,
+      "GD_complete_8x105_words": 7099,
+      "GPT_complete_8x105_words": 7102,
+      "TRT_complete_8x105_words": 7101
+    },
+    "test": {
+      "sentence_observations": 592,
+      "with_word_records": 592,
+      "word_observations": 13017,
+      "exact_word_text_mapping_when_present": 592,
+      "wordbounds_match_when_present": 592,
+      "at_least_one_usable_raw_fixation": 586,
+      "at_least_one_complete_TRT_word": 586,
+      "raw_fixations": 15049,
+      "usable_raw_fixations": 15049,
+      "fixated_word_observations": 8734,
+      "FFD_complete_8x105_words": 8734,
+      "SFD_complete_8x105_words": 5139,
+      "GD_complete_8x105_words": 8734,
+      "GPT_complete_8x105_words": 8734,
+      "TRT_complete_8x105_words": 8734
+    }
+  },
+  "word_count_candidate_collisions": {
+    "training": {
+      "n_candidates": 300,
+      "distinct_word_counts": 47,
+      "word_count_range": [
+        6,
+        65
+      ],
+      "sentences_unique_by_word_count_alone": 8,
+      "largest_equal_count_bucket": 16,
+      "bucket_sizes": {
+        "6": 6,
+        "7": 3,
+        "8": 8,
+        "9": 7,
+        "10": 8,
+        "11": 9,
+        "12": 12,
+        "13": 15,
+        "14": 16,
+        "15": 15,
+        "16": 14,
+        "17": 15,
+        "18": 10,
+        "19": 12,
+        "20": 14,
+        "21": 10,
+        "22": 9,
+        "23": 7,
+        "24": 4,
+        "25": 10,
+        "26": 9,
+        "27": 12,
+        "28": 9,
+        "29": 4,
+        "30": 6,
+        "31": 4,
+        "32": 9,
+        "33": 5,
+        "34": 3,
+        "36": 4,
+        "37": 3,
+        "38": 2,
+        "39": 1,
+        "40": 2,
+        "41": 3,
+        "43": 3,
+        "44": 1,
+        "45": 1,
+        "47": 2,
+        "48": 4,
+        "49": 1,
+        "51": 2,
+        "53": 2,
+        "54": 1,
+        "55": 1,
+        "62": 1,
+        "65": 1
+      },
+      "scope": "Metadata collision audit only; no retrieval model fitted or scored"
+    },
+    "validation": {
+      "n_candidates": 298,
+      "distinct_word_counts": 47,
+      "word_count_range": [
+        6,
+        65
+      ],
+      "sentences_unique_by_word_count_alone": 8,
+      "largest_equal_count_bucket": 16,
+      "bucket_sizes": {
+        "6": 6,
+        "7": 3,
+        "8": 8,
+        "9": 6,
+        "10": 8,
+        "11": 9,
+        "12": 12,
+        "13": 15,
+        "14": 16,
+        "15": 15,
+        "16": 14,
+        "17": 15,
+        "18": 9,
+        "19": 12,
+        "20": 14,
+        "21": 10,
+        "22": 9,
+        "23": 7,
+        "24": 4,
+        "25": 10,
+        "26": 9,
+        "27": 12,
+        "28": 9,
+        "29": 4,
+        "30": 6,
+        "31": 4,
+        "32": 9,
+        "33": 5,
+        "34": 3,
+        "36": 4,
+        "37": 3,
+        "38": 2,
+        "39": 1,
+        "40": 2,
+        "41": 3,
+        "43": 3,
+        "44": 1,
+        "45": 1,
+        "47": 2,
+        "48": 4,
+        "49": 1,
+        "51": 2,
+        "53": 2,
+        "54": 1,
+        "55": 1,
+        "62": 1,
+        "65": 1
+      },
+      "scope": "Metadata collision audit only; no retrieval model fitted or scored"
+    }
+  },
+  "validation": {
+    "source_files": 30,
+    "protected_files_unchanged": 494,
+    "training_launched": false,
+    "datasets_changed": false,
+    "unit_tests": "5 passed in 0.65 s",
+    "all_30_channel_orders_match": true,
+    "producer_sampling_rate_hz": 500,
+    "note": "Initial ZuCo2 sequential process stopped for parallel read-only execution; its completed YAC audit is retained and counted exactly once."
+  }
+}

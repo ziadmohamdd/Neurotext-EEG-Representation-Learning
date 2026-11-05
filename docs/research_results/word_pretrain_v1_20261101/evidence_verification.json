@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "folds": 8,
+  "unique_training_holdouts": 2245,
+  "replayed_sentence_ranks": 13470,
+  "replayed_word_ranks": 195460,
+  "projection_only_transfers_verified": 32,
+  "initial_sentence_weights_match_prior_gru": true,
+  "structural_ranks_match_prior_gru": true,
+  "vocabularies_rebuilt_from_fold_training_labels_only": true,
+  "preprocessing_rebuilt_from_fold_training_words_only": true,
+  "reader_separation_and_fixed_budgets_verified": true
+}

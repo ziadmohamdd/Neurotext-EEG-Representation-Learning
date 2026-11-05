@@ -1,0 +1,3138 @@
+[
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.5313328164238349,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.21477917223285523,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.10129143539566184,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.04545482096479641,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.01578845464088644,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.007783562927580885,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.0034602076124567475,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.5356841142910046,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.20826390541799322,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.09467315736516786,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.04246940171300195,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.013378277669122059,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.004031653593109634,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.5625904109430513,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.23301460302812277,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.10614620657981322,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.04528778047757837,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.015415583910621486,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.00724981577312294,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.0034602076124567475,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.48777354734929584,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.1842082675420216,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.08797309407130235,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.043323564689907904,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.01602819740803938,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.0066087087459090555,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0034602076124567475,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.5028295008737313,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.19479055111065513,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.090277204096789,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.03986217244241084,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.013552485449269236,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.005864118241986882,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.0034602076124567475,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5362974621286641,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.24255528000619647,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.13295287305309297,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.07356851070492348,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.034074958224997426,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.018811041340535486,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.010380622837370242,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9024198308085776,
+    "chance": 0.5,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7469956193253678,
+    "chance": 0.2,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6241665930476359,
+    "chance": 0.1,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5087020848351039,
+    "chance": 0.05,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.3720562069983145,
+    "chance": 0.02,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.27656707240319495,
+    "chance": 0.01,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDM",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.14878892733564014,
+    "chance": 0.0033333333333333335,
+    "n_queries": 289
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.527515962298571,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.21137369352965646,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.10250237201876695,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.04786380440748615,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.01661348819757899,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.00858638730669003,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.006734006734006734,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.4989245858811076,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.1880288287341015,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.08945341333300702,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.04453033943347404,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.020640081975234183,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.01486733267508736,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.013468013468013467,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.5077643773295947,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.1963929815468252,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.09438493741392016,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.04795839950040161,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.024128965639143178,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.015687448166559235,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.006734006734006734,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.49329414546805855,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.1924768937543311,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.09544949186127753,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.04463215595072481,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.015488851888642529,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.007176083115631078,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.003367003367003367,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.5069310721484634,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.2153746981024719,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.11612355613199032,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.062324424222909555,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.025020394885482886,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.009844057097141671,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.533371620328142,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.23257393453076572,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.12070479377043183,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.06245632486396585,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.027496832711845862,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.01569633008922434,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.006734006734006734,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9021204238595543,
+    "chance": 0.5,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.745291177404844,
+    "chance": 0.2,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6224099185038897,
+    "chance": 0.1,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5048956218998047,
+    "chance": 0.05,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.36147033865667744,
+    "chance": 0.02,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.25999133642724775,
+    "chance": 0.01,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZDN",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.12794612794612795,
+    "chance": 0.0033333333333333335,
+    "n_queries": 297
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.5520298979992622,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.25619303848501124,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.14349018332932115,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.07820343288136869,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.033637373742622254,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.018240528806818285,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.010676156583629894,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.562884585629441,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.25156405297466394,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.13841887192431002,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.0751317501541435,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.03328967813373293,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.018193398312769532,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0071174377224199285,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.5574929480236613,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.25466817059019237,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.14093559418719012,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.07626929924070854,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.03417743132310987,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.01961224036205962,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.010676156583629894,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.49659005701091413,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.19632669489417295,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.0957489298382779,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.046826209612893056,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.018975304326629513,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.010842287036216394,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0035587188612099642,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.507456646710863,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.21649409530917796,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.11727510184530246,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.06164053490954196,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.024184188839141956,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.0134985947641394,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.0071174377224199285,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5348790154607886,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.23193653672881326,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.12258091627346708,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.06711947976209168,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.03187016732639477,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.01888217182452617,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.010676156583629894,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9031171520727455,
+    "chance": 0.5,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7467044647016963,
+    "chance": 0.2,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6219593032450831,
+    "chance": 0.1,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5090707789994777,
+    "chance": 0.05,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.3806721096952466,
+    "chance": 0.02,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.29262263964175655,
+    "chance": 0.01,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZGW",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.18149466192170818,
+    "chance": 0.0033333333333333335,
+    "n_queries": 281
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.5177830121156124,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.24761892048170958,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.14220347247784687,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.07876896346750112,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.034272275638266556,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.016075986631479713,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.0038910505836575876,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.5029996226071342,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.24140859779000023,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.1429322558026816,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.08472437506652114,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.04091421954555943,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.021262523081713558,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0038910505836575876,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.501828403367906,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.23316907795396885,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.13190592779434385,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.07495365054873161,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.03615787919067709,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.020504895714468722,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.007782101167315175,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.505680413310256,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.19737188851761955,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.09161733401463944,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.040671569330167065,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.01110370995614063,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.0026709976853218254,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.5050687765964369,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.19857320521024524,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.09741046141247317,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.04765537879926431,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.019804354796500133,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.010469873738869376,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5404135705269185,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.24123969956333458,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.13525248945117033,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.07713371969163138,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.03522942115320771,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.019709408263118223,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.007782101167315175,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9080723032677016,
+    "chance": 0.5,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7576083423019917,
+    "chance": 0.2,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6342921477584482,
+    "chance": 0.1,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5171277543680218,
+    "chance": 0.05,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.3763080548311459,
+    "chance": 0.02,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.279077589573914,
+    "chance": 0.01,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJM",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.1556420233463035,
+    "chance": 0.0033333333333333335,
+    "n_queries": 257
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.42538620799490356,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.14782407406109938,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.06478899417242097,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.02787266869890911,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.008853924620172853,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.0026275753548246398,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.4570222737924601,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.15839786739991,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.06882865031777889,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.028668985424231106,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.008452593322476533,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.0033372632422737324,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.4071053170432053,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.13418557987943958,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.058458854963912454,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.024425596738050045,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.007993408439347047,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.0038831145660205403,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.4776920801765522,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.1717378163561831,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.07447698603245229,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.03146749716784734,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.010381398172778403,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.004724888532891271,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.4974631993265533,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.19348168695786355,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.09005665575689335,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.04087409128065956,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.01383957768712266,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.005388803482129375,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5340704843810434,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.23178415476968986,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.12608303659791356,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.0725799116044309,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.03770936057023229,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.023131563858486023,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.006802721088435374,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.8943189315860125,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7284735494227346,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6010827572515886,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.48890649342225173,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.36230290490581984,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.2778294269222486,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZJN",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.17346938775510204,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.49530179964962573,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.20730339231527278,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.11241402830166655,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.06042596940291225,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.027036528989339895,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.015414331903721747,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.006802721088435374,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.4939253293290561,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.1934271286370165,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.09367467177206593,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.045176506880574674,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.01862370447380003,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.010406966670884874,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.003401360544217687,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.4907059813892113,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.19574780643395426,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.09913192027167107,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.051166735332174945,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.02317399398943364,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.014765942123542448,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.01020408163265306,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.47704366027347395,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.17803336154455418,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.08388726598396136,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.04160781230695753,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.01776161521169496,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.008543038377494898,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.003401360544217687,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.47798785065865823,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.19136851700735147,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.10099819426306586,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.05887537397826109,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.03216362022917245,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.0218404083507527,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.013605442176870748,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5371760744431552,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.23916087741174238,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.12917270575324485,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.06954659414137299,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.031571282216590515,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.0181164319087438,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.006802721088435374,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9049325415785043,
+    "chance": 0.5,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7515678703097937,
+    "chance": 0.2,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6299980967510219,
+    "chance": 0.1,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5166320372523736,
+    "chance": 0.05,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.38443444595114457,
+    "chance": 0.02,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.2932007716958392,
+    "chance": 0.01,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZKH",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.16326530612244897,
+    "chance": 0.0033333333333333335,
+    "n_queries": 294
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.43491124260355024,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.14192416494935975,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.059907125552265794,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.0233043927971863,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.004897244755800357,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.0016896520840193276,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.4355076361765325,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.13967602040056284,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.055056755496166364,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.019546487518098836,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.003761158986702308,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.0005965982307522325,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.4170779053722197,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.13239033990328217,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.055617817835867195,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.02083088403513224,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.005229144274970896,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.0035515533267918187,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.0034965034965034965,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.5042566129522652,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.20120640731544273,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.09420426819899669,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.04027897435357207,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.011232961069086247,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.0048170234719892725,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0034965034965034965,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.4967841523025469,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.19592917391354728,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.0999656068658612,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.05532114541639489,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.031193518812982778,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.021726185619626998,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.013986013986013986,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5399817573730616,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.23498252246050988,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.12225409097921076,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.06441484680942679,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.028104838476581556,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.015518707169714709,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.01048951048951049,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9013027106672593,
+    "chance": 0.5,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7462672649935053,
+    "chance": 0.2,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6254098254389833,
+    "chance": 0.1,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5135391799604112,
+    "chance": 0.05,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.38362946586384683,
+    "chance": 0.02,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.2927007747602482,
+    "chance": 0.01,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZMG",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.16433566433566432,
+    "chance": 0.0033333333333333335,
+    "n_queries": 286
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 2,
+    "expected_accuracy": 0.4523716030493006,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 5,
+    "expected_accuracy": 0.13545892995583417,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 10,
+    "expected_accuracy": 0.050395364831907194,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 20,
+    "expected_accuracy": 0.017618867671083536,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 50,
+    "expected_accuracy": 0.0035231564928742743,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 100,
+    "expected_accuracy": 0.0006396935133865999,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_real",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 2,
+    "expected_accuracy": 0.46384033146927,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 5,
+    "expected_accuracy": 0.1435497645878652,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 10,
+    "expected_accuracy": 0.05565385649267575,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 20,
+    "expected_accuracy": 0.02174459638808762,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 50,
+    "expected_accuracy": 0.005641092563809482,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 100,
+    "expected_accuracy": 0.0010553382125879451,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_equal_steps",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 2,
+    "expected_accuracy": 0.46092914302736515,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 5,
+    "expected_accuracy": 0.13461997026132277,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 10,
+    "expected_accuracy": 0.04671046773726113,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 20,
+    "expected_accuracy": 0.016112349625061466,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 50,
+    "expected_accuracy": 0.004936861974267197,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 100,
+    "expected_accuracy": 0.0021921116563704567,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "fresh_same_sentence",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 2,
+    "expected_accuracy": 0.4939406659174305,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 5,
+    "expected_accuracy": 0.1831052806717598,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 10,
+    "expected_accuracy": 0.08066039915122057,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 20,
+    "expected_accuracy": 0.03543932854253101,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 50,
+    "expected_accuracy": 0.012304959208113758,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 100,
+    "expected_accuracy": 0.006479287022501694,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_gaussian",
+    "N": 300,
+    "expected_accuracy": 0.0,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 2,
+    "expected_accuracy": 0.5238108133725103,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 5,
+    "expected_accuracy": 0.21474584065181002,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 10,
+    "expected_accuracy": 0.10984571926060661,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 20,
+    "expected_accuracy": 0.05585182884079085,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 50,
+    "expected_accuracy": 0.023053277764314935,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 100,
+    "expected_accuracy": 0.013276272806846779,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_class_shuffled",
+    "N": 300,
+    "expected_accuracy": 0.008097165991902834,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 2,
+    "expected_accuracy": 0.5499708881155809,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 5,
+    "expected_accuracy": 0.24734470059697564,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 10,
+    "expected_accuracy": 0.13727174699888606,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 20,
+    "expected_accuracy": 0.07566000186761826,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 50,
+    "expected_accuracy": 0.033182210486092975,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 100,
+    "expected_accuracy": 0.0195341495805293,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "pretrained_missingness",
+    "N": 300,
+    "expected_accuracy": 0.012145748987854251,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 2,
+    "expected_accuracy": 0.9188252339106062,
+    "chance": 0.5,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 5,
+    "expected_accuracy": 0.7815483473156701,
+    "chance": 0.2,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 10,
+    "expected_accuracy": 0.6654860830111542,
+    "chance": 0.1,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 20,
+    "expected_accuracy": 0.5503101581986173,
+    "chance": 0.05,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 50,
+    "expected_accuracy": 0.40965376487056193,
+    "chance": 0.02,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 100,
+    "expected_accuracy": 0.31076974891897424,
+    "chance": 0.01,
+    "n_queries": 247
+  },
+  {
+    "reader": "ZPH",
+    "arm": "structural_only",
+    "N": 300,
+    "expected_accuracy": 0.17408906882591094,
+    "chance": 0.0033333333333333335,
+    "n_queries": 247
+  }
+]

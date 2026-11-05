@@ -1,0 +1,97 @@
+[
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\affected_observations.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\affected_observations.json",
+    "sha256": "51762137ede263f15cba3960593fc665af78eddc536609285228f8eb3575f7eb"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\discrepancies.csv",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\discrepancies.csv",
+    "sha256": "1525eb9d9fb54482fb74444ac038a149ae39e2e2042c219cf0fc3db2209da993"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\discrepancies.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\discrepancies.json",
+    "sha256": "71a4f6f9d0e2328280f1d627e365abf653f050a3d6906090bb45c7b8f44a7bd8"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\preservation.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\preservation.json",
+    "sha256": "77afe24dcca92ed7eba08f79d8da91a6cac8986ee8f906ce8265bdcc21335374"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\source_provenance.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\source_provenance.json",
+    "sha256": "4a16bfa6fc783cb6dcc85a39f8b5f1fd97946df38e2e0b4f5a9ce003aa6939cb"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\analysis_final\\summary.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\summary.json",
+    "sha256": "8efd23e8b3a7c3ffe4d80ed75b7cadb7795742051f9465a13c46108f7683034d"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\sentencesNR.mat",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\sentencesNR.mat",
+    "sha256": "fdec1f01d6edbcbaf01418a90233f00759b2b08eb95c6018bf503235297a0ff4"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\relations_normal_reading.csv",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\relations_normal_reading.csv",
+    "sha256": "6192be2407426a433ea4ad9890a67f7275680605d1aae003c76bc7ac5a4111a7"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\nemar_relations_labels_task2.tsv",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\nemar_relations_labels_task2.tsv",
+    "sha256": "e17c9fde146a01c6b33f4c91e591c519c69cf4933b0a7d4ca0733a952bafca2e"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\osf_preprocessed_inventory.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\osf_preprocessed_inventory.json",
+    "sha256": "85cd6b1d77b6d94680bd6f2c477c098785c39f5f8e8b8c3e05fceb0e64210c29"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\osf_exports_inventory.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\osf_exports_inventory.json",
+    "sha256": "a774bd4d90e9379c86aba5aa3eb046ccf657f814872d6cd69b78e632ecab2018"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\osf_project.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\osf_project.json",
+    "sha256": "2a4dd397404c8f64b152e3a1eb4e9e7823e02931bc14e05d25c6ad93468b2d28"
+  },
+  {
+    "source": "results\\text_discrepancy_investigation_20261030\\nemar_stimuli_inventory.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\nemar_stimuli_inventory.json",
+    "sha256": "db963ef93ede9e700a8c376908eeeb71663a69bf857da8f09683e445f662a8ba"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\official_relations_labels_task2.csv",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\official_relations_labels_task2.csv",
+    "sha256": "017b118da4821e572a2e782f8add1e4a6258afeddf8566d68cf829f3bbf46cb9"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\official_firstLevel_NR.m",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\official_firstLevel_NR.m",
+    "sha256": "4624c63811a56bfc7214a3b5be5344d1855b9587f38904e1eb851dcc808fa6f2"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\osf_materials_inventory.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\osf_materials_inventory.json",
+    "sha256": "6136c67ed2ef1176badae584351cd24e2e2659c6c9caaa838be30b0230e1250e"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\osf_matlab_inventory.json",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\osf_matlab_inventory.json",
+    "sha256": "b66ccd11dc29dac4e52e7a7dfa2b0daab96460a122413597099c255cf9b0f607"
+  },
+  {
+    "source": "scripts\\investigate_text_discrepancies.py",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\investigate_text_discrepancies.py",
+    "sha256": "6174a7ffcb11b61762e2c384ce7b18670a312c9fecd01339aa21abc2aae11999"
+  },
+  {
+    "source": "tests\\test_text_discrepancy_audit.py",
+    "copy": "docs\\research_results\\text_discrepancies_20261030\\artifacts\\test_text_discrepancy_audit.py",
+    "sha256": "25f7f68214f04ede8f678b686d6e76b2ada21f55556aae142899b6700f56cbcc"
+  }
+]

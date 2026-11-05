@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "score_rows_checked": 576,
+  "selected_summaries_checked": 12,
+  "reader_folds_checked": 8,
+  "query_ranks_checked": 161640,
+  "zero_weight_predictions_match_structural": true,
+  "prior_protected_files_unchanged": 1498,
+  "outer_validation_extracted": false,
+  "test_evaluated": false
+}

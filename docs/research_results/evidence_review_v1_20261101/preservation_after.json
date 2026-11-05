@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "protected_files": 2840,
+  "unchanged_protected_files": 2838,
+  "authorized_modified_files": [
+    "docs\\research_results\\REPORT.md",
+    "scripts\\consolidate_evidence_review_v1.py"
+  ],
+  "dataset_metadata_files_unchanged": 19190,
+  "byte_identical_archival_copies": 5,
+  "presentation_unchanged": true,
+  "no_training_tuning_feature_extraction_or_model_evaluation": true
+}

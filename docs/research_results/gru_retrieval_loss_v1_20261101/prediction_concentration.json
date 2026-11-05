@@ -1,0 +1,338 @@
+[
+  {
+    "reader": "ZDM",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 84,
+    "largest_top1_share": 0.10034602076124567,
+    "effective_top1_sentences": 43.62346506322543
+  },
+  {
+    "reader": "ZDM",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 56,
+    "largest_top1_share": 0.09688581314878893,
+    "effective_top1_sentences": 34.17534339349055
+  },
+  {
+    "reader": "ZDM",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 138,
+    "largest_top1_share": 0.02768166089965398,
+    "effective_top1_sentences": 114.80337294670517
+  },
+  {
+    "reader": "ZDM",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 78,
+    "largest_top1_share": 0.11764705882352941,
+    "effective_top1_sentences": 42.894894884605186
+  },
+  {
+    "reader": "ZDM",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 82,
+    "largest_top1_share": 0.07958477508650519,
+    "effective_top1_sentences": 48.705464641761004
+  },
+  {
+    "reader": "ZDM",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 4,
+    "largest_top1_share": 0.4740484429065744,
+    "effective_top1_sentences": 2.533379791473356
+  },
+  {
+    "reader": "ZDN",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 60,
+    "largest_top1_share": 0.12794612794612795,
+    "effective_top1_sentences": 29.159698708172822
+  },
+  {
+    "reader": "ZDN",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 22,
+    "largest_top1_share": 0.19865319865319866,
+    "effective_top1_sentences": 10.684991797900205
+  },
+  {
+    "reader": "ZDN",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 143,
+    "largest_top1_share": 0.03367003367003367,
+    "effective_top1_sentences": 113.08613646992421
+  },
+  {
+    "reader": "ZDN",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 58,
+    "largest_top1_share": 0.1414141414141414,
+    "effective_top1_sentences": 30.602070404172114
+  },
+  {
+    "reader": "ZDN",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 58,
+    "largest_top1_share": 0.13804713804713806,
+    "effective_top1_sentences": 28.220171806852623
+  },
+  {
+    "reader": "ZDN",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 4,
+    "largest_top1_share": 0.5555555555555556,
+    "effective_top1_sentences": 2.6891876328649547
+  },
+  {
+    "reader": "ZGW",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 38,
+    "largest_top1_share": 0.1423487544483986,
+    "effective_top1_sentences": 17.42957309541624
+  },
+  {
+    "reader": "ZGW",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 18,
+    "largest_top1_share": 0.21708185053380782,
+    "effective_top1_sentences": 8.383038485686184
+  },
+  {
+    "reader": "ZGW",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 148,
+    "largest_top1_share": 0.028469750889679714,
+    "effective_top1_sentences": 120.47007144612779
+  },
+  {
+    "reader": "ZGW",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 48,
+    "largest_top1_share": 0.1601423487544484,
+    "effective_top1_sentences": 22.531330148746758
+  },
+  {
+    "reader": "ZGW",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 36,
+    "largest_top1_share": 0.20284697508896798,
+    "effective_top1_sentences": 16.438667758092997
+  },
+  {
+    "reader": "ZGW",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 2,
+    "largest_top1_share": 0.5338078291814946,
+    "effective_top1_sentences": 1.9954298621887199
+  },
+  {
+    "reader": "ZJM",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 41,
+    "largest_top1_share": 0.33073929961089493,
+    "effective_top1_sentences": 15.331908054526785
+  },
+  {
+    "reader": "ZJM",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 23,
+    "largest_top1_share": 0.14396887159533073,
+    "effective_top1_sentences": 13.939260278280022
+  },
+  {
+    "reader": "ZJM",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 144,
+    "largest_top1_share": 0.023346303501945526,
+    "effective_top1_sentences": 122.72394214888178
+  },
+  {
+    "reader": "ZJM",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 46,
+    "largest_top1_share": 0.15953307392996108,
+    "effective_top1_sentences": 25.773826842820704
+  },
+  {
+    "reader": "ZJM",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 33,
+    "largest_top1_share": 0.35019455252918286,
+    "effective_top1_sentences": 11.011633435476334
+  },
+  {
+    "reader": "ZJM",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 3,
+    "largest_top1_share": 0.5525291828793775,
+    "effective_top1_sentences": 2.7111107323162305
+  },
+  {
+    "reader": "ZJN",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 34,
+    "largest_top1_share": 0.24149659863945577,
+    "effective_top1_sentences": 16.038156039668536
+  },
+  {
+    "reader": "ZJN",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 20,
+    "largest_top1_share": 0.2857142857142857,
+    "effective_top1_sentences": 10.555156646573694
+  },
+  {
+    "reader": "ZJN",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 143,
+    "largest_top1_share": 0.034013605442176874,
+    "effective_top1_sentences": 115.11188778517842
+  },
+  {
+    "reader": "ZJN",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 42,
+    "largest_top1_share": 0.22108843537414966,
+    "effective_top1_sentences": 17.98224851187624
+  },
+  {
+    "reader": "ZJN",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 39,
+    "largest_top1_share": 0.1598639455782313,
+    "effective_top1_sentences": 22.04170576830563
+  },
+  {
+    "reader": "ZJN",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 4,
+    "largest_top1_share": 0.43537414965986393,
+    "effective_top1_sentences": 2.9680988195999545
+  },
+  {
+    "reader": "ZKH",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 53,
+    "largest_top1_share": 0.22108843537414966,
+    "effective_top1_sentences": 21.417480147416008
+  },
+  {
+    "reader": "ZKH",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 34,
+    "largest_top1_share": 0.21428571428571427,
+    "effective_top1_sentences": 16.446837764088105
+  },
+  {
+    "reader": "ZKH",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 152,
+    "largest_top1_share": 0.034013605442176874,
+    "effective_top1_sentences": 122.83196293867204
+  },
+  {
+    "reader": "ZKH",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 75,
+    "largest_top1_share": 0.09183673469387756,
+    "effective_top1_sentences": 44.0681457641797
+  },
+  {
+    "reader": "ZKH",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 55,
+    "largest_top1_share": 0.10884353741496598,
+    "effective_top1_sentences": 27.58031682321907
+  },
+  {
+    "reader": "ZKH",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 4,
+    "largest_top1_share": 0.5340136054421769,
+    "effective_top1_sentences": 2.2361996798803316
+  },
+  {
+    "reader": "ZMG",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 63,
+    "largest_top1_share": 0.13636363636363635,
+    "effective_top1_sentences": 28.63410233458662
+  },
+  {
+    "reader": "ZMG",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 46,
+    "largest_top1_share": 0.13986013986013987,
+    "effective_top1_sentences": 25.20643650312569
+  },
+  {
+    "reader": "ZMG",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 143,
+    "largest_top1_share": 0.024475524475524476,
+    "effective_top1_sentences": 116.65975618691505
+  },
+  {
+    "reader": "ZMG",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 74,
+    "largest_top1_share": 0.07692307692307693,
+    "effective_top1_sentences": 45.28472768701919
+  },
+  {
+    "reader": "ZMG",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 51,
+    "largest_top1_share": 0.25524475524475526,
+    "effective_top1_sentences": 22.96219499483212
+  },
+  {
+    "reader": "ZMG",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 3,
+    "largest_top1_share": 0.8671328671328671,
+    "effective_top1_sentences": 1.5349496616824037
+  },
+  {
+    "reader": "ZPH",
+    "condition": "real_eeg",
+    "unique_top1_sentences": 51,
+    "largest_top1_share": 0.12550607287449392,
+    "effective_top1_sentences": 28.839651748853075
+  },
+  {
+    "reader": "ZPH",
+    "condition": "mean_eeg",
+    "unique_top1_sentences": 34,
+    "largest_top1_share": 0.12955465587044535,
+    "effective_top1_sentences": 21.605079359278648
+  },
+  {
+    "reader": "ZPH",
+    "condition": "matched_gaussian",
+    "unique_top1_sentences": 145,
+    "largest_top1_share": 0.02834008097165992,
+    "effective_top1_sentences": 121.24895418609893
+  },
+  {
+    "reader": "ZPH",
+    "condition": "class_shuffled",
+    "unique_top1_sentences": 72,
+    "largest_top1_share": 0.09716599190283401,
+    "effective_top1_sentences": 42.272158832883854
+  },
+  {
+    "reader": "ZPH",
+    "condition": "word_order_shuffled",
+    "unique_top1_sentences": 44,
+    "largest_top1_share": 0.15384615384615385,
+    "effective_top1_sentences": 22.443261009966125
+  },
+  {
+    "reader": "ZPH",
+    "condition": "missingness_only",
+    "unique_top1_sentences": 3,
+    "largest_top1_share": 0.7449392712550608,
+    "effective_top1_sentences": 1.9117929923229513
+  }
+]

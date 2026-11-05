@@ -1,0 +1,5756 @@
+{
+  "verified_cells": 1150,
+  "unmatched_metric_rows": [],
+  "cells": [
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 40,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 40,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 40,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 40,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 41,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 41,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 41,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 41,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 42,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 42,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 42,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 42,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 43,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 43,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 43,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 43,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 44,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 44,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 44,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 44,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 45,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 45,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 45,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 45,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 46,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 46,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 46,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 46,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 47,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 47,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 47,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 47,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 53,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 53,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 53,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 53,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 54,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 54,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 54,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 54,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 55,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 55,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 55,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 55,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 56,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 56,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 56,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 56,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 57,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 57,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 57,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 57,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 58,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 58,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 58,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 58,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 64,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 64,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 65,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 65,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 66,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 66,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 67,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 67,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 68,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 68,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 69,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 69,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 70,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 70,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 71,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 71,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 72,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 72,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 73,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 73,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 74,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 74,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 75,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 75,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 76,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 76,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 77,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_order_pilot_v1_20261031\\README.md",
+      "line": 77,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 37,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 37,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 37,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 37,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 41,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 41,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 41,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 41,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 42,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 42,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 42,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 42,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 43,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 43,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 43,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 43,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 44,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 44,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 44,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 44,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 52,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 53,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 136,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 136,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 137,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 137,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 138,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 138,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 139,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 139,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 140,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 140,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 141,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 141,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 142,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 142,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 143,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 143,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 144,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 144,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 145,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 145,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 146,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 146,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 147,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 147,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 148,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 148,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 149,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 149,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 150,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 150,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 151,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 151,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 152,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 152,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 153,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 153,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 154,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 154,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 155,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 155,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 156,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\amplitude_audit_v1_20261101\\README.md",
+      "line": 156,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 13,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 13,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 13,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 13,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 14,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 14,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 14,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 14,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 15,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 15,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 15,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 15,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 16,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 16,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 16,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 16,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 17,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 17,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 17,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 17,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 18,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 18,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 18,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 18,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 50,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 50,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 50,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 50,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 51,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 51,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 51,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 51,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 52,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 52,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 52,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 52,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 53,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 53,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 53,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 53,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 54,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 54,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 54,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 54,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 55,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 55,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 55,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 55,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 56,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 56,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 56,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 56,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 57,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 57,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 57,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 57,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 58,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 58,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 58,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 58,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 59,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 59,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 59,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 59,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 60,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 60,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 60,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 60,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 61,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 62,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 63,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 64,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 65,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 66,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 67,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 68,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 69,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 70,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_pilot_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 26,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 27,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 28,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 29,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 30,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 38,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 39,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 40,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 46,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 47,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 50,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 51,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 71,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 72,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 73,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 74,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 75,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 76,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 77,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 78,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 79,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\gru_retrieval_loss_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 19,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 20,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 20,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 20,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 20,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 21,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 21,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 21,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 21,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 22,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 22,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 22,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 22,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 23,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 23,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 23,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 23,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 24,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 24,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 24,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 24,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 25,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 31,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 32,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 33,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 34,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 35,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 36,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 46,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 46,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 46,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 46,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 47,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 47,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 47,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 47,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 48,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 49,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 80,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 81,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 82,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 83,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 84,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 85,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 86,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 87,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 88,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 89,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 90,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 91,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 92,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 93,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 94,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 95,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 96,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 97,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 98,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 99,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 100,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 101,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 102,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 103,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 104,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 105,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 106,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 107,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 108,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 109,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 110,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 111,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 112,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 113,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 114,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 115,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 116,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 117,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 118,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 119,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 120,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 121,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 122,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 123,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 124,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 125,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 126,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 127,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 128,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 129,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 130,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 131,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 132,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 133,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 134,
+      "metric": "mrr"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "recall@1"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "recall@5"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "recall@10"
+    },
+    {
+      "file": "docs\\research_results\\word_pretrain_v1_20261101\\README.md",
+      "line": 135,
+      "metric": "mrr"
+    }
+  ]
+}

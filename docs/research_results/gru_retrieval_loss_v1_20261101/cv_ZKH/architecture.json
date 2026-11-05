@@ -1,0 +1,10 @@
+{
+  "parameters": 45952,
+  "layers": {
+    "projection": 26944,
+    "gru": 6336,
+    "head": 12672
+  },
+  "output_width": 384,
+  "input_width": 841
+}

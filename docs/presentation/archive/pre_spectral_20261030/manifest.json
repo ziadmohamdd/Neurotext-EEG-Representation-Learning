@@ -1,0 +1,32 @@
+[
+  {
+    "source": "docs/research_results/REPORT.md",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\REPORT.md",
+    "sha256": "24eee5e2097763d0a58207c02e489d496e3076975975bf45ba6301050de446db"
+  },
+  {
+    "source": "docs/presentation/NeuroText_consolidated.pptx",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\NeuroText_consolidated.pptx",
+    "sha256": "84d64a8f38aeb6751ee3443a944bbc3f956d00e85c089321f65077395a2e8acf"
+  },
+  {
+    "source": "docs/presentation/NeuroText_consolidated.pdf",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\NeuroText_consolidated.pdf",
+    "sha256": "cf3438a69edfdd3582a63f88261aded254c3dc84cc3102d791865450f4534e14"
+  },
+  {
+    "source": "docs/presentation/README.md",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\README.md",
+    "sha256": "5656f9d3abf4ba323e4e2c17f9c550fce453597a9bbbf7249d965139e2c5fb78"
+  },
+  {
+    "source": "docs/presentation_outline.md",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\presentation_outline.md",
+    "sha256": "ba4e253a8808990710c7348f30eceb634425bf6ea3a7686a5b337f79868ca04d"
+  },
+  {
+    "source": "scripts/consolidate_presentation.py",
+    "archive": "docs\\presentation\\archive\\pre_spectral_20261030\\consolidate_presentation.py",
+    "sha256": "25af48117787d097d2ed0ce4bc40534e811f5dce2ee2eee4b478fa83469dcf28"
+  }
+]

@@ -1,0 +1,277 @@
+{
+  "scope": "18 wider-grid exploratory evaluations; original-grid seed42 stored separately",
+  "no_new_experiments": true,
+  "source_summary_sha256": "b606de750770cc5a5b1b2996cbb6d4b5fc2f34a978965bb13a85c57aebdf201d",
+  "alpha_grid": [
+    0.1,
+    1,
+    10,
+    100,
+    1000,
+    10000,
+    100000
+  ],
+  "validation": {
+    "passed": 139,
+    "optional_skips": 2,
+    "deselected": 0,
+    "command": ".venv/Scripts/python.exe -m pytest -q -rs",
+    "skips": [
+      {
+        "test": "tests/test_storage_and_pretrained.py::test_official_pretrained_weights_on_synthetic_input",
+        "reason": "optional official-weight integration; no network download during unit tests"
+      },
+      {
+        "test": "tests/test_storage_and_pretrained.py::test_pretrained_cache_extraction",
+        "reason": "optional official-weight extraction on synthetic fixtures"
+      }
+    ],
+    "skip_condition": "EEG_LABRAM_CACHE unset; large-MAT test included and passed"
+  },
+  "files": [
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\condition_summary.csv",
+      "archived": "condition_summary.csv",
+      "sha256": "1c83e13807b8c31cddd48170139cd799571ddce5b7779eb0aec280ba7e6a115e"
+    },
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\configurations_and_pools.json",
+      "archived": "configurations_and_pools.json",
+      "sha256": "bc65623af382f719a04971330ef4454302388b30df84fe9e72760302e016ccfc"
+    },
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\difference_summary.csv",
+      "archived": "difference_summary.csv",
+      "sha256": "8c2bd70664463fd3095f79c05bc014faa9a0c2d12a0964eea48235685fa31f98"
+    },
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\paired_differences.csv",
+      "archived": "paired_differences.csv",
+      "sha256": "853d7cac23998258fc99b5a4a86867bd2c86b8c5f2e253dc2755e07dfa963aaf"
+    },
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\runs.csv",
+      "archived": "runs.csv",
+      "sha256": "62a580fa073d86bc221fd25eef04067d0b3155aa61e8c208b737cd589ed60ac1"
+    },
+    {
+      "source": "results\\exploratory_three_seed_summary_20261029\\summary.json",
+      "archived": "summary.json",
+      "sha256": "b606de750770cc5a5b1b2996cbb6d4b5fc2f34a978965bb13a85c57aebdf201d"
+    },
+    {
+      "source": "configs\\transfer_ridge_regularized.yaml",
+      "archived": "configs\\transfer_ridge_regularized.yaml",
+      "sha256": "6b8c2f3fa3a5116134cddcb42abad6ac6ea4c78b4eb0fa291a1764ef62dbe4bf"
+    },
+    {
+      "source": "configs\\labram_full_sentence.yaml",
+      "archived": "configs\\labram_full_sentence.yaml",
+      "sha256": "f6ffd06afb5b2fe9d020cac9d98b233b4734c726c0feae7f7b5bb8e69ed5bc37"
+    },
+    {
+      "source": "configs\\local.yaml",
+      "archived": "configs\\local.yaml",
+      "sha256": "b81d4826a29787705e5d47d347a1c7fb407794887bfe23ad71b49bb57f60390d"
+    },
+    {
+      "source": "configs\\transfer_exploratory_ridge.yaml",
+      "archived": "configs\\transfer_exploratory_ridge.yaml",
+      "sha256": "f3fe0b19a14c6a925b32f57122ec15a03e438970259eb852a492ff68eca78720"
+    },
+    {
+      "source": "configs\\transfer_exploratory_seed43.yaml",
+      "archived": "configs\\transfer_exploratory_seed43.yaml",
+      "sha256": "9663eb63baad6bc27e02b814cd8ee5f51d00773ab77921e9b5d865bce75eeb57"
+    },
+    {
+      "source": "configs\\transfer_exploratory_seed44.yaml",
+      "archived": "configs\\transfer_exploratory_seed44.yaml",
+      "sha256": "5f19bd71df247cec78b93c456c506ce6a7eaf937b79dd1cdadeea4ef80ba185d"
+    },
+    {
+      "source": "src\\eeg_decoding\\models\\classical.py",
+      "archived": "implementation\\classical.py",
+      "sha256": "187a553d67b0fd0dc12edb34e8b77927a9d22e4689bd6ac0935212f042466cfc"
+    },
+    {
+      "source": "src\\eeg_decoding\\workflow.py",
+      "archived": "implementation\\workflow.py",
+      "sha256": "d22976054ac348b2eb72819ab57d49054f180a3d628d42192ed9074fab13117a"
+    },
+    {
+      "source": "src\\eeg_decoding\\evaluation\\transfer_summary.py",
+      "archived": "implementation\\transfer_summary.py",
+      "sha256": "68540f24d887537b5a343bd5d07c61e9d2908645f14b34654b600abc402e50bb"
+    },
+    {
+      "source": "scripts\\refit_ridge_path.py",
+      "archived": "implementation\\refit_ridge_path.py",
+      "sha256": "1c33909c629fcd5d3da39daf6ee03986631f39823c00320c6dc8cf342f70a3c3"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\0001_ridge_exploratory_zuco1_to_zuco2_gaussian_q0_s42\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s42_gaussian.json",
+      "sha256": "3fa0500e5b5ade25d71b372e76d5eac3c6329e4ac8d9125fe192dec52e5e599f"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\zuco1_to_zuco2_real\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s42_real.json",
+      "sha256": "480fb7cb1255e780d66134bccd1d14c1e685e5d280faf744242840fc808eef9e"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\0002_ridge_exploratory_zuco1_to_zuco2_shuffled_q0_s42\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s42_shuffled.json",
+      "sha256": "3d4a57e5bba3920cc586e2a5e753a2c46b0c70d033db2384cdba4950c0575361"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0001_ridge_exploratory_zuco1_to_zuco2_gaussian_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s43_gaussian.json",
+      "sha256": "a8b462f09b6db1d2cc7c6560a440f65aae63e8ecdf71317d500373c62a10d329"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0000_ridge_exploratory_zuco1_to_zuco2_real_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s43_real.json",
+      "sha256": "fe4fe47f2dcf3616b3d83316b570c06d9e512e7402b619fa56447e0680ca8699"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0002_ridge_exploratory_zuco1_to_zuco2_shuffled_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s43_shuffled.json",
+      "sha256": "b1b6aa2b97aac1fe1c3cbc36741bb611290f422892e1be2abbe0abf5140c6d03"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0001_ridge_exploratory_zuco1_to_zuco2_gaussian_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s44_gaussian.json",
+      "sha256": "db95368b9ed146e2185fe8bfd4cd8264a548f88b720f294a82e1f6d8d14309a5"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0000_ridge_exploratory_zuco1_to_zuco2_real_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s44_real.json",
+      "sha256": "d4a8bbeca704984bf3d77c66427227b54b8e66e075de91f241bfcab7761f1ddc"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0002_ridge_exploratory_zuco1_to_zuco2_shuffled_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco1_to_zuco2_s44_shuffled.json",
+      "sha256": "c819f7f55982f4e554c2a7c21692981f046cb061da81330d9656fa4c60a4818a"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\0004_ridge_exploratory_zuco2_to_zuco1_gaussian_q0_s42\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s42_gaussian.json",
+      "sha256": "768f72e6c5f36cf17b1efca3986ad459eab1bf8cf3bcebfa7f20905957b88473"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\0003_ridge_exploratory_zuco2_to_zuco1_real_q0_s42\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s42_real.json",
+      "sha256": "16f49cd621a5f3dfb2ce2c91a65bb52d3c44562114021dbba16dd142d6b1304a"
+    },
+    {
+      "source": "results\\exploratory_regularization_20261029\\0005_ridge_exploratory_zuco2_to_zuco1_shuffled_q0_s42\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s42_shuffled.json",
+      "sha256": "8fccb22c88656b5f129bdc71ec9bea2dcd2b22c4ab348d8795f75e425ac38265"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0004_ridge_exploratory_zuco2_to_zuco1_gaussian_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s43_gaussian.json",
+      "sha256": "e3e8378a4c86212a99b1b70417251fbd6289233eff55d0f01a4790521a25a232"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0003_ridge_exploratory_zuco2_to_zuco1_real_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s43_real.json",
+      "sha256": "a110962a266e8e7f78a68a3853f76eca1631f9d4d38ee6fcc1f6845ab22e4894"
+    },
+    {
+      "source": "results\\exploratory_wider_seed43_20261029\\0005_ridge_exploratory_zuco2_to_zuco1_shuffled_q0_s43\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s43_shuffled.json",
+      "sha256": "25c643be6040c46c0d8f6fb5cae3cb1dd24539f33e846b8c07b5bde59766bae4"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0004_ridge_exploratory_zuco2_to_zuco1_gaussian_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s44_gaussian.json",
+      "sha256": "cb2bed9527fe5a5120c3565afb1be9f26695541bb7da7907ab5f1d66e5e209e2"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0003_ridge_exploratory_zuco2_to_zuco1_real_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s44_real.json",
+      "sha256": "3d375990397649631a633681fcd9850ee9a0a0872d786a25b330491672041292"
+    },
+    {
+      "source": "results\\exploratory_wider_seed44_20261029\\0005_ridge_exploratory_zuco2_to_zuco1_shuffled_q0_s44\\evaluation.json",
+      "archived": "evaluations\\zuco2_to_zuco1_s44_shuffled.json",
+      "sha256": "0f742cfee5f3d47f992727ae6585607345edc4cab65fcc59ffce0592e8c20d36"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0000_ridge_exploratory_zuco1_to_zuco2_real_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0000_ridge_exploratory_zuco1_to_zuco2_real_q0_s42\\evaluation.json",
+      "sha256": "d2808fdcec9dd3d2339cca88072c8c8d16e33b1e49fd775b04a809fc9ed49827"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0001_ridge_exploratory_zuco1_to_zuco2_gaussian_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0001_ridge_exploratory_zuco1_to_zuco2_gaussian_q0_s42\\evaluation.json",
+      "sha256": "3d42e3a6afa8376beea90a567b99095a679162f1480ba7cc5a130e11fac05ab4"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0002_ridge_exploratory_zuco1_to_zuco2_shuffled_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0002_ridge_exploratory_zuco1_to_zuco2_shuffled_q0_s42\\evaluation.json",
+      "sha256": "c74f5bf0020fc01f72676984f3f8eded78271889992374ff1db3e1f1bea1e0db"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0003_ridge_exploratory_zuco2_to_zuco1_real_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0003_ridge_exploratory_zuco2_to_zuco1_real_q0_s42\\evaluation.json",
+      "sha256": "69979412eb9910a79abf1ae1f13b151643529b52afc4a3ea273903b90655d5d2"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0004_ridge_exploratory_zuco2_to_zuco1_gaussian_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0004_ridge_exploratory_zuco2_to_zuco1_gaussian_q0_s42\\evaluation.json",
+      "sha256": "226171bd2fc9176e54eb15ee0aa9cd2f69c92cd9de136b3a72b76dda5821c7d6"
+    },
+    {
+      "source": "results\\exploratory_transfer_20261029_232616\\0005_ridge_exploratory_zuco2_to_zuco1_shuffled_q0_s42\\evaluation.json",
+      "archived": "original_grid_evaluations\\0005_ridge_exploratory_zuco2_to_zuco1_shuffled_q0_s42\\evaluation.json",
+      "sha256": "b4692e413f7c635204527c6a9620177f93ebc88def22ae14085ae9569bac5f6d"
+    },
+    {
+      "source": "scripts\\consolidate_transfer.py",
+      "archived": "implementation\\consolidate_transfer.py",
+      "sha256": "ddc844fde58e4c82f3dbc49858bf9ea28f5386c2d4a0d155e20095fb3046fde5"
+    },
+    {
+      "source": "scripts\\consolidate_report.py",
+      "archived": "implementation\\consolidate_report.py",
+      "sha256": "c83983294fbbf49adeff631bd64479bd14b58e188258dd8b3d03b63b685907f0"
+    },
+    {
+      "source": "scripts\\consolidate_presentation.py",
+      "archived": "implementation\\consolidate_presentation.py",
+      "sha256": "25af48117787d097d2ed0ce4bc40534e811f5dce2ee2eee4b478fa83469dcf28"
+    },
+    {
+      "source": "scripts\\validate_consolidation.py",
+      "archived": "implementation\\validate_consolidation.py",
+      "sha256": "480556ad393e9536ac0e093b2148a6138b82bd77adb0bf0c9dab0296b0ec3c74"
+    },
+    {
+      "source": "scripts\\render_presentation.ps1",
+      "archived": "implementation\\render_presentation.ps1",
+      "sha256": "9293235af27986a5b9a793a956b915041be72cf672b3e16971509991e497a815"
+    },
+    {
+      "source": "scripts\\check_slide_text_bounds.ps1",
+      "archived": "implementation\\check_slide_text_bounds.ps1",
+      "sha256": "c37ecb84500e280adb5b3c5f9b6afb2a9beef4e194d7e1b3bf5c4b4bb5eb87bc"
+    }
+  ],
+  "historical_export": {
+    "path": "docs/research_results/retrieval.csv",
+    "rows": 79,
+    "sha256": "97b9b388ea7d66fa032c09f24dca5774e0a171cd50eafe11802c5abd871c9569",
+    "unchanged": true
+  },
+  "figures": {
+    "wider_grid_mean_sd.png": "0e83130ea45b31f4438463d1197e81b6ff0bbf15f28dbaf3db4805c0b4da92e2",
+    "wider_grid_mean_sd.svg": "6fede73640c1131acde0765df7ccb7afee04a21a4e70ccb4592aa71a5e1b89cf",
+    "wider_grid_real_minus_gaussian.png": "d9fd1ad28af9b0108150dd2d7832f8c1b84706faf50f86a92310669bfb328e2a",
+    "wider_grid_real_minus_gaussian.svg": "e01e64c022b4550af7872c3c82dc9ed3e580e1ce4c814f181a0c0e76bc0090b1",
+    "wider_grid_seed_mrr.png": "8cb746b17b2c7c2148e6a61ea984b95260f90e90b85ef4917f3170d4a0944cbf",
+    "wider_grid_seed_mrr.svg": "4bb63c4eab0fd344496a9ef14b23e678e7c38efb9ce5d38ff741e789a236ebb8"
+  }
+}

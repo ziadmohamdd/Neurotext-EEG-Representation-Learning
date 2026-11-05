@@ -1,0 +1,300 @@
+{
+  "scope": "ZuCo1 normal reading; saved seed-42 CNN subject split only; not transfer splits",
+  "training_launched": false,
+  "targets_modified": false,
+  "classification_version": "manual_v1_formatting_orthography_wording_mapping",
+  "classifications": {
+    "formatting_only": [
+      10,
+      23,
+      45,
+      51,
+      61,
+      91,
+      98,
+      100,
+      106,
+      122,
+      140,
+      150,
+      167,
+      180,
+      194,
+      235,
+      241,
+      248,
+      252,
+      295,
+      297
+    ],
+    "canonical_key_difference": [
+      26,
+      69,
+      71,
+      73,
+      114,
+      154,
+      251,
+      255
+    ],
+    "substantive_wording": [
+      24,
+      35,
+      64,
+      65,
+      66,
+      203,
+      227,
+      275
+    ],
+    "unresolved_mapping": []
+  },
+  "current_export_hashes_match_pinned_plan": 12,
+  "inputs_sha256": {
+    "scripts\\investigate_text_discrepancies.py": "6174a7ffcb11b61762e2c384ce7b18670a312c9fecd01339aa21abc2aae11999",
+    "tests\\test_text_discrepancy_audit.py": "25f7f68214f04ede8f678b686d6e76b2ada21f55556aae142899b6700f56cbcc",
+    "data\\processed\\zuco1_batch\\combined.jsonl": "402cbf9cb0cc357bac497994eadacea21f722f9de67b2878b1e2d40c971b8b13",
+    "data\\manifests\\zuco1_duration_qc.jsonl": "20a1e455107405c90eb6b69aa4c31a26066cc63384071304698506434cca015f",
+    "results\\cnn_candidate_comparison_20261030\\batch_real\\splits.json": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163",
+    "data\\processed\\zuco1_batch\\sentence_embeddings_a01b38226d177cab.npz": "f38649e2ee0278f8ec1c512786b4313f8ea09b9ef51810af892f7745fc2ab7b6",
+    "results\\pairing_audit_20261030\\official_relations_labels_task2.csv": "017b118da4821e572a2e782f8add1e4a6258afeddf8566d68cf829f3bbf46cb9",
+    "results\\pairing_audit_20261030\\official_firstLevel_NR.m": "4624c63811a56bfc7214a3b5be5344d1855b9587f38904e1eb851dcc808fa6f2",
+    "results\\pairing_audit_20261030\\audit.json": "8973f7589fce79c7d49bd9b917c913fae4d68bf74776650109b27ba1e8a05097",
+    "results\\pairing_audit_20261030\\stimulus_variant_audit.json": "b34347fba3a3b161c12c39000c624c3695cc771c8c8de3c6db6082c95c350a55",
+    "results\\text_discrepancy_investigation_20261030\\sentencesNR.mat": "fdec1f01d6edbcbaf01418a90233f00759b2b08eb95c6018bf503235297a0ff4",
+    "results\\text_discrepancy_investigation_20261030\\relations_normal_reading.csv": "6192be2407426a433ea4ad9890a67f7275680605d1aae003c76bc7ac5a4111a7",
+    "results\\text_discrepancy_investigation_20261030\\nemar_relations_labels_task2.tsv": "e17c9fde146a01c6b33f4c91e591c519c69cf4933b0a7d4ca0733a952bafca2e",
+    "results\\text_discrepancy_investigation_20261030\\osf_exports_inventory.json": "a774bd4d90e9379c86aba5aa3eb046ccf657f814872d6cd69b78e632ecab2018",
+    "results\\text_discrepancy_investigation_20261030\\osf_preprocessed_inventory.json": "85cd6b1d77b6d94680bd6f2c477c098785c39f5f8e8b8c3e05fceb0e64210c29",
+    "results\\pairing_audit_20261030\\osf_materials_inventory.json": "6136c67ed2ef1176badae584351cd24e2e2659c6c9caaa838be30b0230e1250e",
+    "results\\pairing_audit_20261030\\osf_matlab_inventory.json": "b66ccd11dc29dac4e52e7a7dfa2b0daab96460a122413597099c255cf9b0f607",
+    "data\\raw\\zuco1\\download_plan.json": "990789fa71561fdd6b7b80f434a2c54f6c6229227824a5cc99adfeb72cc4d3a7"
+  },
+  "counts": {
+    "prepared": {
+      "formatting_only": {
+        "unique_sentences": 21,
+        "observations": 234
+      },
+      "canonical_key_difference": {
+        "unique_sentences": 8,
+        "observations": 88
+      },
+      "substantive_wording": {
+        "unique_sentences": 8,
+        "observations": 86
+      },
+      "unresolved_mapping": {
+        "unique_sentences": 0,
+        "observations": 0
+      },
+      "total": {
+        "unique_sentences": 37,
+        "observations": 408
+      },
+      "all_observations": 3356
+    },
+    "duration_qc_retained": {
+      "formatting_only": {
+        "unique_sentences": 21,
+        "observations": 234
+      },
+      "canonical_key_difference": {
+        "unique_sentences": 8,
+        "observations": 87
+      },
+      "substantive_wording": {
+        "unique_sentences": 8,
+        "observations": 85
+      },
+      "unresolved_mapping": {
+        "unique_sentences": 0,
+        "observations": 0
+      },
+      "total": {
+        "unique_sentences": 37,
+        "observations": 406
+      },
+      "all_observations": 3349
+    },
+    "train": {
+      "formatting_only": {
+        "unique_sentences": 21,
+        "observations": 156
+      },
+      "canonical_key_difference": {
+        "unique_sentences": 8,
+        "observations": 57
+      },
+      "substantive_wording": {
+        "unique_sentences": 8,
+        "observations": 55
+      },
+      "unresolved_mapping": {
+        "unique_sentences": 0,
+        "observations": 0
+      },
+      "total": {
+        "unique_sentences": 37,
+        "observations": 268
+      },
+      "all_observations": 2245
+    },
+    "validation": {
+      "formatting_only": {
+        "unique_sentences": 21,
+        "observations": 37
+      },
+      "canonical_key_difference": {
+        "unique_sentences": 8,
+        "observations": 14
+      },
+      "substantive_wording": {
+        "unique_sentences": 8,
+        "observations": 14
+      },
+      "unresolved_mapping": {
+        "unique_sentences": 0,
+        "observations": 0
+      },
+      "total": {
+        "unique_sentences": 37,
+        "observations": 65
+      },
+      "all_observations": 512
+    },
+    "test": {
+      "formatting_only": {
+        "unique_sentences": 21,
+        "observations": 41
+      },
+      "canonical_key_difference": {
+        "unique_sentences": 8,
+        "observations": 16
+      },
+      "substantive_wording": {
+        "unique_sentences": 8,
+        "observations": 16
+      },
+      "unresolved_mapping": {
+        "unique_sentences": 0,
+        "observations": 0
+      },
+      "total": {
+        "unique_sentences": 37,
+        "observations": 73
+      },
+      "all_observations": 592
+    }
+  },
+  "punctuation_repair_proposal_counts": {
+    "train": {
+      "unique_sentences": 3,
+      "observations": 22
+    },
+    "validation": {
+      "unique_sentences": 3,
+      "observations": 6
+    },
+    "test": {
+      "unique_sentences": 3,
+      "observations": 6
+    }
+  },
+  "duration_excluded_observations": [
+    [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "168"
+    ],
+    [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "173"
+    ],
+    [
+      "zuco1",
+      "ZDM",
+      "unspecified",
+      "nr",
+      "195"
+    ],
+    [
+      "zuco1",
+      "ZDN",
+      "unspecified",
+      "nr",
+      "278"
+    ],
+    [
+      "zuco1",
+      "ZJM",
+      "unspecified",
+      "nr",
+      "275"
+    ],
+    [
+      "zuco1",
+      "ZJS",
+      "unspecified",
+      "nr",
+      "250"
+    ],
+    [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "71"
+    ]
+  ],
+  "duration_excluded_discrepant_observations": [
+    {
+      "identity": [
+        "zuco1",
+        "ZJM",
+        "unspecified",
+        "nr",
+        "275"
+      ],
+      "category": "substantive_wording",
+      "retained": false,
+      "split": null
+    },
+    {
+      "identity": [
+        "zuco1",
+        "ZMG",
+        "unspecified",
+        "nr",
+        "71"
+      ],
+      "category": "canonical_key_difference",
+      "retained": false,
+      "split": null
+    }
+  ],
+  "all_prepared_match_sentence_MAT_at_export_id_plus_5": true,
+  "sentence_MAT_total_rows": 595,
+  "practice_rows": 5,
+  "exported_sentence_rows": 300,
+  "unused_trailing_sentence_MAT_rows": 290,
+  "crossed_identifier_matches": 300,
+  "control_flag_matches": 300,
+  "nemar_mirror_annotation_field_dicts_equal": true,
+  "presentation_vs_sentence_MAT_different_zero_based_rows": [
+    2,
+    103,
+    105,
+    253
+  ],
+  "presentation_csv_encoding": "MacRoman inferred, not publisher-declared; bytes D1 and D5 interpreted as em dash and right apostrophe",
+  "canonical_key_changed_discrepancies": 37,
+  "current_unique_candidate_keys": 300,
+  "annotation_unique_candidate_keys": 300,
+  "decision": "Retain existing dataset; do not wholesale substitute annotation CSV. Propose separately versioned, limited punctuation repair for IDs 98,100,248, subject to explicit adoption; no corrected manifest created."
+}

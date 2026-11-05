@@ -1,0 +1,17 @@
+{
+  "dataset": "zuco2",
+  "subject": "YAC",
+  "sentence_id": "0",
+  "word_index_one_based": 2,
+  "fixation_cell_one_based": 2,
+  "prefix_matches": [
+    {
+      "sentence_relative_start_sample_zero_based": 4631,
+      "overlap_samples": 129,
+      "fixation_samples": 168,
+      "all_overlap_samples_exact": true,
+      "extends_beyond_sentence_array": true
+    }
+  ],
+  "scope": "Measured sample containment only, no acquisition clock inferred"
+}

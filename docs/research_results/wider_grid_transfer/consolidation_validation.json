@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "artifact checks only; no new experiments or pytest run",
+  "wider_grid_rows": 18,
+  "original_grid_rows": 6,
+  "historical_export_rows": 79,
+  "slides": 20,
+  "editable_seed_table_rows_checked": 18,
+  "prior_experiment_files_unchanged": 67,
+  "source_report_and_metadata_hashes_verified": 36,
+  "xml_relationships": "all internal targets resolved",
+  "historical_slides_2_to_12": "byte-identical slide XML",
+  "recorded_validation": {
+    "passed": 139,
+    "optional_skips": 2,
+    "deselected": 0,
+    "command": ".venv/Scripts/python.exe -m pytest -q -rs",
+    "skips": [
+      {
+        "test": "tests/test_storage_and_pretrained.py::test_official_pretrained_weights_on_synthetic_input",
+        "reason": "optional official-weight integration; no network download during unit tests"
+      },
+      {
+        "test": "tests/test_storage_and_pretrained.py::test_pretrained_cache_extraction",
+        "reason": "optional official-weight extraction on synthetic fixtures"
+      }
+    ],
+    "skip_condition": "EEG_LABRAM_CACHE unset; large-MAT test included and passed"
+  },
+  "render": "20 slides and PDF exported with Microsoft PowerPoint; visual review completed",
+  "text_bounds": "PowerPoint read-only check reported no text overflow",
+  "deliverables": {
+    "docs\\presentation\\NeuroText_consolidated.pptx": "84d64a8f38aeb6751ee3443a944bbc3f956d00e85c089321f65077395a2e8acf",
+    "docs\\presentation\\NeuroText_consolidated.pdf": "cf3438a69edfdd3582a63f88261aded254c3dc84cc3102d791865450f4534e14",
+    "docs\\research_results\\REPORT.md": "24eee5e2097763d0a58207c02e489d496e3076975975bf45ba6301050de446db"
+  }
+}

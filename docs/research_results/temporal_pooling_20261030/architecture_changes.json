@@ -1,0 +1,37 @@
+[
+  {
+    "comparison": "real",
+    "recall@1": 0.0,
+    "recall@5": 0.0,
+    "recall@10": -0.00390625,
+    "mrr": 0.00022841508555887166
+  },
+  {
+    "comparison": "gaussian",
+    "recall@1": 0.001953125,
+    "recall@5": 0.005859375,
+    "recall@10": -0.00390625,
+    "mrr": 0.002959302835606366
+  },
+  {
+    "comparison": "shuffled",
+    "recall@1": 0.0,
+    "recall@5": -0.01171875,
+    "recall@10": -0.00390625,
+    "mrr": -0.0019981504176785833
+  },
+  {
+    "comparison": "real_minus_gaussian",
+    "recall@1": -0.001953125,
+    "recall@5": -0.005859375,
+    "recall@10": 0.0,
+    "mrr": -0.002730887750047494
+  },
+  {
+    "comparison": "real_minus_shuffled",
+    "recall@1": 0.0,
+    "recall@5": 0.01171875,
+    "recall@10": 0.0,
+    "mrr": 0.002226565503237455
+  }
+]

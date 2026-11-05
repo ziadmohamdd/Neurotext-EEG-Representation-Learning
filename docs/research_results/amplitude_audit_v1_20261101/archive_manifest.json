@@ -1,0 +1,122 @@
+[
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\decision.json",
+    "archive": "decision.json",
+    "sha256": "1fc8ec57422d1b3a47779f1b84539b3a67aec1fe892c222128828c68ca539899"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZDM_provenance.json",
+    "archive": "fold_ZDM_provenance.json",
+    "sha256": "55017e971ea9710dc7eee8303d794edce03e108c13eed8c771c795bb4404d612"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZDN_provenance.json",
+    "archive": "fold_ZDN_provenance.json",
+    "sha256": "fa93932c031a0a022f8ab34effe365c90b092844e2b3d150fdfe59a9d79e7384"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZGW_provenance.json",
+    "archive": "fold_ZGW_provenance.json",
+    "sha256": "0ce57950d6645183ade62605300dac56158abb091ae497a56283093fd537b4aa"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZJM_provenance.json",
+    "archive": "fold_ZJM_provenance.json",
+    "sha256": "6cef35782fdc5b42d2a94daa628edb1e31c275daeac66cbf55b1e4a498325e53"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZJN_provenance.json",
+    "archive": "fold_ZJN_provenance.json",
+    "sha256": "f13646ea45647cafa79fae73fc06bc41a5c3b92763cc2755e7891a9d907282d8"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZKH_provenance.json",
+    "archive": "fold_ZKH_provenance.json",
+    "sha256": "16cd69f93cdd56eba27154d6ad0e564cde3b20b5f0a9863168c6973fba9328ee"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZMG_provenance.json",
+    "archive": "fold_ZMG_provenance.json",
+    "sha256": "12f71061e217563edde52ab390da4618a23dd5f0be03726be4ed5905eba75c85"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\fold_ZPH_provenance.json",
+    "archive": "fold_ZPH_provenance.json",
+    "sha256": "85146a699381bdecc77bcc0a1b16775e9ca7fa4ac9d40bde958d367bdc22d83a"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\inner_training_scores.json",
+    "archive": "inner_training_scores.json",
+    "sha256": "b0b27ef51617b43f2e6a8b5538424dca9f449acbcd47a38dedb23de448324dc4"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\plan.json",
+    "archive": "plan.json",
+    "sha256": "b96fe97153d4a92c9ad6d8b588ac87ce7e989552e3c395ef3b056ff4a9ee8673"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\preservation_after.json",
+    "archive": "preservation_after.json",
+    "sha256": "f7ab498b6e71b362ef79d2c98888905393ca4fede5ec60a76430a1ff11b557cd"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\preservation_before.json",
+    "archive": "preservation_before.json",
+    "sha256": "930019e07f5850816aa0c16cf00e55a5b0da49d48477ac429b289114674583e2"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\training_feature_audit.json",
+    "archive": "training_feature_audit.json",
+    "sha256": "da4b0bb4d748cfe6416d985bbd66af799d26f18993ae25ac4bf3f92b2efb4f27"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\training_summary.json",
+    "archive": "training_summary.json",
+    "sha256": "4451911e39f0b08b84b4e571eafeb90e2e3a754a318f8f2f8d0ed506b795c2d4"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\verification.json",
+    "archive": "verification.json",
+    "sha256": "bc0f72b6211c9a778e587f1e1245db9b9bcaeca79fb8c07f46b982852c3da7fc"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\amplitude_audit_v1.json",
+    "archive": "implementation\\amplitude_audit_v1.json",
+    "sha256": "7d376936effb65959c331b29ddbf81e66be16643e6b735b5ca4f80127e697563"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\incremental_ridge.py",
+    "archive": "implementation\\incremental_ridge.py",
+    "sha256": "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\relative_trt.py",
+    "archive": "implementation\\relative_trt.py",
+    "sha256": "19a7d000a9c87031df76883991a60010c4630e5516960bcb33f74f941be7204f"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\run_amplitude_audit.py",
+    "archive": "implementation\\run_amplitude_audit.py",
+    "sha256": "d1802f42c30766c8c399f35cf5d016e65992dfb7a042b689e85a9d81c0695c0d"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\spectral_pilot.py",
+    "archive": "implementation\\spectral_pilot.py",
+    "sha256": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353"
+  },
+  {
+    "source": "results\\amplitude_audit_v1_20261101\\implementation\\test_relative_trt.py",
+    "archive": "implementation\\test_relative_trt.py",
+    "sha256": "7e52b45901e2100a5a14624d4027335203c06da17a36f75c015438ff823b923a"
+  },
+  {
+    "source": "scripts\\report_amplitude_audit.py",
+    "archive": "reporting\\report_amplitude_audit.py",
+    "sha256": "0af5c450b9f4a5d3d93040a08f77c5a0d0c3bc4a84210e0cbd0fb15589610cc8"
+  },
+  {
+    "source": "scripts/verify_amplitude_audit.py",
+    "archive": "reporting/verify_amplitude_audit.py",
+    "sha256": "2f57388b512e173dcba11ce7b28699e89f67f05c490319de48872bdd5b64efb4"
+  }
+]

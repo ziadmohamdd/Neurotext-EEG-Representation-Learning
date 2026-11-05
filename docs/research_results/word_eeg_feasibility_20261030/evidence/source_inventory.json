@@ -1,0 +1,242 @@
+[
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZAB_NR.mat",
+    "sha256": "e1c8d551319fdd31de1b874551dfb0b0898f3b461e2e1a4a2ec327fe7829ef8c",
+    "source_matches_download_plan": true,
+    "seconds": 59.655999999988126
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZDM",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZDM_NR.mat",
+    "sha256": "2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d",
+    "source_matches_download_plan": true,
+    "seconds": 61.84299999999348
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZDN",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZDN_NR.mat",
+    "sha256": "ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604",
+    "source_matches_download_plan": true,
+    "seconds": 58.578000000008615
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZGW",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZGW_NR.mat",
+    "sha256": "c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723",
+    "source_matches_download_plan": true,
+    "seconds": 67.54699999999139
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZJM",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJM_NR.mat",
+    "sha256": "fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0",
+    "source_matches_download_plan": true,
+    "seconds": 73.76599999997416
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZJN",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJN_NR.mat",
+    "sha256": "93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15",
+    "source_matches_download_plan": true,
+    "seconds": 75.40700000000652
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZJS",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJS_NR.mat",
+    "sha256": "ee156114b0a8f48007a74de02b13a72a0611af1590b0062eeb2a95bd36ea2d1c",
+    "source_matches_download_plan": true,
+    "seconds": 19.703000000008615
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZKB",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZKB_NR.mat",
+    "sha256": "93f510ebdc2b43624889c8d65be7856a8a6daa2cbbab96be0ef2778aff001238",
+    "source_matches_download_plan": true,
+    "seconds": 27.21899999998277
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZKH",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZKH_NR.mat",
+    "sha256": "fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d",
+    "source_matches_download_plan": true,
+    "seconds": 27.75
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZKW",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZKW_NR.mat",
+    "sha256": "f30d3f0fc58e9774f07b141545313a584232ae4972e4d492191c84f3051442f5",
+    "source_matches_download_plan": true,
+    "seconds": 32.719000000011874
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZMG",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZMG_NR.mat",
+    "sha256": "ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2",
+    "source_matches_download_plan": true,
+    "seconds": 26.905999999988126
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZPH",
+    "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZPH_NR.mat",
+    "sha256": "fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94",
+    "source_matches_download_plan": true,
+    "seconds": 25.01600000000326
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYAC_NR.mat",
+    "sha256": "0fbe472ed81fd80697c051e89d2af72ec12ebd2b4ec25f65ce47460aec26d8f5",
+    "source_matches_download_plan": true,
+    "seconds": 219.60899999999674
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAG",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYAG_NR.mat",
+    "sha256": "aaa9ce8a8a615d3af2eafcf756f8a7fb5fc010d54d7485151b104ef585a94ce7",
+    "source_matches_download_plan": true,
+    "seconds": 140.65599999998813
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAK",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYAK_NR.mat",
+    "sha256": "07d877e639b899bdc9cb8f63d3250a9cbe3495eccad50a9e6226280d8fba533b",
+    "source_matches_download_plan": true,
+    "seconds": 105.45299999997951
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YDG",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYDG_NR.mat",
+    "sha256": "e7fc40698f3c87f31100b2f3f85278b56c498d00bf162a32c9b6bbd89ac6bf09",
+    "source_matches_download_plan": true,
+    "seconds": 130.9220000000205
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YDR",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYDR_NR.mat",
+    "sha256": "5143ecd17a1942aed705da78d857e1551d1a211fc1a0827de098b6cce06840f5",
+    "source_matches_download_plan": true,
+    "seconds": 124.36000000001513
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YFR",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYFR_NR.mat",
+    "sha256": "523bb9f407de077547e658cc173b6ab9d57d5bcdb17e470cba6141d611cb259a",
+    "source_matches_download_plan": true,
+    "seconds": 134.5
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YFS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYFS_NR.mat",
+    "sha256": "db464aa7df52464979b6346a45183b3dc203882cfa9b3caa887b5d858bc389b3",
+    "source_matches_download_plan": true,
+    "seconds": 122.04700000002049
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YHS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYHS_NR.mat",
+    "sha256": "f92093dfcfb39ddf142d28c24644ba63379fdd123407432c8fd9d15c24576857",
+    "source_matches_download_plan": true,
+    "seconds": 119.76500000001397
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YIS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYIS_NR.mat",
+    "sha256": "bee4253689232fb54b1780db17e7e2799e37ef5ac9ea355068e7b6a59051a3c9",
+    "source_matches_download_plan": true,
+    "seconds": 131.81200000000536
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YLS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYLS_NR.mat",
+    "sha256": "a1b2e948c3cdd5712ef86ac0509fcc4ccb58ecdeb8d727b563d52c2ddd0c5d5a",
+    "source_matches_download_plan": true,
+    "seconds": 131.35900000002584
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YMD",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYMD_NR.mat",
+    "sha256": "ef2933eb003d89c156db4977504336550c99f8d4a0e16dd71d8a8378e94a55af",
+    "source_matches_download_plan": true,
+    "seconds": 140.18700000000536
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YMS",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYMS_NR.mat",
+    "sha256": "f5584c11b11b02db7ef027108d33527b5f7ffe104b1586533e2aee1584730c10",
+    "source_matches_download_plan": true,
+    "seconds": 136.70300000000861
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YRH",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYRH_NR.mat",
+    "sha256": "95cdcf44cd03dad9ad93a8bf74b5bfd22faf09ca59c12ffc82925548737d93a7",
+    "source_matches_download_plan": true,
+    "seconds": 112.60999999998603
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YRK",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYRK_NR.mat",
+    "sha256": "a91c4548e1caee4c6125aee5fefc25b361ca4fac2e4cb593c417ef5fc826dda6",
+    "source_matches_download_plan": true,
+    "seconds": 139.43700000000536
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YRP",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYRP_NR.mat",
+    "sha256": "729df8d66c3151b853fe820cebdfadf9ffb5b4ae9c394ff63f1d723a8ad4a849",
+    "source_matches_download_plan": true,
+    "seconds": 134.43700000000536
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YSD",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYSD_NR.mat",
+    "sha256": "d71b0c8e78955c8768b680aa29c3ddee38dd45781456caee7566cb66b0703f13",
+    "source_matches_download_plan": true,
+    "seconds": 134.98399999999674
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YSL",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYSL_NR.mat",
+    "sha256": "dd006115a6817df048bb816e95f748f42583687eccb47cfd12f44999a1353ce2",
+    "source_matches_download_plan": true,
+    "seconds": 143.7970000000205
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YTL",
+    "source": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\raw\\zuco2\\resultsYTL_NR.mat",
+    "sha256": "b168d543a8f66f50276645fdbd662fcec6ee01370d986315fea1b12aa8cb8b73",
+    "source_matches_download_plan": true,
+    "seconds": 129.79699999999139
+  }
+]

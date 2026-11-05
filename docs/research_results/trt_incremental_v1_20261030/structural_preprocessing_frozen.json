@@ -1,0 +1,10 @@
+{
+  "imputation": "median",
+  "scaling": "standard",
+  "alpha": 10,
+  "transform_sha256": "3fd56f585d37057b4964c16498610ef842da3eb5d217b9e56800100f716528c1",
+  "transformed_array_hashes": {
+    "train": "766471fa3707836f133219ebe98e3a13b494277b16a348f39cf5b241c7486c90",
+    "val": "e2532c1c94f93ffc78a875892b1f996025514d797c3726a8afcf2e84d5077380"
+  }
+}

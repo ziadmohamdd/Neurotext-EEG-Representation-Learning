@@ -1,0 +1,190 @@
+[
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "sentence_id": "0",
+    "word_index_one_based": 1,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      1837
+    ],
+    "fixation_shape": [
+      105,
+      96
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      182
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "sentence_id": "0",
+    "word_index_one_based": 1,
+    "fixation_cell_one_based": 2,
+    "sentence_shape": [
+      105,
+      1837
+    ],
+    "fixation_shape": [
+      105,
+      72
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      395
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "sentence_id": "0",
+    "word_index_one_based": 2,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      1837
+    ],
+    "fixation_shape": [
+      105,
+      101
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      475
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "sentence_id": "0",
+    "word_index_one_based": 3,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      1837
+    ],
+    "fixation_shape": [
+      105,
+      96
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      287
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco1",
+    "subject": "ZAB",
+    "sentence_id": "0",
+    "word_index_one_based": 3,
+    "fixation_cell_one_based": 2,
+    "sentence_shape": [
+      105,
+      1837
+    ],
+    "fixation_shape": [
+      105,
+      52
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      582
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "sentence_id": "0",
+    "word_index_one_based": 1,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      4760
+    ],
+    "fixation_shape": [
+      105,
+      52
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      230
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "sentence_id": "0",
+    "word_index_one_based": 2,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      4760
+    ],
+    "fixation_shape": [
+      105,
+      67
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      151
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "sentence_id": "0",
+    "word_index_one_based": 2,
+    "fixation_cell_one_based": 2,
+    "sentence_shape": [
+      105,
+      4760
+    ],
+    "fixation_shape": [
+      105,
+      168
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "sentence_id": "0",
+    "word_index_one_based": 3,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      4760
+    ],
+    "fixation_shape": [
+      105,
+      67
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      299
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  },
+  {
+    "dataset": "zuco2",
+    "subject": "YAC",
+    "sentence_id": "0",
+    "word_index_one_based": 5,
+    "fixation_cell_one_based": 1,
+    "sentence_shape": [
+      105,
+      4760
+    ],
+    "fixation_shape": [
+      105,
+      56
+    ],
+    "exact_sentence_relative_start_samples_zero_based": [
+      4557
+    ],
+    "scope": "Exact stored waveform containment only; no original acquisition timestamp inferred"
+  }
+]

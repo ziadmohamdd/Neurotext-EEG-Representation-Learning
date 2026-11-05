@@ -1,0 +1,57 @@
+[
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\per_reader.json",
+    "archive": "per_reader.json",
+    "sha256": "862f7d024974c07405cc7bc3bb2baf593b9f6253078e8f6f237f798e5fd5ab50"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\plan.json",
+    "archive": "plan.json",
+    "sha256": "7645a9194c20e73b38f4eaf1248da40a549a1b625ca875b23be4434aa1e2c63b"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\preservation_before.json",
+    "archive": "preservation_before.json",
+    "sha256": "35ebb70c90f171f6f0f34c6469712def149d15cab803bf76a1f0954641b316d2"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\replay_details.json",
+    "archive": "replay_details.json",
+    "sha256": "c8195b7f2d40cad111d69da73f0b2bfb64fe8d73edb54c960a79c2fc7d650395"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\summary.json",
+    "archive": "summary.json",
+    "sha256": "67c690d3f8ef3e3a738e0bd84f371686ae68d41982bd403caea55aeda66add72"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\verification.json",
+    "archive": "verification.json",
+    "sha256": "a703ad369134895ef0729c964ead894bd7ffc13cc15a5a27160a44f18c318df3"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\summary.csv",
+    "archive": "summary.csv",
+    "sha256": "3347254dccca8d737aa09add13a77f60cff995e6d71f36f356f084f8bef0e809"
+  },
+  {
+    "source": "results\\nway_word_pretrain_v1_20261101\\strict_comparison_counts.npz",
+    "archive": "strict_comparison_counts.npz",
+    "sha256": "9f1d8cb58897bb09cb1a7490d8ad635c5a1221ca76835b5739debae7f86e9881"
+  },
+  {
+    "source": "scripts\\report_nway_accuracy.py",
+    "archive": "implementation\\report_nway_accuracy.py",
+    "sha256": "7904b8aeebb68b27dd3147a35fa793079f63fdfc5a66861ab81b7cc0151c7312"
+  },
+  {
+    "source": "src\\eeg_decoding\\evaluation\\nway.py",
+    "archive": "implementation\\nway.py",
+    "sha256": "4e860e414e19e30bd68a1a0a90ff034586209f32c77f1613ff990104c4453a9d"
+  },
+  {
+    "source": "tests\\test_nway.py",
+    "archive": "implementation\\test_nway.py",
+    "sha256": "2472b7d1132c936c56d9d8b8fdcab3d8c21f24b2ddb803442cf70f01db65db9b"
+  }
+]

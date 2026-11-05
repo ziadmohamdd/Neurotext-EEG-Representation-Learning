@@ -1,0 +1,22 @@
+{
+  "audit_tests": "5 passed in 0.65s",
+  "source_files_censused": 30,
+  "source_hashes_match_pinned_plans": 30,
+  "archive_source_copy_hash_matches": 37,
+  "protected_prior_files_unchanged": 494,
+  "nonempty_word_text_mappings_exact": 9583,
+  "inconsistent_fixation_counts_found": 0,
+  "mismatching_omission_rates_found": 0,
+  "partly_nonfinite_raw_EEG_matrices_found": 0,
+  "no_model_training": true,
+  "no_datasets_changed": true,
+  "report_placeholders": "none",
+  "local_links": "passed",
+  "duration_unit_examples_FFD_N_minus_1": 90,
+  "waveform_probe_full_matches": 9,
+  "waveform_probe_partial_boundary_match": {
+    "overlap_samples": 129,
+    "extra_samples": 39
+  },
+  "estimates_are_not_model_benchmarks": true
+}
