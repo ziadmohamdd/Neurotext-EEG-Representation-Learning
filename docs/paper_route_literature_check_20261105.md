@@ -22,6 +22,8 @@ v3's near-versus-far design is what would set this apart from a plain split comp
 
 **Update after v3:** [v3](research_results/proximity_attribution_v3_20261105/REPORT.md) was inconclusive on this measurement. The stronger lead is an exploratory one: the text of neighbouring sentences, with no EEG, scores 53.94% at 10-way on the v1 random split. Searches should now also cover no-EEG neighbouring-text baselines.
 
+**Update after v4:** [v4](research_results/position_bridge_v4_20261105/REPORT.md) replaces that figure with 55.10% on sentences free of protected data, and adds that EEG predicts list position for familiar readers (correlation 0.80 and 0.88). Searches should also cover decoding list position or session time from EEG.
+
 ## Still to do before writing
 
 1. Run a systematic search, including Google Scholar and citations of the papers above.
