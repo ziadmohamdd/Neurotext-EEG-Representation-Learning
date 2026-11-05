@@ -96,7 +96,9 @@ v3's own text control reached only 20.65% near. Its held-out sentences sit in cl
 
 - Leakage audit: no failures. Worst Jaccard 0.39, containment 0.73, cosine 0.78.
 - [All 11,119 protected files unchanged](preservation_after.json). v3 finished with exit code 0.
-- v2 test blocks and their buffers were excluded throughout. v1 test sentences were not scored.
+- v2 test blocks and their buffers were excluded from every frozen v3 arm. v1 test sentences were not scored.
+- **Correction:** this report first said those blocks were excluded throughout, which was wrong for the exploratory neighbouring-text check. It scored all 81 v1 validation sentences, including 17 in v2 test blocks and 11 in their buffers, and used the text of zone sentences in training as predictions. That check used text only, with no EEG and no model. Its 53.94% therefore includes protected sentences, and [v4](../../position_bridge_plan_v4_20261105.md) recomputes it without them.
+- v2 test sentences are also not fully fresh: v1 fitted or scored many of them before v2 chose its test blocks.
 - Breakdown scripts: `scripts/analyze_v3_details.py`, `scripts/analyze_v1_neighbour_text.py` and `scripts/check_v1_neighbour_text.py`.
 
-The next step is in the [proposed v4 plan](../../position_bridge_plan_v4_proposed_20261105.md).
+The next step is in the [v4 plan](../../position_bridge_plan_v4_20261105.md).

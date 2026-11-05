@@ -1,0 +1,115 @@
+{
+  "version": "position_bridge_v4_20261105",
+  "status": "approved_20261105",
+  "requires": "Proximity attribution v3 reported; owner approval; sizes recorded before any position model is fitted",
+  "seed": 42,
+  "question": "Can a model that maps EEG only to list position, then copies the text of training sentences at that position, match the v1 CNN at 10-way on the same queries?",
+  "cohort": {
+    "manifests": [
+      "data/manifests/zuco1_duration_qc.jsonl",
+      "data/manifests/zuco2_duration_qc.jsonl"
+    ],
+    "readers": 30,
+    "task": "nr",
+    "new_downloads": false,
+    "observations": 9233
+  },
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+  "targets_changed": false,
+  "protected": {
+    "policy": "v1 test sentences, v2 test blocks and their buffers are never fitted or scored; a run-time audit refuses to continue otherwise",
+    "v2_test_zone": {
+      "block": 25,
+      "buffer": 10,
+      "val_blocks": 2,
+      "test_blocks": 2
+    }
+  },
+  "split": {
+    "source": "The v1 sentence holdout split, seed 42, with the v2 test zone removed from training and validation",
+    "train_sentences": 366,
+    "train_observations": 5262,
+    "scored_sentences": 53,
+    "scored_observations": 766
+  },
+  "inputs": {
+    "v1": {
+      "notch_hz": null,
+      "drop_channels": []
+    },
+    "F": {
+      "notch_hz": 50,
+      "drop_channels": [
+        "Cz"
+      ]
+    }
+  },
+  "bridge": {
+    "features": "Existing eeg_features statistical summaries",
+    "model": "Ridge per release from features to sentence ID; no text enters the fit",
+    "alpha_selection": "Lowest absolute position error on a seeded 15% of training sentences, then refit on all training sentences",
+    "alphas": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "neighbours": 2,
+    "shuffles": 10,
+    "arms": [
+      "real",
+      "gaussian",
+      "shuffled positions, permuted by sentence within release, mean of 10"
+    ]
+  },
+  "reference": {
+    "model": "Saved v1 real-EEG CNN, best checkpoint and stored normalizer, re-predicted on the kept queries; no refit",
+    "minimum_identical_rank_share": 0.99
+  },
+  "evaluation": {
+    "primary_input": "v1",
+    "primary": "Expected 10-way top-1, kept queries against the kept pool per release, reader-macro, ties are misses",
+    "secondary": [
+      "Expected 2-way, 4-way and 24-way",
+      "F input",
+      "Real minus noise",
+      "CNN minus bridge",
+      "Spearman correlation of CNN and bridge scores across sentences",
+      "Position error and correlation"
+    ]
+  },
+  "decision_rule": {
+    "beats_shuffled": "Gap over shuffled at least 2 points, with reader and sentence 97.5% lower bounds above 0",
+    "outcomes": [
+      {
+        "condition": "Beats shuffled and bridge within 2 points of the CNN or above it",
+        "label": "Position alone could account for the CNN score"
+      },
+      {
+        "condition": "Beats shuffled and bridge more than 2 points below the CNN",
+        "label": "Position explains part of the CNN score"
+      },
+      {
+        "condition": "Does not beat shuffled",
+        "label": "This route is not supported"
+      }
+    ]
+  },
+  "random_splits": {
+    "fractions": [
+      0.1,
+      0.15,
+      0.25
+    ],
+    "seeds": 20,
+    "scope": "Text only, with v1 test sentences and the v2 test zone removed first"
+  },
+  "sentence_id_check": "IDs are per-reader MATLAB sentence indices. Report missing-sentence runs per reader; presentation order is not otherwise recorded in the manifests",
+  "test_policy": "No final test data is scored",
+  "stop_rule": "Stop after this run whatever the outcome. No extra settings or models under this plan.",
+  "output": "results/position_bridge_v4_20261105/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}
