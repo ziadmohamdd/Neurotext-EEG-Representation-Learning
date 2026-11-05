@@ -4,6 +4,8 @@ Checked on 2026-11-05, against public code where it exists. Code lines for GLIM 
 
 **Finding: GLIM and SemKey hold out sentences at random, so a held-out sentence can keep its list neighbours in training.** Neither paper or repository reports a check for this. That shows the exposure exists. It does not show that these models use it or that their scores are inflated.
 
+**Update on 2026-11-06:** the [GLIM output check](research_results/glim_output_check_20261106/REPORT.md) found that almost all of GLIM's N-way score comes from telling movie reviews apart from biographies. It found no sign that GLIM's generated text follows list neighbours. This changes the paper route below.
+
 ## What each work does
 
 | Work | How it splits | Reading order | No-signal check |
@@ -61,6 +63,8 @@ The closest work, which any paper would have to cite and separate itself from:
 3. A test of how much of a published model's score survives a split that keeps neighbours apart.
 
 We have evidence for 1 and 2 on our own split and models. Point 3 is what would make the paper matter, and it has not been done for any published model.
+
+After the GLIM check, the leading claim is that mixed-task N-way scores mostly measure telling corpora apart. The neighbouring-text baseline and list-position results remain as evidence about split design, and the route is not shown to affect GLIM's generated text.
 
 ## Next steps
 
