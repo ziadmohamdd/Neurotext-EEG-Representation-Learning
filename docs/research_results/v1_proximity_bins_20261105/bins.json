@@ -1,0 +1,240 @@
+{
+  "cnn_real": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.22358608280516298
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.4147741434733711
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "cnn_gaussian": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.10270449094264843
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.04179005114649016
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "cnn_shuffled": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.09185261482243255
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.23480329367646147
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "ridge_real": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.1777674033522059
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.03813879834278646
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "ridge_gaussian": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.12652189679543419
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.07390240928570928
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "ridge_shuffled": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.10817477454101909
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.03154298654860113
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ],
+  "timing": [
+    {
+      "lag_from": 1,
+      "lag_to": 1,
+      "observations": 1055,
+      "sentences": 74,
+      "readers": 30,
+      "mean_primary": 0.116198444177734
+    },
+    {
+      "lag_from": 2,
+      "lag_to": 2,
+      "observations": 109,
+      "sentences": 7,
+      "readers": 28,
+      "mean_primary": 0.013091862748719013
+    },
+    {
+      "lag_from": 3,
+      "lag_to": 3,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    },
+    {
+      "lag_from": 4,
+      "lag_to": null,
+      "observations": 0,
+      "sentences": 0,
+      "readers": 0,
+      "mean_primary": null
+    }
+  ]
+}

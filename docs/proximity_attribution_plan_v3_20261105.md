@@ -1,6 +1,6 @@
 # Proximity attribution test: plan v3
 
-**Status: proposed, not approved.** No code for this plan exists yet and no EEG has been read for it. After approval, the exact set sizes and the config hash get recorded and [the config](../configs/proximity_attribution_v3_20261105.json) is frozen before the run.
+**Status: approved by the project owner on 2026-11-05.** SHA-256 of [the config](../configs/proximity_attribution_v3_20261105.json): `d6b03507fd34de056f5cadc57d16d04fb862cc966468559598f3f29126fabb8c`. Both files are frozen. Any later change needs a new version.
 
 This plan does not try to raise accuracy. It explains why accuracy fell, so that later accuracy work targets the right cause.
 
@@ -53,12 +53,20 @@ Lag:                    1-5       6-10     11+        6-10     1-5
 
 Measured from sentence IDs and observation counts only, with no EEG read:
 
-| Release | Held out | Near | Far | Far observations |
+| Release | Selection sentences | Scored sentences | Near sentences | Training sentences, each condition |
 |---|---:|---:|---:|---:|
-| ZuCo 1.0 | 21–22 | 29–35 | 71–80 | 823–915 |
-| ZuCo 2.0 | 24–36 | 37–49 | 78–106 | 1,309–1,786 |
+| ZuCo 1.0 | 7 | 14–15 | 28–34 | 71–80 |
+| ZuCo 2.0 | 7–13 | 17–24 | 37–49 | 77–100 |
 
-Each fold trains on about 2,100–2,700 observations, well below v1's 6,894. Near and far use the same number of sentences, and their observation counts will be reported because they can differ slightly.
+Each fold trains on about 2,100–2,600 observations, well below v1's 6,894, and 1,543 observations are scored across the folds. Near and far use the same number of sentences. Their observation counts differ by at most 7 per fold at full size.
+
+### Changes made after approval and before freezing
+
+These came from building the test on sentence IDs and text, before any EEG was read:
+
+- **Extra exclusion:** the audit found held-out sentences sharing at least 80% of their words with training sentences, including neighbouring sentences about the same person. Every sentence in such a pair now joins the excluded list.
+- **Selection score:** selection pools of about 7 sentences cannot give a 10-way score, so ridge settings are chosen on expected 4-way accuracy.
+- **24-way dropped:** ZuCo 1.0 scored pools hold only 14 or 15 sentences.
 
 ### Runs
 
