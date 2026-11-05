@@ -1,0 +1,82 @@
+{
+  "failures": [],
+  "worst": {
+    "jaccard": 0.391304347826087,
+    "containment": 0.7272727272727273,
+    "cosine": 0.7823798656463623
+  },
+  "sizes": [
+    {
+      "zuco1": {
+        "select": 7,
+        "score": 15,
+        "near": 71,
+        "far": 71,
+        "near_half": 35,
+        "far_half": 35,
+        "near_only": 34
+      },
+      "zuco2": {
+        "select": 13,
+        "score": 22,
+        "near": 77,
+        "far": 77,
+        "near_half": 38,
+        "far_half": 38,
+        "near_only": 49
+      },
+      "near_observations": 2120,
+      "far_observations": 2117,
+      "near_half_observations": 1044,
+      "far_half_observations": 1044
+    },
+    {
+      "zuco1": {
+        "select": 7,
+        "score": 14,
+        "near": 80,
+        "far": 80,
+        "near_half": 40,
+        "far_half": 40,
+        "near_only": 28
+      },
+      "zuco2": {
+        "select": 7,
+        "score": 24,
+        "near": 85,
+        "far": 85,
+        "near_half": 42,
+        "far_half": 42,
+        "near_only": 39
+      },
+      "near_observations": 2328,
+      "far_observations": 2335,
+      "near_half_observations": 1159,
+      "far_half_observations": 1162
+    },
+    {
+      "zuco1": {
+        "select": 7,
+        "score": 14,
+        "near": 79,
+        "far": 79,
+        "near_half": 39,
+        "far_half": 39,
+        "near_only": 30
+      },
+      "zuco2": {
+        "select": 7,
+        "score": 17,
+        "near": 100,
+        "far": 100,
+        "near_half": 50,
+        "far_half": 50,
+        "near_only": 37
+      },
+      "near_observations": 2586,
+      "far_observations": 2588,
+      "near_half_observations": 1294,
+      "far_half_observations": 1288
+    }
+  ]
+}

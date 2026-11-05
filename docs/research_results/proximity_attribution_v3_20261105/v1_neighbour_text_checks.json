@@ -1,0 +1,69 @@
+{
+  "observations": 1164,
+  "sentences": 81,
+  "train_val_id_overlap": 0,
+  "train_val_key_overlap": 0,
+  "closest_2": {
+    "2_way": 0.83301786214635,
+    "4_way": 0.6884907461102928,
+    "10_way": 0.5394111220451866,
+    "matched_word_count_10_way": 0.5499100459185996,
+    "recall@1": 0.350384823225366,
+    "recall@5": 0.5906046073529602,
+    "recall@10": 0.7243296850237431,
+    "mrr": 0.48558026388911607
+  },
+  "interval_95": {
+    "reader_interval": [
+      0.5077352928342761,
+      0.5725676022112871
+    ],
+    "sentence_interval": [
+      0.44368859173963016,
+      0.6316189301511949
+    ]
+  },
+  "random_training_text_10_way": {
+    "mean": 0.09776913535959916,
+    "min": 0.08994725265329345,
+    "max": 0.11340149838534463,
+    "seeds": 20
+  },
+  "neighbour_overlap": {
+    "median_word_overlap": 0.2222222222222222,
+    "median_cosine": 0.36235636472702026,
+    "share_overlap_at_least_0.8": 0.015463917525773196
+  },
+  "subsets": {
+    "word_overlap_below_0.8": {
+      "observations": 1146,
+      "sentences": 80,
+      "readers": 30,
+      "10_way": 0.5313644802962779
+    },
+    "word_overlap_below_0.5": {
+      "observations": 1113,
+      "sentences": 77,
+      "readers": 30,
+      "10_way": 0.5300332770044945
+    },
+    "word_overlap_below_0.3": {
+      "observations": 736,
+      "sentences": 49,
+      "readers": 30,
+      "10_way": 0.386870272895149
+    },
+    "cosine_below_0.7": {
+      "observations": 1128,
+      "sentences": 79,
+      "readers": 30,
+      "10_way": 0.5228923224874997
+    },
+    "cosine_below_0.5": {
+      "observations": 861,
+      "sentences": 59,
+      "readers": 30,
+      "10_way": 0.39888355171066286
+    }
+  }
+}
