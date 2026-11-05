@@ -1,0 +1,95 @@
+{
+  "version": "proximity_attribution_v3_20261105",
+  "status": "proposed_not_approved",
+  "requires": "Block-holdout pilot v2 finished and reported; owner approval; exact sizes and config hash recorded before any EEG is read",
+  "seed": 42,
+  "question": "With the same held-out sentences, input and training size, how much does training on sentences close in the reading order raise accuracy, compared with training only on distant sentences?",
+  "cohort": {
+    "manifests": ["data/manifests/zuco1_duration_qc.jsonl", "data/manifests/zuco2_duration_qc.jsonl"],
+    "readers": 30,
+    "task": "nr",
+    "new_downloads": false
+  },
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+  "targets_changed": false,
+  "reading_order_evidence": {
+    "zuco1": "Paper: sentences were presented to all subjects in identical order",
+    "zuco2": "Paper: block and sentence order was identical for all subjects; normal-reading blocks alternate with task blocks",
+    "not_verified": "That sentence IDs equal presentation positions, and where block boundaries and breaks fall"
+  },
+  "split": {
+    "excluded_everywhere": "v2 test blocks and every sentence within 10 list positions of them; sentences that repeat in their list, occur in both releases or have a near-duplicate",
+    "cycle_sentences": 42,
+    "cluster_sentences": 7,
+    "folds": 3,
+    "fold_offsets": [0, 14, 28],
+    "cluster_policy": "Drop a cluster if it touches the excluded v2 test zone; remove other excluded sentences from retained clusters",
+    "selection_policy": "In each fold and release, every third retained cluster selects settings and the others are scored",
+    "near_sentences": "List distance 1 to 5 from the nearest held-out sentence",
+    "gap_sentences": "List distance 6 to 10; used in no fit and no score",
+    "far_sentences": "List distance 11 or more from every held-out sentence",
+    "measured_ranges_per_fold_before_selection": {
+      "zuco1": {"held_out": [21, 22], "near": [29, 35], "far": [71, 80]},
+      "zuco2": {"held_out": [24, 36], "near": [37, 49], "far": [78, 106]}
+    }
+  },
+  "training_conditions": {
+    "far": "All far sentences in the fold",
+    "near": "All near sentences plus seeded far sentences, so each release has the same sentence count as the far condition",
+    "half_size": "Seeded half of each condition, keeping its near share",
+    "matching": "Report observation counts per condition; do not drop observations to equalize them"
+  },
+  "inputs": {
+    "F": {"notch_hz": 50, "drop_channels": ["Cz"], "window": "Whole sentence, center crop only above 30 seconds", "normalizer": "Per reader, fit on training observations only"},
+    "v1": {"notch_hz": null, "drop_channels": [], "window": "Center crop to 8 seconds", "normalizer": "Existing channel normalizer, fit on training observations only"}
+  },
+  "runs": {
+    "cnn": {
+      "encoder": "Existing EEGCNN, temporal_segments 1, embedding_dim 128, settings matching v2",
+      "model_seed_by_fold": [42, 43, 44],
+      "selection": "Lowest alignment loss on selection clusters",
+      "also_reported": "Last-epoch score, because v2 always selected the first epoch",
+      "max_epochs": 50,
+      "patience": 8,
+      "max_hours_per_arm": 2,
+      "arms": [
+        "F input, near and far: real, gaussian and class_shuffled",
+        "F input, half size, near and far: real",
+        "v1 input, near and far: real"
+      ],
+      "total_runs": 30
+    },
+    "ridge": {
+      "features": "Existing eeg_features statistical summaries",
+      "alphas": [0.1, 1, 10, 100, 1000, 10000, 100000],
+      "selection": "Highest selection-cluster primary metric",
+      "arms": "The same arms as the CNN"
+    },
+    "no_eeg_controls": {
+      "conditions": ["near", "far"],
+      "controls": ["timing_only_ridge", "position_only_ridge", "text from the two closest training sentences in the list"]
+    }
+  },
+  "no_training_analysis": "Bin saved v1 validation scores by each query's list distance to its closest training sentence",
+  "evaluation": {
+    "primary": "Expected 10-way top-1 accuracy, CNN real EEG, F input; distractors from scored sentences of the same fold and release; chance 10%",
+    "aggregation": "Mean within reader across folds, then equal weight across 30 readers",
+    "secondary": ["Expected 2-way, 4-way and 24-way where the pool allows", "The same comparison for ridge", "Near share of any gain", "Size effect: full minus half", "Input effect: v1 minus F"],
+    "ties": "A tie with the correct sentence counts as a miss"
+  },
+  "decision_rule": {
+    "gain": "Near minus far, paired by query",
+    "bootstrap": "10000 resamples; 97.5% lower bounds when resampling readers and when resampling sentences",
+    "outcomes": [
+      {"condition": "Gain at least 5 points, both lower bounds above 0, far within 2 points of far noise", "label": "Closeness explains most of the score"},
+      {"condition": "Gain from 2 up to 5 points, both lower bounds above 0", "label": "Closeness explains part of the score"},
+      {"condition": "Gain below 2 points or a lower bound at or below 0, and near at least 12%", "label": "Closeness is not the main cause"},
+      {"condition": "Gain below 2 points or a lower bound at or below 0, and near below 12%", "label": "Inconclusive"}
+    ],
+    "conflict_rule": "Any result that fits no outcome is reported as inconclusive"
+  },
+  "test_policy": "v2 test blocks and their buffers are never read, scored or used for fitting in this plan",
+  "stop_rule": "Stop after this run whatever the outcome. No extra settings or architectures under this plan.",
+  "output": "results/proximity_attribution_v3_20261105/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}
