@@ -1,0 +1,84 @@
+{
+  "version": "sentence_holdout_pilot_v1_20261105",
+  "status": "approved_20261105",
+  "seed": 42,
+  "question": "When readers are familiar and sentences are new, does real EEG beat random noise and word-count/timing controls?",
+  "cohort": {
+    "manifests": ["data/manifests/zuco1_duration_qc.jsonl", "data/manifests/zuco2_duration_qc.jsonl"],
+    "observations": 9233,
+    "readers": 30,
+    "task": "nr",
+    "new_downloads": false
+  },
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+  "targets_changed": false,
+  "split": {
+    "unit": "sentence group",
+    "grouping": "Merge sentence keys with identical alphanumeric tokens or token Jaccard >= 0.7",
+    "train_only": "Every group that occurs in both releases",
+    "strata": "Release, then word-count tertile within release",
+    "fractions": {"train": 0.70, "val": 0.15, "test": 0.15},
+    "expected_sizes": {
+      "train": {"observations": 6894, "sentences": 432, "zuco1_sentences": 226, "zuco2_sentences": 256, "sentences_in_both_releases": 50},
+      "val": {"observations": 1164, "sentences": 81, "zuco1_sentences": 37, "zuco2_sentences": 44},
+      "test": {"observations": 1175, "sentences": 81, "zuco1_sentences": 37, "zuco2_sentences": 44}
+    },
+    "readers_shared_across_splits": true
+  },
+  "preprocessing": {
+    "input": "Existing 105-channel 200 Hz prepared waveforms; deterministic centered crop to 1600 samples",
+    "normalizer": "Existing channel normalizer fit on training observations only",
+    "spectral_whitening": false
+  },
+  "models": {
+    "ridge": {
+      "features": "Existing eeg_features statistical summaries",
+      "alphas": [0.1, 1, 10, 100, 1000, 10000, 100000],
+      "selection": "Highest validation primary metric; first grid entry on ties"
+    },
+    "cnn": {
+      "encoder": "Existing EEGCNN, temporal_segments 1, embedding_dim 128",
+      "batch_size": 8,
+      "gradient_accumulation_steps": 2,
+      "alignment_candidate_scope": "batch",
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "gradient_clip": 1.0,
+      "max_epochs": 50,
+      "patience": 8,
+      "selection": "Lowest validation batch alignment loss",
+      "max_hours_per_arm": 12
+    }
+  },
+  "arms": {
+    "ridge": ["real", "gaussian", "class_shuffled"],
+    "cnn": ["real", "gaussian", "class_shuffled"],
+    "timing_only_ridge": "Observation duration, word count and a training-derived word-count basis; no EEG amplitudes"
+  },
+  "controls": {
+    "gaussian": "Existing observation/channel-matched noise in training and evaluation",
+    "class_shuffled": "Existing derangement of training sentence classes; evaluated on real EEG"
+  },
+  "evaluation": {
+    "candidate_pool": "Validation or test sentences from the query's own release",
+    "aggregation": "Mean within reader, then equal weight across 30 readers",
+    "primary": "Expected 10-way top-1 accuracy with uniform random distractors; chance 10%",
+    "secondary": [
+      "Expected 2-way, 4-way and 24-way accuracy",
+      "Expected 10-way accuracy among the 20 candidates closest in word count",
+      "Full-pool Recall@1/5/10 and MRR"
+    ],
+    "ties": "A tie with the correct sentence counts as a miss"
+  },
+  "gate": {
+    "scope": "Applied separately to ridge and CNN on validation",
+    "minimum_gap_percentage_points": 2.0,
+    "comparators": ["gaussian", "class_shuffled", "timing_only_ridge"],
+    "readers_positive_against_gaussian": "At least 20 of 30",
+    "bootstrap": "10000 resamples; 95% lower bounds above zero for real minus Gaussian when resampling readers and when resampling sentences"
+  },
+  "test_policy": "Score a model and its matched controls once on test sentences only if that model passes the gate; otherwise never score test sentences",
+  "stop_rule": "Stop after this run whatever the outcome. No extra seeds, settings or architectures under this plan.",
+  "output": "results/sentence_holdout_pilot_v1_20261105/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}

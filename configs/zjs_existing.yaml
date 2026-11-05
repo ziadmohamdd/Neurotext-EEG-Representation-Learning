@@ -1,0 +1,9 @@
+﻿base: local.yaml
+preprocessing:
+  target_sfreq: 200
+  low: null
+  high: null
+  notch: null
+  already_filtered: true
+  artifact_threshold_uv: 200.0
+  artifact_policy: flag

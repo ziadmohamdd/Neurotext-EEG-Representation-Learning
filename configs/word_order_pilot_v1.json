@@ -1,0 +1,23 @@
+{
+  "version": "zuco1_word_order_pca_ridge_v1",
+  "seed": 42,
+  "family": "TRT",
+  "segments": 4,
+  "pca_components": 16,
+  "pca_max_fit_words": 8192,
+  "ridge_alphas": [1.0, 10.0, 100.0],
+  "conditions": ["mean_real", "ordered_real", "matched_gaussian", "word_order_shuffled", "class_shuffled", "missingness_only", "structural_only"],
+  "selection": "Leave one of the eight original training readers out; maximize equal-reader mean Recall@1; ties prefer larger alpha. No outer validation selection.",
+  "preprocessing": "Fit word-coordinate standardization and 16-component non-whitened PCA on inner-training words only; fit final feature median imputation and standardization on inner-training sentences only. Refit on all eight training readers after selection.",
+  "gaussian": "Training-word column mean/SD only; regenerate per fold; preserve exact word counts and missingness masks. Same model and search as ordered_real.",
+  "order_control": "Permute finite word EEG vectors among finite slots within each sentence; missingness slots and sentence word count remain unchanged.",
+  "pooling": "Four disjoint np.array_split bins over source word order; average available projected words per bin, zero if no valid words; append four finite-word fractions. Mean baseline uses one bin and the same fitted word projection.",
+  "mask_control": "Four per-bin finite fractions plus total word count, overall valid fraction and training-derived word-count basis; no EEG amplitudes.",
+  "structural_control": "Existing first 14 count/duration summaries; rebuild count basis on each inner-training fold.",
+  "validation_policy": "One post-selection evaluation of each frozen arm on existing 512-query/298-candidate cohort; repeatedly reused validation, explicitly exploratory, not fresh confirmation.",
+  "screen": "ordered_real must beat mean_real and every control on aggregate Recall@1 and MRR, and exceed Gaussian and structural Recall@1 for each validation reader; descriptive screen only.",
+  "test_policy": "Never read test source files, extract test features or score test observations; stop after validation regardless of outcome.",
+  "word_text_as_input": false,
+  "duration_units": "Source TRT durations are sample counts at 500 Hz, used only by structural control; no fixation onset or physical temporal spacing is invented.",
+  "blas_threads": 4
+}

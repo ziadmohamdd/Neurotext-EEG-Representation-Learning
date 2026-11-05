@@ -1,5 +1,7 @@
 param([int]$Steps = 200)
 $ErrorActionPreference = "Stop"
+$python = Join-Path $PSScriptRoot "../.venv/Scripts/python.exe"
+if (-not (Test-Path -LiteralPath $python)) { throw "Project .venv Python not found: $python" }
 $env:CUBLAS_WORKSPACE_CONFIG = ":4096:8"
 $runTag = Get-Date -Format "yyyyMMdd_HHmmss"
 $diagnosticRows = @()
@@ -8,7 +10,7 @@ foreach ($dataset in @("zuco1", "zuco2")) {
     $batchSummary = Get-Content "data/processed/${dataset}_batch/summary.json" -Raw | ConvertFrom-Json
     $diagnosticDir = "results/diagnostics/${dataset}_tiny_${runTag}"
     Write-Host "Training-subset diagnostic: $dataset (not held-out evaluation)"
-    python -m eeg_decoding.diagnostics --manifest "data/manifests/${dataset}_duration_qc.jsonl" --text-cache $batchSummary.text_cache --config configs/local.yaml --sentences 8 --steps $Steps --output $diagnosticDir
+    & $python -m eeg_decoding.diagnostics --manifest "data/manifests/${dataset}_duration_qc.jsonl" --text-cache $batchSummary.text_cache --config configs/local.yaml --sentences 8 --steps $Steps --output $diagnosticDir
     if ($LASTEXITCODE -ne 0) { throw "Diagnostic failed: $dataset" }
     $diagnosticReport = Get-Content "$diagnosticDir/diagnostic.json" -Raw | ConvertFrom-Json
     $diagnosticRows += [PSCustomObject]@{

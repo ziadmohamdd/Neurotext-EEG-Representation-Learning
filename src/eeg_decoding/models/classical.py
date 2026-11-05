@@ -24,3 +24,26 @@ def _float64(features):
 def ridge_model(alpha=1.):
     return make_pipeline(FunctionTransformer(_float64, validate=False),
                          StandardScaler(), Ridge(alpha=alpha, solver="svd"))
+
+
+def ridge_path(features, targets, alphas):
+    """Fit a regularization path with one train-only scaling and SVD.
+
+    Matches sklearn's centered, float64 SVD ridge, including its singular-value
+    cutoff. Yield independent coefficient arrays in the existing artifact format.
+    """
+    from scipy.linalg import svd
+    alphas = [float(a) for a in alphas]
+    if not alphas or any(not np.isfinite(a) or a <= 0 for a in alphas):
+        raise ValueError("ridge_alphas must contain finite positive values")
+    scaler = StandardScaler().fit(_float64(features))
+    x = scaler.transform(_float64(features))
+    y = _float64(targets)
+    x_mean, y_mean = x.mean(0), y.mean(0)
+    u, s, vt = svd(x - x_mean, full_matrices=False)
+    keep = s > 1e-15
+    uty = u[:, keep].T @ (y - y_mean)
+    for alpha in alphas:
+        coef = (vt[keep].T @ ((s[keep] / (s[keep]**2 + alpha))[:, None] * uty)).T
+        yield alpha, dict(mean=scaler.mean_, scale=scaler.scale_, coef=coef,
+                          intercept=y_mean - x_mean @ coef.T)

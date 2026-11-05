@@ -1,8 +1,27 @@
+# Current status: consolidation complete, experiments stopped
+
+A stop to further tuning, fitting and test evaluation was first requested on
+2026-10-30. Bounded follow-up pilots, each with its own fixed scope and stopping
+rule, then ran through 2026-11-01. All of them have stopped, and another
+experiment needs a new, concrete request. The spectral and incremental scores are validation-only results on a repeatedly
+used seed-42 split. No test features were extracted. The structural baseline
+performs well, while real TRT adds no consistent useful increment. See
+[the consolidated report](research_results/REPORT.md).
+
+The historical instructions below are preserved for provenance. They are not
+authorization to resume experiments or run diagnostics during consolidation.
+
+---
+
 # Continue experiments without waiting for correspondence
 
 The user chose to continue without waiting for the maintainer reply. No reply is
 required for the diagnostics below or the explicitly exploratory transfer path.
 Existing results are preserved. No cross-release identities are invented.
+
+Local execution results and the subsequent regularization ablation are recorded
+in [the 2026-10-29 investigation](local_investigation_20261029.md). Original
+diagnostics, transfer jobs and ablation artifacts have separate output folders.
 
 ## First: diagnose training capacity
 

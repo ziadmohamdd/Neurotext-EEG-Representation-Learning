@@ -4,13 +4,28 @@ Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4
 
 **Status:** user-side Windows experiments cover both ZuCo versions, statistical/CNN/SSL models, frozen official LaBraM features, matched negative controls for these configurations, and selected robustness comparisons. The [draft research report](docs/research_results/REPORT.md) archives 79 evaluation reports and documents near-chance retrieval and remaining work; these results were not independently rerun in the cloud. Strict cross-dataset transfer remains unexecuted pending participant-identity evidence. Automated software tests use explicitly synthetic fixtures. See [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [pretrained adaptation](docs/pretrained_models.md).
 
-Work can [continue without waiting for correspondence](docs/continue_work.md): tiny training-set diagnostics and a separately labelled exploratory transfer protocol are available. Cross-release participant independence remains unknown; these new actual-data runs have not yet been reported.
+The [main report](docs/research_results/REPORT.md) covers the completed studies through the 2026-11-01 evidence review, including the ordered-word, relative-amplitude, GRU, GRU retrieval-loss and word-pretraining pilots. The later [N-way analysis](docs/research_results/nway_word_pretrain_v1_20261101/README.md) is reported separately. The [35-slide presentation](docs/presentation/NeuroText_consolidated_v2_20261105.pptx) appends those later studies, the N-way analysis and a project-brief checklist to the unchanged [26-slide deck](docs/presentation/NeuroText_consolidated.pptx). Both the report and the deck consolidate 18 wider-grid exploratory transfer evaluations, with original-grid experiments kept separate. Cross-release participant independence remains unknown. These configurations do not demonstrate reliable retrieval beyond controls. The deck records 139 passed and 2 optional skips from its wider-grid consolidation; the last full test run on 2026-11-05 gave 211 passed and 2 optional skips. See the [local investigation](docs/local_investigation_20261029.md) for execution details and source-only alpha selection.
+
+The [2026-10-30 source audit and controlled CNN follow-up](docs/cnn_candidate_comparison_20261030.md) verifies ZuCo1 source/cache pairing, records official-stimulus text variants, and compares batch candidates with all unique training sentence embeddings using matched real/Gaussian/shuffled controls. It finds no reliable control-relative gain. At that point the suite recorded 145 passed and 2 optional skips.
 
 Repository: https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning . Existing local folders can keep their current name. Fresh clones can preserve the documented checkout path with:
 
 ```powershell
 git clone https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning.git New_trends_AI_project1
 ```
+
+A fresh clone has the code, configurations and archived summaries, but not the gitignored `data/` and `results/` folders that most experiment, report and validation scripts need. `scripts/show_accuracy.py` reads only the archived summaries. Some third-party ZuCo source files are also kept out of Git; see [data acquisition](docs/data_sources.md).
+
+## Display saved validation accuracy
+
+Run from the repository root; these commands only read existing result files:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/show_accuracy.py
+.\.venv\Scripts\python.exe scripts/show_accuracy.py --study spectral
+```
+
+The default displays structural-only, structural + real EEG, structural + Gaussian and random-chance Recall@1/5/10. Recall@1 is top-1 accuracy; MRR is a separate ranking metric. All displayed scores are validation-only, with repeated validation use and search-size caveats. No fitting or test evaluation occurs.
 
 ## Windows setup (PowerShell, Python 3.11)
 

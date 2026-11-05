@@ -45,8 +45,31 @@ class TextCache:
         return cls(path)
 
 def train_alignment(model, train_loader, val_loader, text_cache, config, device, output, metadata, resume=None):
+    scope = config.get('alignment_candidate_scope','batch')
+    if scope not in {'batch','training_unique'}:
+        raise ValueError('alignment_candidate_scope must be batch or training_unique')
+    candidates, candidate_keys = None, None
+    if scope == 'training_unique':
+        candidate_keys = sorted(metadata['splits']['splits']['train']['sentence_keys'])
+        candidates = torch.from_numpy(text_cache.get(candidate_keys)).to(device)
+    if 'alignment_candidate_scope' in config:
+        initial = hashlib.sha256()
+        for name, value in sorted(model.state_dict().items()):
+            initial.update(name.encode())
+            initial.update(value.detach().cpu().contiguous().numpy().tobytes())
+        metadata['initial_model_sha256'] = initial.hexdigest()
+        metadata['alignment_objective'] = dict(forward_candidates=scope,
+            candidate_keys=candidate_keys,
+            candidate_keys_sha256=hashlib.sha256(json.dumps(candidate_keys).encode()).hexdigest() if candidate_keys else None,
+            reverse_term='unchanged_symmetric_batch_multi_positive',temperature=.07,
+            model_selection='common_held_out_subject_batch_alignment_loss',
+            training_bank_scope='training sentence texts only; no validation/test-only keys')
     def objective(m, b):
         target = torch.from_numpy(text_cache.get(b["keys"])).to(device)
-        return alignment_loss(m(b["eeg"], b["mask"]), target, b["keys"])
+        # Both arms use exactly the original batch loss on validation. Their
+        # different training losses must not select checkpoints on different scales.
+        return alignment_loss(m(b["eeg"], b["mask"]), target, b["keys"],
+                              candidates=candidates if m.training else None,
+                              candidate_keys=candidate_keys if m.training else None)
     trainer = Trainer(model, config, device, output)
     return trainer.fit(train_loader, val_loader, objective, metadata, resume)

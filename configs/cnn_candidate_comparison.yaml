@@ -1,0 +1,4 @@
+# One within-dataset, seed-42 controlled comparison. All settings inherited from
+# the existing local CNN recipe; only alignment_candidate_scope varies per arm.
+base: local.yaml
+seed: 42

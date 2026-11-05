@@ -12,3 +12,15 @@ results/**
 !**/.gitkeep
 *.log
 .env
+tmp/
+/EEG Decoding paper.pdf
+/NeuroText_draft.pdf
+# Third-party ZuCo files: stay local until their redistribution terms are checked.
+docs/research_results/**/official_firstLevel_NR.m
+docs/research_results/**/official_relations_labels_task2.csv
+docs/research_results/**/getElectrodePairs.m
+docs/research_results/**/data_loading_helpers.py
+docs/research_results/**/read_matlab_files.py
+docs/research_results/**/sentencesNR.mat
+docs/research_results/**/relations_normal_reading.csv
+docs/research_results/**/nemar_relations_labels_task2.tsv

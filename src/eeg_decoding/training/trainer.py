@@ -47,7 +47,7 @@ class Trainer:
         start, best, stale, history = 0, math.inf, 0, []
         if resume:
             previous = load_checkpoint(resume, self.model, self.optimizer, self.scaler, restore_rng=True)
-            for key in ["split_digest", "config", "normalizer", "stage", "channels", "sfreq", "text_cache_digest", "training_control", "encoder_origin", "feature_scaler"]:
+            for key in ["split_digest", "config", "normalizer", "stage", "channels", "sfreq", "text_cache_digest", "training_control", "encoder_origin", "feature_scaler", "alignment_objective"]:
                 if key in metadata and previous.get(key) != metadata[key]:
                     raise ValueError(f"Resume metadata mismatch: {key}")
             start, best, stale, history = previous["epoch"] + 1, previous["best"], previous["stale"], previous["history"]

@@ -106,3 +106,21 @@ def test_ridge_correlated_features_matches_double_precision_svd():
     centered=y.astype(np.float64)-y.astype(np.float64).mean(0)
     reference=(standardized@vt.T)@((s/(s*s+.1))[:,None]*(u.T@centered))+y.astype(np.float64).mean(0)
     np.testing.assert_allclose(prediction,reference,rtol=1e-10,atol=1e-10)
+
+
+@pytest.mark.parametrize("shape", [(40, 9), (9, 40)])
+def test_shared_ridge_path_matches_independent_sklearn_fits(shape):
+    from eeg_decoding.models.classical import ridge_path
+    rng = np.random.default_rng(17)
+    x = rng.normal(size=shape).astype(np.float32)
+    x[:, -1] = 1
+    x[:, -2] = x[:, 0]
+    y = rng.normal(size=(shape[0], 5))
+    query = rng.normal(size=(7, shape[1]))
+    for alpha, weights in ridge_path(x, y, [.1, 100, 10000]):
+        actual = ((query-weights['mean'])/weights['scale']) @ weights['coef'].T + weights['intercept']
+        expected = ridge_model(alpha).fit(x, y).predict(query)
+        np.testing.assert_allclose(actual, expected, rtol=1e-9, atol=1e-9)
+    for invalid in [[], [0], [-1], [float('nan')]]:
+        with pytest.raises(ValueError, match='finite positive'):
+            list(ridge_path(x, y, invalid))
