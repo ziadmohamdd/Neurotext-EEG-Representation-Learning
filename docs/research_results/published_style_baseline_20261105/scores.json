@@ -1,0 +1,42 @@
+{
+  "note": "Not the GLIM or SemKey split. Normal-reading sentences only, 10% held out, no EEG.",
+  "allowed_observations": 6028,
+  "seeds": 20,
+  "trials": 1000,
+  "neighbour_text": {
+    "2_way": {
+      "mean": 0.8213999999999999,
+      "min": 0.7655,
+      "max": 0.891
+    },
+    "4_way": {
+      "mean": 0.6718125,
+      "min": 0.579,
+      "max": 0.766
+    },
+    "10_way": {
+      "mean": 0.47977,
+      "min": 0.3851999999999999,
+      "max": 0.5917000000000014
+    },
+    "24_way": {
+      "mean": 0.3239645833333332,
+      "min": 0.2505833333333333,
+      "max": 0.4171249999999999
+    }
+  },
+  "random_training_text": {
+    "2_way": {
+      "mean": 0.5133500000000001
+    },
+    "4_way": {
+      "mean": 0.2603749999999999
+    },
+    "10_way": {
+      "mean": 0.10307499999999972
+    },
+    "24_way": {
+      "mean": 0.045147916666666635
+    }
+  }
+}

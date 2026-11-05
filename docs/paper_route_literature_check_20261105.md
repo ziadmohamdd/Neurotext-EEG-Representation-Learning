@@ -24,6 +24,8 @@ v3's near-versus-far design is what would set this apart from a plain split comp
 
 **Update after v4:** [v4](research_results/position_bridge_v4_20261105/REPORT.md) replaces that figure with 55.10% on sentences free of protected data, and adds that EEG predicts list position for familiar readers (correlation 0.80 and 0.88). Searches should also cover decoding list position or session time from EEG.
 
+**Update after the splits check:** see [How published ZuCo work splits its data](published_splits_check_20261105.md), which replaces item 3 below and adds the closest recent work.
+
 ## Still to do before writing
 
 1. Run a systematic search, including Google Scholar and citations of the papers above.
