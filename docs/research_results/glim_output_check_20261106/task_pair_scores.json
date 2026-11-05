@@ -1,0 +1,38 @@
+{
+ "glim": {
+  "ZuCo1_task1|ZuCo1_task2": 0.8994,
+  "ZuCo1_task1|ZuCo1_task3": 0.9159,
+  "ZuCo1_task1|ZuCo2_task2": 0.8736,
+  "ZuCo1_task1|ZuCo2_task3": 0.9357,
+  "ZuCo1_task2|ZuCo1_task3": 0.5501,
+  "ZuCo1_task2|ZuCo2_task2": 0.5579,
+  "ZuCo1_task2|ZuCo2_task3": 0.5355,
+  "ZuCo1_task3|ZuCo2_task2": 0.565,
+  "ZuCo1_task3|ZuCo2_task3": 0.5189,
+  "ZuCo2_task2|ZuCo2_task3": 0.6066
+ },
+ "noise_input": {
+  "ZuCo1_task1|ZuCo1_task2": 0.4853,
+  "ZuCo1_task1|ZuCo1_task3": 0.5287,
+  "ZuCo1_task1|ZuCo2_task2": 0.385,
+  "ZuCo1_task1|ZuCo2_task3": 0.536,
+  "ZuCo1_task2|ZuCo1_task3": 0.5016,
+  "ZuCo1_task2|ZuCo2_task2": 0.5416,
+  "ZuCo1_task2|ZuCo2_task3": 0.5239,
+  "ZuCo1_task3|ZuCo2_task2": 0.5549,
+  "ZuCo1_task3|ZuCo2_task3": 0.4992,
+  "ZuCo2_task2|ZuCo2_task3": 0.5818
+ },
+ "prompt_free": {
+  "ZuCo1_task1|ZuCo1_task2": 0.8632,
+  "ZuCo1_task1|ZuCo1_task3": 0.9166,
+  "ZuCo1_task1|ZuCo2_task2": 0.8693,
+  "ZuCo1_task1|ZuCo2_task3": 0.9429,
+  "ZuCo1_task2|ZuCo1_task3": 0.5592,
+  "ZuCo1_task2|ZuCo2_task2": 0.5451,
+  "ZuCo1_task2|ZuCo2_task3": 0.5574,
+  "ZuCo1_task3|ZuCo2_task2": 0.5532,
+  "ZuCo1_task3|ZuCo2_task3": 0.5356,
+  "ZuCo2_task2|ZuCo2_task3": 0.6026
+ }
+}

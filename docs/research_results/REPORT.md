@@ -294,6 +294,8 @@ A follow-up attribution test was inconclusive for the CNN at 10-way: near traini
 
 A frozen position test then fitted EEG to list position only and copied the text of training sentences at that position. It scored 15.41% at 10-way, against 9.70% with shuffled positions and 21.10% for the v1 CNN on the same 53 sentences, so position explains part of that score. Predicted and true position correlated at 0.80 and 0.88 for familiar readers. With protected sentences removed, neighbouring text with no EEG scored 55.10%. None of this is EEG decoding of meaning. [Full v4 results](position_bridge_v4_20261105/REPORT.md).
 
+A check of GLIM's public test outputs, with no EEG read, reproduced 21.46% at 10-way across tasks, near the 21.91% reported for GLIM. Within a single task those outputs scored 9.73% to 14.25%, and at 2-way movie reviews against biographies scored 87.36% to 93.57%, while biography tasks against each other scored 51.89% to 60.66%. SemKey's outputs are not public, so it was not tested. [Full results](glim_output_check_20261106/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.

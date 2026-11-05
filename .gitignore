@@ -24,3 +24,4 @@ docs/research_results/**/read_matlab_files.py
 docs/research_results/**/sentencesNR.mat
 docs/research_results/**/relations_normal_reading.csv
 docs/research_results/**/nemar_relations_labels_task2.tsv
+data/external/**
