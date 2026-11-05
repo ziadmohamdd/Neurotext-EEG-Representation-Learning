@@ -20,6 +20,8 @@ A controlled measurement, on ZuCo sentence retrieval, of how much score comes fr
 
 v3's near-versus-far design is what would set this apart from a plain split comparison. Its value depends on the v3 result, and it says nothing about new readers.
 
+**Update after v3:** [v3](research_results/proximity_attribution_v3_20261105/REPORT.md) was inconclusive on this measurement. The stronger lead is an exploratory one: the text of neighbouring sentences, with no EEG, scores 53.94% at 10-way on the v1 random split. Searches should now also cover no-EEG neighbouring-text baselines.
+
 ## Still to do before writing
 
 1. Run a systematic search, including Google Scholar and citations of the papers above.

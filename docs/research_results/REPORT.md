@@ -290,6 +290,8 @@ The measurement remains gaze/stimulus assisted. Source-session filtering/referen
 
 A later frozen pilot kept neighbouring sentences out of training. No model passed the gate on validation, so its test blocks were not scored. At 10-way, the CNN on real EEG scored 10.02% against 9.72% on matched noise, ridge F scored 12.66% against 12.41%, and word counts and timing with no EEG scored 13.03%. The earlier random-holdout pilot scored 23.10% on validation, but that difference also reflects fewer training sentences and different preprocessing, so it does not measure the leak alone. [Full v2 results](block_holdout_pilot_v2_20261105/REPORT.md).
 
+A follow-up attribution test was inconclusive for the CNN at 10-way: near training scored 10.26% and far training 9.92%, with far no better than matched noise in either model. In an exploratory check added afterwards, the text of neighbouring sentences with no EEG scored 53.94% on the v1 validation split, where the CNN scored 23.10%. This shows how easy that split is, not that the CNN used this route, and it is not EEG decoding. [Full v3 results](proximity_attribution_v3_20261105/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.
