@@ -1,0 +1,24 @@
+{
+  "word_cache_members": [
+    "train_words",
+    "train_offsets"
+  ],
+  "structural_members": [
+    "count_duration_only_train"
+  ],
+  "source_readers_during_feasibility": [
+    "ZDM",
+    "ZDN",
+    "ZGW",
+    "ZJM",
+    "ZJN",
+    "ZKH",
+    "ZMG",
+    "ZPH"
+  ],
+  "raw_sources_during_fit": false,
+  "outer_eeg_arrays_loaded": false,
+  "test_eeg_arrays_loaded": false,
+  "outer_evaluated": false,
+  "test_evaluated": false
+}

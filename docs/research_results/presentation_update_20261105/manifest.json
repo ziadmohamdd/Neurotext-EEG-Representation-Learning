@@ -1,0 +1,112 @@
+{
+  "created": "2026-11-05",
+  "scope": "Saved evidence only; no training, tuning, inference or evaluation ran.",
+  "builder": {
+    "path": "scripts/consolidate_later_evidence.py",
+    "sha256": "3e03ce475aac719eb5e7c01693a4c10b062748481a7efdeaa57435d75c237153"
+  },
+  "source_deck": {
+    "path": "docs/presentation/NeuroText_consolidated.pptx",
+    "md5": "65d0440fb8e70c19e6ca9fec7d4be8d9",
+    "pptx_sha256": "f1ad546ec9cb8e166e7f40012f3412df2f00ce37404e7db7702dedffad8e58c3",
+    "pdf_md5": "681413ecd10141fb8363e247a0048a7b",
+    "pdf_sha256": "fe7027d70818c02e8ed5635c4fe8282e7558a0f6840dca336e158302bc9a9754"
+  },
+  "output_deck": {
+    "path": "docs/presentation/NeuroText_consolidated_v2_20261105.pptx",
+    "sha256": "ad6b568453a0037d94d7c2ecfd83528f91dca554e1708fc8182a25f147f2e362",
+    "slides": 35
+  },
+  "output_pdf": {
+    "path": "docs/presentation/NeuroText_consolidated_v2_20261105.pdf",
+    "sha256": "f46762af3f01d82fe95ae39b6b11d19c56d2be86e88c578d91f14a57ddb85a7e"
+  },
+  "source_parts_changed": [
+    "[Content_Types].xml",
+    "docProps/app.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "ppt/presentation.xml"
+  ],
+  "parts_added": [
+    "ppt/notesSlides/_rels/notesSlide27.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide28.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide29.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide30.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide31.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide32.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide33.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide34.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide35.xml.rels",
+    "ppt/notesSlides/notesSlide27.xml",
+    "ppt/notesSlides/notesSlide28.xml",
+    "ppt/notesSlides/notesSlide29.xml",
+    "ppt/notesSlides/notesSlide30.xml",
+    "ppt/notesSlides/notesSlide31.xml",
+    "ppt/notesSlides/notesSlide32.xml",
+    "ppt/notesSlides/notesSlide33.xml",
+    "ppt/notesSlides/notesSlide34.xml",
+    "ppt/notesSlides/notesSlide35.xml",
+    "ppt/slides/_rels/slide27.xml.rels",
+    "ppt/slides/_rels/slide28.xml.rels",
+    "ppt/slides/_rels/slide29.xml.rels",
+    "ppt/slides/_rels/slide30.xml.rels",
+    "ppt/slides/_rels/slide31.xml.rels",
+    "ppt/slides/_rels/slide32.xml.rels",
+    "ppt/slides/_rels/slide33.xml.rels",
+    "ppt/slides/_rels/slide34.xml.rels",
+    "ppt/slides/_rels/slide35.xml.rels",
+    "ppt/slides/slide27.xml",
+    "ppt/slides/slide28.xml",
+    "ppt/slides/slide29.xml",
+    "ppt/slides/slide30.xml",
+    "ppt/slides/slide31.xml",
+    "ppt/slides/slide32.xml",
+    "ppt/slides/slide33.xml",
+    "ppt/slides/slide34.xml",
+    "ppt/slides/slide35.xml"
+  ],
+  "slides_1_to_26_byte_identical": true,
+  "stated_numbers_checked": {
+    "ordered_minus_mean_top1_hits": 1,
+    "controls_above_ordered_recall1_and_mrr": true,
+    "word_real_near_chance_note_missingness_above_at_every_n": true,
+    "amplitude_combined_real_weights": [
+      0.0
+    ],
+    "cosine_distinct_top1": 6.375,
+    "cross_entropy_distinct_top1": 53,
+    "gru_cosine_real_over_gaussian": 3,
+    "gru_ce_real_over_gaussian": 3,
+    "pretrained_over_fresh_same": 0,
+    "pretrained_over_missingness": 0,
+    "word_real_over_missingness": 1,
+    "quality_nonzero_conditions": 9,
+    "quality_lower_conditions": 8,
+    "models_with_corrupted_rows": [
+      "ridge"
+    ]
+  },
+  "evidence_sources": {
+    "docs/research_results/evidence_review_v1_20261101/training_cv.csv": "7e8f32b39ba3559d0307ecc004eb8a3ff73c8521315616c0646d838a6800340b",
+    "docs/research_results/evidence_review_v1_20261101/outer_validation.csv": "e571f23d9d590960e79983f5ca2aa247a8547431600082779a55d7ce90741949",
+    "docs/research_results/evidence_review_v1_20261101/word_task_macro.json": "7d377c12074c160465768d2095628d74e8ce47e88f3361c612e175e1bc1b83c3",
+    "docs/research_results/evidence_review_v1_20261101/word_task.csv": "65293778fe95b55ed5d4c31fc7bfee21c8606d6ba3fe4db972916a88b6f642a7",
+    "docs/research_results/evidence_review_v1_20261101/participant_metrics.csv": "1a8360fc2910eb47e812eda9223cec7d2ceb3b3a812ce988315cf73fd5ef474e",
+    "docs/research_results/retrieval.csv": "97b9b388ea7d66fa032c09f24dca5774e0a171cd50eafe11802c5abd871c9569",
+    "docs/research_results/nway_word_pretrain_v1_20261101/summary.csv": "3347254dccca8d737aa09add13a77f60cff995e6d71f36f356f084f8bef0e809",
+    "docs/research_results/amplitude_audit_v1_20261101/training_summary.json": "4451911e39f0b08b84b4e571eafeb90e2e3a754a318f8f2f8d0ed506b795c2d4",
+    "docs/research_results/gru_retrieval_loss_v1_20261101/baseline_prediction_audit/summary.json": "ad59c375852bdd55fa413e94cd8d11b0fdde89188efd46cb527adaa0ae58bcbc",
+    "docs/research_results/gru_retrieval_loss_v1_20261101/prediction_concentration.json": "3fcd5610427a174246af43615e79c79b89d50f95cbda14d95a29435fc305a570"
+  },
+  "new_slide_titles": {
+    "27": "Later pilots: what changed after 30 October",
+    "28": "Ordered-word ridge does not beat its controls",
+    "29": "Relative amplitudes: both heads select zero EEG weight",
+    "30": "GRU: the loss change spreads predictions, not retrieval",
+    "31": "Word pretraining adds no sentence-retrieval gain",
+    "32": "Word-task scores are a separate quantity",
+    "33": "Smaller candidate pools change difficulty, not the model",
+    "34": "Project brief: what the evidence covers",
+    "35": "Current conclusion: a controlled negative result"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "train_word_value_percentiles": [
+    0.0,
+    0.051275254115462306,
+    0.5476085990667343,
+    1.0072848796844482,
+    1.7906203120946884,
+    6.407802629470819,
+    26.34263801574707
+  ],
+  "negative_real_values": 0,
+  "complete_training_words": 32848,
+  "text_candidate_common_mean_norm": 0.36597946286201477,
+  "reader_raw_mean_norms": {
+    "ZDM": 65.47044545785033,
+    "ZDN": 32.373051078369116,
+    "ZGW": 37.81775320585692,
+    "ZJM": 23.527939315409803,
+    "ZJN": 35.08060745128672,
+    "ZKH": 83.5289826143754,
+    "ZMG": 51.484196492203424,
+    "ZPH": 49.862750045265564
+  },
+  "reader_relative_mean_norms": {
+    "ZDM": 7.4239424226508195,
+    "ZDN": 6.9133212050404165,
+    "ZGW": 7.537798543203665,
+    "ZJM": 6.857773852908893,
+    "ZJN": 7.807642278595993,
+    "ZKH": 10.345907997936012,
+    "ZMG": 9.346816748951872,
+    "ZPH": 8.09501291507248
+  },
+  "all_missing_training_observations": [
+    [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "70"
+    ]
+  ],
+  "implementation_findings": "No confirmed pairing/ranking bug. PCA loss and amplitude differences are hypotheses, not proven causes."
+}

@@ -1,0 +1,12 @@
+{
+  "working_directory": "C:/Users/Asus/Desktop/New_trends_AI_project1",
+  "execution_environment": "Existing .venv, unsandboxed execution required for base-interpreter visibility; no package installations or upgrades",
+  "preflight": ".\\.venv\\Scripts\\python.exe -c \"import sys,torch,numpy,pytest; print(sys.version); print(torch.__version__,torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')\"",
+  "tests_before_fitting": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_gru_pilot.py tests/test_word_order.py tests/test_spectral_pilot.py -q",
+  "test_result": "16 passed in 5.47s",
+  "environment_variable": "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+  "fit": ".\\.venv\\Scripts\\python.exe scripts/run_gru_pilot.py --output results/gru_pilot_v1_20261101",
+  "fit_output": "gru_pilot_v1_20261101_run.log",
+  "postrun_verification": ".\\.venv\\Scripts\\python.exe scripts/verify_gru_pilot.py",
+  "report": ".\\.venv\\Scripts\\python.exe scripts/report_gru_pilot.py"
+}

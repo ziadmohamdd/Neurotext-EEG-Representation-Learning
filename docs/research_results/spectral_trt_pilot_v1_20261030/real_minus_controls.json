@@ -1,0 +1,37 @@
+[
+  {
+    "comparison": "real_minus_matched_gaussian",
+    "recall@1": 0.015625,
+    "recall@5": 0.0859375,
+    "recall@10": 0.125,
+    "mrr": 0.049777836818609755
+  },
+  {
+    "comparison": "real_minus_class_shuffled",
+    "recall@1": 0.119140625,
+    "recall@5": 0.30078125,
+    "recall@10": 0.376953125,
+    "mrr": 0.20431003673828924
+  },
+  {
+    "comparison": "real_minus_count_duration_only",
+    "recall@1": -0.0546875,
+    "recall@5": -0.083984375,
+    "recall@10": -0.099609375,
+    "mrr": -0.06502587763310211
+  },
+  {
+    "comparison": "real_minus_zero_missingness_only",
+    "recall@1": -0.041015625,
+    "recall@5": -0.080078125,
+    "recall@10": -0.109375,
+    "mrr": -0.054042740222359636
+  },
+  {
+    "comparison": "real_minus_existing_sentence_ridge",
+    "recall@1": 0.1171875,
+    "recall@5": 0.294921875,
+    "recall@10": 0.373046875,
+    "mrr": 0.20066597060758304
+  }
+]

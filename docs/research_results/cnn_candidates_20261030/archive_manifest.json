@@ -1,0 +1,298 @@
+{
+  "files": [
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\plan.json",
+      "archived": "plan.json",
+      "sha256": "2974890ba236a61551c82ed840d7ed83e95a87a7b0bd6e5de9b39ca4d47a0fed"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\selection_frozen.json",
+      "archived": "selection_frozen.json",
+      "sha256": "7425fa6027526d586998a45c32bb9eb6a3bcd1afd73a7a9423fb4f17bb7506cb"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\real_loss_validation_choice.json",
+      "archived": "real_loss_validation_choice.json",
+      "sha256": "58c8e179cc616e603880c6e89ef01717478813d9e2cac87ad740680b8b0ffac0"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\jobs.json",
+      "archived": "jobs.json",
+      "sha256": "338595be7179cf76a61fc7844ea36938b06746ebff0b24bb5b11295f78386525"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\summary.json",
+      "archived": "summary.json",
+      "sha256": "a30947bb210d8df60f89c42dffaae22da57a748babe2e93ecd267074102e0cf2"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\retrieval.csv",
+      "archived": "retrieval.csv",
+      "sha256": "650c8c2f1b19fb016bace67e14dd386068e8774531a6304be799ba37937bb97f"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\alignment_train.py",
+      "archived": "implementation\\alignment_train.py",
+      "sha256": "88af7d8664f568c639d4e5a2c587cd737e382f087ff24dbbd0a74e3700a0c9dc"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\cnn_candidate_comparison.yaml",
+      "archived": "implementation\\cnn_candidate_comparison.yaml",
+      "sha256": "6c54380c4470a1f0c679c56483387c78397131c957f09021bbdd4806ec213853"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\eeg_cnn.py",
+      "archived": "implementation\\eeg_cnn.py",
+      "sha256": "c704b0e60c7c8db14c71fad2603aaa1f54a38e308c63ef8b054c285971487e6c"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\local.yaml",
+      "archived": "implementation\\local.yaml",
+      "sha256": "b81d4826a29787705e5d47d347a1c7fb407794887bfe23ad71b49bb57f60390d"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\projection.py",
+      "archived": "implementation\\projection.py",
+      "sha256": "95052f7241b3b6a867f823d326d96d1bdced5cda1a87451a3dccf473be03c72b"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\run_candidate_comparison.py",
+      "archived": "implementation\\run_candidate_comparison.py",
+      "sha256": "1cdabbe131f3699c0387eb01e93eb5ff8ac5641ad82e13791d9359ee35723095"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\trainer.py",
+      "archived": "implementation\\trainer.py",
+      "sha256": "319e50a784113fb6f1a1f61ba6d02e95106c9d1772d4b62b1ebb24c62cdf663f"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\implementation\\workflow.py",
+      "archived": "implementation\\workflow.py",
+      "sha256": "d22976054ac348b2eb72819ab57d49054f180a3d628d42192ed9074fab13117a"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\audit.json",
+      "archived": "pairing_audit_20261030\\audit.json",
+      "sha256": "8973f7589fce79c7d49bd9b917c913fae4d68bf74776650109b27ba1e8a05097"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\continuous_recording_sample.json",
+      "archived": "pairing_audit_20261030\\continuous_recording_sample.json",
+      "sha256": "0c9a58079954fd3629fe1769c97bb77092c9e680f32ea39cf417c38753bef8b2"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\official_firstLevel_NR.m",
+      "archived": "pairing_audit_20261030\\official_firstLevel_NR.m",
+      "sha256": "4624c63811a56bfc7214a3b5be5344d1855b9587f38904e1eb851dcc808fa6f2"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\official_relations_labels_task2.csv",
+      "archived": "pairing_audit_20261030\\official_relations_labels_task2.csv",
+      "sha256": "017b118da4821e572a2e782f8add1e4a6258afeddf8566d68cf829f3bbf46cb9"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\official_stimulus_comparison.json",
+      "archived": "pairing_audit_20261030\\official_stimulus_comparison.json",
+      "sha256": "d620629150533806858b4acc4965e88e2937fc2de476a822f12b51dfa39a3625"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\osf_materials_inventory.json",
+      "archived": "pairing_audit_20261030\\osf_materials_inventory.json",
+      "sha256": "6136c67ed2ef1176badae584351cd24e2e2659c6c9caaa838be30b0230e1250e"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\osf_matlab_inventory.json",
+      "archived": "pairing_audit_20261030\\osf_matlab_inventory.json",
+      "sha256": "b66ccd11dc29dac4e52e7a7dfa2b0daab96460a122413597099c255cf9b0f607"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\osf_root.json",
+      "archived": "pairing_audit_20261030\\osf_root.json",
+      "sha256": "a403cb50c375b1ff196818269722050700e6b3c7b40c101b4dbbb9b490224b94"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\osf_scripts_inventory.json",
+      "archived": "pairing_audit_20261030\\osf_scripts_inventory.json",
+      "sha256": "26d12c1bb65350827a06092b56c114f6adb455a94a3068c9bf04ea62cd1d5200"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\progress.json",
+      "archived": "pairing_audit_20261030\\progress.json",
+      "sha256": "8fd1b98db03a218f7bc8b10fa9c98c562167e644b2f2acb2f2b8c124ec564dfb"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\source_evidence.json",
+      "archived": "pairing_audit_20261030\\source_evidence.json",
+      "sha256": "c57682ce302a240100742837d9720ee8a539e156b4f5f48d480bcc271b387ec5"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\stimulus_variant_audit.json",
+      "archived": "pairing_audit_20261030\\stimulus_variant_audit.json",
+      "sha256": "b34347fba3a3b161c12c39000c624c3695cc771c8c8de3c6db6082c95c350a55"
+    },
+    {
+      "source": "results\\pairing_audit_20261030\\text_cache_audit.json",
+      "archived": "pairing_audit_20261030\\text_cache_audit.json",
+      "sha256": "b326d3d2016a09eb75160a391b6540218887be179b9b210b38cab534fc06071b"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\evaluation.json",
+      "archived": "runs\\batch_real\\evaluation.json",
+      "sha256": "d00d5a9a9524ddb5f99f3b0b7e11680842b951961f6622514a162fce16357abb"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\history.json",
+      "archived": "runs\\batch_real\\history.json",
+      "sha256": "1c24b07cc48bb39acc997c83a0c1bdf83d8ec96e3f78fe0f1f80c101ac212512"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\config.json",
+      "archived": "runs\\batch_real\\config.json",
+      "sha256": "47affb6477d880913670601d8507ace39e39bb3ff30085af1e36ec30a9b21b74"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\splits.json",
+      "archived": "runs\\batch_real\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_gaussian\\evaluation.json",
+      "archived": "runs\\batch_gaussian\\evaluation.json",
+      "sha256": "4ec6254fac7373f4581276e46415e05550d991024ea8279f04f19a28894a3994"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_gaussian\\history.json",
+      "archived": "runs\\batch_gaussian\\history.json",
+      "sha256": "ee17a719fb7309bd149d48c422cb910c477d3d1653495136f90f6470e6b53285"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_gaussian\\config.json",
+      "archived": "runs\\batch_gaussian\\config.json",
+      "sha256": "47affb6477d880913670601d8507ace39e39bb3ff30085af1e36ec30a9b21b74"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_gaussian\\splits.json",
+      "archived": "runs\\batch_gaussian\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_shuffled\\evaluation.json",
+      "archived": "runs\\batch_shuffled\\evaluation.json",
+      "sha256": "80c55a4f2bf2e695db5f91ecb10d862691120d6e2b4be4e9a426c17864b2e535"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_shuffled\\history.json",
+      "archived": "runs\\batch_shuffled\\history.json",
+      "sha256": "cf7ea2881aab5abae396143ba2a1ba41fd5a83086b1e3b4920aa9703c91fdb9b"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_shuffled\\config.json",
+      "archived": "runs\\batch_shuffled\\config.json",
+      "sha256": "47affb6477d880913670601d8507ace39e39bb3ff30085af1e36ec30a9b21b74"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\batch_shuffled\\splits.json",
+      "archived": "runs\\batch_shuffled\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_real\\evaluation.json",
+      "archived": "runs\\training_unique_real\\evaluation.json",
+      "sha256": "89e5fd9f7d200ce95562aa92316702bc697e1cd3e100de6a28f48436e401f4e9"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_real\\history.json",
+      "archived": "runs\\training_unique_real\\history.json",
+      "sha256": "8bdec021d9bf34fd925133908a7077a2d882018cd37e95330f70ac7fa8289d41"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_real\\config.json",
+      "archived": "runs\\training_unique_real\\config.json",
+      "sha256": "961e56f9b179cb21a61e1fa726e7d639328f895b28b92b0a2fea25da9ec6b3e6"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_real\\splits.json",
+      "archived": "runs\\training_unique_real\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_gaussian\\evaluation.json",
+      "archived": "runs\\training_unique_gaussian\\evaluation.json",
+      "sha256": "877a5862f00ca3bf30a693d4adecaa4cbabbc8997dd346b6cee749bacbe0c449"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_gaussian\\history.json",
+      "archived": "runs\\training_unique_gaussian\\history.json",
+      "sha256": "dc5c3dd2195e5d72f9717efe558e2fdb033383003dc77d970cd302898e21e798"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_gaussian\\config.json",
+      "archived": "runs\\training_unique_gaussian\\config.json",
+      "sha256": "961e56f9b179cb21a61e1fa726e7d639328f895b28b92b0a2fea25da9ec6b3e6"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_gaussian\\splits.json",
+      "archived": "runs\\training_unique_gaussian\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_shuffled\\evaluation.json",
+      "archived": "runs\\training_unique_shuffled\\evaluation.json",
+      "sha256": "1f81837c971df1c399dddf9d9d80960458c02eaf432c9aa7337fabdf74f26b80"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_shuffled\\history.json",
+      "archived": "runs\\training_unique_shuffled\\history.json",
+      "sha256": "ee2a2ace6710dbd93c9db630784b869f32863133bdb798a577fd72e0157968cf"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_shuffled\\config.json",
+      "archived": "runs\\training_unique_shuffled\\config.json",
+      "sha256": "961e56f9b179cb21a61e1fa726e7d639328f895b28b92b0a2fea25da9ec6b3e6"
+    },
+    {
+      "source": "results\\cnn_candidate_comparison_20261030\\training_unique_shuffled\\splits.json",
+      "archived": "runs\\training_unique_shuffled\\splits.json",
+      "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+    },
+    {
+      "source": "scripts\\audit_pairing.py",
+      "archived": "implementation\\audit_pairing.py",
+      "sha256": "313784b1f144a3eb70726b10400b6556707ceec80be52076a263aa176a7ca0fd"
+    },
+    {
+      "source": "scripts\\audit_source_clock.py",
+      "archived": "implementation\\audit_source_clock.py",
+      "sha256": "d38ddcc9f8c877f0f854aab28a17f3109c7d1ac89fa5d6b43dff0789aa1ae32c"
+    },
+    {
+      "source": "scripts\\audit_text_cache.py",
+      "archived": "implementation\\audit_text_cache.py",
+      "sha256": "7f9643766e26f6f7476ecacdca98db49a1bc5e8badd6eeebc80149542aa85a3b"
+    },
+    {
+      "source": "scripts\\report_candidate_comparison.py",
+      "archived": "implementation\\report_candidate_comparison.py",
+      "sha256": "0c5ad3a9ed9264d0d27d406269c46b3805d64bd2b232437bee4257cb7bf6a6dc"
+    },
+    {
+      "source": "scripts\\validate_candidate_comparison.py",
+      "archived": "implementation\\validate_candidate_comparison.py",
+      "sha256": "9e709ce3ae151bbcde90c8266afcf1c50c823dcbf14caab9c94c03617b17198e"
+    }
+  ],
+  "checkpoint_policy": "Best and last checkpoints remain in original fresh run folders; no weights copied or overwritten",
+  "software_validation": {
+    "passed": 145,
+    "optional_skips": 2,
+    "deselected": 0,
+    "command": ".venv/Scripts/python.exe -m pytest -q -rs",
+    "skip_condition": "EEG_LABRAM_CACHE unset",
+    "reasons": [
+      "optional official-weight integration; no network download during unit tests",
+      "optional official-weight extraction on synthetic fixtures"
+    ]
+  },
+  "experiment_scope": "One fixed within-ZuCo1 seed42 comparison, six matched conditions; no test-guided settings changes",
+  "raw_input_policy": "Source datasets and old checkpoints remain in place; no EEG shards copied into this archive"
+}

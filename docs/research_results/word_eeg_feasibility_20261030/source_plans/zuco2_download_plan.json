@@ -1,0 +1,316 @@
+{
+  "dataset": "zuco2",
+  "task": "nr",
+  "subjects": [
+    "YAC",
+    "YAG",
+    "YAK",
+    "YDG",
+    "YDR",
+    "YFR",
+    "YFS",
+    "YHS",
+    "YIS",
+    "YLS",
+    "YMD",
+    "YMS",
+    "YRH",
+    "YRK",
+    "YRP",
+    "YSD",
+    "YSL",
+    "YTL"
+  ],
+  "files": [
+    {
+      "name": "resultsYHS_NR.mat",
+      "subject": "YHS",
+      "role": "sentences",
+      "size": 1290663769,
+      "sha256": "f92093dfcfb39ddf142d28c24644ba63379fdd123407432c8fd9d15c24576857",
+      "url": "https://osf.io/download/kypmc/"
+    },
+    {
+      "name": "gip_YHS_NR6_EEG.mat",
+      "subject": "YHS",
+      "role": "metadata",
+      "size": 91926919,
+      "sha256": "2f77cb1d1f6695c0cf6c89ab36cbaa978cde813131aaeab17cf5a790b19a2645",
+      "url": "https://osf.io/download/cfrgb/"
+    },
+    {
+      "name": "resultsYLS_NR.mat",
+      "subject": "YLS",
+      "role": "sentences",
+      "size": 1923277772,
+      "sha256": "a1b2e948c3cdd5712ef86ac0509fcc4ccb58ecdeb8d727b563d52c2ddd0c5d5a",
+      "url": "https://osf.io/download/p9nme/"
+    },
+    {
+      "name": "gip_YLS_NR6_EEG.mat",
+      "subject": "YLS",
+      "role": "metadata",
+      "size": 122852728,
+      "sha256": "2cb861842dfad86e2eae4f50e89522a1bf4d70bee2f425501a79c87df76fe0cd",
+      "url": "https://osf.io/download/nvesj/"
+    },
+    {
+      "name": "resultsYIS_NR.mat",
+      "subject": "YIS",
+      "role": "sentences",
+      "size": 2026534731,
+      "sha256": "bee4253689232fb54b1780db17e7e2799e37ef5ac9ea355068e7b6a59051a3c9",
+      "url": "https://osf.io/download/m85z9/"
+    },
+    {
+      "name": "gip_YIS_NR4_EEG.mat",
+      "subject": "YIS",
+      "role": "metadata",
+      "size": 182128292,
+      "sha256": "fd327bbeb848754c73b5864fde3eb39826ae9dacaf131b42cd3f583bc78932f5",
+      "url": "https://osf.io/download/pjf2b/"
+    },
+    {
+      "name": "resultsYMD_NR.mat",
+      "subject": "YMD",
+      "role": "sentences",
+      "size": 2415535960,
+      "sha256": "ef2933eb003d89c156db4977504336550c99f8d4a0e16dd71d8a8378e94a55af",
+      "url": "https://osf.io/download/3zk8s/"
+    },
+    {
+      "name": "oip_YMD_NR3_EEG.mat",
+      "subject": "YMD",
+      "role": "metadata",
+      "size": 155776804,
+      "sha256": "36dbaa907a1d7f9ebf3d396c62c01ce9c411def599b315da937f0a9bceff77f7",
+      "url": "https://osf.io/download/j47cr/"
+    },
+    {
+      "name": "resultsYRH_NR.mat",
+      "subject": "YRH",
+      "role": "sentences",
+      "size": 1544909024,
+      "sha256": "95cdcf44cd03dad9ad93a8bf74b5bfd22faf09ca59c12ffc82925548737d93a7",
+      "url": "https://osf.io/download/25edz/"
+    },
+    {
+      "name": "gip_YRH_NR6_EEG.mat",
+      "subject": "YRH",
+      "role": "metadata",
+      "size": 119456368,
+      "sha256": "ae4d7353bb115084df38683a9ba46aa2c143c46b765b875bfc482506349fc93d",
+      "url": "https://osf.io/download/hta57/"
+    },
+    {
+      "name": "resultsYMS_NR.mat",
+      "subject": "YMS",
+      "role": "sentences",
+      "size": 2446833984,
+      "sha256": "f5584c11b11b02db7ef027108d33527b5f7ffe104b1586533e2aee1584730c10",
+      "url": "https://osf.io/download/wczfg/"
+    },
+    {
+      "name": "gip_YMS_NR6_EEG.mat",
+      "subject": "YMS",
+      "role": "metadata",
+      "size": 184031336,
+      "sha256": "e0d293d3919158463245fb7e949806aac09285e57fbfd381389cf1df7b1bcf56",
+      "url": "https://osf.io/download/stnjz/"
+    },
+    {
+      "name": "resultsYSD_NR.mat",
+      "subject": "YSD",
+      "role": "sentences",
+      "size": 1835711329,
+      "sha256": "d71b0c8e78955c8768b680aa29c3ddee38dd45781456caee7566cb66b0703f13",
+      "url": "https://osf.io/download/rjhze/"
+    },
+    {
+      "name": "oip_YSD_NR6_EEG.mat",
+      "subject": "YSD",
+      "role": "metadata",
+      "size": 127903665,
+      "sha256": "aef15ea683c1f71ef50aaabb53e1f1fb88511d01e04dcb27735f16c8022c706a",
+      "url": "https://osf.io/download/szvgj/"
+    },
+    {
+      "name": "resultsYRK_NR.mat",
+      "subject": "YRK",
+      "role": "sentences",
+      "size": 2347425489,
+      "sha256": "a91c4548e1caee4c6125aee5fefc25b361ca4fac2e4cb593c417ef5fc826dda6",
+      "url": "https://osf.io/download/mjbhw/"
+    },
+    {
+      "name": "gip_YRK_NR6_EEG.mat",
+      "subject": "YRK",
+      "role": "metadata",
+      "size": 155384198,
+      "sha256": "39f238fb0ac1485f8c3ffbd00f3c13d561552310d187b91565974b40eb6d7a2d",
+      "url": "https://osf.io/download/369tr/"
+    },
+    {
+      "name": "resultsYRP_NR.mat",
+      "subject": "YRP",
+      "role": "sentences",
+      "size": 2319904154,
+      "sha256": "729df8d66c3151b853fe820cebdfadf9ffb5b4ae9c394ff63f1d723a8ad4a849",
+      "url": "https://osf.io/download/dhjnk/"
+    },
+    {
+      "name": "gip_YRP_NR6_EEG.mat",
+      "subject": "YRP",
+      "role": "metadata",
+      "size": 157599661,
+      "sha256": "86402aad37c456234f78368456b898385e6a0351ddee47b512ab5ea0c2e13b1c",
+      "url": "https://osf.io/download/z79dv/"
+    },
+    {
+      "name": "resultsYSL_NR.mat",
+      "subject": "YSL",
+      "role": "sentences",
+      "size": 2356341298,
+      "sha256": "dd006115a6817df048bb816e95f748f42583687eccb47cfd12f44999a1353ce2",
+      "url": "https://osf.io/download/st5nw/"
+    },
+    {
+      "name": "oip_YSL_NR4_EEG.mat",
+      "subject": "YSL",
+      "role": "metadata",
+      "size": 177335062,
+      "sha256": "baa94d0c2a4ac6a1b97d87b6ec06b99c9745ed51c32af9db85d51374f0beacc6",
+      "url": "https://osf.io/download/xcn93/"
+    },
+    {
+      "name": "resultsYTL_NR.mat",
+      "subject": "YTL",
+      "role": "sentences",
+      "size": 2495299295,
+      "sha256": "b168d543a8f66f50276645fdbd662fcec6ee01370d986315fea1b12aa8cb8b73",
+      "url": "https://osf.io/download/6ab98/"
+    },
+    {
+      "name": "oip_YTL_NR6_EEG.mat",
+      "subject": "YTL",
+      "role": "metadata",
+      "size": 164180564,
+      "sha256": "67cd3399e67e0aa915faae2b810910a3484331534613d0246575ce3a3609419f",
+      "url": "https://osf.io/download/7bwjq/"
+    },
+    {
+      "name": "resultsYAC_NR.mat",
+      "subject": "YAC",
+      "role": "sentences",
+      "size": 1340390157,
+      "sha256": "0fbe472ed81fd80697c051e89d2af72ec12ebd2b4ec25f65ce47460aec26d8f5",
+      "url": "https://osf.io/download/6g23c/"
+    },
+    {
+      "name": "bip_YAC_NR6_EEG.mat",
+      "subject": "YAC",
+      "role": "metadata",
+      "size": 91874942,
+      "sha256": "c501ddfd16745af687ab930483d9a5c426bfebaf07dbc2a55cd612bf69e8bf47",
+      "url": "https://osf.io/download/s2hbm/"
+    },
+    {
+      "name": "resultsYAK_NR.mat",
+      "subject": "YAK",
+      "role": "sentences",
+      "size": 1235552076,
+      "sha256": "07d877e639b899bdc9cb8f63d3250a9cbe3495eccad50a9e6226280d8fba533b",
+      "url": "https://osf.io/download/8r94t/"
+    },
+    {
+      "name": "oip_YAK_NR1_EEG.mat",
+      "subject": "YAK",
+      "role": "metadata",
+      "size": 8202964,
+      "sha256": "fb4dac548be519232a6cefddfc80daee6a42eff99602c79bfd1d305e1a29dead",
+      "url": "https://osf.io/download/yvwg9/"
+    },
+    {
+      "name": "resultsYAG_NR.mat",
+      "subject": "YAG",
+      "role": "sentences",
+      "size": 2426102526,
+      "sha256": "aaa9ce8a8a615d3af2eafcf756f8a7fb5fc010d54d7485151b104ef585a94ce7",
+      "url": "https://osf.io/download/vn74p/"
+    },
+    {
+      "name": "oip_YAG_NR6_EEG.mat",
+      "subject": "YAG",
+      "role": "metadata",
+      "size": 192367943,
+      "sha256": "b0a5987215dceb87e527d6eefc9f4b2079da5025b1b87be30a054276a689b319",
+      "url": "https://osf.io/download/dqn9y/"
+    },
+    {
+      "name": "resultsYDR_NR.mat",
+      "subject": "YDR",
+      "role": "sentences",
+      "size": 1541159278,
+      "sha256": "5143ecd17a1942aed705da78d857e1551d1a211fc1a0827de098b6cce06840f5",
+      "url": "https://osf.io/download/wpn38/"
+    },
+    {
+      "name": "gip_YDR_NR7_EEG.mat",
+      "subject": "YDR",
+      "role": "metadata",
+      "size": 91501773,
+      "sha256": "78473e7cbdaba5cbc5d5964ea2722506a7daa2ec52a61dd1def1f45f3b30d686",
+      "url": "https://osf.io/download/dp6un/"
+    },
+    {
+      "name": "resultsYFS_NR.mat",
+      "subject": "YFS",
+      "role": "sentences",
+      "size": 1404067839,
+      "sha256": "db464aa7df52464979b6346a45183b3dc203882cfa9b3caa887b5d858bc389b3",
+      "url": "https://osf.io/download/zwqjc/"
+    },
+    {
+      "name": "gip_YFS_NR4_EEG.mat",
+      "subject": "YFS",
+      "role": "metadata",
+      "size": 92087942,
+      "sha256": "e699bdde8a6fd46454c4a7091cc93d09b0799a098c60412a8ad0b947b549c78b",
+      "url": "https://osf.io/download/2yjgq/"
+    },
+    {
+      "name": "resultsYDG_NR.mat",
+      "subject": "YDG",
+      "role": "sentences",
+      "size": 1748510042,
+      "sha256": "e7fc40698f3c87f31100b2f3f85278b56c498d00bf162a32c9b6bbd89ac6bf09",
+      "url": "https://osf.io/download/g7cnq/"
+    },
+    {
+      "name": "gip_YDG_NR6_EEG.mat",
+      "subject": "YDG",
+      "role": "metadata",
+      "size": 145543185,
+      "sha256": "9f3677e5549bef5926058420e33fb674930afa8b67bd49bc7a8b3974856ece56",
+      "url": "https://osf.io/download/9zvdf/"
+    },
+    {
+      "name": "resultsYFR_NR.mat",
+      "subject": "YFR",
+      "role": "sentences",
+      "size": 1892890796,
+      "sha256": "523bb9f407de077547e658cc173b6ab9d57d5bcdb17e470cba6141d611cb259a",
+      "url": "https://osf.io/download/4yfb9/"
+    },
+    {
+      "name": "oip_YFR_NR6_EEG.mat",
+      "subject": "YFR",
+      "role": "metadata",
+      "size": 122529876,
+      "sha256": "c2cbfc9609bcd13820340062277a2edfeba568ca5353ed9d19bbc7ec3326fc9c",
+      "url": "https://osf.io/download/ah8my/"
+    }
+  ],
+  "total_bytes": 36973793741,
+  "metadata_scope": "one smallest preprocessed run per subject; full cross-run montage audit remains external"
+}

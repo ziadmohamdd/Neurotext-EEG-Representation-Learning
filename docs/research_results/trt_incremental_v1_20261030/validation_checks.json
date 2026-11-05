@@ -1,0 +1,23 @@
+{
+  "unit_tests": "4 passed in 1.71s",
+  "structural_settings": 28,
+  "combined_settings_each": 196,
+  "identical_structural_raw_and_transformed_blocks": true,
+  "zero_weight_nesting": [
+    {
+      "condition": "structural_real",
+      "zero_weight_settings": 28,
+      "all_zero_weight_metrics_equal_structural_at_same_alpha": true
+    },
+    {
+      "condition": "structural_gaussian",
+      "zero_weight_settings": 28,
+      "all_zero_weight_metrics_equal_structural_at_same_alpha": true
+    }
+  ],
+  "model_rank_replays": 3,
+  "identical_observations_and_candidate_pool": true,
+  "old_feature_cache_unchanged": true,
+  "previous_artifacts_unchanged": 585,
+  "test_features_extracted": false
+}

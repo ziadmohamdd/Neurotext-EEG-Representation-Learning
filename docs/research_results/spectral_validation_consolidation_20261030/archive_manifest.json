@@ -1,0 +1,32 @@
+[
+  {
+    "source": "scripts\\consolidate_spectral_validation.py",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\implementation\\consolidate_spectral_validation.py",
+    "sha256": "83743c6e9182b691757041a2ce9886f44c957c8270737de6b549a9664cc54655"
+  },
+  {
+    "source": "scripts\\finalize_spectral_deck.py",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\implementation\\finalize_spectral_deck.py",
+    "sha256": "fd2627ff04d9a279bfbb726060b5f8b08f709cede5353206eeab1f4ce4792fea"
+  },
+  {
+    "source": "scripts\\make_spectral_final_titles.py",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\implementation\\make_spectral_final_titles.py",
+    "sha256": "104f2fc512334cbaea2cba63ee6402b89ba949b0e937d589dc7aa9e0ce0f91df"
+  },
+  {
+    "source": "scripts\\validate_spectral_consolidation.py",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\implementation\\validate_spectral_consolidation.py",
+    "sha256": "38a6ffa4304d6b97bb469b9a80e971549c0a01c9330c00de1144cc66ac8b2f2b"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\plan.json",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\spectral_pilot\\plan.json",
+    "sha256": "2c12975b9f8a50344008cdde62389416e3fde247522c70ca7a3d2d4176b203bb"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\plan.json",
+    "copy": "docs\\research_results\\spectral_validation_consolidation_20261030\\incremental\\plan.json",
+    "sha256": "1294dfd3a94b8b47c135d060d0e9d74e751bf6b817e9b4a0011ca5e95f6b791c"
+  }
+]

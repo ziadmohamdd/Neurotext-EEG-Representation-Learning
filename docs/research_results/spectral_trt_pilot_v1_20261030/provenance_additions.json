@@ -1,0 +1,22 @@
+[
+  {
+    "source": "data\\manifests\\zuco1_duration_qc.exclusions.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\original_duration_qc_exclusions.json",
+    "sha256": "34ad36f781e04aefeea2aa20f2493713fa4afe345497889cb38d9660da6c82e9"
+  },
+  {
+    "source": "results\\cnn_candidate_comparison_20261030\\batch_real\\splits.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\original_saved_splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "src\\eeg_decoding\\data\\dataset.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\dataset_and_rng.py",
+    "sha256": "bf2cb139fb9aa50fdd847e22fad7e9d445953c721f452e33782061b653d4e5aa"
+  },
+  {
+    "source": "src\\eeg_decoding\\preprocessing\\normalization.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\voltage_normalization.py",
+    "sha256": "ad1ceb36a50080914e256b82e406b4ff4c29b385e4e7b6a376937e63fb19a536"
+  }
+]

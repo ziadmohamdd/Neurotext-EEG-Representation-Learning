@@ -1,0 +1,149 @@
+{
+  "mean_real": {
+    "alpha": 100.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.0021485813661381815,
+        "macro_reader_mrr": 0.02099122157943919
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.0021485813661381815,
+        "macro_reader_mrr": 0.02101090033123503
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.0021485813661381815,
+        "macro_reader_mrr": 0.020972401037893232
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "ordered_real": {
+    "alpha": 100.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.00369600578691907,
+        "macro_reader_mrr": 0.02348942898486614
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.00369600578691907,
+        "macro_reader_mrr": 0.023519015578563
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.0037083196930132217,
+        "macro_reader_mrr": 0.023266506622042087
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "matched_gaussian": {
+    "alpha": 100.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.0032262112552951193,
+        "macro_reader_mrr": 0.02359334124969229
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.0032262112552951193,
+        "macro_reader_mrr": 0.023593927394408888
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.0032262112552951193,
+        "macro_reader_mrr": 0.023465125569293414
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "word_order_shuffled": {
+    "alpha": 1.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.005715577609557277,
+        "macro_reader_mrr": 0.024374561453161067
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.005283051658000183,
+        "macro_reader_mrr": 0.0240619150745418
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.004853344604467129,
+        "macro_reader_mrr": 0.02423170240017857
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "class_shuffled": {
+    "alpha": 10.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.004497426812224962,
+        "macro_reader_mrr": 0.0212778590915182
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.004497426812224962,
+        "macro_reader_mrr": 0.021144339251015734
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.003214560724613447,
+        "macro_reader_mrr": 0.020067141287708347
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "missingness_only": {
+    "alpha": 1.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.15196761265371617,
+        "macro_reader_mrr": 0.27894049989028696
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.15146198257819335,
+        "macro_reader_mrr": 0.27816392531705925
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.15015555132895175,
+        "macro_reader_mrr": 0.2728331698377881
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  },
+  "structural_only": {
+    "alpha": 1.0,
+    "grid": [
+      {
+        "alpha": 1.0,
+        "macro_reader_recall@1": 0.16112889594861327,
+        "macro_reader_mrr": 0.2802707575513446
+      },
+      {
+        "alpha": 10.0,
+        "macro_reader_recall@1": 0.16084460653120905,
+        "macro_reader_mrr": 0.28006599681332245
+      },
+      {
+        "alpha": 100.0,
+        "macro_reader_recall@1": 0.1570747498477476,
+        "macro_reader_mrr": 0.27402440101493136
+      }
+    ],
+    "selection_scope": "Eight original training readers only; Recall@1"
+  }
+}

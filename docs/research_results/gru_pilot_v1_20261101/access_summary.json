@@ -1,0 +1,13 @@
+{
+  "word_cache_members_read": [
+    "train_words",
+    "train_offsets"
+  ],
+  "structural_members_read": [
+    "count_duration_only_train"
+  ],
+  "raw_source_files_opened": false,
+  "test_arrays_loaded": false,
+  "test_evaluated": false,
+  "outer_evaluated": false
+}

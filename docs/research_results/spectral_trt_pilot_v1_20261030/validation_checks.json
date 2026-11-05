@@ -1,0 +1,17 @@
+{
+  "unit_tests": "7 passed in 5.00 s",
+  "conditions": 6,
+  "settings_per_condition": 28,
+  "train_observations_per_condition": 2245,
+  "validation_observations_per_condition": 512,
+  "validation_candidates": 298,
+  "identical_validation_rows_and_pools": true,
+  "gaussian_word_masks_verified": 2757,
+  "shared_structural_values_identical": true,
+  "feature_cache_hashes_verified": 3,
+  "selected_coefficients_and_validation_ranks_verified": 6,
+  "protected_prior_files_unchanged": 547,
+  "test_extracted_or_evaluated": false,
+  "punctuation_repair_applied": false,
+  "archive_source_copy_hash_matches": 37
+}

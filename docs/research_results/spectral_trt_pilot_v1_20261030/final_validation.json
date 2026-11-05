@@ -1,0 +1,21 @@
+{
+  "saved_coefficients_reproduce_validation_ranks": 6,
+  "test_subject_sources_opened": 0,
+  "test_cache_arrays": 0,
+  "archive_source_copy_hash_matches": 41,
+  "local_links": "passed",
+  "word_text_in_feature_cache": false,
+  "target_cache_unchanged": true,
+  "source_subjects": [
+    "ZDM",
+    "ZDN",
+    "ZGW",
+    "ZJM",
+    "ZJN",
+    "ZJS",
+    "ZKH",
+    "ZKW",
+    "ZMG",
+    "ZPH"
+  ]
+}

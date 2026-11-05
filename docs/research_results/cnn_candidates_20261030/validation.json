@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "artifact checks, not additional EEG training or test evaluation",
+  "initial_model_sha256": "d4702d0f3cd3617b14b6a5eed91f3d6b01a9b9dc5698de9f2ce794d88d12d5e3",
+  "same_architecture_and_inputs": true,
+  "prior_checked_experiment_files_unchanged": 67,
+  "old_default_loss_and_gradient": "exactly equal on a synthetic CPU check",
+  "test_after_selection_freeze": true,
+  "real_loss_family_chosen_by_validation": "batch",
+  "metadata_and_checkpoint_checks": [
+    {
+      "scope": "batch",
+      "control": "real",
+      "best_epoch": 0,
+      "epochs_completed": 9,
+      "best_sha256": "2917c6bcea594aa75355905e136e554c52f87a9bf796465f38c4b69c21c14abd",
+      "last_sha256": "d90e1dd8edd0085f71c7e4b904cd7fe31e5a09db340ba74c143cfb128dd5ca1b"
+    },
+    {
+      "scope": "batch",
+      "control": "gaussian",
+      "best_epoch": 2,
+      "epochs_completed": 11,
+      "best_sha256": "c989c34d19d1704094343889b092f99d525688caa7c525011786fc2e66aa3a69",
+      "last_sha256": "e70b1e3a8970a7f14c3eddaed9a31fd45aafe1d92f998c3588cf87d94bd93506"
+    },
+    {
+      "scope": "batch",
+      "control": "shuffled",
+      "best_epoch": 1,
+      "epochs_completed": 10,
+      "best_sha256": "9cf52be6a54fe8da1f35a48952115dbae1378620a74ca9debcf94b9d26ec47e0",
+      "last_sha256": "2f81607fc8a0c8e132adcbb407bff856f85e8c31c0d4519de1e61cb4bff23a35"
+    },
+    {
+      "scope": "training_unique",
+      "control": "real",
+      "best_epoch": 0,
+      "epochs_completed": 9,
+      "best_sha256": "5ee1bd214f05e2c7dc9d3c0550fb19051e61d4276e243f42ac50bbde2e011296",
+      "last_sha256": "03201ea2aad42e74132f88106a3e20fae8e7e50336be9c4e5108fddc21a93920"
+    },
+    {
+      "scope": "training_unique",
+      "control": "gaussian",
+      "best_epoch": 3,
+      "epochs_completed": 12,
+      "best_sha256": "8a52d2b72e3945763b2c3a68a8ebd6fd8b92e5438d4278bf0b7555ebd0cdaa9f",
+      "last_sha256": "c3a56af1bc879aec188fcc5590217eb9ff97b62190aaee76a1ad49e2a5996fd1"
+    },
+    {
+      "scope": "training_unique",
+      "control": "shuffled",
+      "best_epoch": 1,
+      "epochs_completed": 10,
+      "best_sha256": "9ee36612dbea587f87e15906ff67af0137427f3c806c39d4733fa5aa3835473b",
+      "last_sha256": "1de6d7f12f6764d1ac1e26bd1b5b7b1fbf90f159809758e46b21b9f9d075f0ce"
+    }
+  ],
+  "suite": {
+    "passed": 145,
+    "optional_skips": 2,
+    "deselected": 0
+  },
+  "gpu_reproducibility": "CuBLAS warning with CUBLAS_WORKSPACE_CONFIG unset; no bitwise GPU claim"
+}

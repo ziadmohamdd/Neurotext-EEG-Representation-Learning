@@ -1,0 +1,14 @@
+{
+  "observations": 2245,
+  "word_slots": 48865,
+  "complete_words": 32848,
+  "all_missing_observations": [
+    [
+      "zuco1",
+      "ZMG",
+      "unspecified",
+      "nr",
+      "70"
+    ]
+  ]
+}

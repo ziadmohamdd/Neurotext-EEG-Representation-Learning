@@ -1,0 +1,7 @@
+{
+  "all_source_word_slots": 196162,
+  "single_840_feature_family_float32_bytes": 659104320,
+  "qc_sentence_pooled_840_float32_bytes": 31022880,
+  "all_finite_raw_fixations_float32_bytes": 10494346380,
+  "scope": "Uncompressed array payload estimates only; no feature dataset written"
+}

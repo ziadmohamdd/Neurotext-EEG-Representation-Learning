@@ -1,0 +1,6 @@
+{
+  "source_json": "results\\metrics\\zuco1_ZJS_validation.json",
+  "sha256": "8e4ef1ceebacab04820c4ac16c5c7ff60169e38c337f6f57770a60b5e0ff1648",
+  "artifact_type": "Manifest/data validation summary, not a retrieval evaluation",
+  "retrieval_metrics_present": false
+}

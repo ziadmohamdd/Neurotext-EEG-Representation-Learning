@@ -1,0 +1,19 @@
+{
+  "controls.py": "6b8e92527c16b716d933e2e63204f9ccbe23e2eeb2e0b7fd196daa5877119d65",
+  "gru_pilot.py": "a461a4db5ab05b9565ed832e03cb1fcfa7bff484ffb6472e8176535e9722fe37",
+  "gru_retrieval_loss.py": "246d51d1d811f36424a4a3d1e281d728ad6435d7c8d0dfdcf401ccaf9a3a1ce8",
+  "incremental_ridge.py": "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788",
+  "mat5.py": "dbdfffdc869d4ffcbd86f16884ac19dc3fbc00126cda27ddff6ad1e2ed122f5b",
+  "prepare_word_pretrain_v1.py": "ca326214e507cc0dc64d9815c5e39d3607214764e56d931ab3615622039b6be0",
+  "report_word_pretrain_v1.py": "a4bd91426542798ece14346d21f86ee15fd4689dc5c0a08754c874184196a6c1",
+  "retrieval.py": "d57d88565161081761726f2ddd15da706128634396d9625abf56cc134a68bcee",
+  "run_gru_retrieval_loss.py": "dc70cc7b4e1f1d2933d4588fe959881a817a4a22d48baebd7a2175fe664da18d",
+  "run_word_pretrain_v1.py": "dfe4e330ecda5ed298f6d4eb0aa3f437054aebbff2379d2c43d1cab371386a2a",
+  "spectral_pilot.py": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353",
+  "test_word_pretrain_v1.py": "5c7366cb33bdfbaa84b2775857784d40f839e35d4e4793650b53871661418ce4",
+  "trt_view.py": "3cd0791aa889caeae6969cbf0b997d1256e5d13ce6e6b818e5c6e5f34715fbe7",
+  "verify_word_pretrain_v1.py": "1780193f208be03e9f44b996ec9e3784f6349c0cf18e35ea23e4e4658c5a11ff",
+  "word_pretrain_v1.py": "6ebee22f7ac275c21eb1a92cbb1926eb92d9a563ffea5a920876ba4e03821076",
+  "word_pretrain_v1_20261101.json": "5c15c2116b549f0d963747a9e7e85df26045c1a1ebfe83499ededcc92cce1696",
+  "word_targets_v1.py": "6faa92eb0f4816de3ea46d9f1e5f5643a46cd04346621c32bb2e0b9938ef3a2f"
+}

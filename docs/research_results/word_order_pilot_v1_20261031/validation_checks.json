@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "saved_model_replays": 7,
+  "validation_ranks_reproduced": 3584,
+  "inner_reader_folds": 8,
+  "inner_scores_verified": 168,
+  "candidate_pool": 298,
+  "gaussian_validation_masks_match": true,
+  "prior_protected_files_unchanged": 1109,
+  "test_evaluated": false,
+  "verification_only": "No fitting or new model/settings selection"
+}

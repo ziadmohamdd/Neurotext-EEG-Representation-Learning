@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "folds": 8,
+  "holdout_observations": 2245,
+  "scored_rows": 152,
+  "initial_weights_identical": true,
+  "histories_complete": true,
+  "saved_ranks_and_macro_metrics_verified": true,
+  "reader_disjointness_verified": true,
+  "no_test_access_in_declared_execution": true
+}

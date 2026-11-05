@@ -1,0 +1,37 @@
+{
+  "scope": "Consolidation artifact checks only. No fitting, tuning, feature extraction, model or test evaluation.",
+  "status": "passed",
+  "slides": 26,
+  "pdf_pages": 26,
+  "new_validation_only_slides": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "score_rows_checked": 9,
+  "common_validation_queries": 512,
+  "common_candidates": 298,
+  "native_tables_checked": [
+    22,
+    24,
+    25
+  ],
+  "historical_slides_2_to_20": "Source XML identical except date; rendered pixels identical outside date footer",
+  "template_assets": "Original media, layouts, masters and theme byte-identical",
+  "native_package_findings": 0,
+  "geometry_findings": 0,
+  "powerpoint_text_overflow_findings": 0,
+  "visual_review": "Cover and six new slides inspected at full size; historical slides compared against fresh source renders",
+  "pdf_verification": "Native PowerPoint export; PDF signature and 26 page objects verified. No optional PDF text-reader dependency installed.",
+  "prior_protected_files_unchanged": 945,
+  "previous_report_deck_pdf_and_support_docs_archived": 7,
+  "model_tests_run_during_consolidation": false,
+  "deliverables": {
+    "docs\\research_results\\REPORT.md": "f9b97e071e654b4583bd6b72a66850a89e5f21715f207499c3cb4081b3ba0c27",
+    "docs\\presentation\\NeuroText_consolidated.pptx": "f1ad546ec9cb8e166e7f40012f3412df2f00ce37404e7db7702dedffad8e58c3",
+    "docs\\presentation\\NeuroText_consolidated.pdf": "fe7027d70818c02e8ed5635c4fe8282e7558a0f6840dca336e158302bc9a9754"
+  }
+}

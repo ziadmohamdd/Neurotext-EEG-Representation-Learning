@@ -1,0 +1,112 @@
+[
+  {
+    "source": "results\\trt_incremental_v1_20261030\\decision.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\decision.json",
+    "sha256": "d203a7fba82b58efb38c48afae14ebc8c7c6fefd28c181e3d8650deb904b4fb8"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\differences.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\differences.json",
+    "sha256": "c64e38686e74980ef3318048c25e7fda1a3dc6eff7276ce2d5dd3045f3b07b3d"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\plan.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\plan.json",
+    "sha256": "1294dfd3a94b8b47c135d060d0e9d74e751bf6b817e9b4a0011ca5e95f6b791c"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\preservation_after.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\preservation_after.json",
+    "sha256": "8f77c97396b3e9ae2d4966d83164489c67347d1cd53d56dc622f55debba733ad"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\preservation_before.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\preservation_before.json",
+    "sha256": "e6512a522de797c8c62df8ebef16499c86e544f3b8e414edea872bed9203dfd3"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_preprocessing_frozen.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_preprocessing_frozen.json",
+    "sha256": "5622160a1b05f1ce698487a90300f1ff2b0ff196a47cdf6cc4d3f0b4d75fa9d1"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\validation_checks.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\validation_checks.json",
+    "sha256": "18eaacfb420bed451b56204e22b2245755e3807f667f80c4122b5736f9c9cdff"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\validation_summary.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\validation_summary.json",
+    "sha256": "12e0344892ce0bfa7d89ee9b70525257e898000b0ef9f9801fcd0a8e992021ef"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_gaussian\\selection.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_gaussian\\selection.json",
+    "sha256": "785c10030cfeb367241d527127291c9067569354f09ac833bf70a48165775ee8"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_only\\selection.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_only\\selection.json",
+    "sha256": "ed931329e2a29ea46834b1b7d680b62942f88803d5f8b5030772f8aa2ae9ca10"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_real\\selection.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_real\\selection.json",
+    "sha256": "a29d5c886c1bfe2f9239a9aef06474cb72c2a93179f82fd64b8853a934ed1ff1"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_gaussian\\validation.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_gaussian\\validation.json",
+    "sha256": "abc10317fa312c8d2ddd1a857c427e5ab3ed02f4b385f8a5bc72756b9f1d32a7"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_only\\validation.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_only\\validation.json",
+    "sha256": "e0b1e9c48e36ac1bbd9e1a5310eac5689d29b01e1457bafc12a03f7cef7d1fe1"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_real\\validation.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_real\\validation.json",
+    "sha256": "b716474817e56321b9873ebb8e1d9ba3dede79ae1812d16eda30a26f399bede3"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\incremental_ridge.py",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\incremental_ridge.py",
+    "sha256": "5ed20f19bb67bc59dc4955cd3d87ca7829e3753f5c231a405c25452fc76da788"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\retrieval.py",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\retrieval.py",
+    "sha256": "d57d88565161081761726f2ddd15da706128634396d9625abf56cc134a68bcee"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\run_trt_incremental_comparison.py",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\run_trt_incremental_comparison.py",
+    "sha256": "0e74668c13c7a31e5b53d43eac722cefd5bf8f4657985e55e8e13d9b1116549a"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\spectral_pilot.py",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\spectral_pilot.py",
+    "sha256": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\test_incremental_ridge.py",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\test_incremental_ridge.py",
+    "sha256": "c004f9e467fed3924d7ce35841705f46d0874de324f8df79feda824a4d5a8ea3"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\implementation\\trt_incremental_information_v1.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\implementation\\trt_incremental_information_v1.json",
+    "sha256": "6bbddd757fd2929064ad71ec491460f38bb283688ab6b1c7b679794788475ab2"
+  },
+  {
+    "source": "results\\trt_incremental_v1_20261030\\structural_preprocessing.npz",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\structural_preprocessing.npz",
+    "sha256": "3fd56f585d37057b4964c16498610ef842da3eb5d217b9e56800100f716528c1"
+  },
+  {
+    "source": "data\\processed\\zuco1_trt_mean_pilot_v1_20261030\\index.json",
+    "copy": "docs\\research_results\\trt_incremental_v1_20261030\\source_view\\index.json",
+    "sha256": "c1a5516afae858fdcb78d89cd63a277f0604f8da260d04c480e5208e4cf14c22"
+  }
+]

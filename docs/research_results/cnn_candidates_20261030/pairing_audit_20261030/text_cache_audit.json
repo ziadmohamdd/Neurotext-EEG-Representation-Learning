@@ -1,0 +1,20 @@
+{
+  "cache": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\processed\\zuco1_batch\\sentence_embeddings_a01b38226d177cab.npz",
+  "sha256": "f38649e2ee0278f8ec1c512786b4313f8ea09b9ef51810af892f7745fc2ab7b6",
+  "n_sentences": 300,
+  "metadata": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "requested_revision": null,
+    "resolved_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sentence_hash_rule": "NFKC/casefold/whitespace",
+    "n_sentences": 300
+  },
+  "cpu_local_pinned_weights_only": true,
+  "original_cache_unchanged": true,
+  "minimum_same_key_cosine": 0.9999998807907104,
+  "mean_same_key_cosine": 1.0,
+  "max_absolute_embedding_difference": 1.1723022907972336e-07,
+  "same_key_nearest_cached_embedding_count": 300,
+  "mismatched_nearest_keys": [],
+  "interpretation": "Numerical reconstruction audit of key/vector correspondence, not a model training or decoding result"
+}

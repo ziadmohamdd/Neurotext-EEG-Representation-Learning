@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "neural_model_replays": 48,
+  "structural_replays": 8,
+  "original_300way_ranks_reproduced": 15715,
+  "300way_macro_scores_match_all_original_arms": true,
+  "prior_protected_files_unchanged": 2684,
+  "no_training": true,
+  "outer_validation_or_test_evaluated": false
+}

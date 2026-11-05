@@ -1,0 +1,1289 @@
+{
+  "scope": "One available ZDM NR3 continuous preprocessed recording; bounded exact matching, no resampling",
+  "metadata": {
+    "header": "data\\raw\\zuco1\\oip_ZDM_NR3_EEG.mat",
+    "shape_on_disk": [
+      119630,
+      105
+    ],
+    "srate": 500.0,
+    "ref_field": "common",
+    "setname": "ZDM_NR3 pruned with ICA",
+    "event_type_counts": {
+      "92  ": 1,
+      "19  ": 1,
+      "10  ": 43,
+      "11  ": 43,
+      "12  ": 7,
+      "13  ": 7,
+      "15  ": 7,
+      "18  ": 1
+    },
+    "first_events": [
+      {
+        "type": "92  ",
+        "matlab_latency": 1022.0
+      },
+      {
+        "type": "19  ",
+        "matlab_latency": 1023.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 1026.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 5927.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 5929.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 9183.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 9186.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 12287.0
+      },
+      {
+        "type": "12  ",
+        "matlab_latency": 12289.0
+      },
+      {
+        "type": "13  ",
+        "matlab_latency": 14335.0
+      },
+      {
+        "type": "15  ",
+        "matlab_latency": 15108.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 15110.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 17364.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 17365.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 18896.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 18898.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 21056.0
+      },
+      {
+        "type": "10  ",
+        "matlab_latency": 21060.0
+      },
+      {
+        "type": "11  ",
+        "matlab_latency": 23700.0
+      },
+      {
+        "type": "12  ",
+        "matlab_latency": 23702.0
+      }
+    ]
+  },
+  "exact_waveform_matches": [
+    {
+      "sentence_id": "100",
+      "matlab_sentence_index": 101,
+      "text": "From 1775 and 1777, Hindman served in Maryland\ufffds revolutionary government, as the state\ufffds Treasurer for the Eastern Shore.",
+      "matlab_start_sample": 5929,
+      "matlab_end_sample": 9183,
+      "n_samples": 3255,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 5927.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 5929.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 9183.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "101",
+      "matlab_sentence_index": 102,
+      "text": "Clive Jay Davis (born April 4, 1934) is the founder of Arista Records, and member of the Rock and Roll Hall of Fame as a nonperformer.",
+      "matlab_start_sample": 9186,
+      "matlab_end_sample": 12287,
+      "n_samples": 3102,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 9186.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 12287.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 12289.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "102",
+      "matlab_sentence_index": 103,
+      "text": "He was a working class Jewish boy who grew up in Brooklyn, New York.",
+      "matlab_start_sample": 12289,
+      "matlab_end_sample": 14335,
+      "n_samples": 2047,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 12287.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 12289.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 14335.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "103",
+      "matlab_sentence_index": 104,
+      "text": "He graduated from New York University`s College of Arts and Sciences in 1953 and received a scholarship to Harvard Law School.",
+      "matlab_start_sample": 15110,
+      "matlab_end_sample": 17364,
+      "n_samples": 2255,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 15108.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 15110.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 17364.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 17365.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "104",
+      "matlab_sentence_index": 105,
+      "text": "He was then hired by the legal department of CBS subsidiary Columbia Records.",
+      "matlab_start_sample": 17365,
+      "matlab_end_sample": 18896,
+      "n_samples": 1532,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 17364.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 17365.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 18896.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 18898.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "105",
+      "matlab_sentence_index": 106,
+      "text": "In 1974, he founded Arista Records, naming it after his secondary school honor society.",
+      "matlab_start_sample": 18898,
+      "matlab_end_sample": 21056,
+      "n_samples": 2159,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 18896.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 18898.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 21056.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "106",
+      "matlab_sentence_index": 107,
+      "text": "Erasmus Darwin (December 12, 1731 - April 18, 1802) trained as a physician and wrote extensively on medicine and botany, as well as poetry.",
+      "matlab_start_sample": 21060,
+      "matlab_end_sample": 23700,
+      "n_samples": 2641,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 21060.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 23700.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 23702.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "107",
+      "matlab_sentence_index": 108,
+      "text": "He lived in Lichfield and Derby, England.",
+      "matlab_start_sample": 23702,
+      "matlab_end_sample": 24584,
+      "n_samples": 883,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 23700.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 23702.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 24584.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "108",
+      "matlab_sentence_index": 109,
+      "text": "He was one of the founder members of the Lunar Society.",
+      "matlab_start_sample": 25602,
+      "matlab_end_sample": 26660,
+      "n_samples": 1059,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 25600.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 25602.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 26660.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "109",
+      "matlab_sentence_index": 110,
+      "text": "He was a member of the Darwin-Wedgwood family, most famously including his grandson, Charles Darwin.",
+      "matlab_start_sample": 27385,
+      "matlab_end_sample": 29628,
+      "n_samples": 2244,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 27385.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 29628.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "110",
+      "matlab_sentence_index": 111,
+      "text": "He was born near at Elston Hall near Nottingham, and educated at Chesterfield School then later at St. John's College, Cambridge.",
+      "matlab_start_sample": 29631,
+      "matlab_end_sample": 31369,
+      "n_samples": 1739,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 29631.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 31369.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 31371.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "111",
+      "matlab_sentence_index": 112,
+      "text": "He obtained his degree at Edinburgh Medical School.",
+      "matlab_start_sample": 31371,
+      "matlab_end_sample": 32385,
+      "n_samples": 1015,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 31369.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 31371.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 32385.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 32387.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "112",
+      "matlab_sentence_index": 113,
+      "text": "He practised medicine in Lichfield in Staffordshire for twenty years; George III invited him to be royal physician but he declined.",
+      "matlab_start_sample": 32387,
+      "matlab_end_sample": 34953,
+      "n_samples": 2567,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 32385.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 32387.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 34953.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 34955.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "113",
+      "matlab_sentence_index": 114,
+      "text": "In 1781 he moved to Derby, where he died suddenly on the 18th of April 1802.",
+      "matlab_start_sample": 34955,
+      "matlab_end_sample": 37097,
+      "n_samples": 2143,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 34953.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 34955.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 37097.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "114",
+      "matlab_sentence_index": 115,
+      "text": "His most important scientific work is his Zoonomia (1794-1796), which contains a system of pathology, and a treatise on \"generation,\" in which he, in the words of his famous grandson, Charles Robert Darwin, anticipated the views of Jean-Baptiste Lamarck, who in turn is regarded to have foreshadowed the theory of evolution.",
+      "matlab_start_sample": 37101,
+      "matlab_end_sample": 40305,
+      "n_samples": 3205,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 37101.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 40305.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "115",
+      "matlab_sentence_index": 116,
+      "text": "Eunice Mary Kennedy Shriver (born July 10, 1921 in Brookline, Massachusetts) is a member of the Kennedy family.",
+      "matlab_start_sample": 40308,
+      "matlab_end_sample": 41673,
+      "n_samples": 1366,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 40308.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 41673.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "116",
+      "matlab_sentence_index": 117,
+      "text": "Her father was Joseph P. Kennedy, Sr., and her mother was Rose Kennedy.",
+      "matlab_start_sample": 41676,
+      "matlab_end_sample": 43074,
+      "n_samples": 1399,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 41676.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 43074.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 43076.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "117",
+      "matlab_sentence_index": 118,
+      "text": "On May 23, 1953, she married Robert Sargent Shriver, Jr., who was U.S. ambassador to France from 1968 to 1970, and was Democratic vice-presidential candidate in 1972.",
+      "matlab_start_sample": 43076,
+      "matlab_end_sample": 46014,
+      "n_samples": 2939,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 43074.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 43076.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 46014.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 46016.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "118",
+      "matlab_sentence_index": 119,
+      "text": "She actively campaigned for her brother John F. Kennedy, and supported Arnold Schwarzenegger's successful bid for governor of California in 2003.",
+      "matlab_start_sample": 46016,
+      "matlab_end_sample": 47850,
+      "n_samples": 1835,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 46014.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 46016.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 47850.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 47852.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "119",
+      "matlab_sentence_index": 120,
+      "text": "King married Coretta Scott on June 18, 1953.",
+      "matlab_start_sample": 47852,
+      "matlab_end_sample": 49106,
+      "n_samples": 1255,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 47850.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 47852.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 49106.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "120",
+      "matlab_sentence_index": 121,
+      "text": "The wedding ceremony took place in Scott's parents' house in Marion, Alabama, and was performed by King's father.",
+      "matlab_start_sample": 49109,
+      "matlab_end_sample": 51134,
+      "n_samples": 2026,
+      "near_start_events": [
+        {
+          "type": "12  ",
+          "matlab_latency": 49109.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 51134.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "121",
+      "matlab_sentence_index": 122,
+      "text": "In 1953, King became the pastor of the Dexter Avenue Baptist Church in Montgomery, Alabama.",
+      "matlab_start_sample": 53000,
+      "matlab_end_sample": 54550,
+      "n_samples": 1551,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 52998.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 53000.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 54550.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "122",
+      "matlab_sentence_index": 123,
+      "text": "The Reverend Martin Luther King, Jr. Ph.D., Boston University (January 15, 1929 - April 4, 1968) was an American Nobel Laureate, Baptist minister, and African American civil rights activist.",
+      "matlab_start_sample": 54553,
+      "matlab_end_sample": 57275,
+      "n_samples": 2723,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 54553.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 57275.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 57276.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "123",
+      "matlab_sentence_index": 124,
+      "text": "He also was awarded the Presidential Medal of Freedom.",
+      "matlab_start_sample": 57276,
+      "matlab_end_sample": 58159,
+      "n_samples": 884,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 57275.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 57276.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 58159.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "124",
+      "matlab_sentence_index": 125,
+      "text": "Following the campaign, King was instrumental in the founding of the Southern Christian Leadership Conference (SCLC) in 1957, a group created to harness the moral authority and organizing power of black churches to conduct nonviolent protests in the service of civil rights reform.",
+      "matlab_start_sample": 58163,
+      "matlab_end_sample": 61219,
+      "n_samples": 3057,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 58163.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 61219.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "125",
+      "matlab_sentence_index": 126,
+      "text": "The organization's nonviolent principles were criticized by the younger, more radical blacks and challenged by the Student Nonviolent Coordinating Committee (SNCC) then headed by James Foreman.",
+      "matlab_start_sample": 61222,
+      "matlab_end_sample": 63779,
+      "n_samples": 2558,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 61222.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 63779.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 63781.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "126",
+      "matlab_sentence_index": 127,
+      "text": "King was born in Atlanta, Georgia to the Rev. Martin Luther King, Sr. and Alberta Williams King.",
+      "matlab_start_sample": 63781,
+      "matlab_end_sample": 65519,
+      "n_samples": 1739,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 63779.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 63781.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 65519.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 65521.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "127",
+      "matlab_sentence_index": 128,
+      "text": "He graduated from Morehouse College with a Bachelor of Arts degree in Sociology in 1948.",
+      "matlab_start_sample": 65521,
+      "matlab_end_sample": 66843,
+      "n_samples": 1323,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 65519.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 65521.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 66843.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "128",
+      "matlab_sentence_index": 129,
+      "text": "His application to Yale Divinity School was rejected, and he graduated from Crozer Theological Seminary in Chester, Pennsylvania [1] with a Bachelor of Divinity in 1951.",
+      "matlab_start_sample": 66846,
+      "matlab_end_sample": 69756,
+      "n_samples": 2911,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 66846.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 69756.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 69757.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "129",
+      "matlab_sentence_index": 130,
+      "text": "He received his Ph.D. in Systematic theology from Boston University in 1955.",
+      "matlab_start_sample": 69757,
+      "matlab_end_sample": 71832,
+      "n_samples": 2076,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 69756.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 69757.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 71832.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "130",
+      "matlab_sentence_index": 131,
+      "text": "Gail Davis (born October 5, 1925; died March 15, 1997) was an American actress.",
+      "matlab_start_sample": 72706,
+      "matlab_end_sample": 74304,
+      "n_samples": 1599,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 72704.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 72706.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 74304.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "131",
+      "matlab_sentence_index": 132,
+      "text": "She and her husband moved to Hollywood, California to pursue a career in motion pictures and in 1947, as \"Gail Davis,\" she made her motion picture debut in a comedy film short.",
+      "matlab_start_sample": 74307,
+      "matlab_end_sample": 76412,
+      "n_samples": 2106,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 74307.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 76412.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "132",
+      "matlab_sentence_index": 133,
+      "text": "She then appeared in minor roles in another four films until landing a supporting role under star Roy Rogers in a 1948 Western film called The Far Frontier.",
+      "matlab_start_sample": 76415,
+      "matlab_end_sample": 78056,
+      "n_samples": 1642,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 76415.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 78056.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "133",
+      "matlab_sentence_index": 134,
+      "text": "Between then and 1953, Davis appeared in more than three dozen films, of which all but three were in the Western genre and that included fourteen films with the singing cowboy star, Gene Autry.",
+      "matlab_start_sample": 78060,
+      "matlab_end_sample": 80752,
+      "n_samples": 2693,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 78060.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 80752.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "134",
+      "matlab_sentence_index": 135,
+      "text": "In 1950, she began to guest star in television Westerns, notably in the \"Lone Ranger\" and \"Cisco Kid\" series plus more than a dozen appearances on the \"Gene Autry Show\".",
+      "matlab_start_sample": 80755,
+      "matlab_end_sample": 83097,
+      "n_samples": 2343,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 80755.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 83097.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 83099.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "135",
+      "matlab_sentence_index": 136,
+      "text": "Gail Davis passed away from cancer in 1997 in Los Angeles, California and was interred there in the Forest Lawn - Hollywood Hills Cemetery.",
+      "matlab_start_sample": 83099,
+      "matlab_end_sample": 84965,
+      "n_samples": 1867,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 83097.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 83099.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 84965.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 84967.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "136",
+      "matlab_sentence_index": 137,
+      "text": "The daughter of a small town medical doctor, she was born Betty Jeanne Grayson in a hospital at Little Rock, Arkansas.",
+      "matlab_start_sample": 84967,
+      "matlab_end_sample": 86989,
+      "n_samples": 2023,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 84965.0
+        },
+        {
+          "type": "12  ",
+          "matlab_latency": 84967.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 86989.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "137",
+      "matlab_sentence_index": 138,
+      "text": "Her family lived in McGehee, Arkansas where she was raised until they moved to Little Rock.",
+      "matlab_start_sample": 88559,
+      "matlab_end_sample": 90669,
+      "n_samples": 2111,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 88557.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 88559.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 90669.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "138",
+      "matlab_sentence_index": 139,
+      "text": "She had been singing and dancing since childhood and after graduating from high scool in Little Rock, she went to study drama at girl's college in Bryn Mawr, Pennsylvania before completing her education at the University of Texas in Austin.",
+      "matlab_start_sample": 90673,
+      "matlab_end_sample": 93277,
+      "n_samples": 2605,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 90673.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 93277.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "139",
+      "matlab_sentence_index": 140,
+      "text": "Between 1954 and 1956, Gail Davis starred as the Western sharpshooter, Annie Oakley in the Annie Oakley television series on the ABC network.",
+      "matlab_start_sample": 93280,
+      "matlab_end_sample": 95402,
+      "n_samples": 2123,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 93280.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 95402.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 95404.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "140",
+      "matlab_sentence_index": 141,
+      "text": "Elvis Aron Presley (January 8, 1935 - August 16, 1977), also known as The King of Rock and Roll (sometimes shortened to The King) was an American singer and actor.",
+      "matlab_start_sample": 95404,
+      "matlab_end_sample": 97438,
+      "n_samples": 2035,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 95402.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 95404.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 97438.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 97440.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "141",
+      "matlab_sentence_index": 142,
+      "text": "The movies Jailhouse Rock (1957), King Creole (1958), and Flaming Star (1960) are widely regarded as his best among film critics.",
+      "matlab_start_sample": 97440,
+      "matlab_end_sample": 99330,
+      "n_samples": 1891,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 97438.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 97440.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 99330.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 99332.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "142",
+      "matlab_sentence_index": 143,
+      "text": "Among fans, Blue Hawaii (1961) and Viva Las Vegas (1964) are also highly praised.",
+      "matlab_start_sample": 99332,
+      "matlab_end_sample": 101234,
+      "n_samples": 1903,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 99330.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 99332.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 101234.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 101236.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "143",
+      "matlab_sentence_index": 144,
+      "text": "Elvis Aron Presley was born in a two-room house in East Tupelo, Mississippi to Vernon Elvis Presley and Gladys Love Smith.",
+      "matlab_start_sample": 101236,
+      "matlab_end_sample": 103594,
+      "n_samples": 2359,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 101234.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 101236.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 103594.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "144",
+      "matlab_sentence_index": 145,
+      "text": "Elvis Presley was raised both in East Tupelo (which merged with Tupelo in 1948) and later in Memphis, Tennessee, where his family moved when he was 13.",
+      "matlab_start_sample": 103597,
+      "matlab_end_sample": 106374,
+      "n_samples": 2778,
+      "near_start_events": [
+        {
+          "type": "12  ",
+          "matlab_latency": 103597.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "13  ",
+          "matlab_latency": 106374.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "145",
+      "matlab_sentence_index": 146,
+      "text": "Elvis had a twin brother (Jesse Garon Presley) who died at birth.",
+      "matlab_start_sample": 107680,
+      "matlab_end_sample": 109503,
+      "n_samples": 1824,
+      "near_start_events": [
+        {
+          "type": "15  ",
+          "matlab_latency": 107678.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 107680.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 109503.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "146",
+      "matlab_sentence_index": 147,
+      "text": "Beginning with Love Me Tender (opened on November 15, 1956), Presley starred in 31 motion pictures, having signed to multiple long-term contracts on the advice of his manager.",
+      "matlab_start_sample": 109506,
+      "matlab_end_sample": 112959,
+      "n_samples": 3454,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 109506.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 112959.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 112961.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "147",
+      "matlab_sentence_index": 148,
+      "text": "Elvis was praised by all his directors, including the highly respected Michael Curtiz, as unfailingly polite and extremely hardworking.",
+      "matlab_start_sample": 112961,
+      "matlab_end_sample": 114811,
+      "n_samples": 1851,
+      "near_start_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 112959.0
+        },
+        {
+          "type": "10  ",
+          "matlab_latency": 112961.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 114811.0
+        }
+      ]
+    },
+    {
+      "sentence_id": "148",
+      "matlab_sentence_index": 149,
+      "text": "Niels Fabian Helge von Koch (January 25, 1870 - March 11, 1924) was a Swedish mathematician, who gave his name to the famous fractal known as the Koch curve, which was one of the earliest fractal curves to have been described.",
+      "matlab_start_sample": 114816,
+      "matlab_end_sample": 118395,
+      "n_samples": 3580,
+      "near_start_events": [
+        {
+          "type": "10  ",
+          "matlab_latency": 114816.0
+        }
+      ],
+      "near_end_events": [
+        {
+          "type": "11  ",
+          "matlab_latency": 118395.0
+        },
+        {
+          "type": "18  ",
+          "matlab_latency": 118396.0
+        }
+      ]
+    }
+  ],
+  "match_count": 49,
+  "limitation": "A waveform match corroborates export provenance and a recording-clock interval; it does not independently map trigger codes to stimulus text or verify every recording"
+}

@@ -1,0 +1,213 @@
+{
+  "runs": [
+    {
+      "scope": "batch",
+      "control": "real",
+      "best_epoch": 0,
+      "common_validation_loss": 0.697376238880679,
+      "recall@1": 0.0033783783783783786,
+      "recall@5": 0.015202702702702704,
+      "recall@10": 0.03209459459459459,
+      "mrr": 0.02089017391564923
+    },
+    {
+      "scope": "batch",
+      "control": "gaussian",
+      "best_epoch": 2,
+      "common_validation_loss": 0.6936719843652099,
+      "recall@1": 0.005067567567567568,
+      "recall@5": 0.02027027027027027,
+      "recall@10": 0.03885135135135135,
+      "mrr": 0.02286117929845709
+    },
+    {
+      "scope": "batch",
+      "control": "shuffled",
+      "best_epoch": 1,
+      "common_validation_loss": 0.6943525907117873,
+      "recall@1": 0.005067567567567568,
+      "recall@5": 0.013513513513513514,
+      "recall@10": 0.033783783783783786,
+      "mrr": 0.022480069064549545
+    },
+    {
+      "scope": "training_unique",
+      "control": "real",
+      "best_epoch": 0,
+      "common_validation_loss": 0.6976741910912097,
+      "recall@1": 0.0033783783783783786,
+      "recall@5": 0.016891891891891893,
+      "recall@10": 0.030405405405405407,
+      "mrr": 0.02078871725635383
+    },
+    {
+      "scope": "training_unique",
+      "control": "gaussian",
+      "best_epoch": 3,
+      "common_validation_loss": 0.6935457673389465,
+      "recall@1": 0.0033783783783783786,
+      "recall@5": 0.02027027027027027,
+      "recall@10": 0.03885135135135135,
+      "mrr": 0.022961945809821423
+    },
+    {
+      "scope": "training_unique",
+      "control": "shuffled",
+      "best_epoch": 1,
+      "common_validation_loss": 0.6965861620847136,
+      "recall@1": 0.0033783783783783786,
+      "recall@5": 0.013513513513513514,
+      "recall@10": 0.03209459459459459,
+      "mrr": 0.020751855964517115
+    }
+  ],
+  "real_minus_controls": [
+    {
+      "scope": "batch",
+      "comparison": "real_minus_gaussian",
+      "recall@1": -0.0016891891891891893,
+      "recall@5": -0.005067567567567568,
+      "recall@10": -0.006756756756756757,
+      "mrr": -0.0019710053828078597
+    },
+    {
+      "scope": "batch",
+      "comparison": "real_minus_shuffled",
+      "recall@1": -0.0016891891891891893,
+      "recall@5": 0.0016891891891891893,
+      "recall@10": -0.0016891891891891928,
+      "mrr": -0.0015898951489003131
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_gaussian",
+      "recall@1": 0.0,
+      "recall@5": -0.0033783783783783786,
+      "recall@10": -0.008445945945945943,
+      "mrr": -0.002173228553467594
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_shuffled",
+      "recall@1": 0.0,
+      "recall@5": 0.0033783783783783786,
+      "recall@10": -0.0016891891891891858,
+      "mrr": 3.686129183671366e-05
+    }
+  ],
+  "all_training_minus_batch": [
+    {
+      "control": "real",
+      "recall@1": 0.0,
+      "recall@5": 0.0016891891891891893,
+      "recall@10": -0.0016891891891891858,
+      "mrr": -0.00010145665929540276
+    },
+    {
+      "control": "gaussian",
+      "recall@1": -0.0016891891891891893,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr": 0.00010076651136433148
+    },
+    {
+      "control": "shuffled",
+      "recall@1": -0.0016891891891891893,
+      "recall@5": 0.0,
+      "recall@10": -0.0016891891891891928,
+      "mrr": -0.0017282131000324295
+    }
+  ],
+  "change_in_real_minus_control": [
+    {
+      "comparison": "change_in_real_minus_gaussian",
+      "recall@1": 0.0016891891891891893,
+      "recall@5": 0.0016891891891891893,
+      "recall@10": -0.0016891891891891858,
+      "mrr": -0.00020222317065973425
+    },
+    {
+      "comparison": "change_in_real_minus_shuffled",
+      "recall@1": 0.0016891891891891893,
+      "recall@5": 0.0016891891891891893,
+      "recall@10": 6.938893903907228e-18,
+      "mrr": 0.0016267564407370268
+    }
+  ],
+  "per_subject_real_minus_controls": [
+    {
+      "scope": "batch",
+      "comparison": "real_minus_gaussian",
+      "subject": "zuco1:ZAB",
+      "recall@1": -0.003389830508474576,
+      "recall@5": -0.0033898305084745766,
+      "recall@10": -0.0033898305084745783,
+      "mrr": -0.0029158301779494827
+    },
+    {
+      "scope": "batch",
+      "comparison": "real_minus_gaussian",
+      "subject": "zuco1:ZKB",
+      "recall@1": 0.0,
+      "recall@5": -0.006734006734006735,
+      "recall@10": -0.010101010101010104,
+      "mrr": -0.0010325430441991829
+    },
+    {
+      "scope": "batch",
+      "comparison": "real_minus_shuffled",
+      "subject": "zuco1:ZAB",
+      "recall@1": -0.003389830508474576,
+      "recall@5": 0.0033898305084745766,
+      "recall@10": 0.003389830508474575,
+      "mrr": -0.002504807261942091
+    },
+    {
+      "scope": "batch",
+      "comparison": "real_minus_shuffled",
+      "subject": "zuco1:ZKB",
+      "recall@1": 0.0,
+      "recall@5": 0.0,
+      "recall@10": -0.006734006734006731,
+      "mrr": -0.0006811440601887861
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_gaussian",
+      "subject": "zuco1:ZAB",
+      "recall@1": -0.003389830508474576,
+      "recall@5": -0.006779661016949153,
+      "recall@10": -0.010169491525423732,
+      "mrr": -0.005596893139435486
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_gaussian",
+      "subject": "zuco1:ZKB",
+      "recall@1": 0.003367003367003367,
+      "recall@5": 0.0,
+      "recall@10": -0.006734006734006738,
+      "mrr": 0.0012273810521234128
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_shuffled",
+      "subject": "zuco1:ZAB",
+      "recall@1": 0.0,
+      "recall@5": 0.0033898305084745766,
+      "recall@10": -0.0033898305084745783,
+      "mrr": 5.1199811099755105e-05
+    },
+    {
+      "scope": "training_unique",
+      "comparison": "real_minus_shuffled",
+      "subject": "zuco1:ZKB",
+      "recall@1": 0.0,
+      "recall@5": 0.0033670033670033673,
+      "recall@10": 0.0,
+      "mrr": 2.261932825894236e-05
+    }
+  ],
+  "interpretation": "Descriptive single-split controlled loss comparison. No training-accuracy success claim, no significance or replication claim; compare real EEG changes with both controls.",
+  "candidate_pool_sha256": "33787a9cf7129e1a5c37160ab7bf963ff257743f1c5d81725da62172719f1334"
+}

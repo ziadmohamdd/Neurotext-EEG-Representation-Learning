@@ -1,0 +1,6 @@
+{
+  "source": "scripts\\run_trt_incremental_comparison.py",
+  "copy": "docs\\research_results\\trt_incremental_v1_20261030\\packaging\\run_trt_incremental_comparison.py",
+  "sha256": "28c3c8d2e56955f178442b4be7ef81bcb11a6b2f7a5a3c1cc28190858b06d817",
+  "note": "Completed fits preserved; relative-path packaging error repaired with --finalize-only without refitting."
+}

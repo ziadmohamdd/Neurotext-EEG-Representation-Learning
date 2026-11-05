@@ -1,0 +1,3 @@
+# Fixed validation-only architecture comparison; no text repair or loss search.
+base: cnn_candidate_comparison.yaml
+alignment_candidate_scope: batch

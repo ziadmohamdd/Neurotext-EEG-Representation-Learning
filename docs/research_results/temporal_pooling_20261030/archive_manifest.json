@@ -1,0 +1,232 @@
+[
+  {
+    "source": "results\\temporal_pooling_20261030\\control_gaps.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\control_gaps.json",
+    "sha256": "8494f3955bbf5d5ba1e9a655569b9cd14805ddbb138338b8879674c3a2890a73"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\decision.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\decision.json",
+    "sha256": "8df69d874ca7714476a1c83d9f23986297e20840a5bf2f0ac428a1be02230436"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\jobs.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\jobs.json",
+    "sha256": "f3db7b008bec601bf74c448d25a85a7e1b82d3f1ffda611f7d5bd03920c722ef"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\plan.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\plan.json",
+    "sha256": "457ed1bb8f67f65f5c69e199e03ea63a578e289e76b1eb8c4c1981603b2b8334"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\preservation_after.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\preservation_after.json",
+    "sha256": "6455344fa68226031a21936e659193e2cb7e946ce10767ece6c372d9b34fe3f7"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\preservation_before.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\preservation_before.json",
+    "sha256": "5bd50d847c50bc49af0f768acbfcf7f37a7e9070d4541380f111e2cf5363073d"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\validation_summary.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\validation_summary.json",
+    "sha256": "670ba154e07dec176d666a8828e97f04754c099a2f6bb47869917d0976c9c062"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\validation.csv",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\validation.csv",
+    "sha256": "1e2dbc7b6e618eeba10a021ec6e81c73ee89bccdcb56790f71764d964c893eea"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_gaussian\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_gaussian\\validation.json",
+    "sha256": "f528710b1bb0cef4066414168ed49754951ce137117cd4d57625ac0ad3e447e9"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_real\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_real\\validation.json",
+    "sha256": "d80753bfc043d1a0b67915e9e61122353da58f1f57f4ebc1b81a5a3747e76e0c"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_shuffled\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_shuffled\\validation.json",
+    "sha256": "efc83e58ff59b81078862b792622b8f3759b1a0476e128ca5dc90d0c6ebe7283"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_gaussian\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_gaussian\\validation.json",
+    "sha256": "e55869c7f9adc9d454e656cf99c0b3a6ef1bdb5a842a9097b40a6ad305f3f2d5"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_real\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_real\\validation.json",
+    "sha256": "df82277bd2bc78c27bc8a375afad2104ae5c3c3acc35b6b81edf12001b121960"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_shuffled\\validation.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_shuffled\\validation.json",
+    "sha256": "efcb52ce6b3dffef048b7b51ec0fa67e4b67075d534f5a967f6aeee647d061c9"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_gaussian\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_gaussian\\history.json",
+    "sha256": "55ed4995c269b40b5b5820644c9913a92ac49a2c09144bd81001230941efb38b"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_real\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_real\\history.json",
+    "sha256": "95424f640e18bc6e5c9e91f0999e1f58c246d61c4a987aa12e915ea05ce38ab3"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_shuffled\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_shuffled\\history.json",
+    "sha256": "559f3de44fe5d41db70914561e6b1fc6d9be54edf254a951f9736b617b1f67d9"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_gaussian\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_gaussian\\history.json",
+    "sha256": "ee17a719fb7309bd149d48c422cb910c477d3d1653495136f90f6470e6b53285"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_real\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_real\\history.json",
+    "sha256": "1c24b07cc48bb39acc997c83a0c1bdf83d8ec96e3f78fe0f1f80c101ac212512"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_shuffled\\history.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_shuffled\\history.json",
+    "sha256": "cf7ea2881aab5abae396143ba2a1ba41fd5a83086b1e3b4920aa9703c91fdb9b"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_gaussian\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_gaussian\\config.json",
+    "sha256": "b890a87c5678d38543c63c492cff6aeab184fbf980fb7485e6b346b3706bf0c4"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_real\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_real\\config.json",
+    "sha256": "b890a87c5678d38543c63c492cff6aeab184fbf980fb7485e6b346b3706bf0c4"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_shuffled\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_shuffled\\config.json",
+    "sha256": "b890a87c5678d38543c63c492cff6aeab184fbf980fb7485e6b346b3706bf0c4"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_gaussian\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_gaussian\\config.json",
+    "sha256": "71495350b41cfcedf8ca70c3f41a284f0f486be4e728314e116b83d19465e116"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_real\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_real\\config.json",
+    "sha256": "71495350b41cfcedf8ca70c3f41a284f0f486be4e728314e116b83d19465e116"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_shuffled\\config.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_shuffled\\config.json",
+    "sha256": "71495350b41cfcedf8ca70c3f41a284f0f486be4e728314e116b83d19465e116"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_gaussian\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_gaussian\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_real\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_real\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\four_segment_shuffled\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\four_segment_shuffled\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_gaussian\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_gaussian\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_real\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_real\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\global_shuffled\\splits.json",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\global_shuffled\\splits.json",
+    "sha256": "dd05d2e0758a860412121d321bd94ba64c9c4733f83831e19d1536c1557a3163"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\alignment_train.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\alignment_train.py",
+    "sha256": "88af7d8664f568c639d4e5a2c587cd737e382f087ff24dbbd0a74e3700a0c9dc"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\cnn_candidate_comparison.yaml",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\cnn_candidate_comparison.yaml",
+    "sha256": "6c54380c4470a1f0c679c56483387c78397131c957f09021bbdd4806ec213853"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\eeg_cnn.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\eeg_cnn.py",
+    "sha256": "fbc1436dd4510dbae698e2b814f4bd951f251a128032499bcab261e7ff73accc"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\local.yaml",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\local.yaml",
+    "sha256": "b81d4826a29787705e5d47d347a1c7fb407794887bfe23ad71b49bb57f60390d"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\projection.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\projection.py",
+    "sha256": "95052f7241b3b6a867f823d326d96d1bdced5cda1a87451a3dccf473be03c72b"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\run_temporal_pooling_comparison.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\run_temporal_pooling_comparison.py",
+    "sha256": "4f71cbec38aeed073be9db93eeb2f819265c46de7fefe242faa524c0f308a24b"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\temporal_pooling.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\temporal_pooling.py",
+    "sha256": "9dfaf1a7d504481a56effd2c76d5f1258cb4a9f689a6318e91d3943f7c965c42"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\temporal_pooling_comparison.yaml",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\temporal_pooling_comparison.yaml",
+    "sha256": "de8e766f68486f35b612905391eefafa509c21744b25e74a0590aea17aefc2dd"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\test_temporal_pooling.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\test_temporal_pooling.py",
+    "sha256": "4a467269cc750189f1b578db87704a111089c63b26e6020667909f1a74b5c9dc"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\trainer.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\trainer.py",
+    "sha256": "319e50a784113fb6f1a1f61ba6d02e95106c9d1772d4b62b1ebb24c62cdf663f"
+  },
+  {
+    "source": "results\\temporal_pooling_20261030\\implementation\\workflow.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\workflow.py",
+    "sha256": "d22976054ac348b2eb72819ab57d49054f180a3d628d42192ed9074fab13117a"
+  },
+  {
+    "source": "scripts\\report_temporal_pooling_comparison.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\report_temporal_pooling_comparison.py",
+    "sha256": "22097856349f68af147425b00c828279489aabbb873a87af4c5552f571789dbc"
+  },
+  {
+    "source": "tests\\test_pooling_report.py",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\implementation\\test_pooling_report.py",
+    "sha256": "bfc887dd0e801fc528f3148002fb8657999befce1b358de7c47d0f527ea878c8"
+  },
+  {
+    "source": "logs\\temporal_pooling_20261030.log",
+    "copy": "docs\\research_results\\temporal_pooling_20261030\\logs\\temporal_pooling_20261030.log",
+    "sha256": "21676cd3e55fe456a1b92b0f09d16ed0be08b91fff11962bff5a6620d0bd2e3a"
+  }
+]

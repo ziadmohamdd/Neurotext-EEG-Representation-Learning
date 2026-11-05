@@ -1,0 +1,4 @@
+base: local.yaml
+max_samples: null
+batch_size: 2
+gradient_accumulation_steps: 8

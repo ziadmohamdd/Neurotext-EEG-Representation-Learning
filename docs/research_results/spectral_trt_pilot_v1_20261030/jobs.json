@@ -1,0 +1,80 @@
+[
+  {
+    "condition": "real_trt",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 100,
+      "imputation": "median",
+      "scaling": "standard",
+      "all_missing_training_columns": [],
+      "n_features": 891,
+      "coefficient_sha256": "b7258a8db0e4ad19d1a7455c24dbfa66ed938448f35f46971d786f4e14a44146"
+    },
+    "seconds": 2.234000000025844
+  },
+  {
+    "condition": "matched_gaussian",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 100,
+      "imputation": "median",
+      "scaling": "standard",
+      "all_missing_training_columns": [],
+      "n_features": 891,
+      "coefficient_sha256": "32a6a7e23a3b929d6570676cf0b00b2c0ba57e733521e0229c4c46abb4cce2c0"
+    },
+    "seconds": 2.202999999979511
+  },
+  {
+    "condition": "class_shuffled",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 0.1,
+      "imputation": "mean",
+      "scaling": "robust_iqr",
+      "all_missing_training_columns": [],
+      "n_features": 891,
+      "coefficient_sha256": "d297e30929db6d4921eb7a3ffabf30e5defd0a8883bbc1121c9ebc681614ecaa"
+    },
+    "seconds": 2.110000000015134
+  },
+  {
+    "condition": "count_duration_only",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 10,
+      "imputation": "median",
+      "scaling": "standard",
+      "all_missing_training_columns": [],
+      "n_features": 62,
+      "coefficient_sha256": "8b30b2c7e923e529b8aebed86f8a2a3f492477c4ec640b86a29b067a4427f9ba"
+    },
+    "seconds": 0.21799999999348074
+  },
+  {
+    "condition": "zero_missingness_only",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 0.1,
+      "imputation": "mean",
+      "scaling": "standard",
+      "all_missing_training_columns": [],
+      "n_features": 891,
+      "coefficient_sha256": "12a4cc6d49465dc5e3871446f6f1b3a616ab03669921f5dcefad5dd2183d5fe7"
+    },
+    "seconds": 1.6559999999881256
+  },
+  {
+    "condition": "existing_sentence_ridge",
+    "status": "validation_complete",
+    "selected": {
+      "alpha": 1,
+      "imputation": "mean",
+      "scaling": "standard",
+      "all_missing_training_columns": [],
+      "n_features": 1050,
+      "coefficient_sha256": "6b938deb85b80cacc4cf5841df72cb4c56dde7540a684b51f526afa61f899663"
+    },
+    "seconds": 2.687999999994645
+  }
+]

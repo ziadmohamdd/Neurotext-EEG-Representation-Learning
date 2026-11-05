@@ -1,0 +1,128 @@
+ M README.md
+ M docs/continue_work.md
+ M docs/data_sources.md
+ M docs/presentation/README.md
+ M docs/presentation_outline.md
+ M docs/research_results/REPORT.md
+ M scripts/run_diagnostics.ps1
+ M src/eeg_decoding/models/classical.py
+ M src/eeg_decoding/models/eeg_cnn.py
+ M src/eeg_decoding/models/projection.py
+ M src/eeg_decoding/training/alignment_train.py
+ M src/eeg_decoding/training/trainer.py
+ M src/eeg_decoding/workflow.py
+ M tests/test_integration.py
+ M tests/test_models.py
+?? NeuroText_draft.pdf
+?? configs/alignment_batch8.yaml
+?? configs/amplitude_audit_v1.json
+?? configs/cnn_candidate_comparison.yaml
+?? configs/full_sentence.yaml
+?? configs/full_sentence_alignment.yaml
+?? configs/gru_pilot_v1_20261101.json
+?? configs/gru_retrieval_loss_v1_20261101.json
+?? configs/spectral_trt_pilot_v1.json
+?? configs/temporal_pooling_comparison.yaml
+?? configs/transfer_exploratory_seed43.yaml
+?? configs/transfer_exploratory_seed44.yaml
+?? configs/transfer_ridge_regularized.yaml
+?? configs/trt_incremental_information_v1.json
+?? configs/unseen_seed43.yaml
+?? configs/unseen_seed44.yaml
+?? configs/word_order_pilot_v1.json
+?? configs/word_pretrain_v1_20261101.json
+?? configs/zjs_existing.yaml
+?? docs/cnn_candidate_comparison_20261030.md
+?? docs/local_investigation_20261029.md
+?? docs/presentation/NeuroText_consolidated.pdf
+?? docs/presentation/NeuroText_consolidated.pptx
+?? docs/presentation/archive/
+?? docs/research_results/amplitude_audit_v1_20261101/
+?? docs/research_results/cnn_candidates_20261030/
+?? docs/research_results/evidence_review_v1_20261101/
+?? docs/research_results/gru_pilot_v1_20261101/
+?? docs/research_results/gru_retrieval_loss_v1_20261101/
+?? docs/research_results/spectral_trt_pilot_v1_20261030/
+?? docs/research_results/spectral_validation_consolidation_20261030/
+?? docs/research_results/temporal_pooling_20261030/
+?? docs/research_results/text_discrepancies_20261030/
+?? docs/research_results/trt_incremental_v1_20261030/
+?? docs/research_results/wider_grid_transfer/
+?? docs/research_results/word_eeg_feasibility_20261030/
+?? docs/research_results/word_order_pilot_v1_20261031/
+?? docs/research_results/word_pretrain_v1_20261101/
+?? docs/spectral_trt_pilot_v1_20261030.md
+?? docs/temporal_pooling_comparison_20261030.md
+?? docs/text_discrepancy_investigation_20261030.md
+?? docs/trt_incremental_v1_20261030.md
+?? docs/word_eeg_feasibility_20261030.md
+?? scripts/audit_gru_predictions.py
+?? scripts/audit_pairing.py
+?? scripts/audit_source_clock.py
+?? scripts/audit_text_cache.py
+?? scripts/audit_word_eeg.py
+?? scripts/check_slide_text_bounds.ps1
+?? scripts/consolidate_evidence_review_v1.py
+?? scripts/consolidate_presentation.py
+?? scripts/consolidate_report.py
+?? scripts/consolidate_spectral_validation.py
+?? scripts/consolidate_transfer.py
+?? scripts/finalize_gru_loss_comparison.py
+?? scripts/finalize_spectral_deck.py
+?? scripts/finalize_word_eeg_report.py
+?? scripts/investigate_text_discrepancies.py
+?? scripts/make_spectral_final_titles.py
+?? scripts/prepare_gru_loss_comparison.py
+?? scripts/prepare_word_pretrain_v1.py
+?? scripts/probe_word_eeg_containment.py
+?? scripts/refit_ridge_path.py
+?? scripts/render_presentation.ps1
+?? scripts/report_amplitude_audit.py
+?? scripts/report_candidate_comparison.py
+?? scripts/report_gru_pilot.py
+?? scripts/report_spectral_trt_pilot.py
+?? scripts/report_temporal_pooling_comparison.py
+?? scripts/report_word_order_pilot.py
+?? scripts/report_word_pretrain_v1.py
+?? scripts/run_amplitude_audit.py
+?? scripts/run_candidate_comparison.py
+?? scripts/run_gru_pilot.py
+?? scripts/run_gru_retrieval_loss.py
+?? scripts/run_spectral_trt_pilot.py
+?? scripts/run_temporal_pooling_comparison.py
+?? scripts/run_trt_incremental_comparison.py
+?? scripts/run_word_order_pilot.py
+?? scripts/run_word_pretrain_v1.py
+?? scripts/show_accuracy.py
+?? scripts/summarize_word_eeg_audit.py
+?? scripts/validate_candidate_comparison.py
+?? scripts/validate_consolidation.py
+?? scripts/validate_spectral_consolidation.py
+?? scripts/validate_word_order_pilot.py
+?? scripts/verify_amplitude_audit.py
+?? scripts/verify_gru_pilot.py
+?? scripts/verify_word_pretrain_v1.py
+?? src/eeg_decoding/data/trt_view.py
+?? src/eeg_decoding/data/word_targets_v1.py
+?? src/eeg_decoding/evaluation/gru_pilot.py
+?? src/eeg_decoding/evaluation/gru_retrieval_loss.py
+?? src/eeg_decoding/evaluation/incremental_ridge.py
+?? src/eeg_decoding/evaluation/relative_trt.py
+?? src/eeg_decoding/evaluation/spectral_pilot.py
+?? src/eeg_decoding/evaluation/transfer_summary.py
+?? src/eeg_decoding/evaluation/word_order.py
+?? src/eeg_decoding/evaluation/word_pretrain_v1.py
+?? src/eeg_decoding/models/temporal_pooling.py
+?? tests/test_candidate_loss.py
+?? tests/test_gru_pilot.py
+?? tests/test_gru_retrieval_loss.py
+?? tests/test_incremental_ridge.py
+?? tests/test_pooling_report.py
+?? tests/test_relative_trt.py
+?? tests/test_spectral_pilot.py
+?? tests/test_temporal_pooling.py
+?? tests/test_text_discrepancy_audit.py
+?? tests/test_transfer_summary.py
+?? tests/test_word_eeg_audit.py
+?? tests/test_word_order.py
+?? tests/test_word_pretrain_v1.py

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "real_mrr_improves": true,
+    "real_beats_gaussian_mrr": false,
+    "mrr_gap_improves_vs_gaussian": false,
+    "zuco1:ZJS_real_beats_gaussian_mrr": false,
+    "zuco1:ZKW_real_beats_gaussian_mrr": false,
+    "real_beats_shuffled_mrr": true,
+    "mrr_gap_improves_vs_shuffled": true,
+    "zuco1:ZJS_real_beats_shuffled_mrr": true,
+    "zuco1:ZKW_real_beats_shuffled_mrr": false,
+    "recall_corroboration": false
+  },
+  "useful_validation_improvement": false,
+  "test_evaluated": false,
+  "interpretation": "Descriptive screen on one previously used validation split; no independent-cohort or significance claim."
+}

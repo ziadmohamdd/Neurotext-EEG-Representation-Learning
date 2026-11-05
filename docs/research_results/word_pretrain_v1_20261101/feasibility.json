@@ -1,0 +1,69 @@
+{
+  "feasible": true,
+  "paired_observations": 2245,
+  "word_slots": 48865,
+  "complete_eeg_words": 32848,
+  "sources": [
+    {
+      "reader": "ZDM",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZDM_NR.mat",
+      "sha256": "2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d",
+      "paired_observations": 289
+    },
+    {
+      "reader": "ZDN",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZDN_NR.mat",
+      "sha256": "ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604",
+      "paired_observations": 297
+    },
+    {
+      "reader": "ZGW",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZGW_NR.mat",
+      "sha256": "c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723",
+      "paired_observations": 281
+    },
+    {
+      "reader": "ZJM",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZJM_NR.mat",
+      "sha256": "fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0",
+      "paired_observations": 257
+    },
+    {
+      "reader": "ZJN",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZJN_NR.mat",
+      "sha256": "93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15",
+      "paired_observations": 294
+    },
+    {
+      "reader": "ZKH",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZKH_NR.mat",
+      "sha256": "fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d",
+      "paired_observations": 294
+    },
+    {
+      "reader": "ZMG",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZMG_NR.mat",
+      "sha256": "ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2",
+      "paired_observations": 286
+    },
+    {
+      "reader": "ZPH",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZPH_NR.mat",
+      "sha256": "fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94",
+      "paired_observations": 247
+    }
+  ],
+  "source_cache_values_equal_including_missingness": true,
+  "joined_exported_words_equal_unchanged_parent": true,
+  "word_row_offsets_equal_cache": true,
+  "punctuation_repair_applied": false,
+  "stimulus_csv_used": false,
+  "source_fields_decoded": [
+    "sentenceData.content",
+    "word.content",
+    "word.TRT_t1,t2,a1,a2,b1,b2,g1,g2"
+  ],
+  "source_scope": "Eight training-reader files; only declared training slots decoded; other slots skipped",
+  "documentation": "docs/word_eeg_feasibility_20261030.md: Sentence-word and fixation mapping evidence",
+  "word_label_cache_sha256": "37fd608c8fc7b2b29484044372d60a18ae124bfe84d1ce552fa82a4fc5202779"
+}

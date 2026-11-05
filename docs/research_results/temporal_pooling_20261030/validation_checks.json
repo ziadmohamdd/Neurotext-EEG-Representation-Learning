@@ -1,0 +1,30 @@
+{
+  "focused_tests": "34 passed in 5.50s; tests/test_temporal_pooling.py tests/test_models.py tests/test_candidate_loss.py",
+  "report_tests": "2 passed; tests/test_pooling_report.py",
+  "conditions_verified": 6,
+  "validation_queries_per_condition": 512,
+  "candidate_pool_size": 298,
+  "same_saved_splits_and_normalizer": true,
+  "matched_initialization_verified": true,
+  "previous_artifacts_unchanged": 436,
+  "no_test_evaluation": true,
+  "punctuation_repair_applied": false,
+  "archive_copies_verified": 46,
+  "baseline_reproduction_checks": [
+    {
+      "control": "real",
+      "best_model_tensors_equal_previous_baseline": true,
+      "best_validation_loss_equal_previous_baseline": true
+    },
+    {
+      "control": "gaussian",
+      "best_model_tensors_equal_previous_baseline": true,
+      "best_validation_loss_equal_previous_baseline": true
+    },
+    {
+      "control": "shuffled",
+      "best_model_tensors_equal_previous_baseline": true,
+      "best_validation_loss_equal_previous_baseline": true
+    }
+  ]
+}

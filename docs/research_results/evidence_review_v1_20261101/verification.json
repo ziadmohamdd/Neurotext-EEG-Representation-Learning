@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks_scope": "Saved JSON/CSV/rank arithmetic and file artifacts only; no model execution",
+  "numeric_equality_checks": 7332,
+  "existing_experiment_readme_metric_cells_checked": 1150,
+  "training_cv_rows": 40,
+  "outer_validation_rows": 22,
+  "historical_export_rows": 85,
+  "word_reader_rows": 32,
+  "exploratory_transfer_rows": 18,
+  "original_historical_csv_rows_checked_against_JSON": 79,
+  "source_files_hashed": 177,
+  "all_new_metric_tables_generated_from_verified_JSON": true,
+  "local_markdown_links_valid": true,
+  "presentation_unchanged": true,
+  "limits": "Stored arithmetic/provenance consistency is not independent scientific reproduction or raw-data validation."
+}

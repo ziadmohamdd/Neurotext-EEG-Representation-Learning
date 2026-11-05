@@ -1,0 +1,187 @@
+[
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\class_shuffle_mapping.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\class_shuffle_mapping.json",
+    "sha256": "df6d66dbdea35ae076de4ce05b50c23e59d230e9e36ca5fd609b68fa98830946"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\decision.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\decision.json",
+    "sha256": "0f45aed785be591ffd5c8b48737630b6937ffcc503dbe4c206230f1ccb34fb8e"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\feature_view.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\feature_view.json",
+    "sha256": "c87ba5bef4af72986602978ff1c413d73c97633f6fe4e89939c959ace8966ac1"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\jobs.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\jobs.json",
+    "sha256": "279cb590788deca2f9689fbf2db2b9851390eac82aab5e1c39bd1e9e8eaca6ec"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\plan.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\plan.json",
+    "sha256": "2c12975b9f8a50344008cdde62389416e3fde247522c70ca7a3d2d4176b203bb"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\preservation_after.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\preservation_after.json",
+    "sha256": "956bb1a1da59085644cf1a5fc1a5b0343af23408c3c74e38a6b37071c487270d"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\preservation_before.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\preservation_before.json",
+    "sha256": "dcf944b74bbd509d3095d21bd7471a05d124175e87985b15b608315db7655f10"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\real_minus_controls.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\real_minus_controls.json",
+    "sha256": "5929c0609938adeefe581856973cdbf80283d7792b29a1500c6cf04dc35bfe97"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\validation_summary.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\validation_summary.json",
+    "sha256": "5e76556ae6d714893bdca624a3e94c24dd2fe60316446ed787ab811e36c2cad0"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\class_shuffled\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\class_shuffled\\selection.json",
+    "sha256": "5cce990bd32627f5c9dc94243394a16b6828b34b22971fd4d927c6a7ee4db446"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\count_duration_only\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\count_duration_only\\selection.json",
+    "sha256": "8d1bbcdbafab6a9cb32f75f99fb0e140bfff50afa10c6f1911b09c71123bb334"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\existing_sentence_ridge\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\existing_sentence_ridge\\selection.json",
+    "sha256": "19ed04cf59d2a7a006d82e5872d615dce9e77c95a36f1b187b91dfa8b987e8fd"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\matched_gaussian\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\matched_gaussian\\selection.json",
+    "sha256": "7e7baea367c26eb75c8cc7ca1fcbdfdfa5e1f4f80b41897bc0713b781941e204"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\real_trt\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\real_trt\\selection.json",
+    "sha256": "204fb4e3818101b489d42dc1187f210069af5ab3d14589081b6ad25f5d92a32b"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\zero_missingness_only\\selection.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\zero_missingness_only\\selection.json",
+    "sha256": "98f121a24163a3072d8ae3e4ef0e3ff1c5cb69b22f8a537d86f932634b9c8c92"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\class_shuffled\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\class_shuffled\\validation.json",
+    "sha256": "bc87e0a5cc218635929d5fffd619d79b7dc312e6e07d74ddc869580cd090e897"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\count_duration_only\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\count_duration_only\\validation.json",
+    "sha256": "ae8de9efb032c06e37e805e752cea1de56889887ede33d36be34de382e15f18c"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\existing_sentence_ridge\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\existing_sentence_ridge\\validation.json",
+    "sha256": "7bc4e7ceeaa26c1d63ee47899f6e36266eff8e0af45c08fbc6ab5a34aab3c4cf"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\matched_gaussian\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\matched_gaussian\\validation.json",
+    "sha256": "841ba5d21c1583d182c23b6be5494d5aeef6d5e05ce6b89da761da74b2953346"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\real_trt\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\real_trt\\validation.json",
+    "sha256": "fe2f82a9180ea24fbc663ad2e6d1814c19424d2a0911bbdc7e15e837b582d147"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\zero_missingness_only\\validation.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\zero_missingness_only\\validation.json",
+    "sha256": "34e0e7efc29e64ca3d3adaeb7a5ddeb67a7c41ce77c59b09e3cc816c07668692"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\classical.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\classical.py",
+    "sha256": "187a553d67b0fd0dc12edb34e8b77927a9d22e4689bd6ac0935212f042466cfc"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\controls.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\controls.py",
+    "sha256": "6b8e92527c16b716d933e2e63204f9ccbe23e2eeb2e0b7fd196daa5877119d65"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\mat5.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\mat5.py",
+    "sha256": "dbdfffdc869d4ffcbd86f16884ac19dc3fbc00126cda27ddff6ad1e2ed122f5b"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\retrieval.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\retrieval.py",
+    "sha256": "d57d88565161081761726f2ddd15da706128634396d9625abf56cc134a68bcee"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\run_spectral_trt_pilot.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\run_spectral_trt_pilot.py",
+    "sha256": "b5e51e988f20af7477079b27feb7c30866c511be619f2a08f2cbf0cd9b6c7b79"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\spectral_pilot.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\spectral_pilot.py",
+    "sha256": "ec06f55fbbc837d6fd72e69551b3afb026e255aca2f2999ede5ab1a7fef49353"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\spectral_trt_pilot_v1.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\spectral_trt_pilot_v1.json",
+    "sha256": "9645089b4ca24d128a999df805d5db861309c4f4927ad0e192faccc422f2c24e"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\test_spectral_pilot.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\test_spectral_pilot.py",
+    "sha256": "aa9ee7becfc50500c328c505d12d5015af6e57fbb400ebe3249c309393ccc956"
+  },
+  {
+    "source": "results\\spectral_trt_pilot_v1_20261030\\implementation\\trt_view.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\implementation\\trt_view.py",
+    "sha256": "3cd0791aa889caeae6969cbf0b997d1256e5d13ce6e6b818e5c6e5f34715fbe7"
+  },
+  {
+    "source": "data\\processed\\zuco1_trt_mean_pilot_v1_20261030\\index.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\feature_view_metadata\\index.json",
+    "sha256": "c1a5516afae858fdcb78d89cd63a277f0604f8da260d04c480e5208e4cf14c22"
+  },
+  {
+    "source": "data\\processed\\zuco1_trt_mean_pilot_v1_20261030\\sentence_baseline_normalizer.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\feature_view_metadata\\sentence_baseline_normalizer.json",
+    "sha256": "fa57fc755a8cfd0c770c9ca66adec2c67cf99c5c33cd502c3901c5d2992daacc"
+  },
+  {
+    "source": "scripts\\report_spectral_trt_pilot.py",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\report_spectral_trt_pilot.py",
+    "sha256": "72bd4a5ef8f80a1a9dd2e0a0082e7c34f93619d2a3fb34b0d7ed03890a1d9b0a"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\official_firstLevel_NR.m",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\official_firstLevel_NR.m",
+    "sha256": "4624c63811a56bfc7214a3b5be5344d1855b9587f38904e1eb851dcc808fa6f2"
+  },
+  {
+    "source": "configs\\local.yaml",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\local.yaml",
+    "sha256": "b81d4826a29787705e5d47d347a1c7fb407794887bfe23ad71b49bb57f60390d"
+  },
+  {
+    "source": "data\\raw\\zuco1\\download_plan.json",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\provenance\\download_plan.json",
+    "sha256": "990789fa71561fdd6b7b80f434a2c54f6c6229227824a5cc99adfeb72cc4d3a7"
+  },
+  {
+    "source": "logs\\spectral_trt_pilot_v1_20261030.log",
+    "copy": "docs\\research_results\\spectral_trt_pilot_v1_20261030\\logs\\spectral_trt_pilot_v1_20261030.log",
+    "sha256": "59c379248adc50acd4e1d88872f78bdca919123eaed3f80d659f04fa5e970535"
+  }
+]

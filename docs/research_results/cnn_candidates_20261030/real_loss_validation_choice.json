@@ -1,0 +1,25 @@
+﻿{
+    "rule":  "Prefer the loss scope with minimum common held-out validation batch CE for real EEG; no test-based method promotion",
+    "selected_scope":  "batch",
+    "choices":  [
+                    {
+                        "scope":  "batch",
+                        "control":  "real",
+                        "status":  "trained",
+                        "best_epoch":  0,
+                        "validation_loss":  0.697376238880679,
+                        "best_checkpoint_sha256":  "2917c6bcea594aa75355905e136e554c52f87a9bf796465f38c4b69c21c14abd",
+                        "initial_model_sha256":  "d4702d0f3cd3617b14b6a5eed91f3d6b01a9b9dc5698de9f2ce794d88d12d5e3"
+                    },
+                    {
+                        "scope":  "training_unique",
+                        "control":  "real",
+                        "status":  "trained",
+                        "best_epoch":  0,
+                        "validation_loss":  0.6976741910912097,
+                        "best_checkpoint_sha256":  "5ee1bd214f05e2c7dc9d3c0550fb19051e61d4276e243f42ac50bbde2e011296",
+                        "initial_model_sha256":  "d4702d0f3cd3617b14b6a5eed91f3d6b01a9b9dc5698de9f2ce794d88d12d5e3"
+                    }
+                ],
+    "test_reports_present":  0
+}

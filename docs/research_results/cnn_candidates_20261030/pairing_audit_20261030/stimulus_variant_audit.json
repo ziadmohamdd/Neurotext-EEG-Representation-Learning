@@ -1,0 +1,268 @@
+{
+  "affected_observations": 408,
+  "affected_unique_sentence_rows": 37,
+  "punctuation_spacing_accent_only_rows": 26,
+  "other_text_difference_rows": 11,
+  "minimum_character_similarity": 0.9795918367346939,
+  "rows": [
+    {
+      "sentence_id": "10",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.993103448275862,
+      "source_text": "Henry Ford advocated long-time associate Harry Bennett to take the spot.",
+      "official_text": "Henry Ford advocated long -time associate Harry Bennett to take the spot."
+    },
+    {
+      "sentence_id": "23",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.989010989010989,
+      "source_text": "Rosemary Clooney (May 23, 1928 - June 29, 2002) was an American popular singer and actress.",
+      "official_text": "Rosemary Clooney (May 23, 1928 \u2013 June 29, 2002) was an American popular singer and actress."
+    },
+    {
+      "sentence_id": "24",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9951219512195122,
+      "source_text": "In 1954 she, along with Bing Crosby, Danny Kaye, and nVera-Ellen, starred in the movie White Christmas.",
+      "official_text": "In 1954 she, along with Bing Crosby, Danny Kaye, and Vera-Ellen, starred in the movie White Christmas."
+    },
+    {
+      "sentence_id": "26",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9967105263157895,
+      "source_text": "Rosemary Clooney was married three times, twice to Jose Ferrer (from 1953 until 1961 and then again from 1964 to 1967) by whom she had five children, including actor Miguel Ferrer, born in 1955, and Gabriel Ferrer, born 1956, who married Debby Boone, and once to Dante DePaolo (whom she married in 1997).",
+      "official_text": "Rosemary Clooney was married three times, twice to Jos\u00e9 Ferrer (from 1953 until 1961 and then again from 1964 to 1967) by whom she had five children, including actor Miguel Ferrer, born in 1955, and Gabriel Ferrer, born 1956, who married Debby Boone, and once to Dante DePaolo (whom she married in 1997)."
+    },
+    {
+      "sentence_id": "35",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9893617021276596,
+      "source_text": "Michael McManus (born February 5, 1959) is a syndicated columnist who wrote Ethics & Religion.",
+      "official_text": "Michael McManus (born February 5, 1959) is a syndicated columnist who write Ethics & Religion."
+    },
+    {
+      "sentence_id": "45",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9941176470588236,
+      "source_text": "Anne Hutchinson (July 17, 1591 - August 20, 1643) was the unauthorized Puritan preacher of a dissident church discussion group, and pioneer in Rhode Island and the Bronx.",
+      "official_text": "Anne Hutchinson (July 17, 1591 \u2013 August 20, 1643) was the unauthorized Puritan preacher of a dissident church discussion group, and pioneer in Rhode Island and the Bronx."
+    },
+    {
+      "sentence_id": "51",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9917355371900827,
+      "source_text": "Three U.S. Presidents (Franklin D. Roosevelt and both Bushes - George H. W. Bush and George W. Bush) are her descendants.",
+      "official_text": "Three U.S. Presidents (Franklin D. Roosevelt and both Bushes \u2013 George H. W. Bush and George W. Bush) are her descendants."
+    },
+    {
+      "sentence_id": "61",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9964285714285714,
+      "source_text": "Albert Einstein (March 14, 1879 - April 18, 1955) was a German-born Jewish theoretical physicist of German, Swiss and American citizenship, who is widely regarded as the greatest scientist of the 20th century or even of all time, ranking alongside the luminaries Newton and Gauss.",
+      "official_text": "Albert Einstein (March 14, 1879 \u2013 April 18, 1955) was a German-born Jewish theoretical physicist of German, Swiss and American citizenship, who is widely regarded as the greatest scientist of the 20th century or even of all time, ranking alongside the luminaries Newton and Gauss."
+    },
+    {
+      "sentence_id": "64",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9962406015037594,
+      "source_text": "In the spring of 1896, the Serbian Mileva Maria (an acquaintance of Nikola Tesla) started initially as a medical student at the University of Zurich, but after a term switched to the same section as Einstein as the only woman that year to study for the same diploma.",
+      "official_text": "In the spring of 1896, the Serbian Mileva Mari\u0107 (an acquaintance of Nikola Tesla) started initially as a medical student at the University of Zurich, but after a term switched to the same section as Einstein as the only woman that year to study for the same diploma."
+    },
+    {
+      "sentence_id": "65",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9795918367346939,
+      "source_text": "Einstein married Mileva Maria on January 6, 1903.",
+      "official_text": "Einstein married Mileva Mari\u0107 on January 6, 1903."
+    },
+    {
+      "sentence_id": "66",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9962406015037594,
+      "source_text": "Abram Joffe, a Soviet physicist who knew Einstein, in an obituary of Einstein, wrote, \"The author of [the papers of 1905] was ... a bureaucrat at the Patent Office in Bern, Einstein-Maria\" and this has recently been taken as evidence of a collaborative relationship.",
+      "official_text": "Abram Joffe, a Soviet physicist who knew Einstein, in an obituary of Einstein, wrote, \"The author of [the papers of 1905] was ... a bureaucrat at the Patent Office in Bern, Einstein-Mari\u0107\" and this has recently been taken as evidence of a collaborative relationship."
+    },
+    {
+      "sentence_id": "69",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9958960328317373,
+      "source_text": "Despite excelling in the mathematics and science portion, his failure of the liberal arts portion of the Eidgenoessische Technische Hochschule (ETH, Swiss Federal Institute of Technology, in Zurich) entrance exam the following year was a setback; his family sent him to Aarau, Switzerland, to finish secondary school, where he received his diploma in September 1896.",
+      "official_text": "Despite excelling in the mathematics and science portion, his failure of the liberal arts portion of the Eidgen\u00f6ssische Technische Hochschule (ETH, Swiss Federal Institute of Technology, in Zurich) entrance exam the following year was a setback; his family sent him to Aarau, Switzerland, to finish secondary school, where he received his diploma in September 1896."
+    },
+    {
+      "sentence_id": "71",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9806451612903225,
+      "source_text": "The same year, he renounced his Wuerttemberg citizenship and became stateless.",
+      "official_text": "The same year, he renounced his W\u00fcrttemberg citizenship and became stateless."
+    },
+    {
+      "sentence_id": "73",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9828571428571429,
+      "source_text": "Einstein was born at Ulm in Baden-Wuerttemberg, Germany, about 100 km east of Stuttgart.",
+      "official_text": "Einstein was born at Ulm in Baden-W\u00fcrttemberg, Germany, about 100 km east of Stuttgart."
+    },
+    {
+      "sentence_id": "91",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9914529914529915,
+      "source_text": "William Hindman (April 1, 1743 - January 19, 1822) was an American lawyer and statesman from Talbot County, Maryland.",
+      "official_text": "William Hindman (April 1, 1743 \u2013 January 19, 1822) was an American lawyer and statesman from Talbot County, Maryland."
+    },
+    {
+      "sentence_id": "98",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9880952380952381,
+      "source_text": "Hindman died in Baltimore, Maryland and is buried in St. Paul\ufffds Burial Ground there.",
+      "official_text": "Hindman died in Baltimore, Maryland and is buried in St. Paul\u2019s Burial Ground there."
+    },
+    {
+      "sentence_id": "100",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9836065573770492,
+      "source_text": "From 1775 and 1777, Hindman served in Maryland\ufffds revolutionary government, as the state\ufffds Treasurer for the Eastern Shore.",
+      "official_text": "From 1775 and 1777, Hindman served in Maryland\u2019s revolutionary government, as the state\u2019s Treasurer for the Eastern Shore."
+    },
+    {
+      "sentence_id": "106",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9928057553956835,
+      "source_text": "Erasmus Darwin (December 12, 1731 - April 18, 1802) trained as a physician and wrote extensively on medicine and botany, as well as poetry.",
+      "official_text": "Erasmus Darwin (December 12, 1731 \u2013 April 18, 1802) trained as a physician and wrote extensively on medicine and botany, as well as poetry."
+    },
+    {
+      "sentence_id": "114",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9938271604938271,
+      "source_text": "His most important scientific work is his Zoonomia (1794-1796), which contains a system of pathology, and a treatise on \"generation,\" in which he, in the words of his famous grandson, Charles Robert Darwin, anticipated the views of Jean-Baptiste Lamarck, who in turn is regarded to have foreshadowed the theory of evolution.",
+      "official_text": "His most important scientific work is his Zo\u00f6nomia (1794\u20131796), which contains a system of pathology, and a treatise on \"generation,\" in which he, in the words of his famous grandson, Charles Robert Darwin, anticipated the views of Jean-Baptiste Lamarck, who in turn is regarded to have foreshadowed the theory of evolution."
+    },
+    {
+      "sentence_id": "122",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9947368421052631,
+      "source_text": "The Reverend Martin Luther King, Jr. Ph.D., Boston University (January 15, 1929 - April 4, 1968) was an American Nobel Laureate, Baptist minister, and African American civil rights activist.",
+      "official_text": "The Reverend Martin Luther King, Jr. Ph.D., Boston University (January 15, 1929 \u2013 April 4, 1968) was an American Nobel Laureate, Baptist minister, and African American civil rights activist."
+    },
+    {
+      "sentence_id": "140",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9938650306748467,
+      "source_text": "Elvis Aron Presley (January 8, 1935 - August 16, 1977), also known as The King of Rock and Roll (sometimes shortened to The King) was an American singer and actor.",
+      "official_text": "Elvis Aron Presley (January 8, 1935 \u2013 August 16, 1977), also known as The King of Rock and Roll (sometimes shortened to The King) was an American singer and actor."
+    },
+    {
+      "sentence_id": "150",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.990990990990991,
+      "source_text": "John Quincy Adams (July 11, 1767 - February 23, 1848) was the sixth (1825-1829) President of the United States.",
+      "official_text": "John Quincy Adams (July 11, 1767 \u2013 February 23, 1848) was the sixth (1825-1829) President of the United States."
+    },
+    {
+      "sentence_id": "154",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9948717948717949,
+      "source_text": "While serving as Secretary of State under President James Monroe, Adams negotiated the Adams-Onis Treaty with Spain and devised the Monroe Doctrine, both of which were of long lasting importance.",
+      "official_text": "While serving as Secretary of State under President James Monroe, Adams negotiated the Adams-On\u00eds Treaty with Spain and devised the Monroe Doctrine, both of which were of long lasting importance."
+    },
+    {
+      "sentence_id": "167",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9912280701754386,
+      "source_text": "Aldous Leonard Huxley (July 26, 1894 - November 22, 1963) was a British writer who emigrated to the United States.",
+      "official_text": "Aldous Leonard Huxley (July 26, 1894 \u2013 November 22, 1963) was a British writer who emigrated to the United States."
+    },
+    {
+      "sentence_id": "180",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9939024390243902,
+      "source_text": "Roy Stanley Geiger (January 25, 1885 - January 23, 1947) was a United States Marine Corps general who, during World War II, became the first Marine to lead an army.",
+      "official_text": "Roy Stanley Geiger (January 25, 1885 \u2013 January 23, 1947) was a United States Marine Corps general who, during World War II, became the first Marine to lead an army."
+    },
+    {
+      "sentence_id": "194",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9895833333333334,
+      "source_text": "Prescott Sheldon Bush (May 15, 1895, Columbus, Ohio - October 8, 1972, New York City) was a U.S.",
+      "official_text": "Prescott Sheldon Bush (May 15, 1895, Columbus, Ohio \u2013 October 8, 1972, New York City) was a U.S."
+    },
+    {
+      "sentence_id": "203",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9950980392156863,
+      "source_text": "He maintained homes in Long Island, New York and Greenwich, Connecticut; the family compound at Kennebunkport, Maine; a 10,000 acre (40 km?) plantation in South Carolina; and an island retreat in Florida.",
+      "official_text": "He maintained homes in Long Island, New York and Greenwich, Connecticut; the family compound at Kennebunkport, Maine; a 10,000 acre (40 km\u00b2) plantation in South Carolina; and an island retreat in Florida."
+    },
+    {
+      "sentence_id": "227",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9828178694158075,
+      "source_text": "Margaret Tyndal Winthrop (February 23, 1880 - July 7, 1970) was the maternal grandmother of U.S. 111Senator John Kerry, the Presidential candidate.",
+      "official_text": "Margaret Tyndal Winthrop (February 23, 1880 \u2013 July 7, 1970) was the maternal grandmother of U.S. Senator John Kerry, the Presidential candidate."
+    },
+    {
+      "sentence_id": "235",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.987012987012987,
+      "source_text": "David Manners (April 30, 1901 - December 23, 1998) was a Canadian film actor.",
+      "official_text": "David Manners (April 30, 1901 \u2013 December 23, 1998) was a Canadian film actor."
+    },
+    {
+      "sentence_id": "241",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9942528735632183,
+      "source_text": "Elliott Roosevelt (September 23, 1910 - October 27, 1990), World War II hero and an author, was the son of President Franklin Delano Roosevelt and his wife Eleanor Roosevelt.",
+      "official_text": "Elliott Roosevelt (September 23, 1910 \u2013 October 27, 1990), World War II hero and an author, was the son of President Franklin Delano Roosevelt and his wife Eleanor Roosevelt."
+    },
+    {
+      "sentence_id": "248",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.989010989010989,
+      "source_text": "Stella Dorothea Gibbons (5 January 1902\ufffd19 December 1989) was an English novelist and poet.",
+      "official_text": "Stella Dorothea Gibbons (5 January 1902\u201419 December 1989) was an English novelist and poet."
+    },
+    {
+      "sentence_id": "251",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.996742671009772,
+      "source_text": "Keynes (pronounced \"Canes\") was born in London, the eldest son of Geoffrey Keynes, and thus the nephew of the economist John Maynard Keynes; and Geoffrey Keynes' wife Elizabeth (nee Darwin), the grand-daughter of Charles Darwin, and thus the great-grandson of Charles Darwin (see Darwin -- Wedgwood family).",
+      "official_text": "Keynes (pronounced \"Canes\") was born in London, the eldest son of Geoffrey Keynes, and thus the nephew of the economist John Maynard Keynes; and Geoffrey Keynes' wife Elizabeth (n\u00e9e Darwin), the grand-daughter of Charles Darwin, and thus the great-grandson of Charles Darwin (see Darwin -- Wedgwood family)."
+    },
+    {
+      "sentence_id": "252",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9966887417218543,
+      "source_text": "Charles Francis Adams, Jr. (May 27, 1835 - May 20, 1915), a member of the prominent Adams political family and son of Charles Francis Adams, Sr., graduated at Harvard in 1856, and served on the Union side in the American Civil War, receiving in 1865 the brevet of brigadier-general in the regular army.",
+      "official_text": "Charles Francis Adams, Jr. (May 27, 1835 \u2013 May 20, 1915), a member of the prominent Adams political family and son of Charles Francis Adams, Sr., graduated at Harvard in 1856, and served on the Union side in the American Civil War, receiving in 1865 the brevet of brigadier-general in the regular army."
+    },
+    {
+      "sentence_id": "255",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9937106918238994,
+      "source_text": "Jean Tardieu (born in St Germain de Joux, France November 1, 1903, died in Creteil, France January 27, 1995) was an artist, musician, poet and dramatic author.",
+      "official_text": "Jean Tardieu (born in St Germain de Joux, France November 1, 1903, died in Cr\u00e9teil, France January 27, 1995) was an artist, musician, poet and dramatic author."
+    },
+    {
+      "sentence_id": "275",
+      "alphanumeric_accentfold_match": false,
+      "similarity": 0.9820359281437125,
+      "source_text": "Mary Lilian Baels (November 28, 1916 - June 7, 2002) was best known as Princess de Ruthy, the controversial morganatic second wife of King Leopold III of the Belgians.",
+      "official_text": "Mary Lilian Baels (November 28, 1916 \u2013 June 7, 2002) was best known as Princess de R\u00e9thy, the controversial morganatic second wife of King L\u00e9opold III of the Belgians."
+    },
+    {
+      "sentence_id": "295",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9895833333333334,
+      "source_text": "Adolf Otto Reinhold Windaus (December 25, 1876 - June 9, 1959) was a significant German chemist.",
+      "official_text": "Adolf Otto Reinhold Windaus (December 25, 1876 \u2013 June 9, 1959) was a significant German chemist."
+    },
+    {
+      "sentence_id": "297",
+      "alphanumeric_accentfold_match": true,
+      "similarity": 0.9922480620155039,
+      "source_text": "Jack Kerouac (March 12, 1922 - October 21, 1969) was an American novelist, writer, poet, artist, and part of the Beat Generation.",
+      "official_text": "Jack Kerouac (March 12, 1922 \u2013 October 21, 1969) was an American novelist, writer, poet, artist, and part of the Beat Generation."
+    }
+  ]
+}

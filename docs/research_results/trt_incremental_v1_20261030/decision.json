@@ -1,0 +1,8 @@
+{
+  "real_mrr_above_structural": true,
+  "real_mrr_above_gaussian": true,
+  "real_positive_mrr_gaps_for_each_reader": false,
+  "test_extracted_or_evaluated": false,
+  "interpretation": "Selected validation point estimates on one reused split; unequal model-selection dimension and validation reuse preclude a confirmatory significance claim.",
+  "real_mrr_improves_over_both": true
+}

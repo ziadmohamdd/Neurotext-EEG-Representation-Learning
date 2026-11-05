@@ -1,0 +1,162 @@
+[
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\channel_schemas.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\channel_schemas.json",
+    "sha256": "10042a2fd6a39f23c9da2ec5863408a99f50bd4ff72036a24e9fefaed0892842"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\derived_details.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\derived_details.json",
+    "sha256": "5285bee80707b5a05b317fdb4876a83013a6b66296a16ed50bbb66683bd0626e"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\electrode_pairs.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\electrode_pairs.json",
+    "sha256": "27661252182d9041265aeba252612986e6ab1f71d622a4282143b272b45fd6f2"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\field_census.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\field_census.json",
+    "sha256": "8c4342a927afd9fbe755a9b3cc7f810b5610f96629b75e1756f0b4488126a470"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\mapping_exceptions.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\mapping_exceptions.json",
+    "sha256": "c67005c52425c74edfa6bd2e56d5a90a704f8c3f6ea49421966fb0d23f7b9fc3"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\preservation_after.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\preservation_after.json",
+    "sha256": "fe28dfb049caaf994f8ea56123a6c599259683ea7a55c3e57d1e7ac09ffa530a"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\sentence_coverage.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\sentence_coverage.json",
+    "sha256": "cd7e3c1ce5f13ad6b47122ea405f647cbb66dcbba8fe573427b729838fd651bd"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\source_inventory.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\source_inventory.json",
+    "sha256": "14dbfe09071d7ba75696e8b74bc30cf6cce09946223900df8d0fec39eab58784"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\storage_estimate.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\storage_estimate.json",
+    "sha256": "503aaa6f9456b28baa299b6745a65494948ad1a63d37224e703332261c379f91"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\summary\\summary.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\summary.json",
+    "sha256": "9c7f9e8495e04d9750029647e19b02ea84cffbedb8757015460fb4448d0f074d"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\osf_zuco1_lib.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_zuco1_lib.json",
+    "sha256": "57fff02dab0f7eabaf084e9cfac4a26a2ba60dba202ccda04246be607ecc612b"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\osf_zuco2_preprocessing.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_zuco2_preprocessing.json",
+    "sha256": "4e3e57f6838ffbb9823a633ec2eb57e4f23fb9573188d3bdad22dba0b0872db6"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\osf_zuco2_python_reader.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_zuco2_python_reader.json",
+    "sha256": "7fd45143f7be11c03b98a02ac775b6f20773a35d8dfb10dc5870c559e1df3216"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\osf_zuco2_root.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_zuco2_root.json",
+    "sha256": "dc0e921db0841e70a1bf2ff16ae51a3a07a249cce85b0a64d6b835591c3f0b6c"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\osf_zuco2_scripts.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_zuco2_scripts.json",
+    "sha256": "e12426d01ca354377add1ed41f399717534b9553e6a4ca0c12cf87db25347cc8"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\getElectrodePairs.m",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\getElectrodePairs.m",
+    "sha256": "83d7f1711438c06699ab3da2fe9850d077aac6f2c9e9fc386300ff1999ea05d7"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\data_loading_helpers.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\data_loading_helpers.py",
+    "sha256": "90e3bab7d082891b4b53fcb154286d8a73eea0f3fa89a312176025f035cfa71c"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\read_matlab_files.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\read_matlab_files.py",
+    "sha256": "daf147dee64cf53ae55050a3d19d0ea37d8811057cd9de3cfb2bc7f29fb91712"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\containment_examples.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\containment_examples.json",
+    "sha256": "ec3b5df34a63e669e47091650c2fad035c8e704483467f2ffeabab1f06704844"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\containment_followup.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\containment_followup.json",
+    "sha256": "e7ad368abc0297bb26854d8c1914f7f947f0330fab9814f16df807d59b6400df"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\preservation_before.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\preservation_before.json",
+    "sha256": "7a7e4167425a2a795b784b38b081c0b9de3ddd282010827b31e01248fdb566d0"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\official_firstLevel_NR.m",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\official_firstLevel_NR.m",
+    "sha256": "4624c63811a56bfc7214a3b5be5344d1855b9587f38904e1eb851dcc808fa6f2"
+  },
+  {
+    "source": "results\\pairing_audit_20261030\\osf_matlab_inventory.json",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\evidence\\osf_matlab_inventory.json",
+    "sha256": "b66ccd11dc29dac4e52e7a7dfa2b0daab96460a122413597099c255cf9b0f607"
+  },
+  {
+    "source": "scripts\\audit_word_eeg.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\audit_word_eeg.py",
+    "sha256": "f28ffd351b258fcc3272a869c11ee1b564e3f185da90baab122b6c2cd9552f27"
+  },
+  {
+    "source": "scripts\\probe_word_eeg_containment.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\probe_word_eeg_containment.py",
+    "sha256": "fb3288acc9c0b2daa1e7e2dbf1909ec8043132a64105ffe4773d727647face3d"
+  },
+  {
+    "source": "scripts\\summarize_word_eeg_audit.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\summarize_word_eeg_audit.py",
+    "sha256": "e0c096164e533b3a9bd5e46f7fe10e4f7cdf467e472b13cb1cee12ce8007c1b3"
+  },
+  {
+    "source": "scripts\\finalize_word_eeg_report.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\finalize_word_eeg_report.py",
+    "sha256": "6b3100262c3e7f6cb6af2da2756bd29afe43ae44316204c71325579e46576675"
+  },
+  {
+    "source": "tests\\test_word_eeg_audit.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\test_word_eeg_audit.py",
+    "sha256": "f8957a504d2c10c9ead36e19466aae0b1c9ac7e341945a42f445967942816285"
+  },
+  {
+    "source": "results\\word_eeg_feasibility_20261030\\implementation\\audit_word_eeg_initial.py",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\implementation\\audit_word_eeg_initial.py",
+    "sha256": "99aeb0d91ad1e4a5129a5878dd59adfa065d65d9b7d66bfbf7c49b625e17522c"
+  },
+  {
+    "source": "logs\\word_eeg_zuco1_20261030.log",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\logs\\word_eeg_zuco1_20261030.log",
+    "sha256": "61e97e0b722357a79cbe20c878d9b97c91d0f9bd0eb684333be666622169291e"
+  },
+  {
+    "source": "logs\\word_eeg_zuco2_20261030.log",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\logs\\word_eeg_zuco2_20261030.log",
+    "sha256": "008882561ae3ae7bbcf81a950da2a123ddf9e4db30f5a3ddf343649d24ec4c87"
+  },
+  {
+    "source": "logs\\word_eeg_zuco2_parallel_20261030.log",
+    "copy": "docs\\research_results\\word_eeg_feasibility_20261030\\logs\\word_eeg_zuco2_parallel_20261030.log",
+    "sha256": "54ad6d019390bc1ba68722e5ac4b54711f33103ab565d88c3b17354b35cd54d2"
+  }
+]

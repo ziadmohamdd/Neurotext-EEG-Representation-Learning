@@ -1,0 +1,13 @@
+{
+  "training_gate_passed": false,
+  "checks": {
+    "mean_eeg": false,
+    "matched_gaussian": false,
+    "class_shuffled": false,
+    "word_order_shuffled": false,
+    "missingness_only": false,
+    "structural_only": false
+  },
+  "outer_validation_permitted": false,
+  "test_evaluated": false
+}

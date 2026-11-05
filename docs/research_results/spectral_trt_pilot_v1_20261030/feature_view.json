@@ -1,0 +1,98 @@
+{
+  "path": "C:\\Users\\Asus\\Desktop\\New_trends_AI_project1\\data\\processed\\zuco1_trt_mean_pilot_v1_20261030",
+  "version": "zuco1_trt_sentence_mean_pilot_v1",
+  "index_sha256": "c1a5516afae858fdcb78d89cd63a277f0604f8da260d04c480e5208e4cf14c22",
+  "vectors_sha256": "5d259a6019367b9b12516b046abbdcb8fa65aef07625c7007f6f9188a0636bcb",
+  "gaussian_training_moments_sha256": "d27e064717991b81926a16f4dc6f1e6f29fbce5ed51ec310f458b527aea3b011",
+  "aliases": {
+    "class_shuffled": "real_trt"
+  },
+  "source_hashes": [
+    {
+      "subject": "ZDM",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZDM_NR.mat",
+      "sha256": "2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d",
+      "eligible_observations": 289
+    },
+    {
+      "subject": "ZDN",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZDN_NR.mat",
+      "sha256": "ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604",
+      "eligible_observations": 297
+    },
+    {
+      "subject": "ZGW",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZGW_NR.mat",
+      "sha256": "c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723",
+      "eligible_observations": 281
+    },
+    {
+      "subject": "ZJM",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJM_NR.mat",
+      "sha256": "fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0",
+      "eligible_observations": 257
+    },
+    {
+      "subject": "ZJN",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJN_NR.mat",
+      "sha256": "93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15",
+      "eligible_observations": 294
+    },
+    {
+      "subject": "ZJS",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZJS_NR.mat",
+      "sha256": "ee156114b0a8f48007a74de02b13a72a0611af1590b0062eeb2a95bd36ea2d1c",
+      "eligible_observations": 216
+    },
+    {
+      "subject": "ZKH",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZKH_NR.mat",
+      "sha256": "fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d",
+      "eligible_observations": 294
+    },
+    {
+      "subject": "ZKW",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZKW_NR.mat",
+      "sha256": "f30d3f0fc58e9774f07b141545313a584232ae4972e4d492191c84f3051442f5",
+      "eligible_observations": 296
+    },
+    {
+      "subject": "ZMG",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZMG_NR.mat",
+      "sha256": "ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2",
+      "eligible_observations": 286
+    },
+    {
+      "subject": "ZPH",
+      "source": "D:\\EEG_Project_Storage\\zuco1\\resultsZPH_NR.mat",
+      "sha256": "fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94",
+      "eligible_observations": 247
+    }
+  ],
+  "coverage": [
+    {
+      "split": "train",
+      "observations": 2245,
+      "word_observations": 48865,
+      "complete_word_observations": 32848,
+      "all_missing_observations": [
+        [
+          "zuco1",
+          "ZMG",
+          "unspecified",
+          "nr",
+          "70"
+        ]
+      ],
+      "excluded_observations": []
+    },
+    {
+      "split": "val",
+      "observations": 512,
+      "word_observations": 11203,
+      "complete_word_observations": 7101,
+      "all_missing_observations": [],
+      "excluded_observations": []
+    }
+  ]
+}

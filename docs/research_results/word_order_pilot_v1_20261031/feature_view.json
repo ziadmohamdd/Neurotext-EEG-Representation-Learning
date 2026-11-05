@@ -1,0 +1,91 @@
+{
+  "sources": [
+    {
+      "subject": "ZDM",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZDM_NR.mat",
+      "sha256": "2ab6318ea4e32e5b3de9313dd736ffa40e3228ce4bec363932c82d4798eaa89d",
+      "observations": 289
+    },
+    {
+      "subject": "ZDN",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZDN_NR.mat",
+      "sha256": "ff9c531d94b41655c25ce78e50917c52805ab6de9c7e891d46155b4346043604",
+      "observations": 297
+    },
+    {
+      "subject": "ZGW",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZGW_NR.mat",
+      "sha256": "c9d6d47e07d4c167c16171fe8e5d08431b87f18b642a59f2af5f0ee66b34a723",
+      "observations": 281
+    },
+    {
+      "subject": "ZJM",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZJM_NR.mat",
+      "sha256": "fc55997dca4cf731fe5a5976130c0f6d3fdc26215d764b1656e47515f75181f0",
+      "observations": 257
+    },
+    {
+      "subject": "ZJN",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZJN_NR.mat",
+      "sha256": "93ede7473d3e1f47d85fef114c55942382754506a3fe2bd72286738681538c15",
+      "observations": 294
+    },
+    {
+      "subject": "ZJS",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZJS_NR.mat",
+      "sha256": "ee156114b0a8f48007a74de02b13a72a0611af1590b0062eeb2a95bd36ea2d1c",
+      "observations": 216
+    },
+    {
+      "subject": "ZKH",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZKH_NR.mat",
+      "sha256": "fc7a2eaf2caba7037400251f92f942b5884b7e1c387b692b17bfa53c8db62c5d",
+      "observations": 294
+    },
+    {
+      "subject": "ZKW",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZKW_NR.mat",
+      "sha256": "f30d3f0fc58e9774f07b141545313a584232ae4972e4d492191c84f3051442f5",
+      "observations": 296
+    },
+    {
+      "subject": "ZMG",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZMG_NR.mat",
+      "sha256": "ac50e753614a5285271433dc33a631f9b2af79567d4d0608f9bffff9f8f3f6c2",
+      "observations": 286
+    },
+    {
+      "subject": "ZPH",
+      "path": "D:\\EEG_Project_Storage\\zuco1\\resultsZPH_NR.mat",
+      "sha256": "fb13dbcb97de398d3f091f593e30554db72d05cd069719055b9ea46515d2be94",
+      "observations": 247
+    }
+  ],
+  "coverage": [
+    {
+      "split": "train",
+      "observations": 2245,
+      "words": 48865,
+      "complete_words": 32848,
+      "all_missing_observations": [
+        [
+          "zuco1",
+          "ZMG",
+          "unspecified",
+          "nr",
+          "70"
+        ]
+      ]
+    },
+    {
+      "split": "val",
+      "observations": 512,
+      "words": 11203,
+      "complete_words": 7101,
+      "all_missing_observations": []
+    }
+  ],
+  "cache_sha256": "64ffaa05ef4ebad677ff0ce78d9f0645d55077c144ad9df3f82bca141374fabc",
+  "test_features_extracted": false,
+  "fields": "TRT_t1,t2,a1,a2,b1,b2,g1,g2; 105 channels per band; no word text stored"
+}
