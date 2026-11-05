@@ -6,7 +6,7 @@ Run on 2026-11-05 with the frozen plan in `configs/block_holdout_pilot_v2_202611
 
 ## Scores
 
-Expected N-way accuracy on 1,427 validation observations. CNN rows are the mean of three seeds. Other rows are one fit.
+Expected N-way accuracy on 1,427 validation observations. CNN rows are the mean of three seeds. Other rows are one fit. Input V applies the validity fixes only: 50 Hz notch, Cz removed, 8-second center crop and shared normalization. Input F adds the whole sentence (cropped only above 30 seconds) and per-reader normalization.
 
 | Input | 2-way | 4-way | 10-way | 24-way |
 |---|---:|---:|---:|---:|
@@ -23,11 +23,11 @@ Expected N-way accuracy on 1,427 validation observations. CNN rows are the mean 
 | Word counts and timing, no EEG | 53.44 | 29.77 | 13.03 | 4.76 |
 | List position, no EEG | 53.78 | 28.94 | 11.74 | 4.22 |
 
-The highest 10-way score came from word counts and timing, which use no EEG. Ridge scored above chance on matched noise too, so its gain above chance does not come from the EEG waveform. The noise keeps each observation's channel amplitudes, which may explain this, but this run did not test that.
+The highest 10-way score came from word counts and timing, which use no EEG. Ridge scored above chance on matched noise too, so almost none of its gain above chance depends on the real EEG waveform. The noise keeps each observation's channel amplitudes, which may explain this, but this run did not test that.
 
 ## Gate
 
-The gate required all of these on validation, separately for each model. Every check failed for all three models.
+The gate required all of these on validation, separately for each model. The four 10-way gaps count as one check that needs all four to reach 2 points. All five checks failed for all three models. Ridge F's 2.32-point gap over shuffled pairs was the only single row to meet its requirement.
 
 | Check | Required | Ridge V | Ridge F | CNN F |
 |---|---:|---:|---:|---:|
@@ -49,7 +49,7 @@ The gate required all of these on validation, separately for each model. Every c
 
 **This drop does not measure the reading-order leak alone.** v2 also trained on fewer sentences (307 against 432) and used different preprocessing. The two pilots also use different validation sentences. A further test is needed to separate these causes, and the claim that list order matches presentation order is still unverified.
 
-The CNN's best validation loss came after the first epoch in all nine runs. Training loss kept falling while validation loss did not improve, so the model learned patterns that did not carry over to the held-out blocks.
+The CNN's best validation loss came after the first epoch in all nine runs. Across the nine runs, training loss fell while validation loss rose, including on the controls. On real EEG, training loss fell from about 1.97 to 1.10 and validation loss rose from about 2.20 to 2.30, so the model learned patterns that did not carry over to the held-out blocks.
 
 The SemKey paper's scores (72.29 / 50.48 / 29.56 / 16.24) used a random text split, so they cannot be compared with v2. This run does not show how SemKey would score on a block split.
 
