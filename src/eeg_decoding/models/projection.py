@@ -19,7 +19,7 @@ class EEGTextModel(nn.Module):
             z = self.encoder(x, mask)
         return F.normalize(self.projection(z), dim=-1)
 
-def alignment_loss(predicted, targets, keys, temperature=.07):
+def alignment_loss(predicted, targets, keys, temperature=.07, candidates=None, candidate_keys=None):
     """Symmetric multi-positive cross entropy: duplicate text is never a false negative."""
     if len(set(keys)) < 2:
         raise ValueError("Alignment needs at least two distinct sentences per batch")
@@ -27,4 +27,18 @@ def alignment_loss(predicted, targets, keys, temperature=.07):
     positives = torch.tensor([[a == b for b in keys] for a in keys], device=logits.device)
     def direction(scores, positive):
         return -(torch.logsumexp(scores.masked_fill(~positive, -torch.inf), dim=1) - torch.logsumexp(scores, dim=1)).mean()
-    return (direction(logits, positives) + direction(logits.T, positives.T)) / 2
+    forward = direction(logits, positives)
+    if candidates is not None:
+        if candidate_keys is None or len(candidate_keys) != len(set(candidate_keys)):
+            raise ValueError('All-training candidates must have unique sentence keys')
+        if len(candidates) != len(candidate_keys) or not set(keys) <= set(candidate_keys):
+            raise ValueError('All batch targets must occur in the training candidate bank')
+        scores = F.normalize(predicted.float(), dim=-1) @ F.normalize(candidates.detach().float(), dim=-1).T / temperature
+        lookup = {key:i for i,key in enumerate(candidate_keys)}
+        indices = torch.tensor([lookup[key] for key in keys],device=scores.device)
+        forward = F.cross_entropy(scores, indices)
+    elif candidate_keys is not None:
+        raise ValueError('Candidate keys require candidate embeddings')
+    # Keep the original reverse batch term and its weight fixed. Only the EEG
+    # query's text denominator changes; no stale or detached EEG memory bank.
+    return (forward + direction(logits.T, positives.T)) / 2

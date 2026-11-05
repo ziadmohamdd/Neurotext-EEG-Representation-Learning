@@ -1,0 +1,3 @@
+# Wider-grid repeats use --config configs/transfer_ridge_regularized.yaml.
+base: transfer_exploratory_ridge.yaml
+seeds: [44]

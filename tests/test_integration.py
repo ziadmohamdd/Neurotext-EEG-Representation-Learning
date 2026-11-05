@@ -35,6 +35,53 @@ def test_baseline_end_to_end(records,config,text_cache,tmp_path,capsys):
     assert json.loads((tmp_path/"cli_eval.json").read_text())["chance"]["top1"]==.1
 
 
+@pytest.mark.parametrize('control', ['real', 'gaussian', 'shuffled'])
+def test_cached_ridge_regularization_ablation(records,config,text_cache,tmp_path,monkeypatch,control):
+    import runpy
+    import sys
+    import yaml
+    original = tmp_path/'original'
+    train_classical(records,config,text_cache.path,original,control=control)
+    before = {p.name:p.read_bytes() for p in original.iterdir()}
+    manifest = tmp_path/'manifest.jsonl'
+    write_manifest(manifest,records)
+    cfg = tmp_path/'grid.yaml'
+    cfg.write_text(yaml.safe_dump(dict(ridge_alphas=[.1,100.,10000.])))
+    output = tmp_path/'refit'
+    argv = ['refit_ridge_path', '--original', str(original), '--manifest', str(manifest),
+            '--text-cache', str(text_cache.path), '--config', str(cfg), '--output', str(output)]
+    monkeypatch.setattr(sys, 'argv', argv)
+    script = Path(__file__).resolve().parents[1]/'scripts/refit_ridge_path.py'
+    runpy.run_path(str(script), run_name='__main__')
+    assert before == {p.name:p.read_bytes() for p in original.iterdir()}
+    metadata = json.loads((output/'metadata.json').read_text())
+    assert len(metadata['selection']) == 3
+    assert metadata['selected_alpha'] == max(metadata['selection'], key=lambda r:r['validation_mrr'])['alpha']
+    direct = tmp_path/'direct'
+    train_classical(records,dict(config,ridge_alphas=[.1,100.,10000.]),text_cache.path,direct,control=control)
+    with np.load(output/'ridge.npz') as actual, np.load(direct/'ridge.npz') as expected:
+        for key in expected.files:
+            np.testing.assert_allclose(actual[key], expected[key], atol=1e-10)
+    with pytest.raises(FileExistsError):
+        runpy.run_path(str(script), run_name='__main__')
+
+
+def test_four_segment_alignment_trains_and_evaluates(records,config,text_cache,tmp_path):
+    output=tmp_path/"four"
+    model,_=train_neural(records,dict(config,temporal_segments=4),"alignment",output,text_cache.path)
+    assert model.encoder.pool.output_size==4
+    assert model.encoder.head.in_features==4*32
+    report=evaluate_checkpoint(records,output/"best.pt",text_cache.path,tmp_path/"metrics.json")
+    assert report["metrics"]["n_queries"]==10
+
+
+@pytest.mark.parametrize("arguments",[dict(stage="ssl"),dict(stage="alignment",ssl_checkpoint="ssl.pt"),
+                                      dict(stage="alignment",features_path="features.npz")])
+def test_four_segments_refuse_encoders_that_cannot_use_them(records,config,tmp_path,arguments):
+    with pytest.raises(ValueError,match="temporal_segments"):
+        train_neural(records,dict(config,temporal_segments=4),output=tmp_path/"run",**arguments)
+
+
 def test_ssl_alignment_checkpoint_evaluation(records,config,text_cache,tmp_path):
     ssl_output=tmp_path/"ssl"
     _,history=train_neural(records,config,"ssl",ssl_output)

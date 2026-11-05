@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "projection": 32,
+  "hidden": 32,
+  "epochs": 12,
+  "epoch_candidates": [
+    4,
+    8,
+    12
+  ],
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "loss": "Cross entropy over all unique fold-training sentence embeddings, normalized cosine logits / fixed temperature 0.07",
+  "conditions": [
+    "real_eeg",
+    "mean_eeg",
+    "matched_gaussian",
+    "class_shuffled",
+    "word_order_shuffled",
+    "missingness_only"
+  ],
+  "epoch_selection": "Common epoch maximizing equal-reader real_eeg Recall@1 across eight training-reader folds; ties prefer earlier epoch. All arms use that epoch.",
+  "structural_alpha": 1.0,
+  "gate": {
+    "minimum_recall1_gap": 0.02,
+    "minimum_mrr_gap": 0.005,
+    "minimum_positive_readers": 6
+  },
+  "test_policy": "Training CV only; do not read outer validation or test feature arrays, even if the descriptive gate passes.",
+  "preprocessing": "signed log1p, within-word per-band channel centering, fold-training complete-word mean/SD; missing words imputed to training mean (scaled zero), separate observed-word indicator",
+  "checkpoint_rule": "Save epochs 4,8,12 in every fold/arm; select one shared epoch from training CV only; outer refit for exactly that many epochs.",
+  "threads": 4,
+  "version": "gru_full_candidate_ce_loss_only_v1",
+  "temperature": 0.07,
+  "baseline_runner_sha256": "43079c48decaaf29b12f93868f91c371fe055bf433352dbb8ef083f207c974cf",
+  "baseline": "results/gru_pilot_v1_20261101",
+  "hypothesis_evidence": "results/gru_prediction_audit_v1_20261101/summary.json",
+  "hypothesis": "Positive-only cosine GRU outputs concentrate on few candidates; explicit negatives may improve discrimination. Not a confirmed implementation bug or guaranteed EEG benefit.",
+  "comparison": "Only loss differs; same input/scaler, architecture, initial weights, orders, optimizer, 12-epoch budget and 4/8/12 common-epoch selection. Report cosine baseline at both its own selected epoch and CE-selected matched epoch.",
+  "stopping": "One fixed temperature; no search expansion. Stop after training CV and archive all controls regardless of result."
+}

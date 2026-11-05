@@ -17,7 +17,7 @@ from .evaluation.statistics import subject_bootstrap
 from .models.eeg_cnn import EEGCNN
 from .models.ssl_encoder import MaskedEEG
 from .models.projection import EEGTextModel
-from .models.classical import eeg_features, ridge_model
+from .models.classical import eeg_features, ridge_path
 from .preprocessing.normalization import ChannelNormalizer
 from .training.checkpoints import load_checkpoint
 from .training.alignment_train import TextCache, train_alignment
@@ -131,6 +131,8 @@ def train_neural(records, config, stage, output, text_path=None, ssl_checkpoint=
                  protocol="subject", source=None, target=None, control="real", features_path=None):
     if (Path(output)/"last.pt").exists() and not resume:
         raise FileExistsError("Training output already contains a checkpoint; use --resume or a new output directory")
+    if config.get("temporal_segments",1) != 1 and (stage == "ssl" or ssl_checkpoint or features_path):
+        raise ValueError("temporal_segments applies only to a freshly trained CNN alignment encoder")
     seed_all(config.get("seed",42))
     device, info = device_info(config.get("device","auto"))
     config = dict(config)
@@ -166,7 +168,7 @@ def train_neural(records, config, stage, output, text_path=None, ssl_checkpoint=
         model = EEGTextModel(FeatureIdentity(),matrix.shape[1],text.embeddings.shape[1],frozen=True)
         history = train_alignment(model,train,val,text,config,device,output,meta,resume)
         return model,history
-    encoder = EEGCNN(len(meta["channels"]),config["embedding_dim"],quality_aware=config.get("quality_aware",False))
+    encoder = EEGCNN(len(meta["channels"]),config["embedding_dim"],quality_aware=config.get("quality_aware",False),temporal_segments=config.get("temporal_segments",1))
     if ssl_checkpoint:
         ssl = MaskedEEG(len(meta["channels"]),config["embedding_dim"],config.get("quality_aware",False))
         previous = load_checkpoint(ssl_checkpoint,ssl)
@@ -216,16 +218,17 @@ def train_classical(records, config, text_path, output, protocol="subject", sour
     target_vectors = text.get(train_keys).astype(np.float64)
     pool = sorted({r.key for r in splits["val"]})
     best, chosen, table = -float("inf"), None, []
-    for alpha in [.1,1.,10.,100.]:
-        model = ridge_model(alpha).fit(train,target_vectors)
-        metric = summarize(ranks(model.predict(val),text.get(pool),[r.key for r in splits["val"]],pool))["mrr"]
+    selected_alpha = None
+    for alpha, coefficients in ridge_path(train,target_vectors,config.get("ridge_alphas", [.1,1.,10.,100.])):
+        prediction = ((val-coefficients["mean"])/coefficients["scale"]) @ coefficients["coef"].T + coefficients["intercept"]
+        metric = summarize(ranks(prediction,text.get(pool),[r.key for r in splits["val"]],pool))["mrr"]
         table.append({"alpha":alpha,"validation_mrr":metric})
         if metric > best:
-            best,chosen = metric,model
-    scaler, ridge = chosen.named_steps["standardscaler"], chosen.named_steps["ridge"]
-    np.savez_compressed(output/"ridge.npz",mean=scaler.mean_,scale=scaler.scale_,coef=ridge.coef_,intercept=ridge.intercept_)
+            best,chosen,selected_alpha = metric,coefficients,alpha
+    np.savez_compressed(output/"ridge.npz",**chosen)
     meta["selection"] = table
-    meta.update(ridge_solver="svd", ridge_fit_dtype="float64", selected_alpha=float(ridge.alpha))
+    meta.update(ridge_solver="svd", ridge_fit_dtype="float64", selected_alpha=selected_alpha,
+                ridge_path_implementation="shared_train_svd")
     write_json(output/"metadata.json",meta)
     write_json(output/"splits.json",meta["splits"])
     return table
@@ -280,7 +283,7 @@ def evaluate_checkpoint(records, artifact, text_path, output, control="auto", co
             predicted.append(scaled @ coefficients["coef"].T + coefficients["intercept"])
         predicted = np.asarray(predicted)
     else:
-        encoder = FeatureIdentity() if cached else EEGCNN(len(meta["channels"]),config["embedding_dim"],quality_aware=config.get("quality_aware",False))
+        encoder = FeatureIdentity() if cached else EEGCNN(len(meta["channels"]),config["embedding_dim"],quality_aware=config.get("quality_aware",False),temporal_segments=config.get("temporal_segments",1))
         model = EEGTextModel(encoder,matrix.shape[1] if cached else config["embedding_dim"],text.embeddings.shape[1],frozen=cached)
         load_checkpoint(artifact,model)
         model.to(device).eval()

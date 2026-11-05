@@ -1,0 +1,22 @@
+{
+  "version": "zuco1_full_width_relative_trt_training_only_v1",
+  "date": "2026-11-01",
+  "seed": 42,
+  "scope": "Training-reader diagnostic and bounded search; no outer validation/test feature arrays or scores",
+  "hypothesis": "Subject amplitude differences and PCA compression may hide transferable information; retain all 840 coordinates after log1p and per-word within-band centering",
+  "representation": "For each complete word, sign(x)*log1p(abs(x)); this equals log1p for observed nonnegative TRT, and handles possible negative Gaussian draws without clipping. Subtract mean across 105 channels separately in each band; sentence coordinate mean across complete words. No PCA or target text as numeric input.",
+  "heads": ["semantic_embedding", "known_sentence_class"],
+  "ridge_alphas": [1.0, 10.0, 100.0],
+  "eeg_weights": [0.0, 0.1, 1.0],
+  "conditions": ["structural_only", "eeg_only", "gaussian_only", "structural_real", "structural_gaussian", "structural_shuffled"],
+  "structural_preprocessing": "Prior first 14 structural columns plus word-count basis rebuilt on fold-training counts; one training-fit median/standard transform shared across all structure-bearing arms",
+  "eeg_preprocessing": "Word normalization is observation-local and label-independent; sentence median imputation and standard scaling fit fold-training observations only. Gaussian is drawn in original word space from fold-training word moments with exact masks/counts, then normalized identically.",
+  "folds": "Leave each of eight original training readers out; fixed 300-class training candidate vocabulary; source outer val/test arrays are never extracted from cache",
+  "selection": "Equal-reader mean Recall@1, ties within 1e-12 prefer zero/smaller EEG weight then larger alpha; same 9 alpha/weight candidates per combined head and condition",
+  "class_control": "For structural_shuffled, consistently derange all training sentence-class targets; query targets stay correct. This is a whole-pair negative control, not an isolated block ablation.",
+  "interpretation": "Known-class head predicts labels for seen sentence classes only; cannot establish unseen-text semantics. Structural-only is a separate non-EEG comparator.",
+  "gate": "Before any future outer evaluation: selected structural_real must exceed selected structural_only and structural_gaussian by at least 0.02 macro Recall@1, with positive per-reader differences to both in at least six of eight readers. Descriptive screening only, not independent significance.",
+  "stopping": "One frozen training-only run, report all settings and controls. Stop without outer validation or test evaluation; any additional confirmation requires a separately specified protocol.",
+  "duration_units": "Source sample counts at 500 Hz, structural-only columns, no timing inferred",
+  "blas_threads": 4
+}

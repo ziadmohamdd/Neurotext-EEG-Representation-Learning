@@ -6,9 +6,21 @@
 - ZuCo 2.0: https://osf.io/2urht/overview ; LREC 2020, https://aclanthology.org/2020.lrec-1.18/
 - NEMAR: https://www.nemar.org/dataset/nm000278 and https://www.nemar.org/dataset/nm000279
 - Official NEMAR BIDS metadata: https://github.com/nemarDatasets/nm000278 and https://github.com/nemarDatasets/nm000279
-- ZuCo authors' processing code: https://github.com/DS3Lab/zuco-nlp
+- ZuCo authors' downstream NLP experiment code: https://github.com/DS3Lab/zuco-nlp
+- Automagic preprocessing software named in the original ZuCo paper: https://github.com/methlabUZH/automagic
 
-Network inspection: OSF pages and NEMAR's website returned proxy tunnel 403; their full current documentation and OSF binary samples could not be inspected. GitHub NEMAR metadata was accessible and examined directly. Do not interpret this as a complete audit of the OSF MATLAB schema. Local MATLAB parser tests validate supported schema behavior, not a real OSF recording.
+The NLP repository is not evidence of how each exported sentence waveform was
+segmented. A local [source/cache audit](cnn_candidate_comparison_20261030.md)
+checks the ZuCo1 `rawData`/`content` slots and resampling without claiming to
+reconstruct the original trial clock or every upstream preprocessing step.
+
+Local copies of third-party ZuCo files used by the audits, such as
+`sentencesNR.mat` and `official_firstLevel_NR.m`, are kept out of Git until their
+redistribution terms are checked. Their download links are in
+[the text discrepancy investigation](text_discrepancy_investigation_20261030.md).
+Archived hashes still record the exact files used.
+
+Earlier network inspection: OSF pages and NEMAR's website returned proxy tunnel 403; their full documentation and binary samples were unavailable in that inspection. GitHub NEMAR metadata was accessible. In the 2026-10-30 local follow-up, the OSF API and official normal-reading extraction script/stimulus CSV were retrieved and checksum-verified, and local MATLAB source exports were audited against prepared caches. See the [source audit](cnn_candidate_comparison_20261030.md) for its scope and remaining timing/reference/version limitations. Synthetic parser tests alone do not establish source annotation correctness.
 
 ## Verified NEMAR structure
 

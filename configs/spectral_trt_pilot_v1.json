@@ -1,0 +1,28 @@
+{
+  "version": "zuco1_trt_sentence_mean_pilot_v1",
+  "seed": 42,
+  "dataset": "zuco1",
+  "family": "TRT",
+  "bands": ["t1", "t2", "a1", "a2", "b1", "b2", "g1", "g2"],
+  "channels": 105,
+  "aggregation": "unweighted per-coordinate mean of finite word spectral values",
+  "imputation_choices": ["mean", "median"],
+  "scaling_choices": ["standard", "robust_iqr"],
+  "ridge_alphas": [0.1, 1, 10, 100, 1000, 10000, 100000],
+  "selection": "maximum validation full-pool MRR; deterministic first grid entry on ties within 1e-12",
+  "word_count_basis": "one-hot training-observed word counts plus an unseen-count bucket; same basis in all spectral arms and structural controls",
+  "shared_structure": ["word_count", "complete_TRT_word_count", "complete_TRT_word_fraction"],
+  "conditions": ["real_trt", "matched_gaussian", "class_shuffled", "count_duration_only", "zero_missingness_only", "existing_sentence_ridge"],
+  "eligibility": "all original seed-42 train/validation observations in zuco1_duration_qc; no new exclusions; no test extraction",
+  "gaussian": "independent per-word/coordinate draws using only real training-word mean/population SD; exact source per-coordinate missingness and word counts",
+  "duration_units": "stored sample counts at 500 Hz; not milliseconds; inclusive raw snippet N=duration+1 in audited examples",
+  "useful_validation_screen": {
+    "minimum_mrr_gap_vs_strongest_control": 0.002,
+    "positive_mrr_gaps_vs_all_controls_for_each_validation_reader": true,
+    "recall_cutoffs_strictly_above_all_controls_required": 2,
+    "interpretation": "descriptive gate, not a significance test; one previously used validation split"
+  },
+  "test_policy": "this runner has no test extraction or evaluation path; report validation decision only",
+  "punctuation_repair": false,
+  "blas_threads": 4
+}
