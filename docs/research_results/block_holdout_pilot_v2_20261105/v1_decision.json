@@ -1,0 +1,56 @@
+{
+  "ridge": {
+    "passed": true,
+    "checks": {
+      "gaps_at_least_minimum": true,
+      "readers_positive_against_gaussian": true,
+      "reader_ci_above_zero": true,
+      "sentence_ci_above_zero": true
+    },
+    "gaps": {
+      "gaussian": 0.04362296113978156,
+      "class_shuffled": 0.06256050020085986,
+      "timing_only_ridge": 0.05581668420038139
+    },
+    "readers_positive": 23,
+    "readers_total": 30,
+    "bootstrap": {
+      "reader_ci95": [
+        0.02612909033358416,
+        0.06059518603231165
+      ],
+      "sentence_ci95": [
+        0.020004060954587833,
+        0.06946781541000678
+      ],
+      "iterations": 10000
+    }
+  },
+  "cnn": {
+    "passed": true,
+    "checks": {
+      "gaps_at_least_minimum": true,
+      "readers_positive_against_gaussian": true,
+      "reader_ci_above_zero": true,
+      "sentence_ci_above_zero": true
+    },
+    "gaps": {
+      "gaussian": 0.1321884139912371,
+      "class_shuffled": 0.1310092509949259,
+      "timing_only_ridge": 0.12243189749733775
+    },
+    "readers_positive": 29,
+    "readers_total": 30,
+    "bootstrap": {
+      "reader_ci95": [
+        0.10705655089566254,
+        0.15619695692692506
+      ],
+      "sentence_ci95": [
+        0.0651516551344654,
+        0.20166877062166708
+      ],
+      "iterations": 10000
+    }
+  }
+}
