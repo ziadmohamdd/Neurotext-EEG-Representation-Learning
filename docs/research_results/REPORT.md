@@ -292,6 +292,8 @@ A later frozen pilot kept neighbouring sentences out of training. No model passe
 
 A follow-up attribution test was inconclusive for the CNN at 10-way: near training scored 10.26% and far training 9.92%, with far no better than matched noise in either model. In an exploratory check added afterwards, the text of neighbouring sentences with no EEG scored 53.94% on the v1 validation split, where the CNN scored 23.10%. This shows how easy that split is, not that the CNN used this route, and it is not EEG decoding. [Full v3 results](proximity_attribution_v3_20261105/REPORT.md).
 
+A frozen position test then fitted EEG to list position only and copied the text of training sentences at that position. It scored 15.41% at 10-way, against 9.70% with shuffled positions and 21.10% for the v1 CNN on the same 53 sentences, so position explains part of that score. Predicted and true position correlated at 0.80 and 0.88 for familiar readers. With protected sentences removed, neighbouring text with no EEG scored 55.10%. None of this is EEG decoding of meaning. [Full v4 results](position_bridge_v4_20261105/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.

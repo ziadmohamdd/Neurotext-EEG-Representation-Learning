@@ -4,7 +4,7 @@ Run on 2026-11-05 with the frozen plan in `configs/proximity_attribution_v3_2026
 
 **Frozen result: Inconclusive for the CNN.** Near training scored 10.26% and far training 9.92% at 10-way, on familiar readers and new sentences, with chance at 10%. Near is below the 12% the plan required to rule closeness out, so the test cannot say how much closeness contributes.
 
-**Exploratory result: the text of neighbouring sentences, with no EEG, scores 53.94% at 10-way on the v1 validation split.** The v1 CNN on real EEG scored 23.10% on the same queries and pool. This shows how easy that split is for anything that knows a sentence's list position. It does not show that the CNN used this route, and it is not EEG decoding.
+**Exploratory result: the text of neighbouring sentences, with no EEG, scores 53.94% at 10-way on the v1 validation split.** This figure includes protected sentences (see Integrity), and the clean figure is [55.10% against the CNN's 21.10%](../position_bridge_v4_20261105/REPORT.md). The v1 CNN on real EEG scored 23.10% on the same queries and pool. This shows how easy that split is for anything that knows a sentence's list position. It does not show that the CNN used this route, and it is not EEG decoding.
 
 No score here is a new accuracy claim. All sentences were reused from earlier development, and no test data was scored.
 

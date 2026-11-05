@@ -1,0 +1,80 @@
+{
+  "label": "Position explains part of the CNN score",
+  "bridge": 0.15414442315661478,
+  "reference": 0.21102637359595625,
+  "gap_over_shuffled": 0.05719266391196624,
+  "beats_shuffled": true,
+  "interval": {
+    "level": 95,
+    "reader_interval": [
+      0.0328735940919133,
+      0.08228743179171756
+    ],
+    "sentence_interval": [
+      0.015035921627386083,
+      0.09741100521620377
+    ],
+    "iterations": 10000
+  },
+  "secondary_input": {
+    "F": {
+      "label": "This route is not supported",
+      "bridge": 0.14185027776171813,
+      "reference": 0.21102637359595625,
+      "gap_over_shuffled": 0.03987016524219698,
+      "beats_shuffled": false,
+      "interval": {
+        "level": 95,
+        "reader_interval": [
+          0.019660983990338707,
+          0.06015100193848552
+        ],
+        "sentence_interval": [
+          -0.001004056641432007,
+          0.08101797439459664
+        ],
+        "iterations": 10000
+      }
+    }
+  },
+  "real_minus_noise": {
+    "v1": {
+      "estimate": 0.034812622355196395,
+      "reader_interval": [
+        0.0077402964012654755,
+        0.06160790723403172
+      ],
+      "sentence_interval": [
+        0.0031392140097699093,
+        0.06542508441064111
+      ]
+    },
+    "F": {
+      "estimate": 0.019663482987390405,
+      "reader_interval": [
+        -0.0015286985753220775,
+        0.04290570563606416
+      ],
+      "sentence_interval": [
+        -0.014796709207589772,
+        0.05291930163440479
+      ]
+    }
+  },
+  "cnn_minus_bridge": {
+    "estimate": 0.05688195043934141,
+    "reader_interval": [
+      0.03120904987718131,
+      0.08094720877805858
+    ],
+    "sentence_interval": [
+      -0.013072483073212302,
+      0.13235084639396855
+    ]
+  },
+  "sentence_spearman_cnn_bridge": {
+    "rho": 0.29108795135633964,
+    "p": 0.03445980925834937,
+    "sentences": 53
+  }
+}
