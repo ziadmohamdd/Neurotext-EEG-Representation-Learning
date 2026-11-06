@@ -1,6 +1,6 @@
 # Averaged-EEG test: plan v5
 
-**Status: proposed on 2026-11-06, not approved and not run.** [The config](../configs/averaged_eeg_v5_20261106.json) freezes once the owner approves and the synthetic tests pass. Any later change needs a new version.
+**Status: approved by the project owner on 2026-11-06.** [The config](../configs/averaged_eeg_v5_20261106.json) is frozen, and its SHA-256 is recorded in `scripts/run_averaged_eeg.py`. Any later change needs a new version.
 
 This plan does not try to build a usable decoder. It asks whether there is sentence information worth chasing on the fair test, where [v2](research_results/block_holdout_pilot_v2_20261105/REPORT.md) stayed at chance.
 
@@ -44,14 +44,24 @@ All 6,028 usable observations leave out v1 test sentences and the v2 test zone. 
 | Timing and word count, no EEG | Sentence length and reading time |
 | List position, no EEG | Place in the list, even inside a block |
 
+## Changes made after approval and before freezing
+
+No EEG had been read when these were made.
+
+- **The first reading got harder:** the synthetic test failed as first written. A duration-only signal earned the first reading, because a noisy readout of word count can outscore a clean one under cosine, by about 1.6 points on that fixture. Requiring a 2-point gap and lower bounds above 0 over timing and position cut this to 2 of 20 seeds, which was still too many.
+- **New partial check:** inside each held-out block, position, its square, word count and mean duration are removed from the real and noise predictions, and real must still clearly beat noise. Duration-only and position-only signals then earned the first reading on 0 of 20 seeds each, and a planted signal on 10 of 10.
+- **Tried and dropped:** giving the timing and position controls the noise features as well. It did not reduce false passes.
+- **Protected files:** they are hashed to prove they did not change, as in v4. They are never parsed as EEG, fitted or scored.
+- **Reader resampling:** this is done within each release, because no reader is in both.
+
 ## Reading
 
-**Beats nulls** means gaps of at least 2 points over noise and over shuffled pairs. Both gaps also need 95% lower bounds above 0 when resampling sentences, blocks and readers.
+**Clear** means a gap of at least 2 points, with every available 95% lower bound above 0. Lower bounds come from resampling sentences and blocks, and readers too for noise and shuffled pairs. **Beats nulls** means both noise and shuffled pairs are clear.
 
 | Result | Reading | What I would propose next |
 |---|---|---|
-| Beats nulls, and at least 2 points above timing and position | Averaged EEG carries sentence information beyond the controls | Try to carry it to single readers (ideas 2 and 3), then new readers |
-| Beats nulls, but within 2 points of timing or position | The gain does not exceed timing or position | Remove that route, or stop |
+| Beats nulls, and timing, position and the partial check are all clear | Averaged EEG carries sentence information beyond the controls | Try to carry it to single readers (ideas 2 and 3), then new readers |
+| Beats nulls, but timing, position or the partial check is not clear | The gain does not exceed timing or position | Remove that route, or stop |
 | Does not beat nulls | No sentence signal found with these features | Word-locked decoding only, and put the weight on the audit paper |
 
 Secondary results never change this label:
@@ -75,7 +85,7 @@ Secondary results never change this label:
 
 ## Scope and cost
 
-- **Data:** no download, no retraining of the CNN and no final test data. v1 test sentences, v2 test blocks and their buffers are never read.
+- **Data:** no download, no retraining of the CNN and no final test data. v1 test sentences, v2 test blocks and their buffers are never parsed as EEG.
 - **Checks before running:** synthetic tests must show that a planted signal is recovered and that noise stays at chance. They must also show that position-only and duration-only signals cannot earn the first reading. A run-time leakage audit refuses to continue on any failure.
 - **Time:** an estimate of 1 to 2 hours on CPU, not yet measured.
 - **Stop rule:** stop after this run whatever the outcome. Scoring the v2 test blocks would need a new plan and the owner's decision.
