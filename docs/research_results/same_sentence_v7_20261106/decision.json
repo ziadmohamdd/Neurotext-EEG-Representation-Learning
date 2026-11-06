@@ -1,0 +1,93 @@
+{
+  "label": "No same-sentence match found with these features",
+  "beats_nulls": false,
+  "gaps": {
+    "gaussian": 0.014987133757017101,
+    "class_shuffled": 0.1822607124009228,
+    "timing": -0.2455926336110043,
+    "position": -0.2620614009849053,
+    "partial": 0.0233510048255427
+  },
+  "lower_bounds": {
+    "gaussian": {
+      "sentence": -0.049778571284966565,
+      "reader": -0.04251535434352244
+    },
+    "class_shuffled": {
+      "sentence": 0.09704079116760436,
+      "reader": 0.061955685874511446
+    },
+    "timing": {
+      "sentence": -0.36318686215739737
+    },
+    "position": {
+      "sentence": -0.38163905837303774
+    },
+    "partial": {
+      "sentence": -0.024584259189936238,
+      "reader": -0.040513688809592656
+    }
+  },
+  "minimum_gap": 0.02,
+  "primary": {
+    "real": 0.2818236864908465,
+    "gaussian": 0.2668365527338294,
+    "timing": 0.5274163201018508,
+    "position": 0.5438850874757518,
+    "class_shuffled": 0.0995629740899237,
+    "real_partial": 0.18398659419467314,
+    "gaussian_partial": 0.16063558936913044
+  },
+  "intervals": {
+    "gaussian": {
+      "estimate": 0.01498713375701711,
+      "sentence_interval": [
+        -0.049778571284966565,
+        0.08198016592253621
+      ]
+    },
+    "class_shuffled": {
+      "estimate": 0.1822607124009228,
+      "sentence_interval": [
+        0.09704079116760436,
+        0.2760206696530041
+      ]
+    },
+    "timing": {
+      "estimate": -0.24559263361100434,
+      "sentence_interval": [
+        -0.36318686215739737,
+        -0.12587886116254732
+      ]
+    },
+    "position": {
+      "estimate": -0.26206140098490527,
+      "sentence_interval": [
+        -0.38163905837303774,
+        -0.13346355541544838
+      ]
+    },
+    "partial": {
+      "estimate": 0.02335100482554273,
+      "sentence_interval": [
+        -0.024584259189936238,
+        0.07151329969568819
+      ]
+    }
+  },
+  "reader_intervals": {
+    "gaussian": [
+      -0.04251535434352244,
+      0.09473060065281579
+    ],
+    "class_shuffled": [
+      0.061955685874511446,
+      0.21948064227150146
+    ],
+    "partial": [
+      -0.040513688809592656,
+      0.06559776275367521
+    ]
+  },
+  "sentences": 48
+}
