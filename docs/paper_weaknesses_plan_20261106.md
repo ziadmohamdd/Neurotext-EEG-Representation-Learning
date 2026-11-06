@@ -1,10 +1,10 @@
 # Plan for the audit paper's weaknesses
 
-Draft, 6 November 2026. Nothing here has been run. No data was downloaded and no EEG was scored while writing it. Counts come from local manifests, OSF file listings and SemKey's public repository.
+6 November 2026. **Update:** [same-sentence test v7](research_results/same_sentence_v7_20261106/REPORT.md) has now run and found no match beyond noise. Section 1 below is the original proposal, and its scoring changed before freezing. No data was downloaded. Counts come from local manifests, OSF file listings and SemKey's public repository.
 
 | Weakness | Fix | Needs | Status |
 |---|---|---|---|
-| Content or recording block | Same-sentence test, v7 | Local data only | Ready to write as a frozen plan |
+| Content or recording block | Same-sentence test, v7 | Local data only | Run, no match beyond noise; only partly resolved |
 | Only one published model | Ask SemKey's authors for outputs, then retrain only if refused | An email from the owner, or 52.1 GB and a larger GPU | Waiting on the owner |
 | Reused sentences | Score the v2 test blocks once, last | The owner's decision and a final design | Keep closed for now |
 | Others may publish first | Finish the local test, then decide with the supervisor | Supervisor's answer | Waiting |
@@ -66,7 +66,7 @@ The v2 test blocks are the only clean data left and can be scored only once, so 
 
 ## Recommended order
 
-1. Freeze and run v7, which needs no download.
+1. Freeze and run v7, which needs no download. Done.
 2. Send the supervisor summary with the v7 result if it is ready.
 3. Ask SemKey's authors for their outputs.
 4. Decide on retraining only if they cannot share them.

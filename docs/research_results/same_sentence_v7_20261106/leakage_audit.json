@@ -1,0 +1,10 @@
+{
+  "failures": [],
+  "pairs": 48,
+  "observations": [
+    511,
+    827
+  ],
+  "usable_observations": 6028,
+  "protected_sentences": 230
+}
