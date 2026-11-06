@@ -1,0 +1,733 @@
+{
+  "search_date": "2026-11-06",
+  "openalex_budget_ran_out": false,
+  "queries": [
+    {
+      "id": "OA01",
+      "database": "OpenAlex",
+      "query": "ZuCo EEG-to-text decoding",
+      "date": "2026-11-06",
+      "count": 177,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA02",
+      "database": "OpenAlex",
+      "query": "EEG to text translation sentence decoding ZuCo",
+      "date": "2026-11-06",
+      "count": 116,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA03",
+      "database": "OpenAlex",
+      "query": "open vocabulary EEG-to-text decoding natural reading",
+      "date": "2026-11-06",
+      "count": 1344,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA04",
+      "database": "OpenAlex",
+      "query": "reading EEG semantic decoding sentence embeddings",
+      "date": "2026-11-06",
+      "count": 2174,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA05",
+      "database": "OpenAlex",
+      "query": "EEG-to-text noise baseline evaluation critique",
+      "date": "2026-11-06",
+      "count": 1024,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA06",
+      "database": "OpenAlex",
+      "query": "EEG-to-text teacher forcing noise inflated performance",
+      "date": "2026-11-06",
+      "count": 66,
+      "retrieved": 66,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA07",
+      "database": "OpenAlex",
+      "query": "data leakage EEG decoding",
+      "date": "2026-11-06",
+      "count": 3918,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA08",
+      "database": "OpenAlex",
+      "query": "brain-to-text data splitting leakage",
+      "date": "2026-11-06",
+      "count": 3228,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA09",
+      "database": "OpenAlex",
+      "query": "temporal autocorrelation EEG decoding overestimated",
+      "date": "2026-11-06",
+      "count": 187,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA10",
+      "database": "OpenAlex",
+      "query": "block design EEG classification confound",
+      "date": "2026-11-06",
+      "count": 10898,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA11",
+      "database": "OpenAlex",
+      "query": "ZuCo cross-subject split sentence split",
+      "date": "2026-11-06",
+      "count": 100,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA12",
+      "database": "OpenAlex",
+      "query": "unseen subjects unseen sentences EEG text decoding",
+      "date": "2026-11-06",
+      "count": 777,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA13",
+      "database": "OpenAlex",
+      "query": "ZuCo reading task classification normal reading task-specific reading",
+      "date": "2026-11-06",
+      "count": 115,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA14",
+      "database": "OpenAlex",
+      "query": "EEG reading task corpus confound decoding",
+      "date": "2026-11-06",
+      "count": 691,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA15",
+      "database": "OpenAlex",
+      "query": "EEG text retrieval contrastive sentence N-way",
+      "date": "2026-11-06",
+      "count": 3874,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA16",
+      "database": "OpenAlex",
+      "query": "brain signal sentence retrieval contrastive EEG reading",
+      "date": "2026-11-06",
+      "count": 4491,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA17",
+      "database": "OpenAlex",
+      "query": "eye-tracking baseline versus EEG reading decoding",
+      "date": "2026-11-06",
+      "count": 3550,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA18",
+      "database": "OpenAlex",
+      "query": "gaze features EEG natural reading classification ZuCo",
+      "date": "2026-11-06",
+      "count": 126,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA19",
+      "database": "OpenAlex",
+      "query": "fixation-related potentials word decoding natural reading",
+      "date": "2026-11-06",
+      "count": 6207,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA20",
+      "database": "OpenAlex",
+      "query": "word-level EEG decoding natural reading fixation",
+      "date": "2026-11-06",
+      "count": 1914,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA21",
+      "database": "OpenAlex",
+      "query": "list position session drift EEG decoding",
+      "date": "2026-11-06",
+      "count": 1057,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA22",
+      "database": "OpenAlex",
+      "query": "EEG nonstationarity session drift brain-to-text decoding",
+      "date": "2026-11-06",
+      "count": 66,
+      "retrieved": 66,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA23",
+      "database": "OpenAlex",
+      "query": "MEG brain-to-text decoding reading sentence retrieval",
+      "date": "2026-11-06",
+      "count": 843,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "OA24",
+      "database": "OpenAlex",
+      "query": "non-invasive language decoding reading failed replication permutation chance",
+      "date": "2026-11-06",
+      "count": 255,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "CIT",
+      "database": "OpenAlex + Semantic Scholar",
+      "query": "citation tracing from seeds",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 1541,
+      "note": "see seeds in this file"
+    },
+    {
+      "id": "AX01",
+      "database": "arXiv",
+      "query": "all:ZuCo",
+      "date": "2026-11-06",
+      "count": 128,
+      "retrieved": 100,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX02",
+      "database": "arXiv",
+      "query": "abs:\"EEG-to-text\"",
+      "date": "2026-11-06",
+      "count": 35,
+      "retrieved": 35,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX03",
+      "database": "arXiv",
+      "query": "abs:\"EEG to text\"",
+      "date": "2026-11-06",
+      "count": 35,
+      "retrieved": 35,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX04",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:leakage AND abs:decoding",
+      "date": "2026-11-06",
+      "count": 9,
+      "retrieved": 9,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX05",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:autocorrelation AND abs:decoding",
+      "date": "2026-11-06",
+      "count": 1,
+      "retrieved": 1,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX06",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:\"block design\"",
+      "date": "2026-11-06",
+      "count": 4,
+      "retrieved": 4,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX07",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:\"eye-tracking\" AND abs:reading",
+      "date": "2026-11-06",
+      "count": 18,
+      "retrieved": 18,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX08",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:retrieval AND abs:sentence",
+      "date": "2026-11-06",
+      "count": 12,
+      "retrieved": 12,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX09",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:reading AND abs:decoding",
+      "date": "2026-11-06",
+      "count": 20,
+      "retrieved": 20,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX10",
+      "database": "arXiv",
+      "query": "abs:\"fixation-related\" AND abs:EEG",
+      "date": "2026-11-06",
+      "count": 4,
+      "retrieved": 4,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX11",
+      "database": "arXiv",
+      "query": "abs:\"brain-to-text\" AND abs:EEG",
+      "date": "2026-11-06",
+      "count": 11,
+      "retrieved": 11,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX12",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:drift AND abs:decoding",
+      "date": "2026-11-06",
+      "count": 5,
+      "retrieved": 5,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "AX13",
+      "database": "arXiv",
+      "query": "abs:EEG AND abs:noise AND abs:baseline AND abs:text",
+      "date": "2026-11-06",
+      "count": 5,
+      "retrieved": 5,
+      "note": "relevance-ranked, first 100"
+    },
+    {
+      "id": "CR01",
+      "database": "Crossref",
+      "query": "ZuCo EEG reading",
+      "date": "2026-11-06",
+      "count": 395468,
+      "retrieved": 50,
+      "note": "relevance-ranked, first 50"
+    },
+    {
+      "id": "CR02",
+      "database": "Crossref",
+      "query": "EEG-to-text decoding",
+      "date": "2026-11-06",
+      "count": 467589,
+      "retrieved": 50,
+      "note": "relevance-ranked, first 50"
+    },
+    {
+      "id": "CR03",
+      "database": "Crossref",
+      "query": "EEG decoding data leakage temporal autocorrelation",
+      "date": "2026-11-06",
+      "count": 3729929,
+      "retrieved": 50,
+      "note": "relevance-ranked, first 50"
+    },
+    {
+      "id": "CR04",
+      "database": "Crossref",
+      "query": "EEG eye-tracking natural reading decoding",
+      "date": "2026-11-06",
+      "count": 6149077,
+      "retrieved": 50,
+      "note": "relevance-ranked, first 50"
+    },
+    {
+      "id": "S201",
+      "database": "Semantic Scholar",
+      "query": "ZuCo EEG-to-text decoding",
+      "date": "2026-11-06",
+      "count": 16,
+      "retrieved": 16,
+      "note": "first 100"
+    },
+    {
+      "id": "S202",
+      "database": "Semantic Scholar",
+      "query": "EEG-to-text noise baseline evaluation",
+      "date": "2026-11-06",
+      "count": 1037,
+      "retrieved": 100,
+      "note": "first 100"
+    },
+    {
+      "id": "S203",
+      "database": "Semantic Scholar",
+      "query": "brain-to-text data splitting leakage ZuCo",
+      "date": "2026-11-06",
+      "count": 2,
+      "retrieved": 2,
+      "note": "first 100"
+    },
+    {
+      "id": "S204",
+      "database": "Semantic Scholar",
+      "query": "ZuCo sentence retrieval EEG contrastive",
+      "date": "2026-11-06",
+      "count": 16,
+      "retrieved": 16,
+      "note": "first 100"
+    },
+    {
+      "id": "S205",
+      "database": "Semantic Scholar",
+      "query": "EEG gaze eye-tracking reading decoding ZuCo",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 0,
+      "note": "rate-limited or failed, HTTP 429"
+    },
+    {
+      "id": "S206",
+      "database": "Semantic Scholar",
+      "query": "EEG list position block drift reading decoding",
+      "date": "2026-11-06",
+      "count": 5,
+      "retrieved": 5,
+      "note": "first 100"
+    },
+    {
+      "id": "S207",
+      "database": "Semantic Scholar",
+      "query": "ZuCo reading task classification",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 0,
+      "note": "rate-limited or failed, HTTP 429"
+    },
+    {
+      "id": "S208",
+      "database": "Semantic Scholar",
+      "query": "fixation-related EEG word decoding reading",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 0,
+      "note": "rate-limited or failed, HTTP 429"
+    },
+    {
+      "id": "AC01",
+      "database": "ACL Anthology (web search, by hand)",
+      "query": "ZuCo EEG-to-text decoding",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 2,
+      "note": "web search limited to aclanthology.org; no total count available"
+    },
+    {
+      "id": "AC02",
+      "database": "ACL Anthology (web search, by hand)",
+      "query": "EEG to text noise baseline leakage data splitting evaluation critique",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 3,
+      "note": "web search limited to aclanthology.org; no total count available"
+    },
+    {
+      "id": "AC03",
+      "database": "ACL Anthology (web search, by hand)",
+      "query": "EEG eye-tracking gaze reading sentence classification ZuCo task",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 5,
+      "note": "web search limited to aclanthology.org; no total count available"
+    },
+    {
+      "id": "AC04",
+      "database": "ACL Anthology (web search, by hand)",
+      "query": "EEG sentence retrieval brain signals text contrastive reading word-level fixation",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 5,
+      "note": "web search limited to aclanthology.org; no total count available"
+    },
+    {
+      "id": "WB01",
+      "database": "General web search (by hand, deviation)",
+      "query": "ZuCo EEG decoding sentence order block position leakage temporal split reading experiment confound",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 2,
+      "note": "only hits new to or relevant for the record set are listed"
+    },
+    {
+      "id": "WB02",
+      "database": "General web search (by hand, deviation)",
+      "query": "EEG-to-text ZuCo eye-tracking only baseline outperforms EEG fixation duration word length confound retrieval",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 2,
+      "note": "only hits new to or relevant for the record set are listed"
+    },
+    {
+      "id": "WB03",
+      "database": "General web search (by hand, deviation)",
+      "query": "ZuCo EEG reading decoding above chance rigorous held-out subject permutation test no signal failed to decode word embeddings",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 3,
+      "note": "only hits new to or relevant for the record set are listed"
+    },
+    {
+      "id": "WB04",
+      "database": "General web search (by hand, deviation)",
+      "query": "EEG-to-text retrieval candidate pool composition inflates accuracy matched distractors reading task ZuCo controlled audit",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 2,
+      "note": "only hits new to or relevant for the record set are listed"
+    },
+    {
+      "id": "WB05",
+      "database": "General web search (by hand, deviation)",
+      "query": "EEG decoding natural reading sentence semantic signal surrogate presentation order trial position slow drift text embedding null result 2026 arXiv",
+      "date": "2026-11-06",
+      "count": null,
+      "retrieved": 2,
+      "note": "only hits new to or relevant for the record set are listed"
+    },
+    {
+      "id": "GH01",
+      "database": "GitHub repositories (deviation)",
+      "query": "ZuCo EEG",
+      "date": "2026-11-06",
+      "count": 22,
+      "retrieved": 22,
+      "note": "sorted by last update, first 100; code, not peer reviewed"
+    },
+    {
+      "id": "GH02",
+      "database": "GitHub repositories (deviation)",
+      "query": "EEG-to-text",
+      "date": "2026-11-06",
+      "count": 147,
+      "retrieved": 100,
+      "note": "sorted by last update, first 100; code, not peer reviewed"
+    },
+    {
+      "id": "GH03",
+      "database": "GitHub repositories (deviation)",
+      "query": "zuco retrieval",
+      "date": "2026-11-06",
+      "count": 2,
+      "retrieved": 2,
+      "note": "sorted by last update, first 100; code, not peer reviewed"
+    }
+  ],
+  "seeds": [
+    {
+      "seed": "Hollenstein 2023 ZuCo benchmark",
+      "doi": "10.3389/fpsyg.2022.1028824",
+      "openalex_id": "W4315651769",
+      "openalex_title": "The ZuCo benchmark on cross-subject reading task classification with EEG and eye-tracking data",
+      "openalex_cited_by_total": 31,
+      "openalex_cited_by": 31,
+      "openalex_references": 83,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 17,
+      "s2_references": 81
+    },
+    {
+      "seed": "Zhang ACL 2026",
+      "doi": "10.18653/v1/2026.acl-long.61",
+      "openalex_id": "W7166799362",
+      "openalex_title": "Is EEG-to-Text Feasible in Real-World Scenarios? An In-Depth Analysis Using a Neuropsychology-Inspired Benchmark",
+      "openalex_cited_by_total": 0,
+      "openalex_cited_by": 0,
+      "openalex_references": 6,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 0,
+      "s2_references": 55
+    },
+    {
+      "seed": "Rethinking Cross-Subject Data Splitting EMNLP 2025",
+      "doi": "10.18653/v1/2025.emnlp-main.289",
+      "openalex_id": "W4416036958",
+      "openalex_title": "Rethinking Cross-Subject Data Splitting for Brain-to-Text Decoding",
+      "openalex_cited_by_total": 0,
+      "openalex_cited_by": 0,
+      "openalex_references": 2,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 6,
+      "s2_references": 29
+    },
+    {
+      "seed": "Jo et al. noise baselines",
+      "doi": "10.48550/arXiv.2405.06459",
+      "openalex_id": "W4416879689",
+      "openalex_title": "Evaluating EEG-to-text models through noise-based performance analysis",
+      "openalex_cited_by_total": 23,
+      "openalex_cited_by": 23,
+      "openalex_references": 18,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 52,
+      "s2_references": 14
+    },
+    {
+      "seed": "Beware of Overestimated Decoding Performance",
+      "doi": "10.48550/arXiv.2405.17024",
+      "openalex_id": "W4415224111",
+      "openalex_title": "The impacts of temporal autocorrelations on EEG decoding",
+      "openalex_cited_by_total": 9,
+      "openalex_cited_by": 9,
+      "openalex_references": 65,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 16,
+      "s2_references": 57
+    },
+    {
+      "seed": "GLIM",
+      "doi": "10.48550/arXiv.2505.17099",
+      "openalex_id": "W6967149031",
+      "openalex_title": "Learning Interpretable Representations Leads to Semantically Faithful EEG-to-Text Generation",
+      "openalex_cited_by_total": 0,
+      "openalex_cited_by": 0,
+      "openalex_references": 0,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 8,
+      "s2_references": 61
+    },
+    {
+      "seed": "SemKey",
+      "doi": "10.48550/arXiv.2603.03312",
+      "openalex_id": "W7133744529",
+      "openalex_title": "Escaping the BLEU Trap: A Signal-Grounded Framework with Decoupled Semantic Guidance for EEG-to-Text Decoding",
+      "openalex_cited_by_total": 1,
+      "openalex_cited_by": 1,
+      "openalex_references": 0,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 0,
+      "s2_references": 55
+    },
+    {
+      "seed": "Brain-CLIPLM",
+      "doi": "10.48550/arXiv.2604.16370",
+      "openalex_id": "W7171612468",
+      "openalex_title": "Brain-CLIPLM: semantic compression for EEG-to-text decoding",
+      "openalex_cited_by_total": 1,
+      "openalex_cited_by": 1,
+      "openalex_references": 31,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 2,
+      "s2_references": 42
+    },
+    {
+      "seed": "Decoding silent reading",
+      "doi": "10.48550/arXiv.2608.20186",
+      "openalex_id": "W7203955387",
+      "openalex_title": "Decoding silent reading from non-invasive EEG",
+      "openalex_cited_by_total": 0,
+      "openalex_cited_by": 0,
+      "openalex_references": 0,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 1,
+      "s2_references": 25
+    },
+    {
+      "seed": "ZuCo 1.0 dataset (extra seed)",
+      "doi": "10.1038/sdata.2018.291",
+      "openalex_id": "W2905110202",
+      "openalex_title": "ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading",
+      "openalex_cited_by_total": 202,
+      "openalex_cited_by": 200,
+      "openalex_references": 22,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 259,
+      "s2_references": 24
+    },
+    {
+      "seed": "ZuCo 2.0 dataset (extra seed)",
+      "doi": "10.48550/arXiv.1912.00903",
+      "openalex_id": "W3029724270",
+      "openalex_title": "ZuCo 2.0: A Dataset of Physiological Recordings During Natural Reading and Annotation",
+      "openalex_cited_by_total": 48,
+      "openalex_cited_by": 48,
+      "openalex_references": 26,
+      "s2_status": [
+        200,
+        200
+      ],
+      "s2_cited_by": 139,
+      "s2_references": 32
+    }
+  ],
+  "records_found": 4632,
+  "records_unique": 2550
+}
