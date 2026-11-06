@@ -1,0 +1,270 @@
+{
+  "real": [
+    {
+      "inner_score": 0.11951357466063346,
+      "alpha": 10000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.13706589002918057,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.11336834299804807,
+      "alpha": 10000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.10605844104296117,
+      "alpha": 100000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1250035384046883,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.13209921087548593,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.11302181198303082,
+      "alpha": 10000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.14507860367186995,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.14793671042777973,
+      "alpha": 1.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.11865980950391804,
+      "alpha": 1.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.12004494105334443,
+      "alpha": 10.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.12116477873859133,
+      "alpha": 100.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1206254847002644,
+      "alpha": 10.0,
+      "option": 0
+    }
+  ],
+  "gaussian": [
+    {
+      "inner_score": 0.14681174089068824,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.131602305994168,
+      "alpha": 1.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.11560816769998782,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.12929592889787495,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1615151986447873,
+      "alpha": 100.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1270736840151864,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.09413665505913346,
+      "alpha": 1.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1503032107211674,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1167471886690748,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.13232430245041793,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.12360466453787991,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.11931731335944885,
+      "alpha": 1.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.143222592680797,
+      "alpha": 1.0,
+      "option": 0
+    }
+  ],
+  "timing": [
+    {
+      "inner_score": 0.11638728918140681,
+      "alpha": 100.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1221700016038804,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1473974351377806,
+      "alpha": 100.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.19354230466570138,
+      "alpha": 100.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.14368213240393693,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.09991062383925345,
+      "alpha": 100000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.10751920598547618,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.13554647751629173,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.13117633735638018,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.14755534485547236,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.1694255692707705,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.155626733758577,
+      "alpha": 1000.0,
+      "option": 0
+    },
+    {
+      "inner_score": 0.12642477590679543,
+      "alpha": 0.1,
+      "option": 0
+    }
+  ],
+  "position": [
+    {
+      "inner_score": 0.16600083353179326,
+      "alpha": 0.1,
+      "option": 4
+    },
+    {
+      "inner_score": 0.11986358768755939,
+      "alpha": 100.0,
+      "option": 2
+    },
+    {
+      "inner_score": 0.1483186287803772,
+      "alpha": 0.1,
+      "option": 5
+    },
+    {
+      "inner_score": 0.1279462097684123,
+      "alpha": 1.0,
+      "option": 5
+    },
+    {
+      "inner_score": 0.13028263937153808,
+      "alpha": 0.1,
+      "option": 0
+    },
+    {
+      "inner_score": 0.167424753835052,
+      "alpha": 10.0,
+      "option": 3
+    },
+    {
+      "inner_score": 0.1346764893897043,
+      "alpha": 1.0,
+      "option": 5
+    },
+    {
+      "inner_score": 0.17701825651129058,
+      "alpha": 1000.0,
+      "option": 4
+    },
+    {
+      "inner_score": 0.16796040349267305,
+      "alpha": 100.0,
+      "option": 2
+    },
+    {
+      "inner_score": 0.2179545550060939,
+      "alpha": 1.0,
+      "option": 4
+    },
+    {
+      "inner_score": 0.15950257173167393,
+      "alpha": 0.1,
+      "option": 5
+    },
+    {
+      "inner_score": 0.16805735229808325,
+      "alpha": 1.0,
+      "option": 4
+    },
+    {
+      "inner_score": 0.14349979820925285,
+      "alpha": 100.0,
+      "option": 1
+    }
+  ]
+}

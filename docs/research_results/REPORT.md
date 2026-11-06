@@ -296,6 +296,8 @@ A frozen position test then fitted EEG to list position only and copied the text
 
 A check of GLIM's public test outputs, with no EEG read, reproduced 21.46% at 10-way across tasks, near the 21.91% reported for GLIM. Within a single task those outputs scored 9.73% to 14.25%, and at 2-way movie reviews against biographies scored 87.36% to 93.57%, while biography tasks against each other scored 51.89% to 60.66%. SemKey's outputs are not public, so it was not tested. [Full results](glim_output_check_20261106/REPORT.md).
 
+An averaged-EEG test (v5) then averaged whole-sentence EEG features across readers and scored held-out list blocks, on 255 reused sentences. Within a block at 10-way it scored 11.25%, against 12.13% for matched noise, 12.07% for timing with no EEG and 10.18% for shuffled pairs, so no sentence signal was found with these features. New readers on new sentences scored 9.67%. No final test data was scored. [Full results](averaged_eeg_v5_20261106/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.
