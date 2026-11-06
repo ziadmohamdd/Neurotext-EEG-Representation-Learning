@@ -41,6 +41,8 @@ The local run held out 10% of sentences by unique text and used SemKey-style tri
 
 ## Is the idea already published?
 
+**Update on 2026-11-06:** the [systematic search](literature_search_20261106/REVIEW.md) replaces this section. It found that ZuCo block decoding is already published, and that public code overlaps with these claims.
+
 I found no paper that measures a list-position or neighbouring-text route in ZuCo sentence retrieval. The search covered several web searches and one [OpenAlex](https://openalex.org) query, and Semantic Scholar's citation lookups were rate-limited. **It is not a systematic review, and citations have not been traced.**
 
 The closest work, which any paper would have to cite and separate itself from:
