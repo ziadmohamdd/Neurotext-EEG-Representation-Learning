@@ -50,7 +50,7 @@ None of this raises decoding accuracy. The search was not exhaustive: keyword ru
 
 1. Is a benchmark audit an acceptable outcome, given that decoding has not improved?
 2. Is the paper worth pursuing, given the public code overlap, and should I contact those authors?
-3. Should I ask SemKey's authors for their outputs, or retrain the model myself?
+3. I asked SemKey's authors for their outputs on 6 November. If they cannot share them, should I retrain the model myself?
 4. Should I stop decoding work, or test the first-fixation waveform once more under a frozen plan?
 
 Full results: [GLIM output check](research_results/glim_output_check_20261106/REPORT.md), [averaged-EEG test v5](research_results/averaged_eeg_v5_20261106/REPORT.md), [word-locked test v6](research_results/word_locked_v6_20261106/REPORT.md), [same-sentence test v7](research_results/same_sentence_v7_20261106/REPORT.md), [position test v4](research_results/position_bridge_v4_20261105/REPORT.md).

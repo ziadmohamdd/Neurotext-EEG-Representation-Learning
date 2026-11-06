@@ -5,7 +5,7 @@
 | Weakness | Fix | Needs | Status |
 |---|---|---|---|
 | Content or recording block | Same-sentence test, v7 | Local data only | Run, no match beyond noise; only partly resolved |
-| Only one published model | Ask SemKey's authors for outputs, then retrain only if refused | An email from the owner, or 52.1 GB and a larger GPU | Owner will ask the supervisor first; no email sent |
+| Only one published model | Ask SemKey's authors for outputs, then retrain only if refused | An email from the owner, or 52.1 GB and a larger GPU | Owner emailed the authors on 2026-11-06; waiting for a reply, reminder after about two weeks |
 | Reused sentences | Score the v2 test blocks once, last | The owner's decision and a final design | Keep closed for now |
 | Others may publish first | Finish the local test, then decide with the supervisor | Supervisor's answer | Waiting |
 
@@ -68,6 +68,6 @@ The v2 test blocks are the only clean data left and can be scored only once, so 
 
 1. Freeze and run v7, which needs no download. Done.
 2. Send the supervisor summary with the v7 result if it is ready.
-3. Ask SemKey's authors for their outputs, if the supervisor agrees. This is question 3 in the summary.
+3. Ask SemKey's authors for their outputs. Sent on 2026-11-06.
 4. Decide on retraining only if they cannot share them.
 5. Score the v2 test blocks last.
