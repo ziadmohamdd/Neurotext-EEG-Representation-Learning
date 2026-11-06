@@ -1,0 +1,13 @@
+{
+  "failures": [],
+  "worst": {
+    "jaccard": 0.3548387096774194,
+    "containment": 0.7,
+    "cosine": 0.820650577545166
+  },
+  "min_list_distance_held_out_to_train": 11,
+  "blocks": 13,
+  "scored_sentences": 255,
+  "usable_observations": 6028,
+  "usable_sentences": 419
+}
