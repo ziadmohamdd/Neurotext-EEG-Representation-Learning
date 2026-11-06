@@ -1,7 +1,7 @@
 {
   "version": "word_locked_v6_20261106",
-  "status": "proposed_20261106_not_approved",
-  "requires": "Averaged-EEG test v5 reported; owner approval; exact word counts recorded, synthetic tests and leakage audit passing, and SHA-256 recorded in the run script before any EEG feature is fitted",
+  "status": "approved_20261106",
+  "requires": "Owner approval on 2026-11-06; exact word counts recorded, synthetic tests and leakage audit passing, and SHA-256 recorded in the run script before any EEG feature is fitted",
   "seed": 42,
   "question": "On held-out list blocks, does EEG locked to each fixated word predict word meaning well enough to tell sentences apart within a block, beyond matched noise, shuffled pairs, gaze and word properties, and list position?",
   "cohort": {
@@ -14,8 +14,14 @@
     "new_downloads": false,
     "observations_usable": 6028,
     "sentences_usable": 419,
-    "word_rows_estimate": "About 82,000 usable word rows and 51,000 of them in scored sentences; estimated from the 2026-10-30 census, exact counts recorded before freezing"
+    "word_rows": {
+      "word_rows": 83798,
+      "scored_word_rows": 48996,
+      "word_types": 2501,
+      "readers_with_rows": 30
+    }
   },
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
   "sources": {
     "files": "Existing local results*_NR.mat files for 12 ZuCo 1.0 and 18 ZuCo 2.0 readers, opened read-only, hashes checked",
     "cache_policy": "Word rows are written to a new versioned folder; no existing dataset, cache or result is changed",
@@ -63,25 +69,46 @@
   "reader_scaling": "Z-scored per reader and fold, using that reader's training word rows only",
   "model": {
     "type": "Ridge from word features to word embedding; no word text is an input",
-    "alphas": [0.1, 1, 10, 100, 1000, 10000, 100000],
+    "alphas": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
     "alpha_selection": "Inside each fold's training data only: one seeded contiguous 25-position block per release plus 10 positions each side are held back, scored with the primary metric, then the model is refit on all of that fold's training word rows"
   },
   "sentence_prediction": {
     "word_slot": "Mean prediction across the readers who fixated that word in that sentence",
     "sentence": "Mean over the sentence's fixated word slots",
-    "reader_counts_for_curve": [1, 2, 4, 8, "all"],
+    "reader_counts_for_curve": [
+      1,
+      2,
+      4,
+      8,
+      "all"
+    ],
     "subset_draws": "Mean score over 20 seeded reader subsets per sentence for counts below all",
     "subset_draws_count": 20
   },
   "arms_shuffles": 10,
   "arms": {
     "real": "Real word features",
-    "gaussian": "Matched noise per word: the mean of that observation's word vectors plus Gaussian noise, with each feature's spread taken from that reader's training rows. Keeps observation-level amplitude, fixation pattern and row count, and removes word-specific EEG",
+    "gaussian": "Matched noise per word: the mean of that observation's word vectors plus Gaussian noise, with each feature's spread taken from that reader's within-observation variation in training rows. Keeps observation-level amplitude, fixation pattern and row count, and removes word-specific EEG",
     "class_shuffled": "Training sentences' word targets permuted by sentence within release, keeping each sentence's token count where possible, mean of 10 shuffles",
     "gaze_word": "Ridge with no EEG on token length, log training frequency of the token, TRT duration, number of fixations, word position, sentence word count and release flag",
     "position": {
       "input": "Release flag and Fourier basis of list position; no EEG",
-      "fourier_terms": [2, 5, 10, 20, 40, 80],
+      "fourier_terms": [
+        2,
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
       "selection": "Same inside-fold procedure as alpha"
     },
     "partial": "Inside each held-out block, remove from real and noise sentence predictions what list position, its square, word count, mean TRT duration and fixated-word count explain linearly. Refits nothing"
@@ -97,11 +124,18 @@
       "Share of held-out tokens whose word type occurs in that fold's training data",
       "First-fixation waveform input, real and noise",
       "New readers: seeded half of each release's readers for fitting, the other half for scoring, on the same held-out blocks; real, noise and shuffled"
-    ]
+    ],
+    "scoring": "Every N-way score subtracts the pool mean from predictions and from candidates before cosine, so a candidate close to the average sentence cannot win for every query. The same applies inside alpha selection"
   },
   "decision_rule": {
     "minimum_gap_points": 2.0,
-    "comparators": ["gaussian", "class_shuffled", "gaze_word", "position", "partial"],
+    "comparators": [
+      "gaussian",
+      "class_shuffled",
+      "gaze_word",
+      "position",
+      "partial"
+    ],
     "bootstrap": "10000 resamples of sentences and of blocks; 2000 of readers within release, recomputing the average, for gaussian and class_shuffled. Two-sided 95% intervals",
     "clear": "Gap at least the minimum and every available lower bound above 0",
     "beats_nulls": "gaussian and class_shuffled both clear",
@@ -140,7 +174,8 @@
       "Noise with no signal stays at chance at every reader count",
       "Signals carrying only list position, word length, frequency or fixation duration do not earn the first reading, checked over 20 seeds each",
       "A signal present only at sentence level, shared by all a sentence's words, is not counted as word-locked by the noise arm"
-    ]
+    ],
+    "false_pass_check": "On synthetic fixtures before freezing: position-only, length-only, frequency-only and duration-only signals each earned the first reading on 0 of 20 seeds; planted word signals earned it on the seeds checked, and a sentence-level signal did not"
   },
   "test_policy": "No final test data is scored. Any later confirmation on the v2 test blocks needs a new plan and the owner's decision",
   "stop_rule": "Stop after this run whatever the outcome. No extra settings or models under this plan.",

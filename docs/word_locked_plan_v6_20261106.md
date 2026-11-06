@@ -1,6 +1,6 @@
 # Word-locked test: plan v6
 
-**Status: proposed on 2026-11-06, not approved and not run.** [The config](../configs/word_locked_v6_20261106.json) freezes once the owner approves, exact word counts are recorded and the synthetic tests pass. Any later change needs a new version.
+**Status: approved by the project owner on 2026-11-06.** [The config](../configs/word_locked_v6_20261106.json) is frozen, and its SHA-256 is recorded in `scripts/run_word_locked.py`. Any later change needs a new version.
 
 This is the last untested route to a real accuracy gain on held-out blocks. [Test v5](research_results/averaged_eeg_v5_20261106/REPORT.md) found no signal in whole-sentence features, but those features ignore timing inside a sentence.
 
@@ -31,7 +31,7 @@ A sentence's meaning here is roughly the sum of its words, which is crude. The u
 ## Sizes
 
 - **Sentences:** the same as v5, with 419 usable and 255 scored across 13 blocks.
-- **Word rows:** about 82,000 usable, with about 51,000 in scored sentences. These are estimates from the 2026-10-30 census, and exact counts will be recorded before freezing.
+- **Word rows:** 83,798 usable, with 48,996 in scored sentences, from 2,501 word types and 30 readers.
 
 ## Controls
 
@@ -42,6 +42,14 @@ A sentence's meaning here is roughly the sum of its words, which is crude. The u
 | Gaze and word properties, no EEG | Word length, frequency, reading time, fixations and word position |
 | List position, no EEG | Place in the list, even inside a block |
 | Partial check | Inside each block, removes linear effects of position, word count, duration and fixated-word count from real and noise predictions |
+
+## Changes made after approval and before freezing
+
+No model had been fitted to real EEG when these were made. Word rows had been read from source files to count them.
+
+- **Scoring now centres each pool:** on synthetic data, a candidate close to the average sentence won for almost every query. So a clear planted word signal scored only 18% to 23%, and gaze with no EEG reached 20% on one seed. Every N-way score now subtracts the pool mean from predictions and candidates first. Planted signals then scored 76% to 86%. This means these scores are not on exactly the same scale as v5.
+- **Noise spread:** the first noise arm used each reader's total spread, which let a sentence-level signal pass as word-locked. It now uses the spread within an observation, and that signal no longer earns the first reading.
+- **Synthetic check:** position-only, length-only, frequency-only and duration-only signals each earned the first reading on 0 of 20 seeds. Everyday test runs keep 5 of those seeds for speed.
 
 ## Reading
 
