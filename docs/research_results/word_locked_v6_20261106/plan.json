@@ -1,0 +1,188 @@
+{
+  "plan_sha256": "3f4053515a3128dfc3269ad44e8eb6ca2cc6aa6cd4ad1a326112b323b7fca8ff",
+  "plan": {
+    "version": "word_locked_v6_20261106",
+    "status": "approved_20261106",
+    "requires": "Owner approval on 2026-11-06; exact word counts recorded, synthetic tests and leakage audit passing, and SHA-256 recorded in the run script before any EEG feature is fitted",
+    "seed": 42,
+    "question": "On held-out list blocks, does EEG locked to each fixated word predict word meaning well enough to tell sentences apart within a block, beyond matched noise, shuffled pairs, gaze and word properties, and list position?",
+    "cohort": {
+      "manifests": [
+        "data/manifests/zuco1_duration_qc.jsonl",
+        "data/manifests/zuco2_duration_qc.jsonl"
+      ],
+      "readers": 30,
+      "task": "nr",
+      "new_downloads": false,
+      "observations_usable": 6028,
+      "sentences_usable": 419,
+      "word_rows": {
+        "word_rows": 83798,
+        "scored_word_rows": 48996,
+        "word_types": 2501,
+        "readers_with_rows": 30
+      }
+    },
+    "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+    "sources": {
+      "files": "Existing local results*_NR.mat files for 12 ZuCo 1.0 and 18 ZuCo 2.0 readers, opened read-only, hashes checked",
+      "cache_policy": "Word rows are written to a new versioned folder; no existing dataset, cache or result is changed",
+      "pairing": "Word index joins each word record to the token at that position in the manifest sentence; the run stops if a sentence's word count differs from its token count"
+    },
+    "protected": {
+      "policy": "v1 test sentences, v2 test blocks and their buffers are never fitted or scored. Their word fields are discarded on read without being stored, because the source files are streams; their word records are skipped where the format allows. A run-time audit refuses to continue otherwise",
+      "v2_test_zone": {
+        "block": 25,
+        "buffer": 10,
+        "val_blocks": 2,
+        "test_blocks": 2
+      }
+    },
+    "folds": {
+      "source": "The same 13 held-out blocks as averaged-EEG test v5, with 10 list positions of buffer on each side",
+      "buffer_sentences": 10,
+      "minimum_scored_per_block": 10,
+      "blocks": {
+        "zuco1": 5,
+        "zuco2": 8
+      },
+      "scored": {
+        "zuco1_sentences": 105,
+        "zuco1_observations": 1206,
+        "zuco2_sentences": 150,
+        "zuco2_observations": 2509
+      }
+    },
+    "targets": {
+      "word_training_target": "New: all-MiniLM-L6-v2 embedding of each token, lowercased with edge punctuation removed, in a new separate cache at the pinned revision",
+      "primary_candidate": "New: mean of the candidate sentence's token embeddings, over all its tokens",
+      "secondary_candidate": "Unchanged MiniLM sentence embedding from the existing text cache",
+      "existing_targets_changed": false
+    },
+    "inputs": {
+      "primary": {
+        "features": "Supplied TRT word features: 8 bands by 104 channels with Cz removed, 832 values, using log1p of the supplied amplitude",
+        "usable_word": "All 832 values finite; words with no finite vector are not fixated and contribute no row"
+      },
+      "secondary_waveform": {
+        "features": "Raw first-fixation snippet with Cz removed: mean amplitude in 50 ms bins up to 300 ms, 104 channels by 6 bins, 624 values; bins past the end of a fixation are 0 after scaling"
+      }
+    },
+    "reader_scaling": "Z-scored per reader and fold, using that reader's training word rows only",
+    "model": {
+      "type": "Ridge from word features to word embedding; no word text is an input",
+      "alphas": [
+        0.1,
+        1,
+        10,
+        100,
+        1000,
+        10000,
+        100000
+      ],
+      "alpha_selection": "Inside each fold's training data only: one seeded contiguous 25-position block per release plus 10 positions each side are held back, scored with the primary metric, then the model is refit on all of that fold's training word rows"
+    },
+    "sentence_prediction": {
+      "word_slot": "Mean prediction across the readers who fixated that word in that sentence",
+      "sentence": "Mean over the sentence's fixated word slots",
+      "reader_counts_for_curve": [
+        1,
+        2,
+        4,
+        8,
+        "all"
+      ],
+      "subset_draws": "Mean score over 20 seeded reader subsets per sentence for counts below all",
+      "subset_draws_count": 20
+    },
+    "arms_shuffles": 10,
+    "arms": {
+      "real": "Real word features",
+      "gaussian": "Matched noise per word: the mean of that observation's word vectors plus Gaussian noise, with each feature's spread taken from that reader's within-observation variation in training rows. Keeps observation-level amplitude, fixation pattern and row count, and removes word-specific EEG",
+      "class_shuffled": "Training sentences' word targets permuted by sentence within release, keeping each sentence's token count where possible, mean of 10 shuffles",
+      "gaze_word": "Ridge with no EEG on token length, log training frequency of the token, TRT duration, number of fixations, word position, sentence word count and release flag",
+      "position": {
+        "input": "Release flag and Fourier basis of list position; no EEG",
+        "fourier_terms": [
+          2,
+          5,
+          10,
+          20,
+          40,
+          80
+        ],
+        "selection": "Same inside-fold procedure as alpha"
+      },
+      "partial": "Inside each held-out block, remove from real and noise sentence predictions what list position, its square, word count, mean TRT duration and fixated-word count explain linearly. Refits nothing"
+    },
+    "evaluation": {
+      "primary": "Expected 10-way top-1 within each query's own held-out block against primary candidates, all readers averaged, equal weight per sentence, ties are misses; chance 10%",
+      "secondary": [
+        "Score against reader count for real and noise; one reader is the closest to real single-recording use",
+        "Unchanged sentence-embedding candidates",
+        "Expected 2-way, 4-way, 10-way and 24-way against all scored sentences in the release",
+        "Each release separately",
+        "Direct word test: expected 10-way among each block's unique word types, for real, noise and gaze_word",
+        "Share of held-out tokens whose word type occurs in that fold's training data",
+        "First-fixation waveform input, real and noise",
+        "New readers: seeded half of each release's readers for fitting, the other half for scoring, on the same held-out blocks; real, noise and shuffled"
+      ],
+      "scoring": "Every N-way score subtracts the pool mean from predictions and from candidates before cosine, so a candidate close to the average sentence cannot win for every query. The same applies inside alpha selection"
+    },
+    "decision_rule": {
+      "minimum_gap_points": 2.0,
+      "comparators": [
+        "gaussian",
+        "class_shuffled",
+        "gaze_word",
+        "position",
+        "partial"
+      ],
+      "bootstrap": "10000 resamples of sentences and of blocks; 2000 of readers within release, recomputing the average, for gaussian and class_shuffled. Two-sided 95% intervals",
+      "clear": "Gap at least the minimum and every available lower bound above 0",
+      "beats_nulls": "gaussian and class_shuffled both clear",
+      "outcomes": [
+        {
+          "condition": "Beats nulls, and gaze_word, position and partial all clear",
+          "label": "Word-locked EEG carries sentence information beyond the controls"
+        },
+        {
+          "condition": "Beats nulls, and gaze_word, position or partial does not clear",
+          "label": "The gain does not exceed gaze, word properties or position"
+        },
+        {
+          "condition": "Does not beat nulls",
+          "label": "No sentence signal found with word-locked features"
+        }
+      ],
+      "secondary_scope": "Secondary results never change the label"
+    },
+    "audit": {
+      "limits": {
+        "jaccard": 0.7,
+        "containment": 0.8,
+        "cosine": 0.9
+      },
+      "refuse_if": [
+        "A protected sentence reaches a stored row, fit or score",
+        "A held-out sentence key, sentence group or signal file appears in that fold's training",
+        "A training sentence is within 10 list positions of the fold's block in the same release",
+        "Token Jaccard at least 0.7, token containment at least 0.8 or text cosine at least 0.9 across a fold boundary",
+        "A word's text, eye-tracking values or word boxes enter an EEG arm's features",
+        "Scaling statistics use a held-out row"
+      ],
+      "tests_before_run": [
+        "A planted word-meaning signal is recovered, and improves with reader count",
+        "Noise with no signal stays at chance at every reader count",
+        "Signals carrying only list position, word length, frequency or fixation duration do not earn the first reading, checked over 20 seeds each",
+        "A signal present only at sentence level, shared by all a sentence's words, is not counted as word-locked by the noise arm"
+      ],
+      "false_pass_check": "On synthetic fixtures before freezing: position-only, length-only, frequency-only and duration-only signals each earned the first reading on 0 of 20 seeds; planted word signals earned it on the seeds checked, and a sentence-level signal did not"
+    },
+    "test_policy": "No final test data is scored. Any later confirmation on the v2 test blocks needs a new plan and the owner's decision",
+    "stop_rule": "Stop after this run whatever the outcome. No extra settings or models under this plan.",
+    "output": "results/word_locked_v6_20261106/",
+    "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+  },
+  "git_head": "4bae811ba22af948b09394a2714990e6274e9584"
+}
