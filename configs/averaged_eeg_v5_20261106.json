@@ -1,0 +1,137 @@
+{
+  "version": "averaged_eeg_v5_20261106",
+  "status": "proposed_20261106_not_approved",
+  "requires": "Owner approval; synthetic tests passing; SHA-256 recorded in the run script before any EEG is read",
+  "seed": 42,
+  "question": "On held-out list blocks, does EEG averaged across readers beat matched noise, shuffled pairs, timing and list position at telling sentences apart within a block?",
+  "cohort": {
+    "manifests": [
+      "data/manifests/zuco1_duration_qc.jsonl",
+      "data/manifests/zuco2_duration_qc.jsonl"
+    ],
+    "readers": 30,
+    "task": "nr",
+    "new_downloads": false,
+    "observations_in_manifests": 9233,
+    "observations_usable": 6028,
+    "sentences_usable": 419
+  },
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+  "targets_changed": false,
+  "protected": {
+    "policy": "v1 test sentences, v2 test blocks and their buffers are never read, fitted or scored; a run-time audit refuses to continue otherwise",
+    "v2_test_zone": {
+      "block": 25,
+      "buffer": 10,
+      "val_blocks": 2,
+      "test_blocks": 2
+    }
+  },
+  "folds": {
+    "unit": "One contiguous block of the list, in sentence ID order, separately for each release",
+    "placement": "Tile 25 list positions at a time from the start of each run outside the v2 test zone; no block crosses the zone",
+    "scored_sentences": "Tiled-block sentences that are not protected and not repeated, shared between releases, near-duplicated or nearly contained in another sentence",
+    "minimum_scored_per_block": 10,
+    "blocks": {
+      "zuco1": 5,
+      "zuco2": 8
+    },
+    "scored": {
+      "zuco1_sentences": 105,
+      "zuco1_observations": 1206,
+      "zuco2_sentences": 150,
+      "zuco2_observations": 2509
+    },
+    "buffer_policy": "For each fold, training leaves out the block and 10 list positions on each side, in that release",
+    "training_policy": "All other usable observations from both releases"
+  },
+  "inputs": {
+    "primary": {
+      "notch_hz": 50,
+      "drop_channels": ["Cz"],
+      "window": "Whole sentence, center crop only above 30 seconds",
+      "features": "Existing eeg_features statistical summaries"
+    },
+    "secondary_time_binned": {
+      "notch_hz": 50,
+      "drop_channels": ["Cz"],
+      "window": "Whole sentence, center crop only above 30 seconds",
+      "features": "Mean amplitude per channel in 20 equal fractions of the sentence"
+    }
+  },
+  "reader_scaling": "Features are computed once with no reader normalization, then z-scored per reader and fold using that reader's training rows only",
+  "averaging": {
+    "scored_unit": "One prediction per sentence",
+    "primary": "Mean of all available readers' scaled features for that sentence",
+    "reader_counts_for_curve": [1, 2, 4, 8, "all"],
+    "subset_draws": "Mean score over 20 seeded reader subsets per sentence for counts below all"
+  },
+  "model": {
+    "type": "Ridge from scaled features to the fixed text embeddings",
+    "primary_fit": "Single-reader training rows",
+    "alphas": [0.1, 1, 10, 100, 1000, 10000, 100000],
+    "alpha_selection": "Inside each fold's training data only: one seeded contiguous 25-position block per release plus 10 positions each side are held back, scored on averaged features with the primary metric, then the model is refit on all of that fold's training rows"
+  },
+  "arms": {
+    "real": "Real EEG, averaged",
+    "gaussian": "Matched noise per observation, keeping channel amplitudes, averaged the same way",
+    "class_shuffled": "Training targets permuted by sentence within release, mean of 10 shuffles",
+    "timing": "Ridge on averaged duration, word count and a training-derived word-count basis; no EEG amplitudes",
+    "position": {
+      "input": "Release flag and Fourier basis of list position; no EEG",
+      "fourier_terms": [2, 5, 10, 20, 40, 80],
+      "selection": "Same inside-fold procedure as alpha"
+    }
+  },
+  "evaluation": {
+    "primary": "Expected 10-way top-1 within each query's own held-out block, equal weight per sentence, ties are misses; chance 10%",
+    "secondary": [
+      "Score against reader count for real and noise",
+      "Expected 2-way, 4-way, 10-way and 24-way against all scored sentences in the release",
+      "Each release separately",
+      "Time-binned input",
+      "Model fitted on sentence means instead of single-reader rows",
+      "New readers: seeded half of each release's readers for fitting, the other half averaged for scoring, on the same held-out blocks; reported for real, noise and shuffled"
+    ]
+  },
+  "decision_rule": {
+    "minimum_gap_points": 2.0,
+    "comparators": ["gaussian", "class_shuffled", "timing", "position"],
+    "bootstrap": "10000 resamples of sentences and of blocks; 2000 of readers, recomputing the average. Two-sided 95% intervals for real minus gaussian and real minus class_shuffled",
+    "beats_nulls": "Gaps over gaussian and class_shuffled both at least the minimum, with all three lower bounds above 0 for both",
+    "outcomes": [
+      {
+        "condition": "Beats nulls, and gaps over timing and position both at least the minimum",
+        "label": "Averaged EEG carries sentence information beyond the controls"
+      },
+      {
+        "condition": "Beats nulls, and a gap over timing or position is below the minimum",
+        "label": "The gain does not exceed timing or position"
+      },
+      {
+        "condition": "Does not beat nulls",
+        "label": "No sentence signal found with these features"
+      }
+    ],
+    "secondary_scope": "Secondary results never change the label"
+  },
+  "audit": {
+    "refuse_if": [
+      "A protected sentence reaches a read, fit or score",
+      "A held-out sentence key, sentence group or signal file appears in that fold's training",
+      "A training sentence is within 10 list positions of the fold's block in the same release",
+      "Token Jaccard at least 0.7, token containment at least 0.8 or text cosine at least 0.9 across a fold boundary",
+      "Scaling statistics use a held-out row"
+    ],
+    "tests_before_run": [
+      "A planted sentence signal is recovered, and improves with reader count",
+      "Noise with no signal stays at chance at every reader count",
+      "A position-only signal does not produce the first outcome",
+      "A duration-only signal does not produce the first outcome"
+    ]
+  },
+  "test_policy": "No final test data is scored. Any later confirmation on the v2 test blocks needs a new plan and the owner's decision",
+  "stop_rule": "Stop after this run whatever the outcome. No extra settings or models under this plan.",
+  "output": "results/averaged_eeg_v5_20261106/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}
