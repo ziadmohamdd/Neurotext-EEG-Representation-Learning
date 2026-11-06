@@ -298,6 +298,8 @@ A check of GLIM's public test outputs, with no EEG read, reproduced 21.46% at 10
 
 An averaged-EEG test (v5) then averaged whole-sentence EEG features across readers and scored held-out list blocks, on 255 reused sentences. Within a block at 10-way it scored 11.25%, against 12.13% for matched noise, 12.07% for timing with no EEG and 10.18% for shuffled pairs, so no sentence signal was found with these features. New readers on new sentences scored 9.67%. No final test data was scored. [Full results](averaged_eeg_v5_20261106/REPORT.md).
 
+A word-locked test (v6) then predicted each fixated word's meaning from its supplied band features, on the same 255 reused sentences and held-out blocks. Within a block at 10-way it scored 14.55%, against 16.25% for matched noise, 26.05% for gaze and word properties with no EEG and 10.37% for shuffled pairs, so no sentence signal was found with these features. Removing list position, word count, reading time and fixated-word count took real EEG to 10.02%. New readers on new sentences scored 13.22%, against 13.31% for noise. No final test data was scored. [Full results](word_locked_v6_20261106/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.
