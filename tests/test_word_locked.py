@@ -251,3 +251,13 @@ def test_tokens_lose_edge_punctuation_and_case_only():
     assert runner.normal_token('"Henry,') == 'henry'
     assert runner.normal_token("Ford's") == "ford's"
     assert runner.normal_token('--') == '--'
+
+
+def test_a_prediction_with_no_length_left_counts_as_a_miss():
+    rng = np.random.default_rng(0)
+    candidates = rng.normal(size=(12, 5))
+    predicted = rng.normal(size=(12, 5))
+    predicted[3] = predicted[np.arange(12) != 3].mean(0)
+    scores = locked.centered_scores(predicted, candidates)
+    assert np.allclose(scores[3], 0)
+    assert locked.within_score(predicted, candidates)[3] == 0

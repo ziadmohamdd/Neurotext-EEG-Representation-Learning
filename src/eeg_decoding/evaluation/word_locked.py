@@ -82,7 +82,21 @@ class GramSolver:
 
 def centered_scores(predicted, candidates):
     """Cosine after removing each pool's mean, so a candidate close to the average sentence cannot win for every query."""
-    return normalize(predicted - predicted.mean(0)) @ normalize(candidates - candidates.mean(0)).T
+    return _unit(predicted - predicted.mean(0)) @ _unit(candidates - candidates.mean(0)).T
+
+
+def _unit(x):
+    """Unit rows in double precision. A row with no length left scores 0 everywhere, so it ties and counts as a miss."""
+    x = np.asarray(x, dtype=np.float64)
+    if x.ndim != 2 or not np.isfinite(x).all():
+        raise ValueError('Embeddings must be finite matrices')
+    norms = np.linalg.norm(x, axis=1, keepdims=True)
+    return np.divide(x, norms, out=np.zeros_like(x), where=norms > max(float(norms.max()), 1e-300) * 1e-9)
+
+
+def zero_rows(scored, averaged):
+    """How many sentences have no prediction left after centring within their block."""
+    return int(sum((np.abs(_unit(averaged[b] - averaged[b].mean(0))).sum(1) == 0).sum() for b in scored.blocks))
 
 
 def within_score(predicted, candidates, way=PRIMARY):
@@ -422,6 +436,7 @@ def run_test(data, bands, waves, sentence_text, position_terms, plan, status=pri
     values['gaussian_partial'] = scored.within(scored.partial(scored.average(gaussian), covariates))
     primary = {name: float(v.mean()) for name, v in values.items()}
     status(f'Primary 10-way within block: {primary}')
+    unscorable = {name: zero_rows(scored, scored.partial(scored.average(p), covariates)) for name, p in (('real', real), ('gaussian', gaussian))}
     gaps = {name: primary['real'] - primary[name] for name in ('gaussian', 'class_shuffled', 'gaze_word', 'position')}
     gaps['partial'] = primary['real_partial'] - primary['gaussian_partial']
     intervals = {name: resample_gap(values['real'] - values[name], scored.block_of, iterations, seed) for name in gaps if name != 'partial'}
@@ -432,7 +447,7 @@ def run_test(data, bands, waves, sentence_text, position_terms, plan, status=pri
     for name in readers:
         lower[name]['reader'] = readers[name][0]
     decision = read_outcome(gaps, lower, plan['decision_rule']['minimum_gap_points'] / 100)
-    decision.update(primary=primary, intervals=intervals, reader_intervals=readers)
+    decision.update(primary=primary, intervals=intervals, reader_intervals=readers, partial_sentences_with_no_prediction_left=unscorable)
 
     status('SECONDARY reader counts, pools and word test')
     secondary = {'by_release': {name: scored.by_release(v) for name, v in values.items()},
@@ -463,5 +478,5 @@ def run_test(data, bands, waves, sentence_text, position_terms, plan, status=pri
     return {'decision': decision, 'secondary': secondary, 'selection': selection, 'values': values}
 
 
-__all__ = ['FIRST', 'GramSolver', 'SECOND', 'THIRD', 'Table', 'WordData', 'WordScored', 'fit_fold', 'gaze_options', 'half_readers', 'noise_options',
+__all__ = ['FIRST', 'centered_scores', 'zero_rows', 'GramSolver', 'SECOND', 'THIRD', 'Table', 'WordData', 'WordScored', 'fit_fold', 'gaze_options', 'half_readers', 'noise_options',
            'read_outcome', 'resample_readers', 'run_arm', 'run_test', 'scale_rows', 'seen_type_share', 'sentence_means', 'shuffled_table']
