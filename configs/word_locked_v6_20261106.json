@@ -76,7 +76,7 @@
   "arms_shuffles": 10,
   "arms": {
     "real": "Real word features",
-    "gaussian": "Matched noise per word: the mean of that observation's word vectors plus Gaussian noise at reader-level feature spread, computed on training-independent moments of each observation and fitted reader spread. Keeps observation-level amplitude, fixation pattern and row count, and removes word-specific EEG",
+    "gaussian": "Matched noise per word: the mean of that observation's word vectors plus Gaussian noise, with each feature's spread taken from that reader's training rows. Keeps observation-level amplitude, fixation pattern and row count, and removes word-specific EEG",
     "class_shuffled": "Training sentences' word targets permuted by sentence within release, keeping each sentence's token count where possible, mean of 10 shuffles",
     "gaze_word": "Ridge with no EEG on token length, log training frequency of the token, TRT duration, number of fixations, word position, sentence word count and release flag",
     "position": {
