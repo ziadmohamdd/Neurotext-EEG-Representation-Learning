@@ -1,0 +1,104 @@
+{
+  "version": "same_sentence_v7_20261106",
+  "status": "approved_20261106",
+  "requires": "Owner approval on 2026-11-06; synthetic tests passing; SHA-256 recorded in the run script before any score is computed",
+  "seed": 42,
+  "question": "Is a sentence's averaged EEG closer to the same sentence in the other release than to other sentences, beyond noise, length, reading time and list position?",
+  "cohort": {
+    "manifests": [
+      "data/manifests/zuco1_duration_qc.jsonl",
+      "data/manifests/zuco2_duration_qc.jsonl"
+    ],
+    "readers": 30,
+    "readers_per_release": [12, 18],
+    "task": "nr",
+    "new_downloads": false,
+    "observations_usable": 6028
+  },
+  "pairs": {
+    "definition": "Texts identical in both releases after lowercasing and collapsing non-word characters, using each release's earliest list ID. A text with any protected copy is left out",
+    "sentences": 48,
+    "observations": [511, 827],
+    "fewest_readers_per_sentence": [9, 15],
+    "previously_scored_as_held_out_in_v5_or_v6": 0
+  },
+  "protected": {
+    "policy": "v1 test sentences, v2 test blocks and their buffers are never read, fitted or scored. Only metadata marks them; the stored features exclude them",
+    "v2_test_zone": {
+      "block": 25,
+      "buffer": 10,
+      "val_blocks": 2,
+      "test_blocks": 2
+    }
+  },
+  "inputs": {
+    "source": "Stored features from averaged-EEG test v5, opened read-only. No EEG file is opened",
+    "features_file": "results/averaged_eeg_v5_20261106/features.npz",
+    "features_sha256": "b6eeabc2f6e06ecc2059566bc9de18e6f1746554999017a78ce3087dea7cc209",
+    "primary": "Statistical summaries, real and matched noise",
+    "secondary": "Mean amplitude in 20 equal fractions of the sentence, real and matched noise"
+  },
+  "processing": {
+    "reader_scaling": "Z-score each reader from that reader's rows outside the 48 sentences",
+    "averaging": "Mean across all available readers, per sentence, per release",
+    "release_scaling": "Z-score each feature across the 48 sentences, separately within each release",
+    "fitted_to_meaning": "Nothing. No model and no text embedding is used"
+  },
+  "arms": {
+    "real": "Real EEG",
+    "gaussian": "Matched noise per observation, keeping channel amplitudes",
+    "class_shuffled": "Real EEG with the second release re-paired at random, mean of 1000",
+    "timing": "Word count and mean duration only, no EEG amplitudes",
+    "position": "List position and its square only, no EEG",
+    "partial": "Within each release, remove from real and noise what list position, its square, word count and mean duration explain linearly, across the 48 sentences"
+  },
+  "evaluation": {
+    "primary": "Expected 10-way top-1 across releases by cosine, mean of both directions, equal weight per sentence, ties are misses; chance 10%",
+    "shuffles": 1000,
+    "block_near_positions": 25,
+    "block_shuffles": 1000,
+    "secondary": [
+      "Expected 2-way, 4-way, 24-way and 48-way",
+      "Each direction separately",
+      "Mean same-sentence cosine against mean other-sentence cosine",
+      "Correlation of list position, word count and duration between releases",
+      "Time-binned input, with and without the partial check",
+      "Block effect: within each release, across all usable sentences, the mean cosine of pairs within 25 list positions minus farther pairs, against 1000 shuffled lists, with and without length removed, for real and noise"
+    ]
+  },
+  "decision_rule": {
+    "minimum_gap_points": 2.0,
+    "comparators": ["gaussian", "class_shuffled", "timing", "position", "partial"],
+    "bootstrap": "10000 resamples of sentences for all; 2000 of readers within release for gaussian, class_shuffled and partial, recomputing the average. Two-sided 95% intervals",
+    "beats_nulls": "gaussian and class_shuffled both clear",
+    "outcomes": [
+      {
+        "condition": "Beats nulls, and timing, position and partial all clear",
+        "label": "The same sentence matches across releases beyond the controls"
+      },
+      {
+        "condition": "Beats nulls, and timing, position or partial does not clear",
+        "label": "The match does not exceed word count, reading time or position"
+      },
+      {
+        "condition": "Does not beat nulls",
+        "label": "No same-sentence match found with these features"
+      }
+    ],
+    "secondary_scope": "Secondary results never change the label",
+    "clear": "Gap at least the minimum and every available lower bound above 0"
+  },
+  "audit": {
+    "refuse_if": [
+      "A pair includes a protected sentence, or a text with a protected copy",
+      "The stored features' hash, shape or row count differs",
+      "Channel lists differ between rows",
+      "The number of pairs or observations differs from this plan"
+    ],
+    "false_pass_check": "On synthetic fixtures before freezing, over 20 seeds each: no signal, word-count-only, duration-only and position-only signals earned the first reading on 0 of 20. A planted signal earned it on 0 of 10 at strength 0.05 and 0.10, and 10 of 10 from 0.15 upward"
+  },
+  "test_policy": "No final test data is scored. Any later confirmation on the v2 test blocks needs a new plan and the owner's decision",
+  "stop_rule": "Stop after this run whatever the outcome. No extra settings or features under this plan.",
+  "output": "results/same_sentence_v7_20261106/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}
