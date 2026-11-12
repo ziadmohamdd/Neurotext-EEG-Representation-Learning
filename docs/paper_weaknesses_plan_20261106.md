@@ -9,6 +9,8 @@
 | Reused sentences | Score the v2 test blocks once, last | The owner's decision and a final design | Keep closed for now |
 | Others may publish first | Finish the local test, then decide with the supervisor | Supervisor's answer | Waiting |
 
+**Update, 12 November:** [a reading-only check](assumption_and_outputs_check_20261112.md) found public outputs for two more models (Wang and Ji's BART model and Jo et al.'s T5 version), and both dataset papers confirm a fixed presentation order.
+
 ## 1. Content or recording block (v7)
 
 **Idea:** 51 sentence texts appear in both ZuCo 1.0 and ZuCo 2.0 normal reading, so the same words were read in different recording blocks by different people. Of these, 48 are usable in both releases; the other 3 touch the v2 test zone and stay closed.
