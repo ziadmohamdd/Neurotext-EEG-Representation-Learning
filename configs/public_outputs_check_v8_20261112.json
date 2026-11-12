@@ -1,0 +1,111 @@
+{
+  "version": "public_outputs_check_v8_20261112",
+  "status": "draft_not_approved",
+  "requires": "Owner approval of the download and of this plan; synthetic tests passing; SHA-256 recorded in the run script before any score is computed",
+  "seed": 42,
+  "question": "On the public outputs of Wang and Ji's BART model and Jo et al.'s T5 version, does N-way retrieval hold within one corpus, or only when movie reviews and biographies are mixed?",
+  "download": {
+    "approved": false,
+    "total_bytes": 4713314,
+    "destination": "data/external/, kept out of git",
+    "sources": [
+      {
+        "model": "bart",
+        "repository": "https://github.com/MikeWangWZHL/EEG-To-Text",
+        "branch": "main",
+        "commit": "Record at download time",
+        "licence": "No LICENSE file found",
+        "files": {
+          "task1_task2_taskNRv2-BrainTranslator-all_decoding_results.txt": 425337,
+          "task1_task2_taskNRv2-BrainTranslator-intput_noise-all_decoding_results.txt": 425069,
+          "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-all_decoding_results.txt": 527067,
+          "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-intput_noise-all_decoding_results.txt": 525134,
+          "task1_task2_taskNRv2-BrainTranslator_skipstep1-all_generation_results-7_22.txt": 441747
+        }
+      },
+      {
+        "model": "t5",
+        "repository": "https://github.com/NeuSpeech/EEG-To-Text",
+        "branch": "master",
+        "commit": "a07cf91452a4ee67eb413c38ff7bab56c6987545",
+        "licence": "Not verified",
+        "files": {
+          "task1_task2_taskNRv2-T5Translator-all_decoding_results.txt": 594718,
+          "task1_task2_taskNRv2-T5Translator-EEG_noise-all_decoding_results.txt": 594035,
+          "task1_task2_taskNRv2-T5Translator-noise_EEG-all_decoding_results.txt": 589160,
+          "task1_task2_taskNRv2-T5Translator-noise_noise-all_decoding_results.txt": 591047
+        }
+      }
+    ],
+    "left_out": "The four task1_task2_task3 files in the T5 repository. Their task-specific sentences cannot be told from movie reviews with local lists"
+  },
+  "inputs": {
+    "eeg": "None. No EEG file is opened and nothing is trained",
+    "primary_output": "Free generation, trained and tested on EEG: the plain BART file's Predicted field and the plain T5 file's 'predicted string' field",
+    "noise_output": "BART intput_noise file; T5 EEG_noise, noise_EEG and noise_noise files. The meaning of the T5 names is undocumented and is reported as named",
+    "teacher_forced": "Secondary only. These outputs are conditioned on the target text",
+    "embedding": "all-MiniLM-L6-v2, at the revision used in the GLIM check"
+  },
+  "corpus_labels": {
+    "biography": "Target matches a normal-reading sentence in the local ZuCo 1.0 or 2.0 manifests, by squashed text or token Jaccard of at least 0.7",
+    "movie_review": "Every other target, by elimination",
+    "validation": "Compare with the task labels in GLIM's local CSV files wherever a target appears in both"
+  },
+  "protected": {
+    "policy": "Targets matching a v1 test sentence, a v2 test block or its buffer are removed by text before scoring",
+    "v2_test_zone": {
+      "block": 25,
+      "buffer": 10,
+      "val_blocks": 2,
+      "test_blocks": 2
+    }
+  },
+  "evaluation": {
+    "primary": "Expected 10-way top-1 by cosine between each output and the pool of unique test sentences, computed exactly from ranks, ties are misses, averaged within sentence and then across sentences; chance 10%",
+    "pools": ["All sentences", "Movie reviews only", "Biographies only"],
+    "secondary": [
+      "Expected 2-way, 4-way and 24-way",
+      "2-way against same-corpus and different-corpus distractors",
+      "Biographies split by release, where each side has at least 15 sentences",
+      "Corpus label only, no EEG: the mean text of the other test sentences in the query's corpus",
+      "Share of rows whose output is identical to another row's output",
+      "Teacher-forced outputs",
+      "BART generation_results-7_22 file, if its format allows"
+    ]
+  },
+  "decision_rule": {
+    "per_model": true,
+    "minimum_gap_points": 2.0,
+    "bootstrap": "10000 resamples of sentences, two-sided 95% intervals. Readers cannot be resampled, as the files carry no reader labels",
+    "clear": "Gap at least the minimum and the lower bound above 0",
+    "within_corpus": "Sentence-weighted mean of the movie-review and biography pools",
+    "outcomes": [
+      {
+        "condition": "Mixed pool not clear of chance and of noise input",
+        "label": "No retrieval above chance or noise in these outputs"
+      },
+      {
+        "condition": "Mixed pool clear of chance and noise, and mixed minus within-corpus is clear",
+        "label": "The mixed score comes mostly from telling the corpora apart"
+      },
+      {
+        "condition": "Mixed pool clear of chance and noise, and mixed minus within-corpus is not clear",
+        "label": "The score holds within a corpus"
+      }
+    ],
+    "secondary_scope": "Secondary results never change the label"
+  },
+  "audit": {
+    "refuse_if": [
+      "A downloaded file's size differs from this plan, or the plain and noise files of one model list different targets",
+      "Any corpus label by elimination disagrees with a GLIM task label",
+      "A scored target matches a protected sentence",
+      "Either corpus has fewer than 15 scored sentences for a model"
+    ],
+    "false_pass_check": "Before freezing, on synthetic outputs over 20 seeds each: random outputs, corpus-only outputs and sentence-level outputs must earn the first, second and third labels"
+  },
+  "test_policy": "No final test data is scored. These are other authors' public outputs",
+  "stop_rule": "Stop after this run whatever the outcome. No extra files, embeddings or settings under this plan.",
+  "output": "results/public_outputs_check_v8_20261112/",
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+}
