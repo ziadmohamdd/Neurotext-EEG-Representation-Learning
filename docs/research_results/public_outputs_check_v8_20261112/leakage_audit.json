@@ -1,0 +1,32 @@
+{
+  "bart": {
+    "rows_per_file": 1407,
+    "sentences_per_model": 104,
+    "labelled": {
+      "movie_review": 41,
+      "biography": 63
+    },
+    "protected_removed": 25,
+    "scored": {
+      "movie_review": 41,
+      "biography": 38
+    },
+    "failures": [],
+    "sentences_checked_against_glim": 6
+  },
+  "t5": {
+    "rows_per_file": 1407,
+    "sentences_per_model": 104,
+    "labelled": {
+      "movie_review": 41,
+      "biography": 63
+    },
+    "protected_removed": 25,
+    "scored": {
+      "movie_review": 41,
+      "biography": 38
+    },
+    "failures": [],
+    "sentences_checked_against_glim": 6
+  }
+}
