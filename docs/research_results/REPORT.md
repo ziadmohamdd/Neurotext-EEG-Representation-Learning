@@ -302,6 +302,8 @@ A word-locked test (v6) then predicted each fixated word's meaning from its supp
 
 A same-sentence test (v7) then compared 48 sentences read in both releases, with nothing fitted. At 10-way across releases, real EEG scored 28.18%, against 26.68% for matched noise, 54.39% for list position and 52.74% for word count and reading time, so no same-sentence match was found with these features. No final test data was scored. [Full results](same_sentence_v7_20261106/REPORT.md).
 
+A public outputs check (v8) then scored the published test outputs of two more models, with no EEG read, on 79 sentences. At 10-way across movie reviews and biographies, Wang and Ji's BART model scored 10.01% against 10.09% with noise input, and Jo et al.'s T5 version scored 12.38% against 9.61%. Within a corpus they scored 10.10% and 9.53%. The T5 gap over chance was not clear (2.38 points, interval -0.65 to 5.63), so neither model showed retrieval above chance and noise. A predictor that knows only the corpus scored 13.35%. These models have no mixed-task score to break down, so this does not repeat the GLIM finding. [Full results](public_outputs_check_v8_20261112/REPORT.md).
+
 ## Review decision and reproducibility
 
 Stop experiments under the current instruction. Further work would need a revised, falsifiable hypothesis and a narrower question with controls, or better independent reader/stimulus data for a generalization claim. Reusing these development scores for another broad search would not supply independent evidence. There is no authorization here for more fitting, target repair, feature extraction, evaluation or correspondence.

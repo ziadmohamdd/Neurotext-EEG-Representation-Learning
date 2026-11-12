@@ -5,11 +5,11 @@
 | Weakness | Fix | Needs | Status |
 |---|---|---|---|
 | Content or recording block | Same-sentence test, v7 | Local data only | Run, no match beyond noise; only partly resolved |
-| Only one published model | Ask SemKey's authors for outputs, then retrain only if refused | An email from the owner, or 52.1 GB and a larger GPU | Owner emailed the authors on 2026-11-06; waiting for a reply, reminder after about two weeks |
+| Only one published model | Ask SemKey's authors for outputs, then retrain only if refused | An email from the owner, or 52.1 GB and a larger GPU | Partly addressed: [v8](research_results/public_outputs_check_v8_20261112/REPORT.md) checked two more models. SemKey still waits on the authors, emailed 2026-11-06 |
 | Reused sentences | Score the v2 test blocks once, last | The owner's decision and a final design | Keep closed for now |
 | Others may publish first | Finish the local test, then decide with the supervisor | Supervisor's answer | Waiting |
 
-**Update, 12 November:** [a reading-only check](assumption_and_outputs_check_20261112.md) found public outputs for two more models (Wang and Ji's BART model and Jo et al.'s T5 version), and both dataset papers confirm a fixed presentation order.
+**Update, 12 November:** [a reading-only check](assumption_and_outputs_check_20261112.md) found public outputs for two more models (Wang and Ji's BART model and Jo et al.'s T5 version), and both dataset papers confirm a fixed presentation order. [Check v8](research_results/public_outputs_check_v8_20261112/REPORT.md) then ran on those outputs: neither model retrieves its sentence above chance and noise, so three published models are now audited, but only GLIM shows the mixed-task pattern.
 
 ## 1. Content or recording block (v7)
 
