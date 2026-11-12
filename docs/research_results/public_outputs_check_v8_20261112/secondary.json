@@ -1,0 +1,488 @@
+{
+  "bart": {
+    "n_way": {
+      "real": {
+        "2_way": {
+          "mixed": 50.095627601212115,
+          "within_corpus": 50.02891564311892,
+          "biography": 50.06320421181102,
+          "movie_review": 49.9971359940872
+        },
+        "4_way": {
+          "mixed": 25.056233287305616,
+          "within_corpus": 25.03539451501594,
+          "biography": 25.000460242720308,
+          "movie_review": 25.067772621046053
+        },
+        "10_way": {
+          "mixed": 10.008874648756132,
+          "within_corpus": 10.101122885657313,
+          "biography": 10.06466449198746,
+          "movie_review": 10.134913591985468
+        },
+        "24_way": {
+          "mixed": 4.200380930347873,
+          "within_corpus": 4.308640058240239,
+          "biography": 4.18116639745949,
+          "movie_review": 4.4267863779882495
+        }
+      },
+      "noise": {
+        "2_way": {
+          "mixed": 50.18990234552408,
+          "within_corpus": 50.14036330380337,
+          "biography": 50.19731031340938,
+          "movie_review": 50.087583148558764
+        },
+        "4_way": {
+          "mixed": 25.124541140739787,
+          "within_corpus": 25.230451085229273,
+          "biography": 25.209796705152744,
+          "movie_review": 25.249594169202645
+        },
+        "10_way": {
+          "mixed": 10.093425139827321,
+          "within_corpus": 10.211268342534066,
+          "biography": 10.125046977713563,
+          "movie_review": 10.291180827001854
+        },
+        "24_way": {
+          "mixed": 4.215901920601138,
+          "within_corpus": 4.246991809149855,
+          "biography": 4.174035814816122,
+          "movie_review": 4.314609559995752
+        }
+      },
+      "corpus_label_only": {
+        "2_way": {
+          "mixed": 70.05842259006816,
+          "within_corpus": 39.74426958604174,
+          "biography": 39.40256045519203,
+          "movie_review": 40.0609756097561
+        },
+        "4_way": {
+          "mixed": 38.70168805212109,
+          "within_corpus": 17.194732271347863,
+          "biography": 16.906116642958747,
+          "movie_review": 17.462229683025573
+        },
+        "10_way": {
+          "mixed": 13.352429074674571,
+          "within_corpus": 5.493265891467948,
+          "biography": 4.64554976691785,
+          "movie_review": 6.2789540069046215
+        },
+        "24_way": {
+          "mixed": 4.383134052675762,
+          "within_corpus": 2.5943192347442223,
+          "biography": 2.636411325057895,
+          "movie_review": 2.5553070534778923
+        }
+      }
+    },
+    "two_way_split": {
+      "real": {
+        "same_corpus": 50.02763235459925,
+        "different_corpus": 50.16209535512186
+      },
+      "noise": {
+        "same_corpus": 50.13823199746881,
+        "different_corpus": 50.24041193479765
+      },
+      "corpus_label_only": {
+        "same_corpus": 39.75705843729481,
+        "different_corpus": 99.6790757381258
+      }
+    },
+    "other_arms": {
+      "teacher_forced": {
+        "scores": {
+          "mixed": 81.96258161920586,
+          "within_corpus": 76.598017173761,
+          "biography": 87.52391710996994,
+          "movie_review": 66.47157333044538
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 96.7293151265601,
+            "within_corpus": 94.52403289195918,
+            "biography": 98.12781399468706,
+            "movie_review": 91.18394308943087
+          },
+          "4_way": {
+            "mixed": 91.50207601887766,
+            "within_corpus": 87.19973408274835,
+            "biography": 94.80819577568805,
+            "movie_review": 80.14798909904816
+          },
+          "10_way": {
+            "mixed": 81.96258161920588,
+            "within_corpus": 76.59801717376101,
+            "biography": 87.52391710996996,
+            "movie_review": 66.4715733304454
+          },
+          "24_way": {
+            "mixed": 72.16067047775954,
+            "within_corpus": 66.70160791253619,
+            "biography": 79.32665327578106,
+            "movie_review": 55.00034635635802
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 94.38915730242833,
+          "different_corpus": 99.01690201112537
+        }
+      },
+      "teacher_forced_noise": {
+        "scores": {
+          "mixed": 81.27386933118048,
+          "within_corpus": 75.2815048090698,
+          "biography": 87.07131498571377,
+          "movie_review": 64.35436366974126
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 96.41705685451034,
+            "within_corpus": 93.90687072369872,
+            "biography": 97.94275277247415,
+            "movie_review": 90.16629711751662
+          },
+          "4_way": {
+            "mixed": 90.89502019457807,
+            "within_corpus": 86.10238252695733,
+            "biography": 94.3921506344107,
+            "movie_review": 78.41918281761029
+          },
+          "10_way": {
+            "mixed": 81.27386933118049,
+            "within_corpus": 75.2815048090698,
+            "biography": 87.07131498571378,
+            "movie_review": 64.35436366974126
+          },
+          "24_way": {
+            "mixed": 71.45997685047803,
+            "within_corpus": 65.04356336389134,
+            "biography": 79.35359248424781,
+            "movie_review": 51.78060954502433
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 93.75582326685027,
+          "different_corpus": 99.01850663243475
+        }
+      },
+      "generation_7_22": {
+        "skipped": "Its rows do not line up with the plain file"
+      }
+    },
+    "variety": {
+      "real": {
+        "rows": 1072,
+        "distinct_outputs": 4,
+        "most_common_share": 0.8199626865671642
+      },
+      "noise": {
+        "rows": 1072,
+        "distinct_outputs": 3,
+        "most_common_share": 0.9011194029850746
+      },
+      "teacher_forced": {
+        "rows": 1072,
+        "distinct_outputs": 316,
+        "most_common_share": 0.01585820895522388
+      },
+      "teacher_forced_noise": {
+        "rows": 1072,
+        "distinct_outputs": 363,
+        "most_common_share": 0.016791044776119403
+      },
+      "generation_7_22": {
+        "rows": 1072,
+        "distinct_outputs": 367,
+        "most_common_share": 0.016791044776119403
+      }
+    }
+  },
+  "t5": {
+    "n_way": {
+      "real": {
+        "2_way": {
+          "mixed": 54.37058694318559,
+          "within_corpus": 48.784081888698424,
+          "biography": 49.35853387865771,
+          "movie_review": 48.251662971175165
+        },
+        "4_way": {
+          "mixed": 29.258239896125687,
+          "within_corpus": 24.005798841712156,
+          "biography": 24.540515023487167,
+          "movie_review": 23.510208234213373
+        },
+        "10_way": {
+          "mixed": 12.381100895719754,
+          "within_corpus": 9.529589875021962,
+          "biography": 9.941811773940403,
+          "movie_review": 9.147530554073162
+        },
+        "24_way": {
+          "mixed": 5.484710101688379,
+          "within_corpus": 4.129063423515475,
+          "biography": 4.533481726692752,
+          "movie_review": 3.754236703497513
+        }
+      },
+      "noise": {
+        "2_way": {
+          "mixed": 49.45344436595367,
+          "within_corpus": 49.43925972611751,
+          "biography": 50.8256779154612,
+          "movie_review": 48.15428677014042
+        },
+        "4_way": {
+          "mixed": 24.129855689894104,
+          "within_corpus": 24.896298068653753,
+          "biography": 25.98731127291498,
+          "movie_review": 23.885115098850658
+        },
+        "10_way": {
+          "mixed": 9.611256970084662,
+          "within_corpus": 10.347159179462608,
+          "biography": 10.383179624878416,
+          "movie_review": 10.313774376394294
+        },
+        "24_way": {
+          "mixed": 4.10653606251378,
+          "within_corpus": 4.726276012824125,
+          "biography": 4.370724644357799,
+          "movie_review": 5.055811427500231
+        }
+      },
+      "corpus_label_only": {
+        "2_way": {
+          "mixed": 69.94482310938007,
+          "within_corpus": 39.49110502907971,
+          "biography": 39.40256045519203,
+          "movie_review": 39.57317073170732
+        },
+        "4_way": {
+          "mixed": 38.57999096173646,
+          "within_corpus": 17.19934458109008,
+          "biography": 16.906116642958747,
+          "movie_review": 17.471116816431323
+        },
+        "10_way": {
+          "mixed": 13.394121145951138,
+          "within_corpus": 5.530088643784293,
+          "biography": 4.64554976691785,
+          "movie_review": 6.349905163806846
+        },
+        "24_way": {
+          "mixed": 4.401821594203758,
+          "within_corpus": 2.5944029764414527,
+          "biography": 2.636411325057895,
+          "movie_review": 2.555468409431092
+        }
+      }
+    },
+    "two_way_split": {
+      "real": {
+        "same_corpus": 48.76258237233094,
+        "different_corpus": 59.85260938311606
+      },
+      "noise": {
+        "same_corpus": 49.38737145507838,
+        "different_corpus": 49.51803296881829
+      },
+      "corpus_label_only": {
+        "same_corpus": 39.494418910045965,
+        "different_corpus": 99.71116816431322
+      }
+    },
+    "other_arms": {
+      "noise_EEG": {
+        "scores": {
+          "mixed": 11.399235154364561,
+          "within_corpus": 11.328871888377364,
+          "biography": 11.967717589484183,
+          "movie_review": 10.736770994668607
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 50.79598561169669,
+            "within_corpus": 50.664508074038984,
+            "biography": 51.265049879600966,
+            "movie_review": 50.10790835181079
+          },
+          "4_way": {
+            "mixed": 26.438274256961087,
+            "within_corpus": 26.28073534398729,
+            "biography": 26.852001140700825,
+            "movie_review": 25.75126948361865
+          },
+          "10_way": {
+            "mixed": 11.399235154364561,
+            "within_corpus": 11.328871888377362,
+            "biography": 11.967717589484177,
+            "movie_review": 10.736770994668609
+          },
+          "24_way": {
+            "mixed": 5.286666443596257,
+            "within_corpus": 5.261797968163853,
+            "biography": 5.821566653291535,
+            "movie_review": 4.742987967313805
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 50.64203211677237,
+          "different_corpus": 50.94648058780054
+        }
+      },
+      "noise_noise": {
+        "scores": {
+          "mixed": 10.806918413365759,
+          "within_corpus": 11.02527731607375,
+          "biography": 11.022013978006946,
+          "movie_review": 11.028301873306397
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 51.24890194882749,
+            "within_corpus": 50.264447314707915,
+            "biography": 50.92178161837605,
+            "movie_review": 49.655210643015515
+          },
+          "4_way": {
+            "mixed": 26.369997041688286,
+            "within_corpus": 26.163955716856723,
+            "biography": 26.16319345963308,
+            "movie_review": 26.164662199161558
+          },
+          "10_way": {
+            "mixed": 10.806918413365757,
+            "within_corpus": 11.02527731607375,
+            "biography": 11.022013978006946,
+            "movie_review": 11.028301873306397
+          },
+          "24_way": {
+            "mixed": 4.623903590920734,
+            "within_corpus": 4.64273676721265,
+            "biography": 4.733781395300836,
+            "movie_review": 4.558353941179697
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 50.23984583387464,
+          "different_corpus": 52.23528992255867
+        }
+      },
+      "teacher_forced": {
+        "scores": {
+          "mixed": 77.57958022991896,
+          "within_corpus": 72.1573650085517,
+          "biography": 89.1055848788457,
+          "movie_review": 56.44925878730359
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 93.1272598640432,
+            "within_corpus": 90.0464592139015,
+            "biography": 96.42981991279204,
+            "movie_review": 84.13017368810051
+          },
+          "4_way": {
+            "mixed": 86.38889790534684,
+            "within_corpus": 81.73922234881104,
+            "biography": 93.62180643914388,
+            "movie_review": 70.72609563094159
+          },
+          "10_way": {
+            "mixed": 77.57958022991897,
+            "within_corpus": 72.1573650085517,
+            "biography": 89.10558487884572,
+            "movie_review": 56.44925878730359
+          },
+          "24_way": {
+            "mixed": 69.17708034485247,
+            "within_corpus": 63.02857507537889,
+            "biography": 82.93653542003618,
+            "movie_review": 44.57729475594042
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 89.80755470974078,
+          "different_corpus": 96.37238884350566
+        }
+      },
+      "teacher_forced_EEG_noise": {
+        "scores": {
+          "mixed": 77.4178233843446,
+          "within_corpus": 72.15568815702206,
+          "biography": 88.46474154229047,
+          "movie_review": 57.03998014140744
+        },
+        "n_way": {
+          "2_way": {
+            "mixed": 93.18340776456934,
+            "within_corpus": 90.71031228039793,
+            "biography": 96.53461651913663,
+            "movie_review": 85.31217664449373
+          },
+          "4_way": {
+            "mixed": 86.5603052706793,
+            "within_corpus": 82.74130129385449,
+            "biography": 93.70836771997763,
+            "movie_review": 72.57670314281354
+          },
+          "10_way": {
+            "mixed": 77.41782338434459,
+            "within_corpus": 72.15568815702207,
+            "biography": 88.46474154229048,
+            "movie_review": 57.03998014140743
+          },
+          "24_way": {
+            "mixed": 68.35138891805965,
+            "within_corpus": 62.10457078000021,
+            "biography": 81.80754100961957,
+            "movie_review": 43.843281298889586
+          }
+        },
+        "two_way_split": {
+          "same_corpus": 90.49233109746416,
+          "different_corpus": 95.8140302061619
+        }
+      }
+    },
+    "variety": {
+      "real": {
+        "rows": 1072,
+        "distinct_outputs": 747,
+        "most_common_share": 0.01585820895522388
+      },
+      "noise": {
+        "rows": 1072,
+        "distinct_outputs": 793,
+        "most_common_share": 0.024253731343283583
+      },
+      "noise_EEG": {
+        "rows": 1072,
+        "distinct_outputs": 704,
+        "most_common_share": 0.024253731343283583
+      },
+      "noise_noise": {
+        "rows": 1072,
+        "distinct_outputs": 618,
+        "most_common_share": 0.02332089552238806
+      },
+      "teacher_forced": {
+        "rows": 1072,
+        "distinct_outputs": 619,
+        "most_common_share": 0.014925373134328358
+      },
+      "teacher_forced_EEG_noise": {
+        "rows": 1072,
+        "distinct_outputs": 799,
+        "most_common_share": 0.012126865671641791
+      }
+    }
+  }
+}

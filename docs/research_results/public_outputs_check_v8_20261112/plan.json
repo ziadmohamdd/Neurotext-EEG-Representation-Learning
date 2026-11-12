@@ -1,0 +1,228 @@
+{
+  "plan_sha256": "7b3f2ebdf646d9b812c78ab8aecf265f9ccee88e5ebf0115b8666344f1daf0f9",
+  "plan": {
+    "version": "public_outputs_check_v8_20261112",
+    "status": "approved_20261112",
+    "requires": "Owner approval on 2026-11-12; synthetic tests passing; SHA-256 recorded in the run script before any score is computed",
+    "seed": 42,
+    "question": "On the public outputs of Wang and Ji's BART model and Jo et al.'s T5 version, does N-way retrieval hold within one corpus, or only when movie reviews and biographies are mixed?",
+    "inputs": {
+      "eeg": "None. No EEG file is opened and nothing is trained",
+      "primary_output": "Free generation from each model's plain file",
+      "noise_output": "BART intput_noise file. For T5 the EEG_noise file, read as trained on EEG and tested on noise; the README does not define the name",
+      "teacher_forced": "Secondary only. These outputs are conditioned on the target text",
+      "embedding": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "offline": true
+      }
+    },
+    "corpus_labels": {
+      "biography": "Target matches a normal-reading sentence in the local ZuCo 1.0 or 2.0 manifests, by squashed text or token Jaccard of at least 0.7",
+      "movie_review": "Every other target, by elimination",
+      "validation": "Compare with the task labels in GLIM's local CSV files wherever a target appears in both. Only 6 of 104 sentences do, so this is a weak check",
+      "glim_folder": "data/external/glim_results_e1f202c",
+      "expected": "Wang and Ji hold out about 10% of each task: roughly 40 movie reviews and 65 biographies"
+    },
+    "protected": {
+      "policy": "Targets matching a v1 test sentence, a v2 test block or its buffer, by squashed text or token Jaccard of at least 0.7, are removed before scoring",
+      "v2_test_zone": {
+        "block": 25,
+        "buffer": 10,
+        "val_blocks": 2,
+        "test_blocks": 2
+      }
+    },
+    "evaluation": {
+      "primary": "Expected 10-way top-1 by cosine between each output and the pool of unique test sentences, computed exactly from ranks, ties are misses, averaged within sentence and then across sentences; chance 10%",
+      "pools": [
+        "All scored sentences",
+        "Each sentence's own corpus"
+      ],
+      "secondary": [
+        "Expected 2-way, 4-way and 24-way",
+        "2-way against same-corpus and different-corpus distractors",
+        "Corpus label only, no EEG: the mean text of the other test sentences in the query's corpus",
+        "Number of distinct outputs and share of rows taken by the most common one",
+        "Teacher-forced outputs and the other noise files, scored the same way"
+      ]
+    },
+    "decision_rule": {
+      "per_model": true,
+      "minimum_gap_points": 2.0,
+      "resamples": 10000,
+      "bootstrap": "10000 resamples of per-sentence scores, two-sided 95% intervals. Readers cannot be resampled, as the files carry no reader labels",
+      "clear": "Gap at least the minimum and the lower bound above 0",
+      "mixed": "Each sentence against all scored sentences",
+      "within_corpus": "Each sentence against the other scored sentences of its own corpus, one equal weight per sentence",
+      "beats": "Clear of chance and clear of the noise arm on the same pool",
+      "outcomes": [
+        {
+          "condition": "Mixed pool does not beat chance and noise",
+          "label": "No retrieval above chance or noise in these outputs"
+        },
+        {
+          "condition": "Mixed pool beats both, and the within-corpus score does not",
+          "label": "The mixed score comes mostly from telling the corpora apart"
+        },
+        {
+          "condition": "Mixed pool beats both, and so does the within-corpus score",
+          "label": "The score holds within a corpus"
+        }
+      ],
+      "secondary_scope": "Secondary results never change the label"
+    },
+    "audit": {
+      "refuse_if": [
+        "A file's size or SHA-256 differs from this plan",
+        "The files of one model list different targets, apart from the BART 7_22 file",
+        "Any corpus label by elimination disagrees with a GLIM task label",
+        "A scored target matches a protected sentence",
+        "Row, sentence or corpus counts differ from this plan"
+      ],
+      "false_pass_check": "Before freezing, on synthetic outputs over 20 seeds each: random outputs, corpus-only outputs and sentence-level outputs earned the first, second and third labels on 20 of 20"
+    },
+    "test_policy": "No final test data is scored. These are other authors' public outputs",
+    "stop_rule": "Stop after this run whatever the outcome. No extra files, embeddings or settings under this plan.",
+    "output": "results/public_outputs_check_v8_20261112/",
+    "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after",
+    "cohort": {
+      "manifests": [
+        "data/manifests/zuco1_duration_qc.jsonl",
+        "data/manifests/zuco2_duration_qc.jsonl"
+      ],
+      "use": "Sentence text only, to label corpora and to find protected sentences"
+    },
+    "files": {
+      "approved": "Owner approved the download on 2026-11-12",
+      "total_bytes": 4713314,
+      "folder": "data/external/eeg_to_text_outputs_20261112",
+      "kept_out_of_git": true,
+      "left_out": "The four task1_task2_task3 files in the T5 repository. Their task-specific sentences cannot be told from movie reviews with local lists",
+      "sources": [
+        {
+          "model": "bart",
+          "repository": "https://github.com/MikeWangWZHL/EEG-To-Text",
+          "branch": "main",
+          "commit": "a07cf91452a4ee67eb413c38ff7bab56c6987545",
+          "licence": "No LICENSE file found",
+          "files": {
+            "task1_task2_taskNRv2-BrainTranslator-all_decoding_results.txt": {
+              "bytes": 425337,
+              "sha256": "237f6b46ea451d2dabbf1978539970829365a06ea67534f3d2ef9cce2503abd9"
+            },
+            "task1_task2_taskNRv2-BrainTranslator-intput_noise-all_decoding_results.txt": {
+              "bytes": 425069,
+              "sha256": "9a3bdd51e6c3d56fbce60cba72ea576cd25d32f2b4ced69917b31f4e5632d13b"
+            },
+            "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-all_decoding_results.txt": {
+              "bytes": 527067,
+              "sha256": "4123caf74174ccd997e26cc1b4fd1d651827653763d60f25e6ae052571890f6d"
+            },
+            "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-intput_noise-all_decoding_results.txt": {
+              "bytes": 525134,
+              "sha256": "6047a035176e1b0284cca8c6ceafec1a318c0f6dd8af53593a95a922577ab241"
+            },
+            "task1_task2_taskNRv2-BrainTranslator_skipstep1-all_generation_results-7_22.txt": {
+              "bytes": 441747,
+              "sha256": "250a6235f2058333715452bf0a25d7649f17c7961dd26868cc7aaeb839273d53"
+            }
+          }
+        },
+        {
+          "model": "t5",
+          "repository": "https://github.com/NeuSpeech/EEG-To-Text",
+          "branch": "main",
+          "commit": "01582402809aa4fd8079dfb397faf04babc5d9e8",
+          "licence": "Not verified",
+          "files": {
+            "task1_task2_taskNRv2-T5Translator-all_decoding_results.txt": {
+              "bytes": 594718,
+              "sha256": "0692975c0b6f9b7486b8fc7edf55dbc7289088ae0eeea4798508bd103bae32f6"
+            },
+            "task1_task2_taskNRv2-T5Translator-EEG_noise-all_decoding_results.txt": {
+              "bytes": 594035,
+              "sha256": "ea3d5def719360e9a68e34ab1e4e968ebc9cc0466fb3e9bc3bbaf9e7966c3ef3"
+            },
+            "task1_task2_taskNRv2-T5Translator-noise_EEG-all_decoding_results.txt": {
+              "bytes": 589160,
+              "sha256": "742c57f9d700dce0b136773dddd7530b05372bf4d4421c9f787b9ae4250e9a92"
+            },
+            "task1_task2_taskNRv2-T5Translator-noise_noise-all_decoding_results.txt": {
+              "bytes": 591047,
+              "sha256": "d08dd6fc1bafba3451997e627eb262d5e24003a3b92183055f7aab78d7718034"
+            }
+          }
+        }
+      ]
+    },
+    "arms": {
+      "bart": {
+        "real": [
+          "task1_task2_taskNRv2-BrainTranslator-all_decoding_results.txt",
+          "predicted"
+        ],
+        "noise": [
+          "task1_task2_taskNRv2-BrainTranslator-intput_noise-all_decoding_results.txt",
+          "predicted"
+        ],
+        "secondary": {
+          "teacher_forced": [
+            "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-all_decoding_results.txt",
+            "predicted"
+          ],
+          "teacher_forced_noise": [
+            "task1_task2_taskNRv2-BrainTranslator-teacher_forcing-intput_noise-all_decoding_results.txt",
+            "predicted"
+          ],
+          "generation_7_22": [
+            "task1_task2_taskNRv2-BrainTranslator_skipstep1-all_generation_results-7_22.txt",
+            "predicted"
+          ]
+        }
+      },
+      "t5": {
+        "real": [
+          "task1_task2_taskNRv2-T5Translator-all_decoding_results.txt",
+          "predicted"
+        ],
+        "noise": [
+          "task1_task2_taskNRv2-T5Translator-EEG_noise-all_decoding_results.txt",
+          "predicted"
+        ],
+        "secondary": {
+          "noise_EEG": [
+            "task1_task2_taskNRv2-T5Translator-noise_EEG-all_decoding_results.txt",
+            "predicted"
+          ],
+          "noise_noise": [
+            "task1_task2_taskNRv2-T5Translator-noise_noise-all_decoding_results.txt",
+            "predicted"
+          ],
+          "teacher_forced": [
+            "task1_task2_taskNRv2-T5Translator-all_decoding_results.txt",
+            "teacher_forced"
+          ],
+          "teacher_forced_EEG_noise": [
+            "task1_task2_taskNRv2-T5Translator-EEG_noise-all_decoding_results.txt",
+            "teacher_forced"
+          ]
+        }
+      }
+    },
+    "counts": {
+      "rows_per_file": 1407,
+      "sentences_per_model": 104,
+      "labelled": {
+        "biography": 63,
+        "movie_review": 41
+      },
+      "protected_removed": 25,
+      "scored": {
+        "biography": 38,
+        "movie_review": 41
+      }
+    }
+  },
+  "git_head": "609226e55615dd5e4cf50ea7aac69ad191ef2a5c"
+}
