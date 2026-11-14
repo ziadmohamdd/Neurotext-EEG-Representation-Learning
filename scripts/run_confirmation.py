@@ -5,6 +5,7 @@ only, and no EEG. A full run first rebuilds every input and checks that the rows
 v5 features and v6 word rows exactly, so no test score is computed if the inputs differ.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import fields
 import importlib.util
 import json
@@ -123,6 +124,8 @@ def word_inputs(layout, revision, workers):
     """Extract word rows for every usable row into a new cache; rows outside the test zone must equal the stored v6 rows."""
     old_cache = v6_runner.CACHE
     v6_runner.CACHE = CACHE
+    # The v6 runner is loaded by file path, so worker processes cannot import it; threads in this process run the same code.
+    v6_runner.ProcessPoolExecutor = ThreadPoolExecutor
     try:
         v6_runner.extract(layout, workers)
         tested = {layout.identities[s] for s in layout.test_sentences}
