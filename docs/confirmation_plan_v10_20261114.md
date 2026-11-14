@@ -1,6 +1,6 @@
 # Confirmation on the reserved test blocks: plan v10
 
-**Status: draft, not approved.** Nothing here has run, no test-zone EEG has been read, and the config is not frozen. After approval, the config's SHA-256 goes into the run script, and any later change needs a new version.
+**Status: approved by the project owner on 2026-11-14.** [The config](../configs/confirmation_v10_20261114.json) is frozen with SHA-256 `885e285e153d0d53da8f8d6e82243dc7d9290d98c498a8eab18333546dc91f6f`, recorded in `scripts/run_confirmation.py`. Any later change needs a new version.
 
 ## Why this test
 
@@ -17,8 +17,8 @@ That rule was there to stop a failed decoder from being given a second chance on
 | Item | Value |
 |---|---|
 | Scored blocks | 4: 2 in ZuCo 1.0, 2 in ZuCo 2.0, as placed by the v2 split (seed 42) |
-| Scored sentences | 100 (50 per release) |
-| Scored observations | 1,386, from 29 readers (v2 exact sizes) |
+| Scored sentences | 85: 42 in ZuCo 1.0, 43 in ZuCo 2.0. The other 15 test-block sentences are v1 test sentences, which stay closed |
+| Scored observations | 1,184, from 29 readers |
 | Buffers | The 10 sentences on each side of every test block are neither fitted nor scored |
 | Training | All 419 usable sentences outside the test zone, from both releases. These include the 255 sentences scored earlier. One fit serves all four blocks |
 | Still closed | v1 test sentences stay out of every fit and score |
@@ -39,11 +39,11 @@ The settings carried over unchanged are features, alpha grids, how alpha is chos
 
 ## Primary score
 
-Expected 10-way within the query's own block, all readers averaged, one equal-weight score per sentence, ties as misses. Chance is 10%. Each block has 25 sentences, so every query has 24 within-block candidates.
+Expected 10-way within the query's own block, all readers averaged, one equal-weight score per sentence, ties as misses. Chance is 10%. After v1 test sentences are removed, each block keeps 20 to 23 sentences, so every query has at least 19 within-block candidates.
 
 ## Claims tested
 
-A result is **clear** if the gap is at least 2 points and every lower bound from resampling sentences and readers is above 0. Resampling blocks is not used, because 4 blocks are too few. Block-level scores are reported as they are.
+A result is **clear** if the gap is at least 2 points and every available lower bound from resampling sentences and readers is above 0. The v6 gaze comparison has a sentence interval only, as in v6. Resampling blocks is not used, because 4 blocks are too few. Block-level scores are reported as they are.
 
 | Claim in the paper | Test | Confirmed if | Contradicted if |
 |---|---|---|---|
@@ -91,3 +91,11 @@ Score once. No reruns, extra arms, settings or pipelines under this plan, whatev
 - **No download:** the EEG files are already local.
 - **Run time:** extracting word rows for the test zone needs about 30 reader files. It is expected to take tens of minutes, and the full run, including the new-reader arm, up to a few hours on this laptop.
 - **Before freezing:** new code is needed for the confirmation layout and a runner that calls the three frozen pipelines, plus the tests above.
+
+## Changes made after approval and before freezing
+
+- **Scored sentences:** the draft said 100 sentences and 1,386 observations, taken from v2's sizes. Building the layout showed that 15 of the 100 test-block sentences are v1 test sentences. The approved plan keeps v1 test closed, so they are neither fitted nor scored, which leaves 85 sentences and 1,184 observations. A manifest-only audit found no failures.
+- **Available bounds:** "clear" uses every available sentence and reader bound. The v6 gaze comparison has no reader interval, as in v6.
+- **Input checks:** before any score, the run rebuilds v5 features and v6 word rows for every usable row, and stops if those outside the test zone differ in any way from the stored ones. Word embeddings reuse the v6 vectors, and only new word types are encoded.
+- **One fit:** every fold uses the same inner blocks for choosing settings, drawn as for the first fold and never inside the test zone, so all four blocks share one fit.
+- **Old-layout reruns:** v5, v6 and v9 are rerun on their old layouts into `results/repro_v10_20261114/`, and each must match its saved decision before the confirmation runs.
