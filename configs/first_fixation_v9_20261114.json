@@ -1,7 +1,7 @@
 {
   "version": "first_fixation_v9_20261114",
-  "status": "draft_not_approved",
-  "requires": "Owner approval; synthetic tests passing; channel list fixed; SHA-256 recorded in the run script before any EEG feature is fitted",
+  "status": "approved_20261114",
+  "requires": "Owner approval on 2026-11-14; synthetic tests passing; SHA-256 recorded in the run script before any EEG feature is fitted",
   "seed": 42,
   "question": "On held-out list blocks, does the first-fixation waveform tell sentences apart beyond matched noise, shuffled pairs and gaze, and does it survive removing the channels nearest the eyes?",
   "status_of_the_lead": "Found as a secondary result in word-locked test v6 on these same blocks: 12.81% against 9.72% for noise at 10-way, with no interval and no gaze control. Retesting on the same data checks whether it survives controls. It cannot confirm it",
@@ -13,14 +13,51 @@
     "readers": 30,
     "task": "nr",
     "new_downloads": false,
-    "word_rows": 83798,
-    "scored_word_rows": 48996
+    "observations_usable": 6028,
+    "sentences_usable": 419,
+    "word_rows": {
+      "word_rows": 83798,
+      "scored_word_rows": 48996,
+      "word_types": 2501,
+      "readers_with_rows": 30
+    }
   },
   "inputs": {
     "source": "The v6 word-row cache in data/processed/word_locked_v6_20261106/rows, opened read-only, hashes recorded before freezing. No EEG file is opened. Protected sentences were discarded when the cache was built",
     "waveform": "Raw first-fixation snippet with Cz removed: mean amplitude in 50 ms bins up to 300 ms, 104 channels by 6 bins, 624 values, as in v6",
-    "anterior_removed": "The same waveform without the anterior channels nearest the eyes: the 20% of the 104 channels with the most anterior position in the EGI GSN-HydroCel-128 layout bundled with MNE. The list is fixed and recorded before freezing",
-    "gaze": "Token length, log training frequency of the token, TRT duration, number of fixations, word position, sentence word count and release flag, as in v6"
+    "anterior_removed": "The waveform without the 21 channels (20% of 104) with the largest anterior coordinate in the GSN-HydroCel-128 montage of MNE 1.10.2. The next channel lies at 0.045 m and the last removed at 0.0555 m",
+    "gaze": "Token length, log training frequency of the token, TRT duration, number of fixations, word position, sentence word count and release flag, as in v6",
+    "cache": {
+      "rows_folder": "data/processed/word_locked_v6_20261106/rows",
+      "reader_files": 30,
+      "rows_digest": "dfcde97e0aaf044c8ffd84f43b46b92e871b62df176e6a1392d96e8e098acc55",
+      "rows_digest_rule": "SHA-256 over each file name in sorted order followed by the SHA-256 of its bytes",
+      "word_embeddings_sha256": "b01ef00ad23392470db5d5ede86857bcfd54121bda1352cae34f017b76789740"
+    },
+    "anterior_channels": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E9",
+      "E10",
+      "E11",
+      "E12",
+      "E15",
+      "E16",
+      "E18",
+      "E19",
+      "E20",
+      "E22",
+      "E23",
+      "E24",
+      "E26",
+      "E27",
+      "E118",
+      "E123",
+      "E124"
+    ],
+    "column_order": "Bin by bin, with all 104 channels inside each bin, as written by word_rows.waveform_bins"
   },
   "protected": {
     "policy": "v1 test sentences, v2 test blocks and their buffers are never fitted or scored. A run-time audit refuses to continue otherwise",
@@ -31,14 +68,28 @@
       "test_blocks": 2
     }
   },
-  "folds": "The same 13 held-out blocks, buffers, targets, reader scaling, ridge alphas and inside-fold alpha selection as word-locked test v6",
+  "folds": {
+    "source": "The same 13 held-out blocks as averaged-EEG test v5, with 10 list positions of buffer on each side",
+    "buffer_sentences": 10,
+    "minimum_scored_per_block": 10,
+    "blocks": {
+      "zuco1": 5,
+      "zuco2": 8
+    },
+    "scored": {
+      "zuco1_sentences": 105,
+      "zuco1_observations": 1206,
+      "zuco2_sentences": 150,
+      "zuco2_observations": 2509
+    }
+  },
   "arms": {
     "real": "First-fixation waveform",
     "gaussian": "Matched noise per word, built as in v6 from the waveform features",
     "class_shuffled": "Training sentences' word targets permuted by sentence within release, mean of 10 shuffles",
     "gaze_word": "Gaze and word properties, no EEG",
-    "gaze_plus_real": "Gaze features and the real waveform in one ridge, with gaze columns scaled to the same total weight as in gaze_word",
-    "gaze_plus_noise": "Gaze features and the noise waveform in one ridge, built the same way",
+    "gaze_plus_real": "Gaze features and the real waveform side by side in one ridge. Every column, gaze included, is z-scored per reader from the fold's training rows",
+    "gaze_plus_noise": "Gaze features and the noise waveform, built the same way",
     "anterior_removed": "Real waveform without the anterior channels",
     "anterior_removed_noise": "Noise waveform without the anterior channels",
     "partial": "Inside each held-out block, remove from real and noise sentence predictions what list position, its square, word count, mean TRT duration and fixated-word count explain linearly. Refits nothing"
@@ -48,8 +99,9 @@
     "secondary": [
       "Each 50 ms bin alone, real and noise",
       "Each release separately",
-      "Score against reader count: 1, 2, 4, 8 and all",
-      "Expected 2-way, 4-way and 24-way within block"
+      "Score against reader count: 1, 2, 4, 8 and all, real and noise",
+      "Expected 2-way and 4-way within block, real and noise",
+      "Expected 2-way, 4-way, 10-way and 24-way against all scored sentences in the release, real and noise"
     ]
   },
   "decision_rule": {
@@ -60,7 +112,7 @@
       "not_eye_channels": "anterior_removed minus anterior_removed_noise",
       "not_structure": "partial, real minus noise"
     },
-    "bootstrap": "10000 resamples of sentences and of blocks; 2000 of readers within release, recomputing the average. Two-sided 95% intervals",
+    "bootstrap": "10000 resamples of sentences and of blocks for every comparison; 2000 of readers within release, recomputing the average, for noise, shuffled pairs, adds-to-gaze and the eye-channel check. Two-sided 95% intervals",
     "clear": "Gap at least the minimum and every available lower bound above 0",
     "outcomes": [
       {
@@ -93,10 +145,44 @@
       "A signal that only follows fixation duration or word length does not earn the first label, over 20 seeds",
       "A signal placed only on the anterior channels does not earn the first label, over 20 seeds",
       "A signal present only at sentence level is not counted by the noise arm"
-    ]
+    ],
+    "limits": {
+      "jaccard": 0.7,
+      "containment": 0.8,
+      "cosine": 0.9
+    },
+    "false_pass_check": "On synthetic fixtures before freezing, over 20 seeds each: signals following only fixation duration, only word length, or present only on the anterior channels did not earn the first label on any seed. A planted waveform signal earned it, no signal earned the third, and a sentence-level signal did not earn the first"
   },
   "test_policy": "No final test data is scored",
   "stop_rule": "Stop after this run whatever the outcome. No extra bins, channels, models or settings under this plan. If the result does not hold, decoding work stops",
   "output": "results/first_fixation_v9_20261114/",
-  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after"
+  "existing_output_policy": "Refuse to run if the output directory exists; hash protected prior artifacts before and after",
+  "text_cache": "data/processed/transfer_plan_20261029_213051/sentence_embeddings.npz",
+  "folds_note": "The same 13 held-out blocks, buffers, targets, reader scaling and centred scoring as word-locked test v6",
+  "model": {
+    "type": "Ridge from word features to word embedding; no word text is an input",
+    "alphas": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "alpha_selection": "Inside each fold's training data only: one seeded contiguous 25-position block per release plus 10 positions each side are held back, scored with the primary metric, then the model is refit on all of that fold's training word rows"
+  },
+  "arms_shuffles": 10,
+  "sentence_prediction": {
+    "reader_counts_for_curve": [
+      1,
+      2,
+      4,
+      8,
+      "all"
+    ],
+    "subset_draws_count": 20,
+    "word_slot": "Mean prediction across the readers who fixated that word in that sentence",
+    "sentence": "Mean over the sentence's fixated word slots"
+  }
 }
