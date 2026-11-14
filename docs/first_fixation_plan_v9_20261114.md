@@ -1,6 +1,6 @@
 # First-fixation test: plan v9
 
-**Status: draft, not approved.** Nothing has been fitted or scored. [The config](../configs/first_fixation_v9_20261114.json) is not frozen, and no run script exists yet.
+**Status: approved by the project owner on 2026-11-14.** [The config](../configs/first_fixation_v9_20261114.json) is frozen, and its SHA-256 is recorded in `scripts/run_first_fixation.py`. Any later change needs a new version.
 
 ## Why this test
 
@@ -29,7 +29,7 @@ The lead was found on these same 13 held-out blocks. Retesting there can show wh
 | Without the anterior channels | Eye-movement traces, which are strongest near the eyes |
 | Partial check | List position, word count and reading time |
 
-The anterior channels are the 20% of channels nearest the front of the head, in the EGI layout bundled with MNE. The exact list will be fixed before freezing.
+The anterior channels are the 21 channels (20% of 104) nearest the front of the head in the EGI layout bundled with MNE 1.10.2: E2, E3, E4, E5, E9, E10, E11, E12, E15, E16, E18, E19, E20, E22, E23, E24, E26, E27, E118, E123 and E124.
 
 ## Decision
 
@@ -41,12 +41,19 @@ Each comparison needs a gap of at least 2 points and every 95% lower bound above
 | Beats noise and shuffled pairs, but fails any of the other three | The gain does not exceed gaze, eye channels or structure |
 | Does not beat noise and shuffled pairs | The first-fixation result did not hold |
 
-## Before freezing
+## Synthetic checks before freezing
 
-- Owner approves this plan.
-- Fix the anterior channel list and record the word-row cache hashes.
-- Synthetic fixtures over 20 seeds: a planted waveform signal must earn the first label, while signals that follow only fixation duration, word length or the anterior channels must not.
-- Record any change made after approval in this file.
+Over 20 seeds each, signals that follow only fixation duration, only word length, or appear only on the anterior channels never earned the first label. A planted waveform signal earned it, no signal earned the third label, and a sentence-level signal did not earn the first. The everyday suite keeps 5 seeds for speed.
+
+## Changes made after approval and before freezing
+
+No EEG feature had been fitted and no score computed when these were made.
+
+- **Anterior channels:** the list above is now fixed.
+- **Stored rows:** the v6 word-row files and word embeddings are checked by hash before anything runs. A dry run of the audit found 83,798 word rows, no protected sentence and all 21 channels.
+- **Gaze in the combined arms:** the draft said gaze columns would be weighted to match the gaze-only arm. The ridge model standardises every column, so that weighting has no effect. Every column, gaze included, is instead z-scored per reader inside each fold, the same way in the real and noise versions.
+- **Reader resampling** now covers the adds-to-gaze and eye-channel checks as well as noise and shuffled pairs.
+- **24-way within block** is impossible, because blocks hold fewer than 24 scored sentences. 2-way and 4-way are reported within block, and 2-, 4-, 10- and 24-way against all scored sentences in a release.
 
 ## Stop rule
 
