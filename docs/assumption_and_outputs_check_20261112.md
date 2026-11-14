@@ -20,7 +20,9 @@
 
 ## 2. Is any reader in both releases?
 
-**Still unresolved.** Neither paper says whether the 18 ZuCo 2.0 readers include any of the 12 ZuCo 1.0 readers. The owner emailed the dataset's first author on 29 October 2026 and has had no reply. Cross-release results stay labelled exploratory.
+**Update, 14 November:** [the dataset authors state in a 2021 paper](reader_overlap_check_20261114.md) that the two releases have different participants.
+
+**Still unresolved as of 12 November.** Neither paper says whether the 18 ZuCo 2.0 readers include any of the 12 ZuCo 1.0 readers. The owner emailed the dataset's first author on 29 October 2026 and has had no reply. Cross-release results stay labelled exploratory.
 
 ## 3. Other models with public outputs
 
