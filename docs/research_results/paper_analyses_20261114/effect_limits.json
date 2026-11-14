@@ -1,0 +1,147 @@
+[
+  {
+    "test": "v5 whole-sentence",
+    "comparison": "real minus matched noise",
+    "gap_points": -0.88,
+    "intervals": {
+      "sentence": [
+        -3.01,
+        1.19
+      ],
+      "block": [
+        -3.32,
+        0.95
+      ]
+    },
+    "largest_upper": 1.19,
+    "smallest_upper": 0.95
+  },
+  {
+    "test": "v5 whole-sentence",
+    "comparison": "partial check, real minus noise",
+    "gap_points": -2.48,
+    "intervals": {
+      "sentence": [
+        -6.67,
+        1.68
+      ],
+      "block": [
+        -6.63,
+        1.7
+      ]
+    },
+    "largest_upper": 1.7,
+    "smallest_upper": 1.68
+  },
+  {
+    "test": "v6 word-locked",
+    "comparison": "real minus matched noise",
+    "gap_points": -1.7,
+    "intervals": {
+      "sentence": [
+        -6.43,
+        2.81
+      ],
+      "block": [
+        -5.83,
+        2.22
+      ]
+    },
+    "largest_upper": 2.81,
+    "smallest_upper": 2.22
+  },
+  {
+    "test": "v6 word-locked",
+    "comparison": "partial check, real minus noise",
+    "gap_points": -1.96,
+    "intervals": {
+      "sentence": [
+        -5.81,
+        1.73
+      ],
+      "block": [
+        -5.95,
+        1.99
+      ]
+    },
+    "largest_upper": 1.99,
+    "smallest_upper": 1.73
+  },
+  {
+    "test": "v7 same sentence",
+    "comparison": "real minus matched noise",
+    "gap_points": 1.5,
+    "intervals": {
+      "sentence": [
+        -4.98,
+        8.2
+      ]
+    },
+    "largest_upper": 8.2,
+    "smallest_upper": 8.2
+  },
+  {
+    "test": "v7 same sentence",
+    "comparison": "partial check, real minus noise",
+    "gap_points": 2.34,
+    "intervals": {
+      "sentence": [
+        -2.46,
+        7.15
+      ]
+    },
+    "largest_upper": 7.15,
+    "smallest_upper": 7.15
+  },
+  {
+    "test": "v9 first fixation",
+    "comparison": "real minus matched noise",
+    "gap_points": 3.08,
+    "intervals": {
+      "sentence": [
+        -1.5,
+        7.79
+      ],
+      "block": [
+        -1.91,
+        9.29
+      ]
+    },
+    "largest_upper": 9.29,
+    "smallest_upper": 7.79
+  },
+  {
+    "test": "v9 first fixation",
+    "comparison": "partial check, real minus noise",
+    "gap_points": 2.34,
+    "intervals": {
+      "sentence": [
+        -2.47,
+        7.22
+      ],
+      "block": [
+        -2.85,
+        8.43
+      ]
+    },
+    "largest_upper": 8.43,
+    "smallest_upper": 7.22
+  },
+  {
+    "test": "v9 first fixation",
+    "comparison": "gaze plus real minus gaze plus noise",
+    "gap_points": 0.1,
+    "intervals": {
+      "sentence": [
+        -1.56,
+        1.72
+      ],
+      "block": [
+        -1.82,
+        2.37
+      ]
+    },
+    "largest_upper": 2.37,
+    "smallest_upper": 1.72
+  }
+]

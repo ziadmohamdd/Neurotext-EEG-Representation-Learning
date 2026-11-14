@@ -1,0 +1,49 @@
+{
+  "groups": {
+    "tasks": {
+      "ZuCo 1.0 movie reviews": 40,
+      "ZuCo 1.0 normal reading": 15,
+      "ZuCo 1.0 task-specific": 39,
+      "ZuCo 2.0 normal reading": 24,
+      "ZuCo 2.0 task-specific": 38
+    },
+    "corpora": {
+      "movie reviews": 40,
+      "biographies": 116
+    }
+  },
+  "rows": [
+    {
+      "n": 2,
+      "chance": 50.0,
+      "corpus_only": 69.19,
+      "task_only": 89.23,
+      "glim": 67.26,
+      "glim_noise": 51.55
+    },
+    {
+      "n": 4,
+      "chance": 25.0,
+      "corpus_only": 42.36,
+      "task_only": 72.23,
+      "glim": 42.71,
+      "glim_noise": 26.5
+    },
+    {
+      "n": 10,
+      "chance": 10.0,
+      "corpus_only": 19.53,
+      "task_only": 43.16,
+      "glim": 21.46,
+      "glim_noise": 11.26
+    },
+    {
+      "n": 24,
+      "chance": 4.17,
+      "corpus_only": 8.33,
+      "task_only": 20.48,
+      "glim": 10.47,
+      "glim_noise": 5.06
+    }
+  ]
+}
