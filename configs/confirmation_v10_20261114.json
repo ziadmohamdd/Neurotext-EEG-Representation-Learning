@@ -1,0 +1,54 @@
+{
+  "version": "confirmation_v10_20261114",
+  "status": "Draft, not approved. Not frozen; no test-zone EEG has been read",
+  "seed": 42,
+  "question": "On the reserved v2 test blocks, scored once, do the paper's block-holdout claims hold on fresh sentences?",
+  "changes_v2_commitment": {
+    "v2_test_policy": "Score a model and its matched controls once on test blocks only if that model passes the gate; otherwise never score test blocks",
+    "why_changed": "This plan tests pre-stated claims about controls with frozen pipelines and adds no model, feature or setting. Must be reported in the paper with the v2 rule quoted"
+  },
+  "test_zone": {
+    "source": "v2 split, seed 42: block 25, buffer 10, 2 validation and 2 test blocks per release",
+    "scored_blocks": {"zuco1": 2, "zuco2": 2},
+    "scored": {"sentences": 100, "zuco1_sentences": 50, "zuco2_sentences": 50, "observations": 1386, "readers": 29},
+    "buffers": "Neither fitted nor scored"
+  },
+  "training": {
+    "rows": "All usable rows outside the test zone, from both releases; v1 test sentences stay closed",
+    "sentences_usable": 419,
+    "one_fit_for_all_blocks": true,
+    "alpha": "Chosen inside training data exactly as in each source pipeline"
+  },
+  "pipelines": {
+    "whole_sentence_v5": {"config": "configs/averaged_eeg_v5_20261106.json", "sha256": "d006d67e421de6f01191c159856bc1a182be8a15e7696920dac5d575aac68bf6"},
+    "word_locked_v6": {"config": "configs/word_locked_v6_20261106.json", "sha256": "3f4053515a3128dfc3269ad44e8eb6ca2cc6aa6cd4ad1a326112b323b7fca8ff"},
+    "first_fixation_v9": {"config": "configs/first_fixation_v9_20261114.json", "sha256": "ce55bbfa603ca82019920b0622ace6aa8feac1dfbbcb06ce8a9282b4703c5b79"},
+    "rule": "Settings are reused unchanged; only the layout differs"
+  },
+  "primary_score": "Expected 10-way top-1 within the query's own block (24 candidates per query), all readers averaged, equal weight per sentence, ties are misses; chance 10%. Scoring as in each source pipeline",
+  "intervals": {"resample": ["sentence", "reader"], "level": 95, "block_resampling": "Not used: 4 blocks are too few; block scores reported as they are"},
+  "claims": {
+    "C1_eeg_not_above_noise": {"test": "Real minus matched noise for v5, v6 and v9", "confirmed": "No pipeline clear", "contradicted": "Any pipeline clear"},
+    "C2_gaze_beats_word_locked": {"test": "Gaze and word properties minus real word-locked EEG (v6)", "confirmed": "Clear", "contradicted": "Real clear over gaze"},
+    "C3_eeg_adds_little_to_gaze": {"test": "Gaze plus real minus gaze plus noise (v9)", "confirmed": "Sentence and reader upper bounds both below 3 points", "contradicted": "Clear"},
+    "clear": "Gap at least 2 points and every sentence and reader lower bound above 0",
+    "otherwise": "Inconclusive"
+  },
+  "secondary": [
+    "Position, timing, shuffled pairs and partial check for each pipeline",
+    "Each release separately",
+    "Reader count 1, 2, 4, 8 and all, real and noise",
+    "v9 time bins and anterior removal",
+    "New readers: fit on half of each release's readers, average the other half, on the same test blocks",
+    "Each pipeline's development score beside its test score"
+  ],
+  "checks_before_running": [
+    "Synthetic tests: no test-zone or buffer row in any fit; every fold's training excludes the whole zone; position-only and duration-only signals cannot contradict C1; a planted signal is found",
+    "Each reused pipeline, run on its old layout, reproduces its frozen development result exactly",
+    "Leakage audit refuses to run on any failure",
+    "Hashes of existing results, manifests and caches recorded before and checked after"
+  ],
+  "stop_rule": "Score once. No reruns or added arms, settings or pipelines under this plan, whatever the outcome",
+  "output": "results/confirmation_v10_20261114",
+  "new_cache": "data/processed/confirmation_v10_20261114"
+}
