@@ -2,6 +2,23 @@
 
 Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4 GB), CPU and Google Colab. One package implements all workflows; notebooks are clients of the same modules.
 
+## Where the project stands (17 November 2026)
+
+The experiments are complete. The project became an audit of what ZuCo EEG-to-text retrieval scores measure:
+
+- **Task mixing:** a predictor that knows only the corpus, with no EEG, scores 19.53% at 10-way on GLIM's public outputs, against GLIM's 21.46%.
+- **List position:** on random splits, the text of a held-out sentence's list neighbours scores 51.09% at 10-way with no EEG.
+- **Block holdouts:** EEG never clearly beat matched noise, gaze with no EEG beat it, and EEG added at most 2.37 points to gaze.
+- **Confirmation:** a one-time test under a frozen plan on 85 never-used sentences confirmed all three claims.
+
+Start here:
+
+- the [paper draft](docs/paper_draft_20261114.md), with its five figures in [docs/paper_figures](docs/paper_figures/);
+- the [13-slide final presentation](docs/presentation/NeuroText_final_v3_20261117.pptx), with a [PDF](docs/presentation/NeuroText_final_v3_20261117.pdf);
+- the [confirmation report](docs/research_results/confirmation_v10_20261114/REPORT.md).
+
+No clean held-out data remains in ZuCo normal reading, so any further claim needs a new dataset. The sections below are the project's earlier history.
+
 **Status:** user-side Windows experiments cover both ZuCo versions, statistical/CNN/SSL models, frozen official LaBraM features, matched negative controls for these configurations, and selected robustness comparisons. The [draft research report](docs/research_results/REPORT.md) archives 79 evaluation reports and documents near-chance retrieval and remaining work; these results were not independently rerun in the cloud. Strict cross-dataset transfer remains unexecuted pending participant-identity evidence. Automated software tests use explicitly synthetic fixtures. See [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [pretrained adaptation](docs/pretrained_models.md).
 
 The [main report](docs/research_results/REPORT.md) covers the completed studies through the 2026-11-01 evidence review, including the ordered-word, relative-amplitude, GRU, GRU retrieval-loss and word-pretraining pilots. The later [N-way analysis](docs/research_results/nway_word_pretrain_v1_20261101/README.md) is reported separately. The [35-slide presentation](docs/presentation/NeuroText_consolidated_v2_20261105.pptx) appends those later studies, the N-way analysis and a project-brief checklist to the unchanged [26-slide deck](docs/presentation/NeuroText_consolidated.pptx). Both the report and the deck consolidate 18 wider-grid exploratory transfer evaluations, with original-grid experiments kept separate. Cross-release participant independence remains unknown. These configurations do not demonstrate reliable retrieval beyond controls. The deck records 139 passed and 2 optional skips from its wider-grid consolidation; the last full test run on 2026-11-05 gave 211 passed and 2 optional skips. See the [local investigation](docs/local_investigation_20261029.md) for execution details and source-only alpha selection.
