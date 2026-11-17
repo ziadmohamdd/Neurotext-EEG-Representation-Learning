@@ -1,10 +1,10 @@
 # What ZuCo EEG-to-text retrieval scores measure: an audit of task mixing, list position and controls
 
-**Draft 2, 14 November 2026.** Ziad Mohamed. Every number comes from a report in `docs/research_results/`, and each section links its source. Figures are made by `scripts/paper/make_figures.py` from saved results only. Items marked **TODO** need work before submission.
+**Draft 3, 17 November 2026.** Ziad Mohamed. Every number comes from a report in `docs/research_results/`, and each section links its source. Figures are made by `scripts/paper/make_figures.py` from saved results only. Items marked **TODO** need work before submission.
 
 ## Abstract
 
-EEG-to-text models trained on the ZuCo reading corpora are often scored by N-way sentence retrieval. We audit what this score measures. On GLIM's public test outputs, the mixed-task 10-way score of 21.46% (chance 10%) falls to 9.73–14.25% within any single task. A predictor that knows only whether a sentence is a movie review or a biography, with no EEG, scores 19.53%. Random sentence splits are also weak: readers saw sentences in one fixed order, so the text of a held-out sentence's list neighbours, with no EEG, scores 51.09% at 10-way, and EEG predicts list position (correlation 0.80–0.88). Under frozen tests that hold out whole list blocks, EEG never beat matched noise, whether as whole-sentence, word-locked or first-fixation features. Gaze and word properties with no EEG scored 26.05%. Once gaze was known, EEG added 0.10 points, and the data allow at most 2.37. Two more published models retrieve no better than chance and noise. We do not claim that ZuCo EEG lacks language information, only that these scores do not show it. We propose five reporting controls that would.
+EEG-to-text models trained on the ZuCo reading corpora are often scored by N-way sentence retrieval. We audit what this score measures. On GLIM's public test outputs, the mixed-task 10-way score of 21.46% (chance 10%) falls to 9.73–14.25% within any single task. A predictor that knows only whether a sentence is a movie review or a biography, with no EEG, scores 19.53%. Random sentence splits are also weak: readers saw sentences in one fixed order, so the text of a held-out sentence's list neighbours, with no EEG, scores 51.09% at 10-way, and EEG predicts list position (correlation 0.80–0.88). Under frozen tests that hold out whole list blocks, EEG never beat matched noise, whether as whole-sentence, word-locked or first-fixation features. Gaze and word properties with no EEG scored 26.05%. Once gaze was known, EEG added 0.10 points, and the data allow at most 2.37. A frozen confirmation on 85 never-used sentences reproduced all three findings. Two more published models retrieve no better than chance and noise. We do not claim that ZuCo EEG lacks language information, only that these scores do not show it. We propose five reporting controls that would.
 
 ## 1. Introduction
 
@@ -21,6 +21,7 @@ Our contributions:
 - A breakdown of a published model's own public outputs by task and by distractor type, and an exact ceiling for a predictor that knows only the corpus (Section 4).
 - A no-EEG neighbouring-text baseline showing how easy random ZuCo splits are, and evidence that EEG encodes list position (Section 5).
 - Frozen tests on held-out list blocks with buffers, with matched noise, shuffled pairs, list position, timing and gaze controls, for whole-sentence, word-locked and first-fixation EEG, and the largest effect each test still allows (Section 6).
+- A one-time confirmation of these findings on reserved blocks never fitted or scored before (Section 6.6).
 - Five reporting controls for EEG-to-text retrieval (Section 7).
 
 Each idea has partial precedent (Section 2 and Table 1). We believe the combination, run on one data set under frozen plans, is new.
@@ -185,9 +186,23 @@ A shared signal should grow as more readers are averaged, and faster than noise.
 
 Forty-eight sentences were read in both releases by different readers. With nothing fitted, a sentence's averaged EEG found its own copy in the other release 28.18% of the time at 10-way, against 26.68% for matched noise (gap 1.50, interval −4.98 to 8.20). List position alone scored 54.39% and word count with reading time 52.74%, because the shared sentences sit in similar positions in both lists (correlation 0.70). With these removed, real scored 18.40% and noise 16.06%. [Source](research_results/same_sentence_v7_20261106/REPORT.md).
 
+### 6.6 Confirmation on reserved blocks
+
+All results above come from sentences used during development. The only sentences never fitted or scored were four reserved blocks (two per release). We scored them once under a frozen plan, with the three pipelines reused unchanged and one fit on all 419 other usable sentences. Fifteen of the 100 reserved sentences also belonged to an older test set that stays closed, so 85 sentences from 29 readers were scored. Before scoring, we stated three claims and how each would be confirmed or contradicted. [Source](research_results/confirmation_v10_20261114/REPORT.md).
+
+**Table 5.** Expected 10-way within block on the 85 reserved sentences. Intervals are 95%, from resampling sentences.
+
+| Claim | Test | Result | Label |
+|---|---|---|---|
+| EEG does not beat matched noise | Real minus noise, each pipeline | Whole-sentence 11.04 vs 10.10; word-locked 13.47 vs 15.92; first fixation 12.90 vs 16.79; none clear | Confirmed |
+| Gaze beats word-locked EEG | Gaze minus word-locked EEG | 25.58 vs 13.47; 12.12 points (3.96 to 20.38) | Confirmed |
+| EEG adds little to gaze | Gaze plus EEG minus gaze plus noise | 25.29 vs 26.65; −1.36 points (−4.20 to 1.19; readers −4.26 to 1.44) | Confirmed: both upper ends below the preset 3 points |
+
+The first-fixation waveform, the only development lead, scored 12.90% against 16.79% for noise, so it reversed on fresh sentences. Real EEG and gaze scored close to their development values (Table 3). This test had been ruled out by an earlier frozen plan, which reserved these blocks for a decoder that passed its gate. We changed that rule before scoring, to test claims about controls, and report it here. In each pipeline's own partial check, the whole-sentence arm scored 13.41% against 6.46% for noise. That check was not a claim, and noise sat far below chance there.
+
 ## 7. Discussion
 
-**What the scores measure.** On GLIM's outputs, the mixed-task score mostly measures corpus separation, and a corpus-only predictor with no EEG nearly matches it. On random splits, list neighbours and EEG-predicted position can supply much of a retrieval score without sentence content. Under block holdout, every EEG representation we tried fell to the level of matched noise, gaze with no EEG beat all of them, and EEG added at most 2.37 points to gaze.
+**What the scores measure.** On GLIM's outputs, the mixed-task score mostly measures corpus separation, and a corpus-only predictor with no EEG nearly matches it. On random splits, list neighbours and EEG-predicted position can supply much of a retrieval score without sentence content. Under block holdout, every EEG representation we tried fell to the level of matched noise, gaze with no EEG beat all of them, and EEG added at most 2.37 points to gaze. All three findings held on reserved sentences scored once.
 
 **Five reporting controls for EEG-to-text retrieval.**
 
@@ -201,7 +216,7 @@ Forty-eight sentences were read in both releases by different readers. With noth
 
 ## 8. Limitations
 
-- **Reused data.** The 255 block-holdout sentences were all used in earlier development, and the first-fixation lead was found on them, so these results are exploratory. Reserved test blocks exist and have not been scored. **TODO:** owner's decision on scoring them once, under a new frozen plan.
+- **Reused data, partly addressed.** The 255 block-holdout sentences were all used in earlier development. The confirmation on 85 reserved sentences supports the main findings, but every design choice was shaped by the development blocks, and it uses the same readers. No clean held-out data remains in ZuCo normal reading.
 - **Small samples.** 255 sentences in 13 blocks, 48 shared sentences and 79–156 output sentences give wide intervals (Table 4).
 - **One model shows the mixed-task pattern.** SemKey's outputs are not public, so the strongest published model is untested. The corpus-only ceiling applies to any model scored on the same test composition, but whether SemKey exceeds it is unknown.
 - **Content or session.** The corpus gap in GLIM's outputs could reflect content or recording session. The same-sentence test covers biography sentences only and does not settle this.
@@ -235,5 +250,4 @@ Checked against the publisher, arXiv or OpenAlex record on 14 November 2026 unle
 ## Open decisions before submission
 
 1. Venue and length.
-2. Whether to score the reserved test blocks once as confirmation.
-3. Whether to contact the authors of the overlapping repositories.
+2. Whether to contact the authors of the overlapping repositories.

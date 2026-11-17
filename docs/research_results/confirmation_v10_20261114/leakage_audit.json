@@ -1,0 +1,27 @@
+{
+  "failures": [],
+  "worst": {
+    "jaccard": 0.3142857142857143,
+    "containment": 0.7777777777777778,
+    "cosine": 0.6465212106704712
+  },
+  "min_list_distance_held_out_to_train": 11,
+  "blocks": 4,
+  "scored_sentences": 85,
+  "usable_observations": 7212,
+  "usable_sentences": 504,
+  "sizes": {
+    "blocks": {
+      "zuco1": 2,
+      "zuco2": 2
+    },
+    "scored_sentences": 85,
+    "scored_observations": 1184,
+    "scored_readers": 29,
+    "usable_observations": 7212,
+    "usable_sentences": 504,
+    "training_sentences": 419,
+    "zuco1_scored_sentences": 42,
+    "zuco2_scored_sentences": 43
+  }
+}

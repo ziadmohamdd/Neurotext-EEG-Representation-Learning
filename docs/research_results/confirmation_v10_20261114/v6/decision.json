@@ -1,0 +1,116 @@
+{
+  "label": "No sentence signal found with word-locked features",
+  "beats_nulls": false,
+  "gaps": {
+    "gaussian": -0.02449992367857967,
+    "class_shuffled": 0.04478889804422495,
+    "gaze_word": -0.12116007012473959,
+    "position": 0.05293281659153086,
+    "partial": 0.01177063148106676
+  },
+  "lower_bounds": {
+    "gaussian": {
+      "sentence": -0.08531794230173396,
+      "block": -0.06389446466845848,
+      "reader": -0.08082316599808861
+    },
+    "class_shuffled": {
+      "sentence": -0.009153570862301058,
+      "block": 0.03478085210283354,
+      "reader": -0.00979998761482552
+    },
+    "gaze_word": {
+      "sentence": -0.20381767822416155,
+      "block": -0.13243002938313667
+    },
+    "position": {
+      "sentence": -0.020502981174716738,
+      "block": 0.036755079286039036
+    },
+    "partial": {
+      "sentence": -0.04853471187344799,
+      "block": -0.04049821227803805
+    }
+  },
+  "minimum_gap": 0.02,
+  "primary": {
+    "real": 0.1346808964119108,
+    "gaussian": 0.15918082009049048,
+    "gaze_word": 0.2558409665366504,
+    "position": 0.08174807982037995,
+    "class_shuffled": 0.08989199836768585,
+    "real_partial": 0.13603129523908983,
+    "gaussian_partial": 0.12426066375802307
+  },
+  "intervals": {
+    "gaussian": {
+      "estimate": -0.024499923678579665,
+      "sentence_interval": [
+        -0.08531794230173396,
+        0.035615042442532864
+      ],
+      "block_interval": [
+        -0.06389446466845848,
+        0.024811658573802266
+      ]
+    },
+    "class_shuffled": {
+      "estimate": 0.04478889804422495,
+      "sentence_interval": [
+        -0.009153570862301058,
+        0.10403807721144269
+      ],
+      "block_interval": [
+        0.03478085210283354,
+        0.052171269223252804
+      ]
+    },
+    "gaze_word": {
+      "estimate": -0.12116007012473957,
+      "sentence_interval": [
+        -0.20381767822416155,
+        -0.03956511324679698
+      ],
+      "block_interval": [
+        -0.13243002938313667,
+        -0.1147123364706683
+      ]
+    },
+    "position": {
+      "estimate": 0.052932816591530846,
+      "sentence_interval": [
+        -0.020502981174716738,
+        0.1260868001967073
+      ],
+      "block_interval": [
+        0.036755079286039036,
+        0.06869983125904645
+      ]
+    },
+    "partial": {
+      "estimate": 0.01177063148106674,
+      "sentence_interval": [
+        -0.04853471187344799,
+        0.0732868599484653
+      ],
+      "block_interval": [
+        -0.04049821227803805,
+        0.06545152473945043
+      ]
+    }
+  },
+  "reader_intervals": {
+    "gaussian": [
+      -0.08082316599808861,
+      0.029333053101515166
+    ],
+    "class_shuffled": [
+      -0.00979998761482552,
+      0.08151957299666274
+    ]
+  },
+  "partial_sentences_with_no_prediction_left": {
+    "real": 1,
+    "gaussian": 1
+  }
+}
