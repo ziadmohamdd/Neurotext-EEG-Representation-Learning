@@ -6,7 +6,7 @@ I have not improved EEG decoding: on held-out list blocks, EEG never beat matche
 
 ## Evidence
 
-Scores are expected 10-way accuracy unless marked, with chance at 10%. No final test data was scored. Word-locked scores use centred scoring, so they are not on exactly the same scale as the others.
+Scores are expected 10-way accuracy unless marked, with chance at 10%. The reserved test blocks were scored once on 17 November (confirmation v10, 85 sentences); every other score is from development data. Word-locked scores use centred scoring, so they are not on exactly the same scale as the others.
 
 | Result | Key numbers | Data used |
 |---|---|---|
@@ -19,6 +19,7 @@ Scores are expected 10-way accuracy unless marked, with chance at 10%. No final 
 | Gaze beats word-locked EEG | Gaze and word properties with no EEG: 26.05% | Same sentences |
 | New readers show no gain | Whole-sentence 9.67% (noise 11.23%). Word-locked 13.22% (noise 13.31%) | Same sentences, 15 fit and 15 scored readers |
 | The last decoding lead did not hold | First-fixation waveform 12.81% (noise 9.72%), gap not clear. Gaze alone 26.05%; gaze plus waveform 24.39%, gaze plus noise 24.29% | 255 reused sentences (test v9) |
+| Confirmed on reserved blocks | Whole-sentence 11.04% (noise 10.10%), word-locked 13.47% (noise 15.92%), first fixation 12.90% (noise 16.79%). Gaze 25.58%; gaze plus EEG 25.29%, gaze plus noise 26.65% | 85 never-used sentences, scored once (v10) |
 | Two more published models show no retrieval | BART (Wang and Ji) 10.01%, noise input 10.09%. T5 (Jo et al.) 12.38%, noise 9.61%, not clear of chance. Corpus label alone, no EEG: 13.35% | Their public outputs, 79 sentences |
 | Same sentence across releases: no match beyond noise | Real 28.18% (noise 26.68%), list position alone 54.39%, word count and reading time 52.74%. With these removed, 18.40% (noise 16.06%) | 48 sentences read in both releases, nothing fitted |
 

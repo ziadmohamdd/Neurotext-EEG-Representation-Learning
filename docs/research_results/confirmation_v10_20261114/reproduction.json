@@ -1,0 +1,18 @@
+{
+  "purpose": "Each reused pipeline rerun on its old layout before confirmation v10",
+  "runs": {
+    "v5": {
+      "decision_identical": true,
+      "secondary_identical": true
+    },
+    "v6": {
+      "decision_identical": true,
+      "secondary_identical": true
+    },
+    "v9": {
+      "decision_identical": true,
+      "secondary_identical": true
+    }
+  },
+  "note": "Each rerun ended with \"A protected file changed\" because its own log file sat inside results/ and was hashed; for v5 and v6 the stored before-hashes show the log was the only changed file. v9 keeps no before-hash file."
+}

@@ -13,6 +13,8 @@
 
 **Update, 14 November:** [first-fixation test v9](research_results/first_fixation_v9_20261114/REPORT.md) retested the last decoding lead, and it did not hold: the waveform added 0.10 points to gaze. Decoding work has stopped. The project owner decided to finish without waiting for the supervisor or for SemKey's authors, so SemKey stays untested and is listed as a limitation. [Paper draft 2](paper_draft_20261114.md) adds two analyses from saved results only: [effect limits](research_results/paper_analyses_20261114/effect_limits.json), the largest EEG gain each test still allows (at most 2.37 points over gaze), and an [exact corpus-only ceiling](research_results/paper_analyses_20261114/label_ceiling.json), which scores 19.53% at 10-way against GLIM's 21.46% on the same test set. That ceiling applies to any model scored on that test composition, which partly answers the single-model weakness.
 
+**Update, 17 November:** the reused-sentences weakness is now partly addressed. [Confirmation v10](research_results/confirmation_v10_20261114/REPORT.md) scored the reserved test blocks once (85 sentences) and confirmed all three block-holdout claims. No clean held-out data remains in ZuCo normal reading.
+
 ## 1. Content or recording block (v7)
 
 **Idea:** 51 sentence texts appear in both ZuCo 1.0 and ZuCo 2.0 normal reading, so the same words were read in different recording blocks by different people. Of these, 48 are usable in both releases; the other 3 touch the v2 test zone and stay closed.
