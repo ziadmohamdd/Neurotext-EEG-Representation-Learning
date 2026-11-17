@@ -1,6 +1,13 @@
 # Consolidated presentation
 
-Latest deck: [35-slide PowerPoint](NeuroText_consolidated_v2_20261105.pptx) and
+**Final deck (17 November 2026):** [13-slide PowerPoint](NeuroText_final_v3_20261117.pptx) and
+[PDF](NeuroText_final_v3_20261117.pdf). It presents the finished audit: task mixing, list position,
+block-holdout tests, effect limits and the one-time confirmation, with speaker notes on each slide.
+`scripts/build_final_deck.ps1` builds it with local Microsoft PowerPoint from the paper figures in
+`docs/paper_figures/`, runs no experiment, and refuses to overwrite an existing deck. The decks below are
+unchanged and record earlier stages of the project.
+
+Previous deck: [35-slide PowerPoint](NeuroText_consolidated_v2_20261105.pptx) and
 [PDF preview](NeuroText_consolidated_v2_20261105.pdf). Its slides 1–26 are byte-identical
 to the earlier deck. Slides 27–35 add the later pilots, separate word-task scores,
 expected N-way accuracy, a project-brief checklist and the current conclusion, all

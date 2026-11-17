@@ -101,8 +101,49 @@ def fig4():
     fig.savefig(OUT/'fig4_readers.png'); plt.close(fig)
 
 
+def fig5():
+    """Confirmation v10: development against reserved-block scores, and the three claims' gaps with intervals."""
+    conf = 'confirmation_v10_20261114'
+    tests = [('Whole-\nsentence (v5)', 'averaged_eeg_v5_20261106', 'v5'), ('Word-\nlocked (v6)', 'word_locked_v6_20261106', 'v6'),
+             ('First\nfixation (v9)', 'first_fixation_v9_20261114', 'v9')]
+    fig, (a, b) = plt.subplots(1, 2, figsize=(7.8, 3.0), gridspec_kw=dict(width_ratios=[1.25, 1]))
+    w = 0.2
+    groups = [(lab, load(f'{dev}/decision.json')['primary'], load(f'{conf}/{v}/decision.json')['primary']) for lab, dev, v in tests]
+    gaze_dev = load('word_locked_v6_20261106/decision.json')['primary']['gaze_word']
+    gaze_test = load(f'{conf}/v6/decision.json')['primary']['gaze_word']
+    arms = [('real', 'dev', REAL, 0.45, 'Real EEG, development'), ('real', 'test', REAL, 1, 'Real EEG, reserved'),
+            ('gaussian', 'dev', NOISE, 0.45, 'Noise, development'), ('gaussian', 'test', NOISE, 1, 'Noise, reserved')]
+    for j, (key, which, col, alpha, lab) in enumerate(arms):
+        vals = [100 * (dev if which == 'dev' else test)[key] for _, dev, test in groups]
+        xs = [i + (j - 1.5) * w for i in range(len(groups))]
+        a.bar(xs, vals, w, color=col, alpha=alpha, label=lab)
+    for j, (v, alpha) in enumerate([(gaze_dev, 0.45), (gaze_test, 1)]):
+        a.bar(3 + (j - 0.5) * w, 100 * v, w, color=NOEEG, alpha=alpha, label='Gaze, no EEG' if j else None)
+    a.set_xticks(range(4), [g[0] for g in groups] + ['Gaze,\nno EEG'], fontsize=7)
+    a.set_ylabel('10-way within block (%)'); a.set_ylim(0, 32)
+    a.set_title('(a) Development (light) and reserved blocks (dark)', loc='left', fontsize=9)
+    chance(a, 10); a.legend(frameon=False, fontsize=6.5, ncol=2, loc='upper left')
+    c = load(f'{conf}/claims.json')['inputs']
+    rows = [('C1 whole-sentence: real − noise', c['C1']['v5']), ('C1 word-locked: real − noise', c['C1']['v6']),
+            ('C1 first fixation: real − noise', c['C1']['v9']),
+            ('C2 gaze − word-locked EEG', {'gap': -c['C2_real_minus_gaze']['gap'], 'bounds': [(-hi, -lo) for lo, hi in c['C2_real_minus_gaze']['bounds']]}),
+            ('C3 gaze+EEG − gaze+noise', c['C3'])]
+    for i, (lab, r) in enumerate(rows):
+        lo, hi = r['bounds'][0]
+        y = len(rows) - 1 - i
+        b.plot([100 * lo, 100 * hi], [y, y], color=INK, lw=1.2)
+        b.plot(100 * r['gap'], y, 'o', color=NOEEG if lab.startswith('C2') else REAL, ms=5)
+    b.axvline(0, color=INK, lw=0.8); b.axvline(3, color=INK, lw=0.8, ls='--')
+    b.text(3.4, 0.25, 'C3 margin', fontsize=7, color=INK)
+    b.set_yticks(range(len(rows)), [r[0] for r in rows][::-1], fontsize=7)
+    b.set_xlabel('Gap in points, 95% sentence interval')
+    b.set_title('(b) Claims on 85 reserved sentences', loc='left', fontsize=9)
+    fig.tight_layout()
+    fig.savefig(OUT/'fig5_confirmation.png'); plt.close(fig)
+
+
 if __name__ == '__main__':
     OUT.mkdir(exist_ok=True)
-    for f in (fig1, fig2, fig3, fig4):
+    for f in (fig1, fig2, fig3, fig4, fig5):
         f()
     print(sorted(p.name for p in OUT.iterdir()))

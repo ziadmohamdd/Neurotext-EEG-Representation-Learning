@@ -1,6 +1,6 @@
 # What ZuCo EEG-to-text retrieval scores measure: an audit of task mixing, list position and controls
 
-**Draft 3, 17 November 2026.** Ziad Mohamed. Every number comes from a report in `docs/research_results/`, and each section links its source. Figures are made by `scripts/paper/make_figures.py` from saved results only. Items marked **TODO** need work before submission.
+**Draft 4, 17 November 2026.** Ziad Mohamed. Every number comes from a report in `docs/research_results/`, and each section links its source. Figures are made by `scripts/paper/make_figures.py` from saved results only. The decisions left before submission are listed at the end.
 
 ## Abstract
 
@@ -32,7 +32,7 @@ Each idea has partial precedent (Section 2 and Table 1). We believe the combinat
 
 **EEG-to-text on ZuCo.** Wang and Ji (2022) decoded open-vocabulary text with BART from word-level EEG features. Jo et al. (2024) showed that such models produce similar text from noise input. GLIM (Liu et al. 2025) and SemKey (Wang et al. 2026) report N-way retrieval; SemKey's paper reports GLIM at 21.91% for 10-way.
 
-**Critiques and leakage.** Zhang et al. (2026) report that ZuCo decoding scores match noise and attribute this to EEG instability, but do not test list position. Yin et al. (2025) show leakage in cross-subject brain-to-text splits. Li et al. (2020) showed that block designs let EEG classifiers exploit temporal correlation rather than stimulus content, and later work examines temporal autocorrelation in EEG decoding more generally (**TODO:** cite arXiv 2405.17024 after reading it).
+**Critiques and leakage.** Zhang et al. (2026) report that ZuCo decoding scores match noise and attribute this to EEG instability, but do not test list position. Yin et al. (2025) show leakage in cross-subject brain-to-text splits. Li et al. (2020) showed that block designs let EEG classifiers exploit temporal correlation rather than stimulus content, Xu et al. (2024) recorded "EEG" from watermelons, which have no neural response, and could still decode labels whenever segments sharing a label were split across training and test sets. ZuCo's fixed reading order creates the same risk for sentences, which Section 5 measures.
 
 **Positive results.** McGuire and Moshfeghi (2025) report above-noise passage retrieval at P@5 (12.39 against 4.13) on a different task and split, and Marquardt et al. (2026) report a strict positive on their own single-reader recordings. Raghavan and Parra (2025) find that fixation-locked ZuCo EEG tracks word features.
 
@@ -176,7 +176,7 @@ Whole-sentence and word-locked EEG add at most about 1 to 3 points over noise at
 
 ### 6.4 Readers and new readers
 
-A shared signal should grow as more readers are averaged, and faster than noise. It did not (Figure 4). At one reader, real and noise were 11.00 and 11.05 (v5), 11.72 and 11.96 (v6), and 10.29 and 10.13 (v9). Fitting on 15 readers and averaging the other 15 on the same blocks gave 9.67% for whole-sentence features (noise 11.23%) and 13.22% for word-locked features (noise 13.31%).
+A shared signal should grow as more readers are averaged, and faster than noise. For whole-sentence and word-locked features it did not (Figure 4). The first-fixation gap did grow with readers on the development blocks, but it reversed on the reserved sentences (Section 6.6). At one reader, real and noise were 11.00 and 11.05 (v5), 11.72 and 11.96 (v6), and 10.29 and 10.13 (v9). Fitting on 15 readers and averaging the other 15 on the same blocks gave 9.67% for whole-sentence features (noise 11.23%) and 13.22% for word-locked features (noise 13.31%).
 
 ![Figure 4](paper_figures/fig4_readers.png)
 
@@ -197,6 +197,10 @@ All results above come from sentences used during development. The only sentence
 | EEG does not beat matched noise | Real minus noise, each pipeline | Whole-sentence 11.04 vs 10.10; word-locked 13.47 vs 15.92; first fixation 12.90 vs 16.79; none clear | Confirmed |
 | Gaze beats word-locked EEG | Gaze minus word-locked EEG | 25.58 vs 13.47; 12.12 points (3.96 to 20.38) | Confirmed |
 | EEG adds little to gaze | Gaze plus EEG minus gaze plus noise | 25.29 vs 26.65; −1.36 points (−4.20 to 1.19; readers −4.26 to 1.44) | Confirmed: both upper ends below the preset 3 points |
+
+![Figure 5](paper_figures/fig5_confirmation.png)
+
+**Figure 5.** (a) Each pipeline's development score (255 sentences) beside its score on the 85 reserved sentences. (b) The gaps behind the three pre-stated claims, with 95% sentence intervals. The dashed line is the 3-point margin for C3.
 
 The first-fixation waveform, the only development lead, scored 12.90% against 16.79% for noise, so it reversed on fresh sentences. Real EEG and gaze scored close to their development values (Table 3). This test had been ruled out by an earlier frozen plan, which reserved these blocks for a decoder that passed its gate. We changed that rule before scoring, to test claims about controls, and report it here. In each pipeline's own partial check, the whole-sentence arm scored 13.41% against 6.46% for noise. That check was not a claim, and noise sat far below chance there.
 
@@ -225,7 +229,7 @@ The first-fixation waveform, the only development lead, scored 12.90% against 16
 
 ## 9. Reproducibility and ethics
 
-Code, frozen plans, configuration hashes, leakage audits and numeric results are in the public repository (**TODO:** add the URL and a release tag). No raw EEG or ZuCo text is redistributed; readers must obtain ZuCo from its official source. **TODO:** confirm the ZuCo licence terms for derived files and for quoting sentences.
+Code, frozen plans, configuration hashes, leakage audits and numeric results are in the public repository at https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning; the version used for the paper will be marked with a release tag. ZuCo 1.0 and 2.0 are released on OSF under the Creative Commons Attribution 4.0 International licence (checked 17 November 2026), which allows sharing derived results and quoting sentences with attribution. We still redistribute no raw EEG, and readers obtain ZuCo from its official source. ZuCo was collected by its authors with ethics approval and informed consent; we collected no new data.
 
 ## References
 
@@ -234,15 +238,16 @@ Checked against the publisher, arXiv or OpenAlex record on 14 November 2026 unle
 - Hollenstein, N., Rotsztejn, J., Troendle, M., Pedroni, A., Zhang, C. and Langer, N. (2018). ZuCo, a simultaneous EEG and eye-tracking resource for natural sentence reading. *Scientific Data* 5, 180291. doi:10.1038/sdata.2018.291
 - Hollenstein, N., Troendle, M., Zhang, C. and Langer, N. (2020). ZuCo 2.0: A dataset of physiological recordings during natural reading and annotation. *LREC 2020*, 138–146.
 - Hollenstein, N., Tröndle, M., Plomecka, M., Kiegeland, S., Özyurt, Y., Jäger, L. A. and Langer, N. (2021). Reading task classification using EEG and eye-tracking data. arXiv:2112.06310.
-- Hollenstein, N. et al. (2023). The ZuCo benchmark on cross-subject reading task classification with EEG and eye-tracking data. *Frontiers in Psychology* 13. doi:10.3389/fpsyg.2022.1028824 (**TODO:** full author list)
+- Hollenstein, N., Tröndle, M., Plomecka, M., Kiegeland, S., Özyurt, Y., Jäger, L. A. and Langer, N. (2023). The ZuCo benchmark on cross-subject reading task classification with EEG and eye-tracking data. *Frontiers in Psychology* 13, 1028824. doi:10.3389/fpsyg.2022.1028824
 - Jo, H., Yang, Y., Han, J., Duan, Y., Xiong, H. and Lee, W. H. (2024). Are EEG-to-text models working? arXiv:2405.06459.
-- Li, R. et al. (2020). The perils and pitfalls of block design for EEG classification experiments. *IEEE TPAMI*. doi:10.1109/tpami.2020.2973153 (**TODO:** full author list)
+- Li, R., Johansen, J. S., Ahmed, H., Ilyevsky, T. V., Wilbur, R. B., Bharadwaj, H. M. and Siskind, J. M. (2020). The perils and pitfalls of block design for EEG classification experiments. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, early access. doi:10.1109/tpami.2020.2973153
 - Liu, X., Shen, D. and Liu, X. (2025). Learning interpretable representations leads to semantically faithful EEG-to-text generation. arXiv:2505.17099. (GLIM; outputs from github.com/justin-xzliu/GLIM, commit e1f202c.)
 - Marquardt, I., Alchanat, A. and Jain, P. (2026). Decoding silent reading from non-invasive EEG. arXiv:2608.20186.
 - McGuire, N. and Moshfeghi, Y. (2025). Towards brain passage retrieval: an investigation of EEG query representations. *SIGIR 2025*. doi:10.1145/3726302.3730097
 - Raghavan, V. S. and Parra, L. C. (2025). Neural encoding of linguistic features during natural sentence reading. *iScience* 28(7), 112798. doi:10.1016/j.isci.2025.112798
 - Wang, Y., Wang, H., Guo, Y., Yang, H. and Li, X. (2026). Escaping the BLEU trap: a signal-grounded framework with decoupled semantic guidance for EEG-to-text decoding. arXiv:2603.03312. (SemKey.)
 - Wang, Z. and Ji, H. (2022). Open vocabulary electroencephalography-to-text decoding and zero-shot sentiment classification. *AAAI 2022*. doi:10.1609/aaai.v36i5.20472
+- Xu, X., Wang, B., Xiao, B., Niu, Y., Wang, Y., Wu, X. and Chen, J. (2024). Beware of overestimated decoding performance arising from temporal autocorrelations in electroencephalogram signals. arXiv:2405.17024. (Journal version: The impacts of temporal autocorrelations on EEG decoding, *Biomedical Signal Processing and Control* 113, 108783, 2026; checked 17 November 2026.)
 - Yin, C., Yu, Q., Fang, Z., Peng, C. and Li, P. (2025). Rethinking cross-subject data splitting for brain-to-text decoding. *EMNLP 2025*. doi:10.18653/v1/2025.emnlp-main.289
 - Zhang, Z., Bao, Y., Ding, X., Jiang, T. and Xiong, K. (2026). Is EEG-to-text feasible in real-world scenarios? An in-depth analysis using a neuropsychology-inspired benchmark. *ACL 2026*, 1378–1393.
 - Public repositories, accessed 6 November 2026: bleepbloop301/eeg2text-reproductions, RahmaDawy/eeg-language-decoding, thestonedape/task-aware-eeg2text.
@@ -251,3 +256,4 @@ Checked against the publisher, arXiv or OpenAlex record on 14 November 2026 unle
 
 1. Venue and length.
 2. Whether to contact the authors of the overlapping repositories.
+3. A licence for the repository, and the release tag named in Section 9.
