@@ -229,7 +229,7 @@ The first-fixation waveform, the only development lead, scored 12.90% against 16
 
 ## 9. Reproducibility and ethics
 
-Code, frozen plans, configuration hashes, leakage audits and numeric results are in the public repository at https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning; the version used for the paper will be marked with a release tag. ZuCo 1.0 and 2.0 are released on OSF under the Creative Commons Attribution 4.0 International licence (checked 17 November 2026), which allows sharing derived results and quoting sentences with attribution. We still redistribute no raw EEG, and readers obtain ZuCo from its official source. ZuCo was collected by its authors with ethics approval and informed consent; we collected no new data.
+Code, frozen plans, configuration hashes, leakage audits and numeric results are in the public repository at https://github.com/ziadmohamdd/Neurotext-EEG-Representation-Learning; the version used for the paper is tagged `paper-v1`, and the code is released under the MIT licence. ZuCo 1.0 and 2.0 are released on OSF under the Creative Commons Attribution 4.0 International licence (checked 17 November 2026), which allows sharing derived results and quoting sentences with attribution. We still redistribute no raw EEG, and readers obtain ZuCo from its official source. ZuCo was collected by its authors with ethics approval and informed consent; we collected no new data.
 
 ## References
 
@@ -256,4 +256,3 @@ Checked against the publisher, arXiv or OpenAlex record on 14 November 2026 unle
 
 1. Venue and length.
 2. Whether to contact the authors of the overlapping repositories.
-3. A licence for the repository, and the release tag named in Section 9.

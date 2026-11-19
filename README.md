@@ -17,7 +17,7 @@ Start here:
 - the [13-slide final presentation](docs/presentation/NeuroText_final_v3_20261117.pptx), with a [PDF](docs/presentation/NeuroText_final_v3_20261117.pdf);
 - the [confirmation report](docs/research_results/confirmation_v10_20261114/REPORT.md).
 
-No clean held-out data remains in ZuCo normal reading, so any further claim needs a new dataset. The sections below are the project's earlier history.
+No clean held-out data remains in ZuCo normal reading, so any further claim needs a new dataset. The version used for the paper is tagged `paper-v1`. The code is under the [MIT licence](LICENSE); ZuCo itself is not included and keeps its own CC BY 4.0 licence. The sections below are the project's earlier history.
 
 **Status:** user-side Windows experiments cover both ZuCo versions, statistical/CNN/SSL models, frozen official LaBraM features, matched negative controls for these configurations, and selected robustness comparisons. The [draft research report](docs/research_results/REPORT.md) archives 79 evaluation reports and documents near-chance retrieval and remaining work; these results were not independently rerun in the cloud. Strict cross-dataset transfer remains unexecuted pending participant-identity evidence. Automated software tests use explicitly synthetic fixtures. See [data acquisition](docs/data_sources.md), [methodology](docs/methodology.md), and [pretrained adaptation](docs/pretrained_models.md).
 
