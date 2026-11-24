@@ -103,7 +103,7 @@ The gap is not the task prompt alone: two ZuCo 1.0 tasks share the same prompts 
 
 ### 4.3 Two further models
 
-Wang and Ji's BART model and Jo et al.'s T5 variant have public test outputs (79 usable sentences). At 10-way across movie reviews and biographies, BART scored 10.01% (noise input 10.09%), and its outputs contain only 4 distinct texts. T5 scored 12.38% (noise 9.61%), a gap over chance of 2.38 points (interval −0.65 to 5.63). A predictor that knows only the corpus scored 13.35%. Neither model retrieves its sentence above chance and noise. These models report no mixed-task score, so they do not repeat the GLIM pattern. [Source](research_results/public_outputs_check_v8_20261112/REPORT.md).
+Wang and Ji's BART model and Jo et al.'s T5 variant have public test outputs (79 usable sentences). At 10-way across movie reviews and biographies, BART scored 10.01% (noise input 10.09%), and its outputs contain only 4 distinct texts. T5 scored 12.38% (noise 9.61%), a gap over chance of 2.38 points (interval −0.65 to 5.63). A predictor that knows only the corpus scored 13.35% on BART's sentences and 13.39% on T5's. Neither model retrieves its sentence above chance and noise. These models report no mixed-task score, so they do not repeat the GLIM pattern. [Source](research_results/public_outputs_check_v8_20261112/REPORT.md).
 
 ## 5. Random splits and list position
 
