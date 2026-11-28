@@ -133,3 +133,7 @@ python scripts/run_experiments.py --manifest data/manifests/combined_clean.jsonl
 ```
 
 The full default matrix is expensive; edit the experiments YAML for a small debugging subset, then use Colab for the full study. The runner records failed/not-executed/executed states and never converts a failed command into success. Do not compare caches made from different manifests as if preprocessing were controlled.
+
+## Architecture map
+[Explore the interactive codebase map ?](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)
+
