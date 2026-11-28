@@ -1,5 +1,10 @@
 # NeuroText: EEG Representation Learning
 
+[![Codebase map](https://img.shields.io/badge/codebase%20map-open%20interactive%20map-black)](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-lightgrey)](LICENSE)
+
+**[Explore the interactive codebase map →](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)** · [Architecture map section](#architecture-map)
+
 Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4 GB), CPU and Google Colab. One package implements all workflows; notebooks are clients of the same modules.
 
 ## Where the project stands (17 November 2026)
@@ -135,5 +140,8 @@ python scripts/run_experiments.py --manifest data/manifests/combined_clean.jsonl
 The full default matrix is expensive; edit the experiments YAML for a small debugging subset, then use Colab for the full study. The runner records failed/not-executed/executed states and never converts a failed command into success. Do not compare caches made from different manifests as if preprocessing were controlled.
 
 ## Architecture map
-[Explore the interactive codebase map ?](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)
+
+An interactive map of the codebase, made with [Floorplan](https://github.com/haydenschmitty/floorplan): every subsystem, module and file, with a one-line description and the imports between them.
+
+**[Open the interactive codebase map →](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)**
 
