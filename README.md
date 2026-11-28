@@ -5,6 +5,8 @@
 
 **[Explore the interactive codebase map →](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)** · [Architecture map section](#architecture-map)
 
+[![Interactive codebase map of NeuroText](docs/images/codebase_map.png)](https://ziadmohamdd.github.io/Neurotext-EEG-Representation-Learning/map/)
+
 Memory-conscious ZuCo 1.0/2.0 EEG-to-sentence retrieval for Windows (RTX 3050, 4 GB), CPU and Google Colab. One package implements all workflows; notebooks are clients of the same modules.
 
 ## Where the project stands (17 November 2026)
