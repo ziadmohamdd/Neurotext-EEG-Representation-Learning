@@ -1,0 +1,2 @@
+# Keep the exported codebase map (one large self-contained HTML page) out of GitHub's language statistics.
+map/** linguist-generated
